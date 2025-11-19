@@ -4,7 +4,6 @@ if __name__ == "__main__":
     __package__ = "Code_Understanding.experiment"
 
 from .llm.chatfunction import ChatGPTChatFunction
-from .llm.deepseek import DeepSeekChatFunction
 
 from .prompt_tasks import SYSTEM_PROMPT_ADVERSARIAL_TEST_GENERATION_FEW_SHOT
 
@@ -115,75 +114,3 @@ def _message_code_parse(response_content):
         return code
 
     return response_content.strip()
-
-if __name__ == "__main__":
-    model_names = ["gpt-4o-mini","gpt-4.1-mini"]
-    dataset = "question_with_images"
-    tasks = "questions"
-    res_name = "adv_tescase"
-    platforms = ["atCoder", "codeforces"]
-    languages = ["py", "cpp", "java"]
-
-
-    for model_name in model_names:
-
-        model = ChatGPTChatFunction(model=model_name, openai_key= API_KEY, temperature=0)
-
-        for platform in platforms:
-            for language in languages:
-                    extension = "Wrong_solution"
-                    question_dir = os.path.join("data", "programming_contest", platform, dataset, tasks)
-                    result_dir = os.path.join("results", model_name, platform, dataset, res_name, language)
-
-                    if language != "cpp":
-                        extension += "_" +language
-                    
-                    code_dir = os.path.join("data", "programming_contest", platform, dataset, extension)
-
-                    if not os.path.exists(result_dir):
-                        os.makedirs(result_dir)
-
-                    for fd in os.listdir(code_dir):
-                        fd_path =  os.path.join(code_dir, fd)
-                        if not os.path.isdir(fd_path):
-                            continue
-
-                        for sub_fd in os.listdir(fd_path):
-                            sub_fd_path = os.path.join(fd_path, sub_fd)
-                            if not os.path.isdir(sub_fd_path):
-                                continue
-
-                            print(f"Processing {fd}/{sub_fd}...")
-                            question_files = [f for f in os.listdir(sub_fd_path) if f.endswith(f".{language}") and "1" in f]
-                    
-                            for qf in question_files:
-                                # pass if exists
-                                if os.path.exists(os.path.join(result_dir, fd, sub_fd, "input.txt")):
-                                    continue
-
-                                print(os.path.join(sub_fd_path, qf))
-                                print(os.path.join(question_dir, fd, sub_fd, "data.json"))
-
-                                # get the question_data:
-                                question_json_path = os.path.join(question_dir, fd, sub_fd, "data.json")
-                                with open(question_json_path, "r", encoding="utf-8") as f:
-                                    question_data = json.load(f)
-
-                                # get the unoptimized code
-                                code_path = os.path.join(sub_fd_path, qf)
-                                with open(code_path, "r", encoding="utf-8") as f:
-                                    unoptimized_code = f.read()
-                                
-                                messages = _message_construct(question_data, unoptimized_code, os.path.join(question_dir, fd, sub_fd))
-                                model.conversation_history = messages
-                                print(messages)
-
-                                response_message, _, total_tokens = model.parse()
-
-                                code = _message_code_parse(response_message["content"])
-                                question_name = qf.replace(".json", "")
-                                if not os.path.exists(os.path.join(result_dir, fd, sub_fd)):
-                                    os.makedirs(os.path.join(result_dir, fd, sub_fd))
-
-                                with open(os.path.join(result_dir, fd, sub_fd, "input.txt"), "w", encoding="utf-8") as f:
-                                    f.write(code)

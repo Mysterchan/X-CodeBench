@@ -4,7 +4,6 @@ if __name__ == "__main__":
     __package__ = "Code_Understanding.experiment"
 
 from .llm.chatfunction import ChatGPTChatFunction
-from .llm.deepseek import DeepSeekChatFunction
 
 SYSTEM_PROMPT_PROGRAM_REPAIR = """
 You are a professional data visualization programmer tasked with debugging and repairing Python code for matplotlib or seaborn. 
@@ -173,47 +172,3 @@ def _message_code_parse(response_content):
         return code
 
     return response_content.strip()
-
-if __name__ == "__main__":
-    model_names = ["gpt-4.1-mini"]
-    res_name = "code_debug"
-    platform = "data"
-    language = "py"
-
-    for model_name in model_names:
-        model = ChatGPTChatFunction(model=model_name, openai_key= API_KEY, temperature=0)
-
-        question_dir = os.path.join("data", "datascience", platform)
-        result_dir = os.path.join("results", model_name, "code_debug")
-
-        if not os.path.exists(result_dir):
-            os.makedirs(result_dir)
-
-        for fd in os.listdir(question_dir):
-            fd_path =  os.path.join(question_dir, fd)
-            if not os.path.isdir(fd_path):
-                continue
-
-            print(f"Processing {fd}...")
-
-            question_json_path = os.path.join(question_dir, fd, "data.json")
-            buggy_code_path = os.path.join(question_dir, fd, "Buggy_code.py")
-
-            with open(question_json_path, "r", encoding="utf-8") as f:
-                question_data = json.load(f)
-            
-            with open(buggy_code_path, "r", encoding="utf-8") as f:
-                buggy_code = f.read()
-
-            messages = _message_construct(question_data, buggy_code, os.path.join(question_dir, fd))
-
-            model.conversation_history = messages
-
-            response_message, _, total_tokens = model.parse()
-            code = _message_code_parse(response_message["content"])
-            if not os.path.exists(os.path.join(result_dir, fd)):
-                os.makedirs(os.path.join(result_dir, fd))
-
-
-            with open(os.path.join(result_dir, fd, "code.py"), "w", encoding="utf-8") as f:
-                f.write(code)
