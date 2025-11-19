@@ -1,0 +1,26 @@
+{
+    "Title": "Japan Registry Services (JPRS) Programming Contest 2025#1 (AtCoder Beginner Contest 392)",
+    "Source": "atcoder",
+    "Name": "Doubles",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "There are N dice.\nThe i-th die has K_i faces, with the numbers A_{i,1}, A_{i,2}, ..., A_{i,K_i} written on them.\nWhen you roll this die, each face appears with probability \\frac{1}{K_i}.\nYou choose two dice from the N dice and roll them.\nDetermine the maximum probability that the two dice show the same number, when the dice are chosen optimally.",
+    "Statement Images": [],
+    "Constraints": "- 2 ≤ N ≤ 100\n- 1 ≤ K_i\n- K_1 + K_2 + \\dots + K_N ≤ 10^5\n- 1 ≤ A_{i,j} ≤ 10^5\n- All input values are integers.",
+    "IO Styles": "Input\nThe input is given from Standard Input in the following format:\nN\r\nK_1 A_{1,1} A_{1,2} \\dots A_{1,K_1}\r\n\\vdots\r\nK_N A_{N,1} A_{N,2} \\dots A_{N,K_N}\r\nOutput\nPrint the answer.\r\nYour answer is considered correct if the absolute or relative error from the true solution does not exceed 10^{-8}.",
+    "Sample Detail": [
+        {
+            "input": "3\n3 1 2 3\n4 1 2 2 1\n6 1 2 3 4 5 6\n",
+            "output": "0.333333333333333\n",
+            "explanation": "- When choosing the 1st and 2nd dice, the probability that the outcomes are the same is \\frac{1}{3}.\n- When choosing the 1st and 3rd dice, the probability is \\frac{1}{6}.\n- When choosing the 2nd and 3rd dice, the probability is \\frac{1}{6}.\n\n\nTherefore, the maximum probability is \\frac{1}{3} = 0.3333333333....",
+            "images": []
+        },
+        {
+            "input": "3\n5 1 1 1 1 1\n4 2 2 2 2\n3 1 1 2\n",
+            "output": "0.666666666666667\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "en"
+}

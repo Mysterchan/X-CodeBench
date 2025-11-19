@@ -1,0 +1,26 @@
+{
+    "Title": "HHKBプログラミングコンテスト2025(AtCoder Beginner Contest 388)",
+    "Source": "atcoder",
+    "Name": "?UPC",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "文字列 S が与えられます。ここで、S の 1 文字目は英大文字、2 文字目以降は英小文字です。\nS の 1 文字目と UPC をこの順に結合した文字列を出力してください。",
+    "Statement Images": [],
+    "Constraints": "- S は長さ 1 以上 100 以下の文字列\n- S の 1 文字目は英大文字\n- S の 2 文字目以降は英小文字",
+    "IO Styles": "入力\n入力は以下の形式で標準入力から与えられる。\nS\r\n出力\nS の 1 文字目と UPC をこの順に結合した文字列を出力せよ。",
+    "Sample Detail": [
+        {
+            "input": "Kyoto\n",
+            "output": "KUPC\n",
+            "explanation": "Kyoto の 1 文字目は K であるため、K と UPC を結合した KUPC を出力します。",
+            "images": []
+        },
+        {
+            "input": "Tohoku\n",
+            "output": "TUPC\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "jp"
+}

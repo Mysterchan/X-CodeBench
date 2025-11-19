@@ -1,0 +1,26 @@
+{
+    "Title": "Atto Round 1 (Codeforces Round 1041, Div. 1 + Div. 2)",
+    "Source": "codeforces",
+    "Name": "Hamiiid, Haaamid... Hamid?",
+    "Time Limit": "1 s",
+    "Memory Limit": "256 mb",
+    "Problem Statement": "Mani 將 Hamid 鎖在一個 $1 \\times n$ 的網格中。起初，這個網格中的一些單元格有牆壁，其他的則是空的，Hamid 在一個空的單元格裡。  \n每天，以下事件依序發生：  \n- Mani 選擇一個空單元格並在該單元格建造一堵牆。注意，他不能在 Hamid 當前所在的單元格建造牆壁；  \n- Hamid 選擇一個方向（左或右），然後：  \n  - 如果該方向上沒有牆壁，他將逃離網格；  \n  - 否則，他會移動到該方向上最近的牆壁並摧毀那堵牆。Hamid 會在這一天摧毀的牆壁位置上。  \n\n這裡有一個可能的行動序列的例子，當 $n=6$ 時： ![image](1.png)  \nHamid 總是知道牆壁的位置。他想要最小化逃出網格所需的天數，而 Mani 則想要最大化它。  \n你需要計算出當他們都以最佳方式行動時，Hamid 逃出網格所需的天數。",
+    "Statement Images": [
+        "https://espresso.codeforces.com/8bcd10effcd8ea6be8329a09b1b01111ec2239fa.png"
+    ],
+    "Constraints": "Time limit: 1 s\nMemory limit: 256 mb",
+    "IO Styles": "輸入\n每個測試包含多個測試案例。第一行包含測試案例的數量 $t$ ($1 ≤ t ≤ 10^4$)。接下來是測試案例的描述。\n每個測試案例的第一行包含兩個整數 $n$ 和 $x$ ($2 ≤ n ≤ 2 \\cdot 10^5$, $1 ≤ x ≤ n$) — 網格的大小以及哈米德的初始位置。他最初位於從左到右的第 $x$ 個單元格。\n第二行包含一個長度為 $n$ 的字符串 $s$ ($s_i=\\texttt{\"#\"}$ 或 $\\texttt{\".\"}$) — 網格的初始狀態。當 $s_i= \\texttt{\"#\"}$ 時，網格的第 $i$ 個單元格包含一面牆，而當 $s_i=\\texttt{\".\"}$ 時，則該單元格是空的。\n保證第 $x$ 個單元格是空的，且網格中至少有兩個空的單元格。\n保證所有測試案例的 $n$ 之和不超過 $2 \\cdot 10^5$。\n輸出\n對於每個測試案例，輸出一個整數 — 哈米德如果以最佳方式行動，逃離網格所需的天數。",
+    "Sample Detail": [
+        {
+            "input": "4\n3 1\n..#\n4 2\n....\n5 3\n##..#\n6 4\n#...#.",
+            "output": "1\n1\n3\n3",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Notes": "註解\n在第一個測試案例中，Mani 必須在格子 $2$ 建造一面牆，以便 Hamid 能在第一天從網格的左側逃脫。\n在第二個測試案例中，如果 Mani 將牆放在 Hamid 的左側，Hamid 就可以從右側逃脫。如果牆在 Hamid 的右側，他則可以從左側逃脫。因此，答案是 $1$。\n在第三個測試案例中： ![image](2.png) \n可以顯示出上述插圖中兩位玩家的行動都是最佳的。\n在第四個測試案例中，我們展示了一個行動的例子。在此例中，請注意玩家的行為並不是最佳的。",
+    "Note Images": [
+        "https://espresso.codeforces.com/da9772e72a1c53012878dd69f118e33675b2fb97.png"
+    ],
+    "Language": "cn"
+}

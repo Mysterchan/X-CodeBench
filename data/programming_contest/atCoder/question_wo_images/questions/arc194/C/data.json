@@ -1,0 +1,32 @@
+{
+    "Title": "AtCoder Regular Contest 194 (Div. 2)",
+    "Source": "atcoder",
+    "Name": "Cost to Flip",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "You are given two integer sequences of length N, A = (A_1, A_2, ..., A_N) and B = (B_1, B_2, ..., B_N), each consisting of 0 and 1.\nYou can perform the following operation on A any number of times (possibly zero):\n- First, choose an integer i satisfying 1 ≤ i ≤ N, and flip the value of A_i (if the original value is 0, change it to 1; if it is 1, change it to 0).\n- Then, pay \\sum_{k=1}^N A_k C_k yen as the cost of this operation.\nNote that the cost calculation in step 2 uses the A after the change in step 1.\nPrint the minimum total cost required to make A identical to B.",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ N ≤ 2 \\times 10^5\n- A_i, B_i \\in {0, 1}\n- 1 ≤ C_i ≤ 10^6\n- All input values are integers.",
+    "IO Styles": "Input\nThe input is given from Standard Input in the following format:\nN\r\nA_1 A_2 ... A_N\r\nB_1 B_2 ... B_N\r\nC_1 C_2 ... C_N\r\nOutput\nPrint the answer.",
+    "Sample Detail": [
+        {
+            "input": "4\n0 1 1 1\n1 0 1 0\n4 6 2 9\n",
+            "output": "16\n",
+            "explanation": "Consider the following procedure:\n\n- First, flip A_4. Now, A = (0, 1, 1, 0). The cost of this operation is 0 \\times 4 + 1 \\times 6 + 1 \\times 2 + 0 \\times 9 = 8 yen.\n- Next, flip A_2. Now, A = (0, 0, 1, 0). The cost of this operation is 0 \\times 4 + 0 \\times 6 + 1 \\times 2 + 0 \\times 9 = 2 yen.\n- Finally, flip A_1. Now, A = (1, 0, 1, 0), which matches B. The cost of this operation is 1 \\times 4 + 0 \\times 6 + 1 \\times 2 + 0 \\times 9 = 6 yen.\n\n\nIn this case, the total cost is 8 + 2 + 6 = 16 yen, which is the minimum possible.",
+            "images": []
+        },
+        {
+            "input": "5\n1 1 1 1 1\n1 1 1 1 1\n1 1 1 1 1\n",
+            "output": "0\n",
+            "explanation": "A and B are already identical initially, so there is no need to perform any operations.",
+            "images": []
+        },
+        {
+            "input": "20\n1 1 1 1 0 0 1 1 0 0 0 1 0 1 0 1 1 0 1 0\n0 0 0 1 1 1 0 1 1 0 0 0 0 0 0 1 0 1 0 0\n52 73 97 72 54 15 79 67 13 55 65 22 36 90 84 46 1 2 27 8\n",
+            "output": "2867\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "en"
+}

@@ -1,0 +1,28 @@
+{
+    "Title": "AtCoder Grand Contest 072",
+    "Source": "atcoder",
+    "Name": "Human Exercise",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "AtCoder City 由一個 N \\times N 的網格表示。令 (i, j) 表示從頂部第 i 行 (1 ≤ i ≤ N) 和從左側第 j 列 (1 ≤ j ≤ N) 的單元格。 \n青木為了馬拉松訓練進行了以下練習 K 次。 \n- 從單元格 (1, 1) 開始。 \n- 重複以下動作 2N-2 次以到達單元格 (N, N)： \n- 向下或向右移動一個單元格。如果兩個移動都可能，則選擇之前的練習中該目的地單元格被拜訪次數較少的移動。如果次數相等，則選擇向下移動。 \n打印第 K 次練習中走過的路徑。",
+    "Statement Images": [],
+    "Constraints": "- 2 ≤ N ≤ 100\n- 1 ≤ K ≤ 10^{18}\n- 所有輸入值均為整數。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nN K\n\n輸出\n輸出一個長度為 2N-2 的字串。第 i 個字符應該是 D，若第 i 次動作在第 K 次練習中是向下移動；若是向右移動則應該是 R。",
+    "Sample Detail": [
+        {
+            "input": "5 4\n",
+            "output": "RRDDRRDD\n",
+            "explanation": "第一、第二、第三和第四道題的答案如下，因此答案是 RRDDRRDD。",
+            "images": [
+                "https://img.atcoder.jp/agc072/bf631afab80dc49bc5ffd8d3ac085b08.png"
+            ]
+        },
+        {
+            "input": "10 869120\n",
+            "output": "RDRRRDRDRDRDRDDDRD\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

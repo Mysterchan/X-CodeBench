@@ -1,0 +1,42 @@
+Looking at this problem, I need to understand what the code checks for:
+
+1. The condition states: for every position i, exactly A_i numbers among A_{i-1} and A_{i+1} are less than A_i
+2. The sequence is circular (A_0 = A_{X+Y+Z} and A_{X+Y+Z+1} = A_1)
+3. We have exactly X zeros, Y ones, and Z twos
+
+Let me trace through the logic:
+- For a 0: both neighbors must be less than 0 (impossible), so A_i = 0 means 0 neighbors < 0
+- For a 1: neighbors less than 1 are only 0s, so A_i = 1 means exactly 1 neighbor is 0
+- For a 2: neighbors less than 2 are 0s and 1s, so A_i = 2 means exactly 2 neighbors are < 2
+
+The code checks:
+1. `Z > X` → "No" (need enough 0s to satisfy 2s)
+2. `Y > X*2` → "No" (each 0 can have at most 2 ones as neighbors)
+3. `Z == 0 && Y%2 == 1` → "No" (without 2s, 1s must alternate with 0s, requiring even count)
+
+Let me trace through each test case:
+
+**Test case 1: X=2, Y=1, Z=1**
+- Z > X? 1 > 2? No
+- Y > X*2? 1 > 4? No
+- Z == 0 && Y%2 == 1? 1 == 0? No
+- Output: "Yes"
+
+**Test case 2: X=3, Y=4, Z=5**
+- Z > X? 5 > 3? Yes → flag = "No"
+- Output: "No"
+
+**Test case 3: X=1359, Y=1998, Z=1022**
+- Z > X? 1022 > 1359? No
+- Y > X*2? 1998 > 2718? No
+- Z == 0 && Y%2 == 1? 1022 == 0? No
+- Output: "Yes"
+
+**Test case 4: X=392848293, Y=683919483, Z=822948689**
+- Z > X? 822948689 > 392848293? Yes → flag = "No"
+- Output: "No"
+
+Yes
+No
+Yes
+No

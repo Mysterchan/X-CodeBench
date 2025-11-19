@@ -1,0 +1,24 @@
+{
+    "Title": "Codeforces Round 1009 (Div. 3)",
+    "Source": "codeforces",
+    "Name": "Draw a Square",
+    "Time Limit": "1 s",
+    "Memory Limit": "256 mb",
+    "Problem Statement": "粉紅色的士兵給了你 $4$ 個不同的平面點。這 $4$ 個點的坐標分別是 $(-l,0)$、$(r,0)$、$(0,-d)$ 和 $(0,u)$，其中 $l$、$r$、$d$、$u$ 是正整數。 ![image](1.png) 在圖中，通過連接四個點 $L$、$R$、$D$ 和 $U$ 畫出了一個正方形。\n請判斷是否可以以這些點作為頂點來畫出一個正方形$^{\\text{∗}}$。\n$^{\\text{∗}}$正方形被定義為由 $4$ 個頂點組成的多邊形，其中所有邊的長度相等，且所有內角相等。多邊形的任何兩條邊不得相交。",
+    "Statement Images": [
+        "https://espresso.codeforces.com/280d7475bd2765cb5054e65e90e80526f8b96081.png"
+    ],
+    "Constraints": "時間限制：1 秒  \n記憶體限制：256 MB",
+    "IO Styles": "輸入\n每個測試包含多個測試案例。第一行包含測試案例的數量 $t$ ($1 ≤ t ≤ 10^4$)。接下來是測試案例的描述。\n每個測試案例的第一行包含四個整數 $l$, $r$, $d$, $u$ ($1 ≤ l,r,d,u ≤ 10$)。\n\n輸出\n對於每個測試案例，如果您可以使用這四個點畫出一個正方形，則輸出 \"Yes\"。否則，輸出 \"No\"。\n您可以以任何大小輸出答案。例如，字符串 \"yEs\"、\"yes\" 和 \"YES\" 也會被認為是正面的回應。",
+    "Sample Detail": [
+        {
+            "input": "2\n2 2 2 2\n1 2 3 4",
+            "output": "Yes\nNo",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Notes": "備註\n在第一個測試案例中，給出的四個點形成了一個正方形，因此答案是 \"Yes\"。\n在第二個測試案例中，給出的四個點並未形成正方形，因此答案是 \"No\"。",
+    "Note Images": [],
+    "Language": "cn"
+}

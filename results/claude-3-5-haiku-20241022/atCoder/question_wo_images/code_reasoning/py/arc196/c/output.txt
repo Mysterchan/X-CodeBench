@@ -1,0 +1,1 @@
+s = np.fromiter(map('BW'.index, input()), dtype=np.int8)

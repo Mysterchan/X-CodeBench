@@ -1,0 +1,32 @@
+{
+    "Title": "AtCoder Regular Contest 195 (Div. 2)",
+    "Source": "atcoder",
+    "Name": "Twice Subsequence",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "数列 A = (A_1,\\dots,A_N) があります。A の部分列であって、数列 B = (B_1,\\dots,B_M) と一致するものが 2 つ以上あるかどうかを判定してください。ただし、2 つの部分列が数列として一致していても、取り出す位置が異なれば区別するものとします。\n部分列とは\nA の部分列とは、A の要素を 0 個以上選んで削除し、残った要素を元の順序を保って並べた数列のことを指します。",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ M ≤ N ≤ 2\\times 10^5\n- 1 ≤ A_i ≤ 10^9\n- 1 ≤ B_i ≤ 10^9\n- 入力される値は全て整数",
+    "IO Styles": "入力\n入力は以下の形式で標準入力から与えられる。\nN M\nA_1 A_2 ... A_N\nB_1 B_2 ... B_M\n出力\nA の部分列であって、数列 B と一致するものが 2 つ以上ある場合は Yes、そうでない場合は No を出力せよ。",
+    "Sample Detail": [
+        {
+            "input": "4 2\n1 2 1 2\n1 2\n",
+            "output": "Yes\n",
+            "explanation": "A の部分列であって B と一致するものは、(A_1,A_2),(A_1,A_4),(A_3,A_4) の 3 つです。",
+            "images": []
+        },
+        {
+            "input": "3 2\n1 2 1\n1 2\n",
+            "output": "No\n",
+            "explanation": "A の部分列であって B と一致するものは、(A_1,A_2) のみです。",
+            "images": []
+        },
+        {
+            "input": "3 2\n1 1 2\n2 1\n",
+            "output": "No\n",
+            "explanation": "A の部分列であって B と一致するものはありません。",
+            "images": []
+        }
+    ],
+    "Language": "jp"
+}

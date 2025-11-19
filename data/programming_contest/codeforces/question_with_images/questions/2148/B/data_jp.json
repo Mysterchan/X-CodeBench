@@ -1,0 +1,24 @@
+{
+    "Title": "Codeforces Round 1050 (Div. 4)",
+    "Source": "codeforces",
+    "Name": "Lasers",
+    "Time Limit": "2 s",
+    "Memory Limit": "256 mb",
+    "Problem Statement": "2D座標平面が $(0,0)$ から $(x, y)$ まで存在します。あなたは $(0,0)$ に位置しており、$(x, y)$ へ向かいたいと考えています。しかし、$n$ 本の水平レーザーがあり、$i$ 番目のレーザーは $(0, a_i)$ から $(x, a_i)$ までを連続的に横断しています。さらに、$m$ 本の垂直レーザーもあり、$i$ 番目のレーザーは $(b_i, 0)$ から $(b_i, y)$ までを連続的に横断しています。\nあなたは任意の方向に移動して $(x, y)$ に到達することができますが、移動は平面内に収まる連続的な曲線でなければなりません。垂直または水平レーザーを横切るたびに、それは 1 回の交差とカウントされます。特に、2 本のレーザーの交差点を通過した場合は、2 回の交差とカウントされます。\nたとえば、$x = y = 2$、$n = m = 1$、$a = [1]$、$b = [1]$ の場合、移動は次のようになります： ![image](1.png) \n$(x, y)$ に到達するために必要な最小交差数は何ですか？",
+    "Statement Images": [
+        "https://espresso.codeforces.com/44cd14d5698957fd058be07680bad092035229a0.png"
+    ],
+    "Constraints": "Time limit: 2 s\nMemory limit: 256 mb",
+    "IO Styles": "入力\n最初の行には $t$ ($1 ≤ t ≤ 10^4$)  — テストケースの数が含まれる。\n各テストケースの最初の行には四つの整数 $n$, $m$, $x$, および $y$ ($1 ≤ n, m ≤ 2 \\cdot 10^5, 2 ≤ x ,y ≤ 10^9$) が含まれる。\n次の行には $n$ 個の整数 $a_1, a_2, ..., a_n$ ($0 < a_i < y$)  — 水平方向のレーザーの y 座標が含まれる。全ての $i > 1$ に対して $a_i > a_{i-1}$ であることが保証されている。\nさらに次の行には $m$ 個の整数 $b_1, b_2, ..., b_m$ ($0 < b_i < x$)  — 垂直方向のレーザーの x 座標が含まれる。全ての $i > 1$ に対して $b_i > b_{i-1}$ であることが保証されている。\n全てのテストケースで $n$ と $m$ の合計は $2 \\cdot 10^5$ を超えないことが保証されている。\n出力\n各テストケースに対して、点 $(x, y)$ に到達するために必要な最小の交差数を出力せよ。",
+    "Sample Detail": [
+        {
+            "input": "2\n1 1 2 2\n1\n1\n2 1 100000 100000\n42 58\n32",
+            "output": "2\n3",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Notes": "It seems that there is no specific content provided to translate. Please provide the English statement or text that you would like me to translate into Japanese.",
+    "Note Images": [],
+    "Language": "jp"
+}

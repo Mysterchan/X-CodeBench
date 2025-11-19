@@ -1,0 +1,22 @@
+{
+    "Title": "AtCoder Regular Contest 197 (Div. 2)",
+    "Source": "atcoder",
+    "Name": "Four Square Tiles",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "You are given positive integers N, H, and W, with H,W ≤ 3N-1.\nFind the number, modulo 998244353, of ways to place four N\\times N square tiles on an H\\times W grid that satisfy all of the following conditions.\n- Each tile exactly covers N^2 cells of the grid.\n- No cell is covered by more than one tile.\nHere, the tiles are indistinguishable.\nThere are T test cases; solve each one.",
+    "Statement Images": [],
+    "Constraints": "- 1≤ T≤ 2\\times 10^5\n- 1≤ N,H,W≤ 10^9\n- H,W≤ 3N-1\n- All input values are integers.",
+    "IO Styles": "Input\nThe input is given from Standard Input in the following format:\nT\n\\text{case}_1\n\\vdots\n\\text{case}_T\nEach case is given in the following format:\nN H W\nOutput\nPrint T lines. The i-th line should contain the number, modulo 998244353, of valid ways to place the tiles for the i-th test case.",
+    "Sample Detail": [
+        {
+            "input": "4\n2 4 5\n2 5 5\n1000 1000 1000\n1000 2222 2025\n",
+            "output": "9\n79\n0\n262210557\n",
+            "explanation": "For the first test case, there are 9 ways as illustrated in the following figure:\n\n![image](1.png)",
+            "images": [
+                "https://img.atcoder.jp/arc197/240d39425cb3786e6c8a2952f2220f14.png"
+            ]
+        }
+    ],
+    "Language": "en"
+}

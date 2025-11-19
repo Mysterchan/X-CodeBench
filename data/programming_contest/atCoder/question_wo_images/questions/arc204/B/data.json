@@ -1,0 +1,32 @@
+{
+    "Title": "AtCoder Regular Contest 204 (Div. 1)",
+    "Source": "atcoder",
+    "Name": "Sort Permutation",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "You are given positive integers N, K and a permutation P = (P_{1}, P_{2}, \\dots, P_{NK}) of (1, 2, \\dots, NK).\nAlice repeatedly performs the following operation to sort P in ascending order.\n- Choose integers i and j (i\\neq j) where 1 ≤ i, j ≤ NK, and swap P_{i} and P_{j}. If |i - j| is a multiple of N, Alice gets 1 point.\nAlice sorts P in ascending order with the minimum number of operations, and under that condition, she maximizes the sum of points she gets.\nOutput the sum of points Alice gets.",
+    "Statement Images": [],
+    "Constraints": "- 1≤ N≤ 500\n- 1≤ K≤ 10\n- (P_{1}, P_{2}, \\dots , P_{NK}) is a permutation of (1, 2, \\dots, NK)\n- All input values are integers.",
+    "IO Styles": "Input\nThe input is given from Standard Input in the following format:\nN K\nP_{1} P_{2} \\dots P_{NK}\nOutput\nOutput the answer.",
+    "Sample Detail": [
+        {
+            "input": "3 2\n1 6 5 3 2 4\n",
+            "output": "2\n",
+            "explanation": "For example, P can be sorted in ascending order with four operations as follows.\n\n- Perform the operation with (i, j) = (2, 5). After the operation, P = (1, 2, 5, 3, 6, 4).\n- Perform the operation with (i, j) = (4, 6). After the operation, P = (1, 2, 5, 4, 6, 3).\n- Perform the operation with (i, j) = (3, 5). After the operation, P = (1, 2, 6, 4, 5, 3).\n- Perform the operation with (i, j) = (3, 6). After the operation, P = (1, 2, 3, 4, 5, 6).\n\n\nAmong the above four operations, Alice gets 1 point from each of the 1st and 4th operations, so Alice gets a total of 2 points.\n\nThis sequence of operations is one of the ways to sort P in ascending order with the minimum number of operations and maximize the sum of points under that condition, so output 2.",
+            "images": []
+        },
+        {
+            "input": "1 1\n1\n",
+            "output": "0\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "4 6\n10 24 3 4 8 14 5 2 22 9 21 1 15 6 13 23 18 12 7 17 19 16 20 11\n",
+            "output": "7\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "en"
+}

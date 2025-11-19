@@ -1,0 +1,11 @@
+{
+    "url": "https://stackoverflow.com/questions/28356359/one-colorbar-for-seaborn-heatmaps-in-subplot",
+    "source": "stackoverflow",
+    "title": "One colorbar for seaborn heatmaps in subplot",
+    "Description": "The intended visualization consists of a 2x2 grid of heatmaps created with Seaborn, where only a single colorbar is displayed, either vertically or horizontally, for all subplots. Currently, each subplot has its own colorbar, which is unsatisfactory. The desired appearance is that there should be one unified colorbar alongside the heatmaps, instead of multiple colorbars for each subplot.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "seaborn",
+        "data-visualization"
+    ]
+}

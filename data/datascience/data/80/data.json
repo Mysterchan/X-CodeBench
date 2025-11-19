@@ -1,0 +1,11 @@
+{
+    "url": "https://stackoverflow.com/questions/67575736/how-to-only-plot-confidence-interval-in-seaborn-line-plot",
+    "source": "stackoverflow",
+    "title": "How to Only plot Confidence Interval in Seaborn Line Plot",
+    "Description": "The current line plot using Seaborn's lineplot method displays both the mean values and the confidence intervals of 'total_bill' against 'day'. However, the goal is to visualize only the confidence interval area without the mean line. The expected output should show just the shaded region representing the confidence interval, while the mean line should not be present.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "seaborn",
+        "data-visualization"
+    ]
+}

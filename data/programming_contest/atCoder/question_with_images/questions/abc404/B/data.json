@@ -1,0 +1,28 @@
+{
+    "Title": "AtCoder Beginner Contest 404",
+    "Source": "atcoder",
+    "Name": "Grid Rotation",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "There are two grids S and T, each with N rows and N columns. Let (i,j) denote the cell at the i-th row from the top and the j-th column from the left.\nEach cell of grids S and T is colored either white or black. Cell (i,j) of S is white if S_{i,j} is ., and black if S_{i,j} is #. The same applies to T.\nYou may perform the following two types of operations any number of times in any order. Find the minimum number of operations required to make grid S identical to grid T.\n- Choose one cell of grid S and change its color.\n- Rotate the entire grid S 90 degrees clockwise.",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ N ≤ 100\n- N is an integer.\n- Each of S_{i,j} and T_{i,j} is . or #.",
+    "IO Styles": "Input\nThe input is given from Standard Input in the following format:\nN\r\nS_{1,1}S_{1,2}\\dots S_{1,N}\r\n\\vdots\r\nS_{N,1}S_{N,2}\\dots S_{N,N}\r\nT_{1,1}T_{1,2}\\dots T_{1,N}\r\n\\vdots\r\nT_{N,1}T_{N,2}\\dots T_{N,N}\r\nOutput\nOutput the minimum number of operations required.",
+    "Sample Detail": [
+        {
+            "input": "4\n###.\n..#.\n..#.\n..#.\n...#\n...#\n###.\n....\n",
+            "output": "2\n",
+            "explanation": "You can match S to T in two operations as shown below.\n\n![image](1.png)",
+            "images": [
+                "https://img.atcoder.jp/abc404/ba23906703e10d3d450486afe6eb488f.png"
+            ]
+        },
+        {
+            "input": "13\n.#..###..##..\n#.#.#..#.#.#.\n#.#.###..#...\n###.#..#.#.#.\n#.#.###..##..\n.............\n..#...#....#.\n.##..#.#..##.\n#.#..#.#.#.#.\n####.#.#.####\n..#..#.#...#.\n..#...#....#.\n.............\n.............\n.#....#...#..\n.#...#.#..#..\n####.#.#.####\n.#.#.###..#.#\n.##....#..##.\n.#....#...#..\n.............\n..##..###.#.#\n.#.#.#..#.###\n.#.#..###.#.#\n.#.#.#..#.#.#\n..##..###..#.\n",
+            "output": "5\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "en"
+}

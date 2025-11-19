@@ -1,0 +1,5 @@
+Arrays.sort(a);  // a = [1, 2, 3, 5]
+long ans = 0;
+for (int i = 0, j = n - 1; i <= j; i++, j--) {
+    ans += a[j] - a[i];
+}

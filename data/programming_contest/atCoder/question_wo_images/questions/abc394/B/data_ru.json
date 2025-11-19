@@ -1,0 +1,26 @@
+{
+    "Title": "KAJIMA CORPORATION CONTEST 2025 (AtCoder Beginner Contest 394)",
+    "Source": "atcoder",
+    "Name": "cat",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "Вам даны N строк $S_1, S_2, ..., S_N$, каждая из которых состоит из строчных букв английского алфавита. Длину этих строк все различны. Отсортируйте эти строки в порядке возрастания длины, а затем соедините их в этом порядке, чтобы получить одну строку.",
+    "Statement Images": [],
+    "Constraints": "- 2 ≤ N ≤ 50\n- N — целое число.\n- Каждое S_i — это строка, состоящая из строчных английских букв, длина которой находится в пределах от 1 до 50 включительно.\n- Если i ≠ j, то длины S_i и S_j различны.",
+    "IO Styles": "Входные данные\nВходные данные подаются из стандартного ввода в следующем формате:\nN  \nS_1  \nS_2  \n\\vdots  \nS_N  \nВыходные данные\nНапечатайте ответ.",
+    "Sample Detail": [
+        {
+            "input": "3\ntc\noder\na\n",
+            "output": "atcoder\n",
+            "explanation": "Когда мы сортируем (tc, oder, a) по возрастанию длины, мы получаем (a, tc, oder). Конкатенация этих строк в этом порядке дает строку atcoder.",
+            "images": []
+        },
+        {
+            "input": "4\ncat\nenate\non\nc\n",
+            "output": "concatenate\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "ru"
+}

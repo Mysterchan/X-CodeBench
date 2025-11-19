@@ -1,0 +1,32 @@
+{
+    "Title": "AtCoder Regular Contest 191 (Div. 2)",
+    "Source": "atcoder",
+    "Name": "Replace Digits",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "You are given a string S of length N and a string T of length M, both consisting of digits from 1 to 9.\nYou will perform the following operation for k=1,2,...,M in order:\n- Choose an integer i such that 1 ≤ i ≤ N. Then, replace the i-th character of S with the k-th character of T.\nFind the maximum possible value of the resulting string S interpreted as an integer after performing the M operations.",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ N,M ≤ 10^6\n- N and M are integers.\n- S is a string of length N consisting of digits from 1 through 9.\n- T is a string of length M consisting of digits from 1 through 9.",
+    "IO Styles": "Input\nThe input is given from Standard Input in the following format:\nN M\nS\nT\nOutput\nPrint the maximum possible value of the resulting string S interpreted as an integer after performing the M operations.",
+    "Sample Detail": [
+        {
+            "input": "3 3\n191\n325\n",
+            "output": "593\n",
+            "explanation": "The following sequence of operations is optimal:\n\n- For k=1: Choose i=3. Then, S = 193.\n- For k=2: Choose i=1. Then, S = 293.\n- For k=3: Choose i=1. Then, S = 593.\n\n\nIn this case, the value of S interpreted as an integer is 593, which is the maximum.",
+            "images": []
+        },
+        {
+            "input": "3 9\n191\n998244353\n",
+            "output": "993\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "11 13\n31415926535\n2718281828459\n",
+            "output": "98888976555\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "en"
+}

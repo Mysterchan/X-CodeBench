@@ -1,0 +1,26 @@
+{
+    "Title": "AtCoder Regular Contest 206 (Div. 2)",
+    "Source": "atcoder",
+    "Name": "Range Replace",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "長さ N の数列 A=(A_1,...,A_N) が与えられます．あなたは以下の操作をちょうど一回行います．\n- 1≤ L ≤ R ≤ N なる整数組 (L,R) を選ぶ．A_L,A_{L+1},...,A_R を全て A_L で置き換える．\n操作後の A として考えられる数列は何通りですか．",
+    "Statement Images": [],
+    "Constraints": "- 入力される数値は全て整数\n- 1 ≤ N ≤ 10^6\n- 1≤ A_i ≤ N",
+    "IO Styles": "入力\n入力は以下の形式で標準入力から与えられる．\nN \nA_1 ... A_N\n出力\n答えを出力せよ．",
+    "Sample Detail": [
+        {
+            "input": "4\n1 1 2 3\n",
+            "output": "4\n",
+            "explanation": "操作後に考えられる数列は以下の 4 個です．\n\n- (1,1,1,1)\n- (1,1,1,3)\n- (1,1,2,2)\n- (1,1,2,3)\n\n\n例えば，(1,1,1,3) は L=2,R=3 として操作を行うことで得られます．",
+            "images": []
+        },
+        {
+            "input": "10\n2 5 6 5 2 1 7 9 7 2\n",
+            "output": "41\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "jp"
+}

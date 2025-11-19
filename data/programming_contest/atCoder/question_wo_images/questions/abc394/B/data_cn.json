@@ -1,0 +1,26 @@
+{
+    "Title": "KAJIMA CORPORATION CONTEST 2025 (AtCoder Beginner Contest 394)",
+    "Source": "atcoder",
+    "Name": "cat",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "給定 N 個字符串 S_1, S_2, ..., S_N，每個字符串由小寫英文字母組成。這些字符串的長度都是不同的。\n按長度的升序對這些字符串進行排序，然後將它們按該順序串聯起來形成一個單一的字符串。",
+    "Statement Images": [],
+    "Constraints": "- 2 ≤ N ≤ 50\n- N 是一個整數。\n- 每個 S_i 是一個由小寫英文字母組成的字符串，長度介於 1 到 50 之間（包含 1 和 50）。\n- 如果 i ≠ j，則 S_i 的長度與 S_j 的長度不同。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nN\nS_1\nS_2\n\\vdots\nS_N\n\n輸出\n輸出答案。",
+    "Sample Detail": [
+        {
+            "input": "3\ntc\noder\na\n",
+            "output": "atcoder\n",
+            "explanation": "當我們按照長度的升序對 (tc, oder, a) 進行排序時，得到 (a, tc, oder)。按此順序連接它們會產生字符串 atcoder。",
+            "images": []
+        },
+        {
+            "input": "4\ncat\nenate\non\nc\n",
+            "output": "concatenate\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

@@ -1,0 +1,11 @@
+{
+    "url": "https://github.com/matplotlib/matplotlib/issues/27919",
+    "source": "github",
+    "title": "[Bug]: Minor ticks become major ticks when minor ticks are set only",
+    "Description": "Setting minor ticks using ax.set_xticks(xticks, minor=True) incorrectly results in these ticks becoming major ticks, while the actual minor ticks are placed in unexpected locations. The desired outcome is to have only the specified positions as minor ticks without altering the major ticks.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "matplotlib",
+        "data-visualization"
+    ]
+}

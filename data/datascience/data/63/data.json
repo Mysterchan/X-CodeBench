@@ -1,0 +1,11 @@
+{
+    "url": "https://stackoverflow.com/questions/70477458/how-can-i-plot-bar-plots-with-variable-widths-but-without-gaps-in-python-and-ad",
+    "source": "stackoverflow",
+    "title": "How can I plot bar plots with variable widths but without gaps in Python, and add bar width as labels on the x-axis?",
+    "Description": "The intended visualization is a bar chart displaying categories A through H with corresponding heights specified by the variable `y`, and uniform gaps between the bars. However, the current graph shows uneven gaps between bars, specifically a large gap between bars B and C, and no gap between bars F and G. The desired outcome is to have uniform gap widths or no gaps between all consecutive bars. Additionally, the expected graph includes a legend that identifies the colors associated with each category.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "seaborn",
+        "data-visualization"
+    ]
+}

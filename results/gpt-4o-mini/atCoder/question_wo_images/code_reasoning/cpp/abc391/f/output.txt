@@ -1,0 +1,52 @@
+The code provided computes the K-th largest value based on specific calculations involving three sequences and will be executed with the given input.
+
+Let's break down the execution:
+
+1. **Input Reading**:
+   - N = 2
+   - K = 5
+   - A = [1, 2]
+   - B = [3, 4]
+   - C = [5, 6]
+
+2. **Sorting the Arrays**:
+   - Sorted A = [2, 1]
+   - Sorted B = [4, 3]
+   - Sorted C = [6, 5]
+
+3. **Generating Values**:
+   The calculation happens in the nested loops managing the values of i, j, and k:
+   - i ranges (1 to min(2, 5)) => 1 and 2
+   - For each i:
+     - j ranges such that `i * j <= 5`
+       - For each j:
+         - k ranges such that `i * j * k <= 5`
+           - Calculate the value for all combinations of (i, j, k).
+
+4. **Calculations**:
+   - For i = 1:
+     - j = 1:
+       - k = 1: Value = 2*4 + 4*6 + 6*2 = 8 + 24 + 12 = 44
+       - k = 2: Value = 2*4 + 4*5 + 5*2 = 8 + 20 + 10 = 38
+     - j = 2:
+       - k = 1: Value = 2*3 + 3*6 + 6*2 = 6 + 18 + 12 = 36
+     - The generated values: 44, 38, 36
+   
+   - For i = 2:
+     - j = 1:
+       - k = 1: Value = 1*4 + 4*6 + 6*1 = 4 + 24 + 6 = 34
+       - k = 2: Value = 1*4 + 4*5 + 5*1 = 4 + 20 + 5 = 29
+     - j = 2:
+       - k = 1: Value = 1*3 + 3*6 + 6*1 = 3 + 18 + 6 = 27
+     - The generated values: 34, 29, 27
+
+So the values we calculate overall are:
+   44, 38, 36, 34, 29, 27 
+
+5. **Finding the K-th Largest**:
+   We need to find the 5-th largest value. When sorted, these are:
+   - 44, 38, 36, 34, 29, 27 -> K = 5 gives us the 5-th largest which is 29.
+
+The final output of the code for the provided input will be:
+
+29

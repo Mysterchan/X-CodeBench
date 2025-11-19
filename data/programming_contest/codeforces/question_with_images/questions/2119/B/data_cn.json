@@ -1,0 +1,26 @@
+{
+    "Title": "Codeforces Round 1035 (Div. 2)",
+    "Source": "codeforces",
+    "Name": "Line Segments",
+    "Time Limit": "1.5 s",
+    "Memory Limit": "256 mb",
+    "Problem Statement": "PIKASONIC - 失去理智 (feat.nakotanmaru)  \n給定兩個點 $(p_x,p_y)$ 和 $(q_x,q_y)$ 在歐幾里德平面上。  \n你從起始點 $(p_x,p_y)$ 開始，將執行 $n$ 次操作。在第 $i$ 次操作中，你必須選擇一個點，使得你當前位置與該點的歐幾里德距離$^{\\text{∗}}$ 恰好為 $a_i$，然後移動到該點。  \n確定在執行完所有操作後，是否可以到達終點 $(q_x,q_y)$。  \n$^{\\text{∗}}$ 點 $(x_1, y_1)$ 和 $(x_2, y_2)$ 之間的歐幾里德距離為 $\\sqrt{(x_1 - x_2)^2 + (y_1 - y_2)^2}$",
+    "Statement Images": [],
+    "Constraints": "Time limit: 1.5 s\nMemory limit: 256 mb",
+    "IO Styles": "輸入\n每個測試包含多個測試案例。第一行包含測試案例的數量 $t$ ($1 ≤ t ≤ 10^4$)。接下來是測試案例的描述。\n每個測試案例的第一行包含一個整數 $n$ ($1 ≤ n ≤ 10^3$) — 序列 $a$ 的長度。\n每個測試案例的第二行包含四個整數 $p_x,p_y,q_x,q_y$ ($1 ≤ p_x,p_y,q_x,q_y ≤ 10^7$) — 起始點和終點的坐標。\n每個測試案例的第三行包含 $n$ 個整數 $a_1,a_2,...,a_n$ ($1 ≤ a_i ≤ 10^4$) — 每次操作移動的距離。\n保證所有測試案例中 $n$ 的總和不超過 $2 \\cdot 10^5$。\n輸出\n對於每個測試案例，如果可以在所有操作後到達終點 $(q_x,q_y)$，則輸出 \"Yes\"；否則，輸出 \"No\"。你可以以任何大小寫輸出答案（大寫或小寫）。例如，字串 \"yEs\"、\"yes\"、\"Yes\" 和 \"YES\" 都會被識別為正確回應。",
+    "Sample Detail": [
+        {
+            "input": "5\n2\n1 1 5 1\n3 3\n3\n1 1 3 3\n2 3 4\n2\n100 100 100 100\n4 5\n1\n5 1 1 4\n5\n2\n10000000 10000000 10000000 10000000\n10000 10000",
+            "output": "Yes\nYes\nNo\nYes\nYes",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Notes": "註解\n這是一張顯示第一個測試案例可能移動的圖片。點 $r_1$ 的座標為 $(3,1+\\sqrt{5})$。![image](1.png) 第一個測試案例。\n這是一張顯示第二個測試案例可能移動的圖片。點 $r_1$ 的座標為 $(1+\\sqrt{3},0)$，而點 $r_2$ 的座標為 $≤ft(-\\frac{(\\sqrt{3}+4)(3\\sqrt{3(149-24\\sqrt{3})}-7\\sqrt{3}-38)}{104},-\\frac{\\sqrt{3(1331-764\\sqrt{3})}+12\\sqrt{3}-27}{104}\\right)$。![image](2.png) 第二個測試案例。\n對於第三個測試案例，可以證明不存在滿足所有要求的移動集合。\n這是一張顯示第四個測試案例可能移動的圖片。![image](3.png) 第四個測試案例。",
+    "Note Images": [
+        "https://espresso.codeforces.com/4bb380de077bba6d4efe150c19f8ecefdf92f011.png",
+        "https://espresso.codeforces.com/6616aa240a030d50075aca3ca14cf54501d4f21d.png",
+        "https://espresso.codeforces.com/db54fedff28db688eddb8b1f7d23c4f549dfbe25.png"
+    ],
+    "Language": "cn"
+}

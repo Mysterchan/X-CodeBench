@@ -1,0 +1,16 @@
+—
+Comments:
+Functional Correctness: The Candidate Image does not display any of the required plot elements; it is completely blank, which means there are no trials visualized at all. Therefore, it does not meet the expectations set in the Spec or match the Reference Image. Subscore: 0/25
+
+Visual Fidelity: There is no rendered output to evaluate how closely it matches the Reference Image. The absence of any visualization results in a subscore of 0. Subscore: 0/20
+
+Text & Annotations: The Candidate Image does not contain any titles, labels, or other annotations. As a result, it cannot be assessed against the requirements set forth in the Spec. Subscore: 0/15
+
+Style & Aesthetics: Given that the Candidate Image is completely empty and lacks any visual elements, there are no style or aesthetic components to evaluate. Subscore: 0/15
+
+Data Faithfulness: The Candidate Image fails to utilize data at all, meaning it cannot be rated on the accuracy of any data selection, aggregation, or visualization fidelity. Subscore: 0/15
+
+Code Quality & Repair Validity: The code does not execute successfully and results in a blank figure. Without any visible trials or corrections made to present them correctly, the code does not display valid functionality. Subscore: 0/10
+
+Score: 0/100
+—

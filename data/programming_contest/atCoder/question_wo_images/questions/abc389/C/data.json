@@ -1,0 +1,26 @@
+{
+    "Title": "Toyota Programming Contest  2025（AtCoder Beginner Contest 389)",
+    "Source": "atcoder",
+    "Name": "Snake Queue",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "There is a queue of snakes. Initially, the queue is empty.\nYou are given Q queries, which should be processed in the order they are given. There are three types of queries:\n- Type 1: Given in the form 1 l. A snake of length l is added to the end of the queue. If the queue was empty before adding, the head position of the newly added snake is 0; otherwise, it is the sum of the head coordinate of the last snake in the queue and the last snake’s length.\n- Type 2: Given in the form 2. The snake at the front of the queue leaves the queue. It is guaranteed that the queue is not empty at this time. Let m be the length of the snake that left, then the head coordinate of every snake remaining in the queue decreases by m.\n- Type 3: Given in the form 3 k. Output the head coordinate of the snake that is k-th from the front of the queue. It is guaranteed that there are at least k snakes in the queue at this time.",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ Q ≤ 3 \\times 10^{5}\n- For a query of type 1, 1 ≤ l ≤ 10^{9}\n- For a query of type 2, it is guaranteed that the queue is not empty.\n- For a query of type 3, let n be the number of snakes in the queue, then 1 ≤ k ≤ n. \n- All input values are integers.",
+    "IO Styles": "Input\nThe input is given from Standard Input in the following format:\nQ\n\\text{query}_1\n\\text{query}_2\n\\vdots\n\\text{query}_Q\nHere, \\text{query}_i is the i-th query in one of the following forms:\n1 l\n2\n3 k\nOutput\nLet q be the number of queries of type 3. Print q lines. The i-th line should contain the answer to the i-th type 3 query.",
+    "Sample Detail": [
+        {
+            "input": "7\n1 5\n1 7\n3 2\n1 3\n1 4\n2\n3 3\n",
+            "output": "5\n10\n",
+            "explanation": "- 1st query: A snake of length 5 is added to the queue. Since the queue was empty, the head coordinate of this snake is 0. \n- 2nd query: A snake of length 7 is added to the queue. Before adding, the last snake has head coordinate 0 and length 5, so the newly added snake’s head coordinate is 5. \n- 3rd query: Output the head coordinate of the snake that is 2nd from the front. Currently, the head coordinates of the snakes in order are 0, 5, so output 5. \n- 4th query: A snake of length 3 is added to the queue. Before adding, the last snake has head coordinate 5 and length 7, so the new snake’s head coordinate is 12. \n- 5th query: A snake of length 4 is added to the queue. Before adding, the last snake has head coordinate 12 and length 3, so the new snake’s head coordinate is 15. \n- 6th query: The snake at the front leaves the queue. The length of the snake that left is 5, so the head coordinate of each remaining snake decreases by 5. The remaining snake’s head coordinate becomes 0, 7, 10. \n- 7th query: Output the head coordinate of the snake that is 3rd from the front. Currently, the head coordinates of the snakes in order are 0, 7, 10, so output 10.",
+            "images": []
+        },
+        {
+            "input": "10\n1 15\n1 10\n1 5\n2\n1 5\n1 10\n1 15\n2\n3 4\n3 2\n",
+            "output": "20\n5\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "en"
+}

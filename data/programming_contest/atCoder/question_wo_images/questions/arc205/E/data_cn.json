@@ -1,0 +1,32 @@
+{
+    "Title": "AtCoder Regular Contest 205 (Div. 2)",
+    "Source": "atcoder",
+    "Name": "Subset Product Problem",
+    "Time Limit": "6 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "給定一個長度為 N 的非負整數序列 A=(A_1,A_2,...,A_N)。\n對於 k=1,2,...,N，解決以下問題。\n- 找到所有 i 在 1 到 k 之間（包括 k）滿足 A_i 和 A_k 的按位或運算等於 A_k 的 A_i 之積，對 998244353 取模。什麼是按位或運算？\n \n非負整數 X 和 Y 的按位或運算，記作 X\\ \\mathrm{OR}\\ Y，定義如下。\n \n- 當 X\\ \\mathrm{OR}\\ Y 以二進制表示時，若 X 和 Y 在二進制表示的 2^k 位（k ≥ 0）中至少有一位為 1，則該位為 1，否則為 0。\n例如，3\\ \\mathrm{OR}\\ 5 = 7（以二進制表示：011\\ \\mathrm{OR}\\ 101 = 111）。",
+    "Statement Images": [],
+    "Constraints": "- 1≤ N≤ 4\\times 10^5\n- 0≤ A_i < 2^{20}\n- 所有輸入值均為整數。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nN\nA_1 A_2 ... A_N\n輸出\n輸出 N 行。\n第 i 行 (1≤ i≤ N) 應該包含對於情況 k=i 的答案。",
+    "Sample Detail": [
+        {
+            "input": "4\n1 2 3 5\n",
+            "output": "1\n2\n6\n5\n",
+            "explanation": "- 當 k=1 時：對於 i=1，A_i 和 A_k 的位元 \\mathrm{OR} 運算結果為 1。因此，k=1 的情況下答案為 A_1=1。\n- 當 k=2 時：對於 i=1,2，A_i 和 A_k 的位元 \\mathrm{OR} 運算結果分別為 3、2。因此，k=2 的情況下答案為 A_2=2。\n- 當 k=3 時：對於 i=1,2,3，A_i 和 A_k 的位元 \\mathrm{OR} 運算結果都是 3。因此，k=3 的情況下答案為 A_1\\times A_2\\times A_3=6。\n- 當 k=4 時：對於 i=1,2,3,4，A_i 和 A_k 的位元 \\mathrm{OR} 運算結果分別為 5、7、7、5。因此，k=4 的情況下答案為 A_1\\times A_4=5。",
+            "images": []
+        },
+        {
+            "input": "9\n3 1 4 1 5 9 2 6 5\n",
+            "output": "3\n1\n4\n1\n20\n9\n2\n48\n100\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "12\n437926 528156 284664 1038330 692060 720863 602077 1027766 868190 532252 982711 876446\n",
+            "output": "437926\n528156\n284664\n94842632\n158208162\n985930968\n548875758\n875494466\n345599613\n605424119\n111381243\n768586512\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

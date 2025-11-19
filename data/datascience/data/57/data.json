@@ -1,0 +1,11 @@
+{
+    "url": "https://stackoverflow.com/questions/68135722/seaborn-scatterplot-cant-get-hue-order-to-work",
+    "source": "stackoverflow",
+    "title": "Seaborn scatterplot can't get hue_order to work",
+    "Description": "The Seaborn scatterplot is intended to display points colored by category, with the 'Y' category points (blue) plotted on top of the 'N' category points (gray). However, the current graph shows the blue point overlapping with the gray points, rather than being displayed above them as expected. The expected behavior is for the blue point to be visually on top of the gray points while maintaining proper color representation.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "seaborn",
+        "data-visualization"
+    ]
+}

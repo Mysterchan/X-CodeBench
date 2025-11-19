@@ -1,0 +1,32 @@
+{
+    "Title": "Japan Registry Services (JPRS) Programming Contest 2025#1 (AtCoder Beginner Contest 392)",
+    "Source": "atcoder",
+    "Name": "Shuffled Equation",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "給定一個整數序列 A = (A_1, A_2, A_3)。  \n設 B = (B_1, B_2, B_3) 為 A 的任意排列。  \n判斷是否有可能使得 B_1 \\times B_2 = B_3。",
+    "Statement Images": [],
+    "Constraints": "- 所有輸入值都是整數。\n- 1 ≤ A_1, A_2, A_3 ≤ 100",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nA_1 A_2 A_3\n\n輸出\n如果可能滿足 B_1 \\times B_2 = B_3，則輸出 Yes；否則，輸出 No。",
+    "Sample Detail": [
+        {
+            "input": "3 15 5\n",
+            "output": "Yes\n",
+            "explanation": "這裡，A=(3,15,5)。\n通過將其重新排列為B=(3,5,15)，我們可以滿足B_1 \\times B_2 = B_3。",
+            "images": []
+        },
+        {
+            "input": "5 3 2\n",
+            "output": "No\n",
+            "explanation": "沒有任何 B 的排列滿足 B_1 \\times B_2 = B_3。",
+            "images": []
+        },
+        {
+            "input": "3 3 9\n",
+            "output": "Yes\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

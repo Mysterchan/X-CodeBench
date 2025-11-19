@@ -1,0 +1,32 @@
+{
+    "Title": "AtCoder Regular Contest 202 (Div. 1)",
+    "Source": "atcoder",
+    "Name": "Japanese \"Knight's Tour\"",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "在一個有 H 行和 W 列的將棋（日本象棋）棋盤上，放置有一個騎士棋子。棋盤上從上方數第 i 行和從左側數第 j 列的格子表示為 (i-1, j-1)。 （請注意，這些值偏移了 1。）\n\n該棋盤是一個環面，意味著上下是連接的，左右也是連接的。 在 (i, j) 的騎士可以移動到 ((i-2) \\bmod H, (j-1) \\bmod W) 或 ((i-2) \\bmod H, (j+1) \\bmod W)。 （請注意，這與標準棋類中的騎士不同。）\n\n在棋盤上移動騎士以滿足以下條件稱為一次巡迴：\n- 初始時，將騎士放置在 (0, 0)。 然後，將騎士移動 H \\times W 次，以便騎士每個格子恰好訪問一次。 最後，騎士返回到 (0, 0)。\n\n找出巡迴的數量，模 998244353。 若存在一個整數 i（1 ≤ i ≤ H\\times W），使得第 i 次移動的目的地不同，則兩次巡迴被視為不同。",
+    "Statement Images": [],
+    "Constraints": "- 3 ≤ H ≤ 2 \\times 10^5\n- 3 ≤ W ≤ 2 \\times 10^5\n- 所有輸入值均為整數。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nH W\n輸出\n輸出遊覽的數量，結果取模 998244353。",
+    "Sample Detail": [
+        {
+            "input": "3 3\n",
+            "output": "6\n",
+            "explanation": "例如，運動 (0,0) \\to (1,1) \\to (2,2) \\to (0,1) \\to (1,2) \\to (2,0) \\to (0,2) \\to (1,0) \\to (2,1) \\to (0,0) 滿足作為一個巡迴的條件。\n總共有六個巡迴。",
+            "images": []
+        },
+        {
+            "input": "123 45\n",
+            "output": "993644157\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "6789 200000\n",
+            "output": "152401277\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

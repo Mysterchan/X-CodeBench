@@ -1,0 +1,32 @@
+{
+    "Title": "AtCoder Regular Contest 194 (Div. 2)",
+    "Source": "atcoder",
+    "Name": "Cost to Flip",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "你被給定了兩個長度為 N 的整數序列，A = (A_1, A_2, ..., A_N) 和 B = (B_1, B_2, ..., B_N)，每個序列由 0 和 1 組成。\n你可以對 A 執行以下操作任意次數（可能為零）：\n- 首先，選擇一個滿足 1 ≤ i ≤ N 的整數 i，並翻轉 A_i 的值（如果原始值為 0，則改為 1；如果為 1，則改為 0）。\n- 然後，支付 \\sum_{k=1}^N A_k C_k 日元作為此操作的成本。\n請注意，步驟 2 中的成本計算使用的是步驟 1 改變後的 A。\n輸出使 A 與 B 相同所需的最小總成本。",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ N ≤ 2 \\times 10^5\n- A_i, B_i \\in {0, 1}\n- 1 ≤ C_i ≤ 10^6\n- 所有輸入值均為整數。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nN\nA_1 A_2 ... A_N\nB_1 B_2 ... B_N\nC_1 C_2 ... C_N\n輸出\n輸出答案。",
+    "Sample Detail": [
+        {
+            "input": "4\n0 1 1 1\n1 0 1 0\n4 6 2 9\n",
+            "output": "16\n",
+            "explanation": "考慮以下步驟：\n\n- 首先，翻轉 A_4。現在，A = (0, 1, 1, 0)。這個操作的成本是 0 \\times 4 + 1 \\times 6 + 1 \\times 2 + 0 \\times 9 = 8 日元。\n- 接下來，翻轉 A_2。現在，A = (0, 0, 1, 0)。這個操作的成本是 0 \\times 4 + 0 \\times 6 + 1 \\times 2 + 0 \\times 9 = 2 日元。\n- 最後，翻轉 A_1。現在，A = (1, 0, 1, 0)，這與 B 匹配。這個操作的成本是 1 \\times 4 + 0 \\times 6 + 1 \\times 2 + 0 \\times 9 = 6 日元。\n\n在這種情況下，總成本是 8 + 2 + 6 = 16 日元，這是可能的最小成本。",
+            "images": []
+        },
+        {
+            "input": "5\n1 1 1 1 1\n1 1 1 1 1\n1 1 1 1 1\n",
+            "output": "0\n",
+            "explanation": "A 和 B 初始時已經相同，因此不需要執行任何操作。",
+            "images": []
+        },
+        {
+            "input": "20\n1 1 1 1 0 0 1 1 0 0 0 1 0 1 0 1 1 0 1 0\n0 0 0 1 1 1 0 1 1 0 0 0 0 0 0 1 0 1 0 0\n52 73 97 72 54 15 79 67 13 55 65 22 36 90 84 46 1 2 27 8\n",
+            "output": "2867\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

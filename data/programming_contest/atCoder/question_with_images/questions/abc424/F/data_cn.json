@@ -1,0 +1,28 @@
+{
+    "Title": "AtCoder Beginner Contest 424",
+    "Source": "atcoder",
+    "Name": "Adding Chords",
+    "Time Limit": "3 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "有 N 個點均勻分佈在一個圓上，按順時針方向編號為 1, 2, \\dots, N。\n您將收到 Q 個查詢，格式如下；請按順序處理它們。\n- 繪製連接點 A_i 和 B_i 的線段。然而，如果這個線段與已經繪製的任何線段相交，則不繪製它。\n在這裡，可以保證 2Q 個整數 A_1, \\ldots, A_Q, B_1, \\ldots, B_Q 全部不同。\n對於每個查詢，請回答該線段是否被繪製。",
+    "Statement Images": [],
+    "Constraints": "- 2 ≤ N ≤ 10^6\n- 1 ≤ Q ≤ 3×10^5\n- 1 ≤ A_i < B_i ≤ N\n- 2Q 個整數 A_1,...,A_Q,B_1,...,B_Q 互不相同。\n- 所有輸入值均為整數。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nN Q\nA_1 B_1\nA_2 B_2\n\\vdots\nA_Q B_Q\n輸出\n輸出 Q 行。\n在第 i 行，若在第 i 個查詢中該段線被繪製，則輸出 Yes；若未被繪製，則輸出 No。",
+    "Sample Detail": [
+        {
+            "input": "8 3\n1 5\n2 7\n3 4\n",
+            "output": "Yes\nNo\nYes\n",
+            "explanation": "根據查詢，段線如下圖所示。\n\n- 在第一個查詢中，連接點1和5的段線被畫出。\n- 在第二個查詢中，連接點2和7的段線沒有被畫出，因為它與在第一個查詢中畫出的段線相交。\n- 在第三個查詢中，連接點3和4的段線被畫出。",
+            "images": [
+                "https://img.atcoder.jp/abc424/da7d251baf0dbd538951f53fa04bb155.png"
+            ]
+        },
+        {
+            "input": "999999 4\n123456 987654\n888888 999999\n1 3\n2 777777\n",
+            "output": "Yes\nNo\nYes\nNo\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

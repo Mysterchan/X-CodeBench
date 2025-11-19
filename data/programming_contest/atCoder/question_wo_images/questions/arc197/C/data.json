@@ -1,0 +1,20 @@
+{
+    "Title": "AtCoder Regular Contest 197 (Div. 2)",
+    "Source": "atcoder",
+    "Name": "Removal of Multiples",
+    "Time Limit": "4 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "Let S be the set of all positive integers.\nProcess Q queries in order. The i-th query gives you an integer A_i not less than 2 and a positive integer B_i, so perform the following two steps in order.\n- Remove from S all elements that are multiples of A_i.\n- Print the B_i-th smallest element of S. It can be shown that under the given constraints, S contains at least B_i elements at this point.",
+    "Statement Images": [],
+    "Constraints": "- 1≤ Q≤ 10^5\n- 2≤ A_i≤ 10^9\n- 1≤ B_i≤ 10^5\n- All input values are integers.",
+    "IO Styles": "Input\nThe input is given from Standard Input in the following format:\nQ\nA_1 B_1\n\\vdots\nA_Q B_Q\nOutput\nPrint Q lines. The i-th line should contain the B_i-th smallest element of S after removing all multiples of A_i from S.",
+    "Sample Detail": [
+        {
+            "input": "5\n5 10\n6 1\n6 10\n9 10\n123456789 111\n",
+            "output": "12\n1\n14\n16\n178\n",
+            "explanation": "When the elements of S are listed in ascending order, the beginning of the list evolves as follows.\n\n- Initially, S=\\lbrace 1,2,3,4,5,6,7,8,9,10,...\\rbrace.\n- The first query removes multiples of 5, resulting in S=\\lbrace1,2,3,4,6,7,8,9,11,12,...\\rbrace.\n- The second query removes multiples of 6, resulting in S=\\lbrace1,2,3,4,7,8,9,11,13,14,...\\rbrace.\n- The third query removes multiples of 6, resulting in S=\\lbrace1,2,3,4,7,8,9,11,13,14,...\\rbrace.\n- The fourth query removes multiples of 9, resulting in S=\\lbrace1,2,3,4,7,8,11,13,14,16,...\\rbrace.\n- The fifth query removes multiples of 123456789, resulting in S=\\lbrace1,2,3,4,7,8,11,13,14,16,...\\rbrace.",
+            "images": []
+        }
+    ],
+    "Language": "en"
+}

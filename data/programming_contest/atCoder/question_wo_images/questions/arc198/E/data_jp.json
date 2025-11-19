@@ -1,0 +1,32 @@
+{
+    "Title": "AtCoder Regular Contest 198 (Div. 2)",
+    "Source": "atcoder",
+    "Name": "Monotone OR",
+    "Time Limit": "7 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "0 以上 2^N 未満の非負整数からなる集合 S = \\lbrace s_1,s_2,\\dots,s_M \\rbrace が与えられます。\nあなたは非負整数 x = 0 を持っています。以下の操作を好きな回数行い、x = 2^N とする方法の個数を 998244353 で割った余りを求めてください。\n- 1 ≤ i ≤ M を満たす整数 i を選び、x を (x\\ \\mathrm{OR}\\ s_i) + 1 で置き換える。\nただし、\\mathrm{OR} はビットごとの論理和を表します。",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ N ≤ 24\n- 1 ≤ M ≤ \\min(2^N,2 \\times 10^5)\n- 0 ≤ s_1 < s_2 < \\dots < s_M < 2^N",
+    "IO Styles": "入力\n入力は以下の形式で標準入力から与えられる。\nN M\ns_1\\ s_2\\ \\dots\\ s_M\n出力\n操作方法の個数を 998244353 で割った余りを出力せよ。",
+    "Sample Detail": [
+        {
+            "input": "2 2\n1 2\n",
+            "output": "5\n",
+            "explanation": "i を選んで操作を行い、x = k となった場合、その遷移を (i, k) と表記します。条件を満たす方法は以下の 5 通りです。\n\n- (1,2) \\rightarrow (1,4)\n- (1,2) \\rightarrow (2,3) \\rightarrow (1,4)\n- (1,2) \\rightarrow (2,3) \\rightarrow (2,4)\n- (2,3) \\rightarrow (1,4)\n- (2,3) \\rightarrow (2,4)\n\n\nx の遷移が完全に一致していても、i の選び方が異なる方法は区別して数え上げることに注意してください。",
+            "images": []
+        },
+        {
+            "input": "5 10\n3 5 8 9 11 16 17 23 27 28\n",
+            "output": "242816764\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "24 32\n673802 709603 941436 987977 1288854 1448514 1890649 2031791 2194398 3531579 3540682 4352378 4676427 5094869 5243789 6064976 6412917 7164733 8403938 9123034 10396333 10558625 10726446 12263566 12421464 12503511 12676340 14032527 14268967 14669703 15823827 16285412\n",
+            "output": "508425421\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "jp"
+}

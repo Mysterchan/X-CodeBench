@@ -1,0 +1,26 @@
+{
+    "Title": "トヨタ自動車プログラミングコンテスト2025（AtCoder Beginner Contest 389）",
+    "Source": "atcoder",
+    "Name": "tcaF",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "2 以上の整数 X が与えられます。\nN!=X を満たすような正の整数 N を求めてください。\nただし、N! は N の階乗を表し、そのような N がただ一つ存在することは保証されています。",
+    "Statement Images": [],
+    "Constraints": "- 2 ≤ X ≤ 3 \\times 10^{18}\n- N!=X を満たすような正の整数 N がただ一つ存在する\n- 入力は全て整数",
+    "IO Styles": "入力\n入力は以下の形式で標準入力から与えられる。\nX\r\n出力\n答えを出力せよ。",
+    "Sample Detail": [
+        {
+            "input": "6\n",
+            "output": "3\n",
+            "explanation": "3!=3\\times2\\times1=6 より、3 を出力します。",
+            "images": []
+        },
+        {
+            "input": "2432902008176640000\n",
+            "output": "20\n",
+            "explanation": "20!=2432902008176640000 より、20 を出力します。",
+            "images": []
+        }
+    ],
+    "Language": "jp"
+}

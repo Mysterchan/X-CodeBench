@@ -1,0 +1,28 @@
+{
+    "Title": "AtCoder Grand Contest 072",
+    "Source": "atcoder",
+    "Name": "Human Exercise",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "AtCoder 市は N \\times N のマス目で表されます。上から i 番目 (1 ≤ i ≤ N)、左から j 番目 (1 ≤ j ≤ N) のマスは、(i, j) と表されます。\n青木君は、近日行われるマラソン大会に向けて、以下の手順からなる エクササイズ を K 回行いました。\n- マス (1, 1) を出発する。\n- 以下を 2N-2 回繰り返して、マス (N, N) に到着する。\n- 下方向または右方向に 1 マス進む。ただし、下方向のマスと右方向のマスの両方に移動できる場合、今までのエクササイズで「そのマスを訪れた回数」が少ない方を選ぶ。同数の場合は下方向を選ぶ。\nそれでは、K 回目のエクササイズで通る経路を求めてください。",
+    "Statement Images": [],
+    "Constraints": "- 2 ≤ N ≤ 100\n- 1 ≤ K ≤ 10^{18}\n- 入力される値はすべて整数",
+    "IO Styles": "入力\n入力は以下の形式で標準入力から与えられます。\nN K\r\n出力\n長さ 2N-2 の文字列を出力してください。この i 文字目は、K 回目のエクササイズにおける i 回目の移動で下方向に動いた場合は D、右方向に動いた場合は R としてください。",
+    "Sample Detail": [
+        {
+            "input": "5 4\n",
+            "output": "RRDDRRDD\n",
+            "explanation": "1, 2, 3, 4 回目のエクササイズでは以下の図のように動くことになります。よって、答えは RRDDRRDD です。\n\n![image](1.png)",
+            "images": [
+                "https://img.atcoder.jp/agc072/8ed0de00f959669be6ebb4712911602e.png"
+            ]
+        },
+        {
+            "input": "10 869120\n",
+            "output": "RDRRRDRDRDRDRDDDRD\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "jp"
+}

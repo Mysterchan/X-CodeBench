@@ -1,0 +1,69 @@
+Looking at this problem, I need to understand what makes X compatible with N:
+- X XOR N = X mod N
+
+Let me trace through the code logic:
+
+The code finds all zero bit positions in N (up to the highest bit of N), then uses these positions to generate compatible numbers.
+
+For a number X to be compatible:
+- X XOR N = X mod N
+
+The key insight: If N has k zero bits in positions less than or equal to the highest bit of N, we can generate 2^k compatible numbers by setting different combinations of those zero bits in N.
+
+Let me trace through each test case:
+
+**Test Case 1: N=2, K=1**
+- N = 2 = binary 10
+- Zero bits at positions: 0 (since bit 0 is 0)
+- zero_bits = [0]
+- K-1 = 0
+- Check: 2^1 = 2 > 0 ✓ (enough compatible numbers exist)
+- For i=0, b=0: (0 >> 0) & 1 = 0, so don't set bit 0
+- Result: N = 2
+
+**Test Case 2: N=2, K=2**
+- N = 2 = binary 10
+- zero_bits = [0]
+- K-1 = 1
+- Check: 2^1 = 2 > 1 ✓
+- For i=0, b=0: (1 >> 0) & 1 = 1, so set bit 0
+- N |= 1 << 0 → N = 2 | 1 = 3
+- Result: N = 3
+
+**Test Case 3: N=1, K=7**
+- N = 1 = binary 1
+- Zero bits: none (bit 0 is 1, and we stop at position 0 since 1<<1=2 > 1)
+- zero_bits = []
+- K-1 = 6
+- Check: 2^0 = 1 <= 6, so print -1
+- Result: -1
+
+**Test Case 4: N=20250126, K=191**
+- N = 20250126 in binary
+- 20250126 = 0b1001101001001000000001110
+- Need to find zero bit positions
+- K-1 = 190
+- Let me count zero bits in N up to bit 24 (since 2^25 > 20250126)
+- Binary: 1001101001001000000001110
+- Zero bits at positions: 0, 4, 5, 6, 7, 8, 9, 10, 14, 16, 17, 19, 21, 22
+- That's 14 zero bits
+- Check: 2^14 = 16384 > 190 ✓
+- 190 in binary = 10111110
+- Apply each bit of 190 to corresponding zero bit positions:
+  - Set bits at positions where 190 has 1s: 1,2,3,4,5,6,7 (of zero_bits list)
+  - This corresponds to positions: 8,9,10,14,16,17,19
+- N = 20250126 | (1<<8) | (1<<9) | (1<<10) | (1<<14) | (1<<16) | (1<<17) | (1<<19)
+- = 20250126 | 256 | 512 | 1024 | 16384 | 65536 | 131072 | 524288
+- = 20250126 | 739072 = 20989198
+
+Let me verify: 20250126 | 739072
+20250126 = ...1001101001001000000001110
+739072   = ...0010110100111100000000000
+Result   = ...1011111101111100000001110 = 20989198
+
+Output:
+
+2
+3
+-1
+20989198

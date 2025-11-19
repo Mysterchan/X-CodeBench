@@ -1,0 +1,32 @@
+{
+    "Title": "AtCoder Regular Contest 192 (Div. 2)",
+    "Source": "atcoder",
+    "Name": "Snuke's Kyoto Trip",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "You are given integers W,H,L,R,D,U.\nA town of Kyoto is on the two-dimensional plane.\nIn the town, there is exactly one block at each lattice point (x,y) that satisfies all of the following conditions. There are no blocks at any other points.\n- 0≤ x≤ W\n- 0≤ y≤ H\n- x<L or R<x or y<D or U<y\nSnuke traveled through the town as follows.\n- First, he chooses one block and stands there.\n- Then, he performs the following operation any number of times (possibly zero):\n- Move one unit in the positive direction of the x-axis or the positive direction of the y-axis. However, the point after moving must also have a block.\nPrint the number, modulo 998244353, of possible paths that Snuke could have taken.",
+    "Statement Images": [],
+    "Constraints": "- 0≤ L≤ R≤ W≤ 10^6\n- 0≤ D≤ U≤ H≤ 10^6\n- There is at least one block.\n- All input values are integers.",
+    "IO Styles": "Input\nThe input is given from Standard Input in the following format:\nW H L R D U\r\nOutput\nPrint the answer.",
+    "Sample Detail": [
+        {
+            "input": "4 3 1 2 2 3\n",
+            "output": "192\n",
+            "explanation": "The following are examples of possible paths. Here, a path is represented by listing the lattice points visited in order.\n\n- (3,0)\n- (0,0)\\rightarrow (1,0)\\rightarrow (2,0)\\rightarrow (2,1)\\rightarrow (3,1)\\rightarrow (3,2)\\rightarrow (4,2)\\rightarrow (4,3)\n- (0,1)\\rightarrow (0,2)\n\n\nThere are 192 possible paths.",
+            "images": []
+        },
+        {
+            "input": "10 12 4 6 8 11\n",
+            "output": "4519189\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "192 25 0 2 0 9\n",
+            "output": "675935675\n",
+            "explanation": "Do not forget to print the number of paths modulo 998244353.",
+            "images": []
+        }
+    ],
+    "Language": "en"
+}

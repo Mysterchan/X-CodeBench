@@ -1,0 +1,32 @@
+{
+    "Title": "AtCoder Regular Contest 202 (Div. 1)",
+    "Source": "atcoder",
+    "Name": "Repunits",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "對於一個正整數 n，定義 R_n 為「將一串 n 個連續的 1 解釋為十進制數得到的整數」。例如，R_3 = 111。\n\n給定一個正整數序列 A = (A_1, A_2, \\dots, A_N)。對於 k = 1, 2, \\dots, N，計算 \\mathrm{LCM}(R_{A_1}, R_{A_2}, \\dots, R_{A_k}) \\bmod 998244353。這裡，\\mathrm{LCM} 是計算最小公倍數的函數。",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ N ≤ 2 \\times 10^5\n- 1 ≤ A_i ≤ 2 \\times 10^5\n- 所有輸入值均為整數。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nN\nA_1 A_2 \\dots A_N\n輸出\n輸出 N 行。第 k 行應該包含 \\mathrm{LCM}(R_{A_1}, R_{A_2}, \\dots, R_{A_k}) \\bmod 998244353。",
+    "Sample Detail": [
+        {
+            "input": "3\n2 4 6\n",
+            "output": "11\n1111\n11222211\n",
+            "explanation": "對於 k=1，\\mathrm{LCM}(11) \\bmod 998244353 = 11。\n對於 k=2，\\mathrm{LCM}(11,1111) \\bmod 998244353 = 1111。\n對於 k=3，\\mathrm{LCM}(11,1111,111111) \\bmod 998244353 = 11222211。",
+            "images": []
+        },
+        {
+            "input": "1\n200000\n",
+            "output": "202819780\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "10\n47718 21994 98917 104184 160670 190107 125377 29127 7017 177076\n",
+            "output": "429620650\n844699313\n355160870\n608402385\n858856681\n605347397\n566966598\n429324494\n370941155\n567238109\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

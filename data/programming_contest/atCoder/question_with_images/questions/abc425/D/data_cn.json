@@ -1,0 +1,34 @@
+{
+    "Title": "UNIQUE VISION Programming Contest 2025 Autumn (AtCoder Beginner Contest 425)",
+    "Source": "atcoder",
+    "Name": "Ulam-Warburton Automaton",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "在一個有 H 行和 W 列的格子中，我們稱從上方數的第 i 行（1≤ i≤ H）和從左側數的第 j 列（1≤ j≤ W）的單元格為單元格 (i,j)。\n最初，當 S_{i,j} 為 # 時，單元格 (i,j) 塗成黑色；當 S_{i,j} 為 . 時，則塗成白色。\n執行以下操作 10^{100} 次：\n- 令 T 為所有塗成白色且恰好有一個相鄰單元格塗成黑色的單元格集合。將 T 中的每個單元格涂成黑色。若兩個單元格 (i_1,j_1) 和 (i_2,j_2) 除了相連，還需要滿足 |i_1-i_2| + |j_1-j_2| = 1。\n在所有操作完成後，計算塗成黑色的單元格數量。",
+    "Statement Images": [],
+    "Constraints": "- 2≤ H,W\n- HW≤ 3\\times 10^5\n- H 和 W 為整數。\n- S_{i,j} 為 # 或 ..",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nH W\nS_{1,1}S_{1,2}... S_{1,W}\nS_{2,1}S_{2,2}... S_{2,W}\n\\vdots\nS_{H,1}S_{H,2}... S_{H,W}\n輸出\n輸出答案。",
+    "Sample Detail": [
+        {
+            "input": "9 9\n.........\n.........\n.........\n.........\n....#....\n.........\n.........\n.........\n.........\n",
+            "output": "57\n",
+            "explanation": "最終，57 個單元格被塗成黑色。",
+            "images": [
+                "https://img.atcoder.jp/abc425/66c86ae7efa44c7545e6db9451921205.gif"
+            ]
+        },
+        {
+            "input": "2 2\n..\n..\n",
+            "output": "0\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "10 10\n..........\n....#.....\n#.......#.\n......#...\n.......#..\n.....#....\n..........\n..........\n..#...#...\n.......#..\n",
+            "output": "64\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

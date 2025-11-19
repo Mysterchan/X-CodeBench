@@ -1,0 +1,32 @@
+{
+    "Title": "KAJIMA CORPORATION CONTEST 2025 (AtCoder Beginner Contest 394)",
+    "Source": "atcoder",
+    "Name": "Alkane",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "You are given an undirected tree T with N vertices, numbered 1, 2, ..., N. The i-th edge is an undirected edge connecting vertices A_i and B_i.\nA graph is defined to be an alkane if and only if it satisfies the following conditions:\n- The graph is an undirected tree.\n- Every vertex has degree 1 or 4, and there is at least one vertex of degree 4.\nDetermine whether there exists a subgraph of T that is an alkane, and if so, find the maximum number of vertices in such a subgraph.",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ N ≤ 2 \\times 10^5\n- 1 ≤ A_i, B_i ≤ N\n- The given graph is an undirected tree.\n- All input values are integers.",
+    "IO Styles": "Input\nThe input is given from Standard Input in the following format:\nN\r\nA_1 B_1\r\nA_2 B_2\r\n\\vdots\r\nA_{N - 1} B_{N - 1}\r\nOutput\nIf there exists a subgraph of T that is an alkane, print the maximum number of vertices in such a subgraph. Otherwise, print -1.",
+    "Sample Detail": [
+        {
+            "input": "9\n1 2\n2 3\n3 4\n4 5\n2 6\n2 7\n3 8\n3 9\n",
+            "output": "8\n",
+            "explanation": "Let (u, v) denote an undirected edge between vertices u and v.\n\nA subgraph consisting of vertices 1,2,3,4,6,7,8,9 and edges (1,2),(2,3),(3,4),(2,6),(2,7),(3,8),(3,9) is an alkane.",
+            "images": []
+        },
+        {
+            "input": "7\n1 2\n1 3\n2 4\n2 5\n3 6\n3 7\n",
+            "output": "-1\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "15\n8 5\n2 9\n1 12\n6 11\n9 3\n15 1\n7 12\n7 13\n10 5\n6 9\n5 1\n1 9\n4 5\n6 14\n",
+            "output": "11\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "en"
+}

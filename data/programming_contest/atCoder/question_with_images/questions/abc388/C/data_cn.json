@@ -1,0 +1,35 @@
+{
+    "Title": "HHKB Programming Contest 2025(AtCoder Beginner Contest 388)",
+    "Source": "atcoder",
+    "Name": "Various Kagamimochi",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "有 N 個麻糬（年糕）按照大小升序排列。\n第 i 個麻糬的大小為 A_i（1 ≤ i ≤ N）。\n給定兩個麻糬 A 和 B，分別大小為 a 和 b，當且僅當 a 至多為 b 的一半時，可以將麻糬 A 放在麻糬 B 上面，形成一個鏡餅（疊層年糕）。\n你從 N 個麻糬中選擇兩個，並將一個放在另一個上方來形成一個鏡餅。\n找出可以製作多少種不同類型的鏡餅。\n如果至少有一個麻糬不同，即使麻糬的大小相同，兩個鏡餅也會被區分開來。",
+    "Statement Images": [],
+    "Constraints": "- 2 ≤ N ≤ 5 \\times 10^5\n- 1 ≤ A_i ≤ 10^9 \\ (1 ≤ i ≤ N)\n- A_i ≤ A_{i+1} \\ (1 ≤ i < N)\n- 所有輸入值均為整數。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nN\nA_1 A_2 \\cdots A_N\n輸出\n輸出可以製作的不同種類的鏡餅數量。",
+    "Sample Detail": [
+        {
+            "input": "6\n2 3 4 4 7 10\n",
+            "output": "8\n",
+            "explanation": "給定的麻糬大小如下：\n\n![image](1.png)\n\n在這種情況下，您可以製作以下八種鏡餅：\n\n![image](2.png)\n\n請注意，有兩種鏡餅是由大小為4的麻糬和大小為2的麻糬組成的，而有兩種是由大小為10的麻糬和大小為4的麻糬組成的。",
+            "images": [
+                "https://img.atcoder.jp/abc388/29024766d11c2d88b06c92b2081129f5.png",
+                "https://img.atcoder.jp/abc388/0b69fbe457f2c4298173acce2faab37e.png"
+            ]
+        },
+        {
+            "input": "3\n387 388 389\n",
+            "output": "0\n",
+            "explanation": "有可能你無法製作任何鏡餅。",
+            "images": []
+        },
+        {
+            "input": "32\n1 2 4 5 8 10 12 16 19 25 33 40 50 64 87 101 149 175 202 211 278 314 355 405 412 420 442 481 512 582 600 641\n",
+            "output": "388\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

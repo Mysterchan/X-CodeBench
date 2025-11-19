@@ -1,0 +1,32 @@
+{
+    "Title": "AtCoder Beginner Contest 387（Promotion of AtCoderJobs）",
+    "Source": "atcoder",
+    "Name": "Count Arrays",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "正整数 N,M および、各要素が 1 以上 N 以下の整数である長さ N の数列 A=(A_1,A_2,\\dots,A_N) が与えられます。\n各要素が 1 以上 M 以下の整数である長さ N の数列 x=(x_1,x_2,\\dots,x_N) のうち、以下の条件を満たすものの数を 998244353 で割った余りを求めてください。\n- 全ての i\\ (1≤ i≤ N) について、x_i ≤ x_{A_i}",
+    "Statement Images": [],
+    "Constraints": "- 1≤ N,M ≤ 2025\n- 1≤ A_i≤ N\n- 入力は全て整数",
+    "IO Styles": "入力\n入力は以下の形式で標準入力から与えられる。\nN M\r\nA_1 A_2 \\dots A_N\r\n出力\n答えを出力せよ。",
+    "Sample Detail": [
+        {
+            "input": "3 3\n2 1 1\n",
+            "output": "6\n",
+            "explanation": "x=(1,1,1),(2,2,1),(2,2,2),(3,3,1),(3,3,2),(3,3,3) が条件を満たします。",
+            "images": []
+        },
+        {
+            "input": "4 9\n1 1 1 1\n",
+            "output": "2025\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "10 5\n9 4 5 5 4 2 1 5 7 2\n",
+            "output": "10010\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "jp"
+}

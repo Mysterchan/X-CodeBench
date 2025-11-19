@@ -1,0 +1,11 @@
+{
+    "url": "https://github.com/matplotlib/matplotlib/issues/30389",
+    "source": "github",
+    "title": "[Bug]: Arrow not drawing tip",
+    "Description": "The arrow drawn in the plot currently does not have a visible tip, which is not the expected appearance. The intended visualization is to show an arrow from the point (0, 1) extending diagonally to (1, 2) with a clearly defined tip.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "matplotlib",
+        "data-visualization"
+    ]
+}

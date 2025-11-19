@@ -1,0 +1,11 @@
+{
+    "url": "https://stackoverflow.com/questions/68858330/right-align-horizontal-seaborn-barplot",
+    "source": "stackoverflow",
+    "title": "Right align horizontal seaborn barplot",
+    "Description": "The current horizontal Seaborn barplot displays the bars extending to the right from a starting point of zero, with labels positioned on the left side. The intended visualization is for the bars to be right-aligned or mirrored, with labels positioned on the right side of the graph. The expected output should show the bars extending towards the left, starting from the maximum value on the x-axis and decreasing towards zero.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "seaborn",
+        "data-visualization"
+    ]
+}

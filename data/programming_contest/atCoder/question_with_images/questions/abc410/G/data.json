@@ -1,0 +1,34 @@
+{
+    "Title": "AtCoder Beginner Contest 410",
+    "Source": "atcoder",
+    "Name": "Longest Chord Chain",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "There are 2N pairwise distinct points, numbered from 1 to 2N, on a circle. Starting from point 1 and going clockwise, the points are arranged as point 2, point 3, ..., point 2N.\nYou are given N chords on this circle. The endpoints of the i-th chord are points A_i and B_i, and the 2N values A_1,...,A_N,B_1,...,B_N are all distinct.\nPerform the following operations on this circle once each in order:\n- Among the N chords on the circle, choose any number of chords such that no two chosen chords intersect, and delete the remaining chords.\n- Add one chord freely to the circle.\nFind the maximum possible number of intersection points between chords after the operations are completed.",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ N ≤ 2\\times 10^5\n- 1 ≤ A_i,B_i ≤ 2N\n- The 2N values A_1, ..., A_N,B_1,...,B_N are pairwise distinct.\n- All input values are integers.",
+    "IO Styles": "Input\nThe input is given from Standard Input in the following format:\nN\nA_1 B_1\nA_2 B_2\n\\vdots\nA_N B_N\nOutput\nOutput the answer.",
+    "Sample Detail": [
+        {
+            "input": "3\n1 5\n6 3\n4 2\n",
+            "output": "2\n",
+            "explanation": "Initially, there are 3 chords on the circle, as shown in the figure.\nAfter deleting the chord connecting points 3 and 6 and adding a new chord through the operations, the number of intersection points between chords is 2.\n\n![image](1.png)\n\nIt is impossible to make the number of intersection points between chords 3 or more, so the answer is 2.\n\nThe endpoints of the chord added at the end do not need to be any of the points 1,..., 2N.",
+            "images": [
+                "https://img.atcoder.jp/abc410/be5d090022ebeba5ad0aeea63ef1c38b.png"
+            ]
+        },
+        {
+            "input": "4\n1 8\n2 7\n3 6\n4 5\n",
+            "output": "4\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "3\n1 2\n3 4\n5 6\n",
+            "output": "2\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "en"
+}

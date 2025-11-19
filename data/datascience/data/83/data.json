@@ -1,0 +1,11 @@
+{
+    "url": "https://stackoverflow.com/questions/71096188/set-x-range-in-seaborne-violinplot-by-month",
+    "source": "stackoverflow",
+    "title": "How to assign different position for each group in a violinplot",
+    "Description": "The intended visualization is a violin plot displaying the distribution of \"total_bill\" across the \"day\" of the week, with data split by \"sex\", and positioned at specified x-axis locations [1, 2, 4, 6]. The current graph displays a violin for \"Fri\" that is too narrow, making it difficult to interpret. The desired outcome is for the \"Fri\" violin to be wider, along with formatted x-axis positions that reflect the specified values.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "seaborn",
+        "data-visualization"
+    ]
+}

@@ -1,0 +1,16 @@
+—
+Comments:
+Functional Correctness: The Candidate Image successfully includes all required plot elements as specified in the Natural-Language Description. The heatmaps are correctly arranged in a 2x2 grid, and there is a single colorbar displayed alongside the subplots, which aligns with the requirements. Full credit is awarded. **Subscore: 25**
+
+Visual Fidelity: The Candidate Image closely matches the Reference Image in terms of the arrangement of the heatmaps and the overall layout. The scaling and relative positions of the heatmaps are consistent with the Reference Image. **Subscore: 20**
+
+Text & Annotations: The Candidate Image does not include any titles, subtitles, or axis labels, which are typically expected in a complete visualization. However, since the Spec did not explicitly mention these elements, I will not penalize heavily. Still, the absence of these elements is noted. **Subscore: 10**
+
+Style & Aesthetics: The colors used in the Candidate Image are consistent with those in the Reference Image, and the overall aesthetic is maintained. The colorbar is appropriately placed, and the aspect ratio appears correct. **Subscore: 15**
+
+Data Faithfulness: The heatmaps in the Candidate Image reflect the data structure and trends expected from the Reference Image. The data appears to be faithfully represented, maintaining the integrity of the visual information. **Subscore: 15**
+
+Code Quality & Repair Validity: The Candidate Code effectively addresses the issue of multiple colorbars by consolidating them into a single colorbar for the entire grid. The code executes successfully without errors, and there are no unnecessary regressions or redundant code. **Subscore: 10**
+
+Score: 95
+—

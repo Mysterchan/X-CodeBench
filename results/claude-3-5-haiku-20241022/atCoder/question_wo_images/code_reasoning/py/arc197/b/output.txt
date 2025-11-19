@@ -1,0 +1,59 @@
+Looking at this problem, I need to trace through the code execution for each test case.
+
+The code:
+1. Sorts array A
+2. Creates prefix sums
+3. For each possible subsequence length i (1 to N), finds the maximum score by:
+   - Using binary search to find the smallest index where A[x] * i > pre[i]
+   - The score is i - lo (elements strictly greater than average)
+
+Let me trace through each test case:
+
+**Test Case 1:**
+- N = 5
+- A = [2, 6, 5, 7, 5]
+- After sorting: A = [2, 5, 5, 6, 7]
+- pre = [0, 2, 7, 12, 18, 25]
+
+For each length i:
+- i=1: Check if A[0]*1 > pre[1] → 2 > 2? No. lo=1, score=0
+- i=2: Check A[0]*2 > pre[2] → 4 > 7? No. Check A[1]*2 > pre[2] → 10 > 7? Yes. lo=1, score=1
+- i=3: Need A[x]*3 > pre[3]=12. A[1]*3=15>12, so lo=1, score=2
+- i=4: Need A[x]*4 > pre[4]=18. A[1]*4=20>18, so lo=1, score=3
+- i=5: Need A[x]*5 > pre[5]=25. A[1]*5=25≤25, A[2]*5=25≤25, A[3]*5=30>25, so lo=3, score=2
+
+ans = max(0,1,2,3,2) = 3
+
+**Test Case 2:**
+- N = 5
+- A = [10, 10, 10, 10, 10]
+- After sorting: A = [10, 10, 10, 10, 10]
+- pre = [0, 10, 20, 30, 40, 50]
+
+For each length i:
+- i=1: A[0]*1=10≤10, lo=1, score=0
+- i=2: A[0]*2=20≤20, A[1]*2=20≤20, lo=2, score=0
+- i=3: All equal to average, lo=3, score=0
+- i=4: All equal to average, lo=4, score=0
+- i=5: All equal to average, lo=5, score=0
+
+ans = 0
+
+**Test Case 3:**
+- N = 5
+- A = [1, 10, 100, 1000, 10000]
+- After sorting: A = [1, 10, 100, 1000, 10000]
+- pre = [0, 1, 11, 111, 1111, 11111]
+
+For each length i:
+- i=1: A[0]*1=1≤1, lo=1, score=0
+- i=2: A[0]*2=2≤11? Yes. A[1]*2=20>11? Yes. lo=1, score=1
+- i=3: A[0]*3=3≤111, A[1]*3=30≤111, A[2]*3=300>111, lo=2, score=1
+- i=4: A[1]*4=40≤1111, A[2]*4=400≤1111, A[3]*4=4000>1111, lo=3, score=1
+- i=5: A[2]*5=500≤11111, A[3]*5=5000≤11111, A[4]*5=50000>11111, lo=4, score=1
+
+ans = max(0,1,1,1,1) = 1
+
+3
+0
+1

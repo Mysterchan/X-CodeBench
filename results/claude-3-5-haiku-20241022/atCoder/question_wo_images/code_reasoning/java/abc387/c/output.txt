@@ -1,0 +1,50 @@
+I need to trace through this Java program to find how many Snake numbers exist between 97 and 210.
+
+A Snake number is a positive integer ≥ 10 where the first digit is strictly larger than all other digits.
+
+The program calculates `count(210) - count(97 - 1) = count(210) - count(96)`.
+
+Let me trace through `count(210)`:
+
+**count(210):**
+- digits = [2, 1, 0]
+- n = 3
+- res = 0
+
+First loop (i from 1 to n):
+- i=1: res += 2^(3-1-1) * min(2,1) = 2^1 * 1 = 2. digits[1]=1 < digits[0]=2, continue
+- i=2: res += 2^(3-1-2) * min(2,0) = 2^0 * 0 = 0. digits[2]=0 < digits[0]=2, continue
+- i=3: res++, so res = 3, break
+
+Second loop (i from 0 to n-1):
+- i=0: maxDigit = 2-1 = 1
+  - j=1: res += 1^(3-1-0) = 1^2 = 1, so res = 4
+- i=1: maxDigit = 9
+  - j=1: res += 1^(3-1-1) = 1^1 = 1, so res = 5
+  - j=2: res += 2^1 = 2, so res = 7
+  - j=3 to 9: res += 3^1 + 4^1 + 5^1 + 6^1 + 7^1 + 8^1 + 9^1 = 3+4+5+6+7+8+9 = 42, so res = 49
+- i=2: maxDigit = 9
+  - j=1 to 9: res += 1^0 + 2^0 + ... + 9^0 = 9, so res = 58
+
+count(210) = 58
+
+**count(96):**
+- digits = [9, 6]
+- n = 2
+- res = 0
+
+First loop (i from 1 to n):
+- i=1: res += 9^(2-1-1) * min(9,6) = 9^0 * 6 = 6. digits[1]=6 < digits[0]=9, continue
+- i=2: res++, so res = 7, break
+
+Second loop (i from 0 to n-1):
+- i=0: maxDigit = 9-1 = 8
+  - j=1 to 8: res += 1^(2-1-0) + 2^1 + 3^1 + ... + 8^1 = 1+2+3+4+5+6+7+8 = 36, so res = 43
+- i=1: maxDigit = 9
+  - j=1 to 9: res += 1^0 + 2^0 + ... + 9^0 = 9, so res = 52
+
+count(96) = 52
+
+Answer: 58 - 52 = 6
+
+6

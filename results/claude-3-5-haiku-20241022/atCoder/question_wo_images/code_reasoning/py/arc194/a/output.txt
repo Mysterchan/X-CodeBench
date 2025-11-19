@@ -1,0 +1,39 @@
+I need to trace through this dynamic programming solution step by step.
+
+The code uses `dp[i][j]` where:
+- `dp[i][0]` represents the maximum sum when we're at position i and the last operation was "delete"
+- `dp[i][1]` represents the maximum sum when we're at position i and the last operation was "append"
+
+Given input:
+- N = 6
+- A = [3, -1, -4, 5, -9, 2]
+
+Initial setup:
+- `dp[0][1] = a[0] = 3` (append first element)
+- `dp[0][0] = NEG = -10^18` (can't delete when S is empty)
+
+Now I'll trace through i = 1 to 5:
+
+**i = 1** (a[1] = -1):
+- `dp[1][0] = dp[0][1] - a[0] = 3 - 3 = 0` (we had appended 3, now delete it)
+- `dp[1][1] = max(dp[0][1], dp[0][0]) + a[1] = max(3, -10^18) + (-1) = 3 + (-1) = 2`
+
+**i = 2** (a[2] = -4):
+- `dp[2][0] = dp[1][1] - a[1] = 2 - (-1) = 3` (delete the -1 we appended)
+- `dp[2][1] = max(dp[1][1], dp[1][0]) + a[2] = max(2, 0) + (-4) = 2 + (-4) = -2`
+
+**i = 3** (a[3] = 5):
+- `dp[3][0] = dp[2][1] - a[2] = -2 - (-4) = 2` (delete the -4 we appended)
+- `dp[3][1] = max(dp[2][1], dp[2][0]) + a[3] = max(-2, 3) + 5 = 3 + 5 = 8`
+
+**i = 4** (a[4] = -9):
+- `dp[4][0] = dp[3][1] - a[3] = 8 - 5 = 3` (delete the 5 we appended)
+- `dp[4][1] = max(dp[3][1], dp[3][0]) + a[4] = max(8, 2) + (-9) = 8 + (-9) = -1`
+
+**i = 5** (a[5] = 2):
+- `dp[5][0] = dp[4][1] - a[4] = -1 - (-9) = 8` (delete the -9 we appended)
+- `dp[5][1] = max(dp[4][1], dp[4][0]) + a[5] = max(-1, 3) + 2 = 3 + 2 = 5`
+
+Final answer: `max(dp[5][0], dp[5][1]) = max(8, 5) = 8`
+
+8

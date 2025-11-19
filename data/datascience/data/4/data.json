@@ -1,0 +1,11 @@
+{
+    "url": "https://github.com/matplotlib/matplotlib/issues/28956",
+    "source": "github",
+    "title": "[Bug]: Incorrect Y limits",
+    "Description": "The intended visualization is a figure with 4 subplots, each having a y-limit set to (-300, 300). All subplots should display a y-axis label indicating \"axis 0\" through \"axis 3\" respectively. However, the current plot incorrectly shows the y-limits as (-200, 200) instead of the specified (-300, 300). Similar issues arise when different y-limits are set, resulting in the limits not reflecting the intended values.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "matplotlib",
+        "data-visualization"
+    ]
+}

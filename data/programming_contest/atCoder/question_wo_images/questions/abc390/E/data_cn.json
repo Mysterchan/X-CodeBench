@@ -1,0 +1,26 @@
+{
+    "Title": "AtCoder Beginner Contest 390",
+    "Source": "atcoder",
+    "Name": "Vitamin Balance",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "有 N 種食物，每種食物都含有一種維他命 1、2 或 3。\n具體而言，吃第 i 種食物可以獲得 A_i 單位的維他命 V_i，並攝取 C_i 卡路里。\nTakahashi 可以選擇這 N 種食物的任何子集，只要總卡路里消耗不超過 X。\n找出可能的最大值：維他命 1、2 和 3 中的最小攝取量。",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ N ≤ 5000\n- 1 ≤ X ≤ 5000\n- 1 ≤ V_i ≤ 3\n- 1 ≤ A_i ≤ 2 \\times 10^5\n- 1 ≤ C_i ≤ X\n- 所有輸入值都是整數。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nN X\nV_1 A_1 C_1\nV_2 A_2 C_2\n\\vdots\nV_N A_N C_N\n\n輸出\n打印「維他命1、2和3之間的最小攝取量」的最大可能值，前提是總攝取的卡路里不超過X。",
+    "Sample Detail": [
+        {
+            "input": "5 25\n1 8 5\n2 3 5\n2 7 10\n3 2 5\n3 3 10\n",
+            "output": "3\n",
+            "explanation": "每種食物提供以下營養成分：\n\n- 第1種食物：8單位維他命1，5卡路里\n- 第2種食物：3單位維他命2，5卡路里\n- 第3種食物：7單位維他命2，10卡路里\n- 第4種食物：2單位維他命3，5卡路里\n- 第5種食物：3單位維他命3，10卡路里\n\n食用第1、第2、第4和第5種食物可獲得8單位維他命1、3單位維他命2、5單位維他命3和25卡路里。\n在這種情況下，三種維他命攝取量中的最小值為3（維他命2）。\n\n在不超過25卡路里的情況下，無法獲得每種維他命4或更多單位，因此答案是3。",
+            "images": []
+        },
+        {
+            "input": "2 5000\n1 200000 1\n2 200000 1\n",
+            "output": "0\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

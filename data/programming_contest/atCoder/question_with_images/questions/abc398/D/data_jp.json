@@ -1,0 +1,40 @@
+{
+    "Title": "ユニークビジョンプログラミングコンテスト2025 春（AtCoder Beginner Contest 398）",
+    "Source": "atcoder",
+    "Name": "Bonfire",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "無限に広い 2 次元グリッドがあり、このグリッドの座標 (0,0) に焚き火があります。\n時刻 t=0 では、マス (0,0) にのみ煙が存在します。\nN, W, S, E からなる長さ N の文字列 S が与えられ、時刻 t=1,2,\\dots,N では次の現象が順番に発生します。\n- 風が吹き、現時点で存在する全ての煙が以下の通りに移動する。 \n- S の t 文字目が N であるとき、マス (r,c) にある煙がマス (r-1,c) に移動する。\n- S の t 文字目が W であるとき、マス (r,c) にある煙がマス (r,c-1) に移動する。\n- S の t 文字目が S であるとき、マス (r,c) にある煙がマス (r+1,c) に移動する。\n- S の t 文字目が E であるとき、マス (r,c) にある煙がマス (r,c+1) に移動する。\n- マス (0,0) に煙が存在しない場合、新たな煙がマス (0,0) に生成される。\n高橋君はマス (R,C) に立っています。\n整数 1 ≤ t ≤ N について、時刻 t+0.5 においてマス (R,C) に煙が存在するか判定し、出力欄の形式に従って出力してください。",
+    "Statement Images": [],
+    "Constraints": "- N は 1 以上 200000 以下の整数\n- S は N, W, S, E からなる長さ N の文字列\n- R,C は -N 以上 N 以下の整数\n- (R,C) \\neq (0,0)",
+    "IO Styles": "入力\n入力は以下の形式で標準入力から与えられる。\nN R C\nS\n出力\n答えを N 文字の 0, 1 からなる文字列として出力せよ。\n出力する文字列のうち t 文字目 (1 ≤ t ≤ N) は次の通りにせよ。\n- 時刻 t+0.5 においてマス (R,C) に煙が存在するなら 1\n- 時刻 t+0.5 においてマス (R,C) に煙が存在しないなら 0",
+    "Sample Detail": [
+        {
+            "input": "6 -2 1\nNNEEWS\n",
+            "output": "001010\n",
+            "explanation": "時刻 1.5,2.5,4.5,6.5 ではマス (-2,1) には煙が存在せず、時刻 3.5,5.5 ではマス (-2,1) に煙が存在します。\nよって、 001010 と出力します。\n\n図では焚き火のあるマス (0,0) を基準として、マス (r,c) を\n\n- r < 0 なら -r マス上に\n- r ≥ 0 なら r マス下に\n- c < 0 なら -c マス左に\n- c ≥ 0 なら c マス右に\n\n\n描画します。\n\n時刻 0.5 でのグリッドの状態は次の通りです。 \n\n![image](1.png)\n\n時刻 1.5 でのグリッドの状態は次の通りです。\n\n![image](2.png)\n\n時刻 2.5 でのグリッドの状態は次の通りです。\n\n![image](3.png)\n\n時刻 3.5 でのグリッドの状態は次の通りです。\n\n![image](4.png)\n\n時刻 4.5 でのグリッドの状態は次の通りです。\n\n![image](5.png)\n\n時刻 5.5 でのグリッドの状態は次の通りです。\n\n![image](6.png)\n\n時刻 6.5 でのグリッドの状態は次の通りです。\n\n![image](7.png)",
+            "images": [
+                "https://img.atcoder.jp/abc398/pmRbLy1F_D_t0.png",
+                "https://img.atcoder.jp/abc398/pmRbLy1F_D_t1.png",
+                "https://img.atcoder.jp/abc398/pmRbLy1F_D_t2.png",
+                "https://img.atcoder.jp/abc398/pmRbLy1F_D_t3.png",
+                "https://img.atcoder.jp/abc398/pmRbLy1F_D_t4.png",
+                "https://img.atcoder.jp/abc398/pmRbLy1F_D_t5.png",
+                "https://img.atcoder.jp/abc398/pmRbLy1F_D_t6.png"
+            ]
+        },
+        {
+            "input": "10 1 2\nNEESESWEES\n",
+            "output": "0001101011\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "20 -1 -2\nWWNNWSWEWNSWWENSNWWN\n",
+            "output": "00100111111000101111\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "jp"
+}

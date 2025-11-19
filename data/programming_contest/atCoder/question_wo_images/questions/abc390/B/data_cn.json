@@ -1,0 +1,32 @@
+{
+    "Title": "AtCoder Beginner Contest 390",
+    "Source": "atcoder",
+    "Name": "Geometric Sequence",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "給定一個長度為 N 的序列 A = (A_1, A_2, ..., A_N) 的正整數。判斷 A 是否為幾何級數。",
+    "Statement Images": [],
+    "Constraints": "- 2 ≤ N ≤ 100\n- 1 ≤ A_i ≤ 10^9\n- 所有輸入值均為整數。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nN\nA_1 A_2 ... A_N\n輸出\n如果 A 是一個等比數列，則輸出 Yes；否則，輸出 No。",
+    "Sample Detail": [
+        {
+            "input": "5\n3 6 12 24 48\n",
+            "output": "Yes\n",
+            "explanation": "A=(3,6,12,24,48)。\nA是一個首項為3，公比為2，且共有五項的幾何級數。\n因此，輸出是 Yes。",
+            "images": []
+        },
+        {
+            "input": "3\n1 2 3\n",
+            "output": "No\n",
+            "explanation": "A=(1,2,3)。\n因為 A_1 : A_2 = 1 : 2 \\neq 2 : 3 = A_2 : A_3，所以 A 不是一個幾何級數。\n因此，輸出 No。",
+            "images": []
+        },
+        {
+            "input": "2\n10 8\n",
+            "output": "Yes\n",
+            "explanation": "A 是一個首項為 10、常數比為 0.8 且有兩項的幾何級數。\n因此，輸出是 Yes。",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

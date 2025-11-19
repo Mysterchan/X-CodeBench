@@ -1,0 +1,26 @@
+{
+    "Title": "HHKB Programming Contest 2025(AtCoder Beginner Contest 388)",
+    "Source": "atcoder",
+    "Name": "Heavy Snake",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "There are N snakes.\nInitially, the thickness of the i-th snake is T_i, and its length is L_i.\nThe weight of a snake is defined as the product of its thickness and length.\nFor each integer k satisfying 1 ≤ k ≤ D, find the weight of the heaviest snake when every snake's length has increased by k.",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ N, D ≤ 100\n- 1 ≤ T_i, L_i ≤ 100\n- All input values are integers.",
+    "IO Styles": "Input\nThe input is given from Standard Input in the following format:\nN D\r\nT_1 L_1\r\nT_2 L_2\r\n\\vdots\r\nT_N L_N\r\nOutput\nPrint D lines. The k-th line should contain the weight of the heaviest snake when every snake's length has increased by k.",
+    "Sample Detail": [
+        {
+            "input": "4 3\n3 3\n5 1\n2 4\n1 10\n",
+            "output": "12\n15\n20\n",
+            "explanation": "When every snake’s length has increased by 1, the snakes' weights become 12, 10, 10, 11, so print 12 on the first line.\n\nWhen every snake’s length has increased by 2, the snakes' weights become 15, 15, 12, 12, so print 15 on the second line.\n\nWhen every snake’s length has increased by 3, the snakes' weights become 18, 20, 14, 13, so print 20 on the third line.",
+            "images": []
+        },
+        {
+            "input": "1 4\n100 100\n",
+            "output": "10100\n10200\n10300\n10400\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "en"
+}

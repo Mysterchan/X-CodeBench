@@ -1,0 +1,11 @@
+{
+    "url": "https://stackoverflow.com/questions/69408290/how-to-put-a-text-label-next-to-a-matplotlib-pyplot-arrow",
+    "source": "stackoverflow",
+    "title": "How to put a text label next to a matplotlib pyplot arrow?",
+    "Description": "The goal is to add a text label next to the arrow in the plot. Currently, there is no text label displayed next to the arrow, making the graph unclear about the represented information. The expected outcome is a clear and visible text label positioned appropriately next to the arrow on the plot.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "matplotlib",
+        "data-visualization"
+    ]
+}

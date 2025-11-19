@@ -1,0 +1,25 @@
+{
+    "Title": "Codeforces Global Round 29 (Div. 1 + Div. 2)",
+    "Source": "codeforces",
+    "Name": "Shortest Increasing Path",
+    "Time Limit": "1 s",
+    "Memory Limit": "256 mb",
+    "Problem Statement": "You are at $(0, 0)$ in a rectangular grid and want to go to $(x, y)$.\nIn order to do so, you are allowed to perform a sequence of steps.\nEach step consists of moving a positive integer amount of length in the positive direction of either the $x$ or the $y$ axis.\nThe first step must be along the $x$ axis, the second along the $y$ axis, the third along the $x$ axis, and so on. Formally, if we number steps from one in the order they are done, then odd-numbered steps must be along the $x$ axis and even-numbered steps must be along the $y$ axis.\nAdditionally, each step must have a length strictly greater than the length of the previous one.\nOutput the minimum number of steps needed to reach $(x, y)$, or $-1$ if it is impossible.",
+    "Statement Images": [],
+    "Constraints": "Time limit: 1 s\nMemory limit: 256 mb",
+    "IO Styles": "Input\nEach test contains multiple test cases. The first line contains the number of test cases $t$ ($1 ≤ t ≤ 10^4$). The description of the test cases follows. \nThe first and only line of each case contains two integers $x$ and $y$ ($1 ≤ x, y ≤ 10^9$).\nOutput\nFor each test case, output the minimum number of steps to reach $(x, y)$ or $-1$ if it is impossible.",
+    "Sample Detail": [
+        {
+            "input": "10\n1 2\n5 6\n4 2\n1 1\n2 1\n3 3\n5 1\n5 4\n752 18572\n95152 2322",
+            "output": "2\n2\n3\n-1\n-1\n-1\n-1\n-1\n2\n3",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Notes": "Note\nVisualizer link\nIn the second test case, you can move to $(5, 0)$ by moving $5$ along the $x$ axis and then to $(5, 6)$ by moving $6$ along the $y$ axis.  ![image](1.png)  In the third test case, you can move to $(1, 0)$, then to $(1, 2)$, and finally to $(4, 2)$.  ![image](2.png)  In the fourth test case, reaching $(1, 1)$ is impossible since after moving to $(1, 0)$ along the $x$ axis, you are forced to move at least $2$ along the $y$ axis.",
+    "Note Images": [
+        "https://espresso.codeforces.com/d2004648d27b0293b7b5a2bf5c299b775a067848.png",
+        "https://espresso.codeforces.com/dba4a2a4e5028d5aa466d15009f7766286faac00.png"
+    ],
+    "Language": "en"
+}

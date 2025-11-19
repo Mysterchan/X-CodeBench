@@ -1,0 +1,34 @@
+{
+    "Title": "CodeQUEEN 2025 予選 (AtCoder Beginner Contest 410)",
+    "Source": "atcoder",
+    "Name": "Longest Chord Chain",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "円周上に 1 から 2N の番号がついた相異なる 2N 個の点があり、点 1 から時計回りに順に点 2、点 3、…、点 2N と並んでいます。\nこの円の弦が N 個与えられます。i 番目の弦の端点は点 A_i と点 B_i であり、2N 個の値 A_1,...,A_N,B_1,...,B_N は相異なります。\nこの円に対し以下の操作を一度ずつ順に行います。\n- 円の N 本の弦のうち、互いに交わらないように弦を好きな個数選び、残りの弦を削除する。\n- 円に自由に弦を 1 つ追加する。\n適切に操作を行ったとき、操作を終えた後の弦同士の交点の個数として考えられる最大値を求めてください。",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ N ≤ 2\\times 10^5\n- 1 ≤ A_i,B_i ≤ 2N\n- 2N 個の値 A_1, ..., A_N,B_1,...,B_N は相異なる\n- 入力は全て整数である",
+    "IO Styles": "入力\n入力は以下の形式で標準入力から与えられる。\nN\nA_1 B_1\nA_2 B_2\n\\vdots\nA_N B_N\n出力\n答えを出力せよ。",
+    "Sample Detail": [
+        {
+            "input": "3\n1 5\n6 3\n4 2\n",
+            "output": "2\n",
+            "explanation": "最初、円には弦が 3 本あり、図のようになっています。\n操作により点 3 と点 6 を結ぶ弦を削除し、新たな弦を追加することで、弦同士の交点の個数は 2 個となります。\n\n![image](1.png)\n\n弦同士の交点の個数を 3 個以上にすることはできないため、答えは 2 となります。\n\n最後に追加する弦の端点は、点 1,..., 2N のいずれかである必要はありません。",
+            "images": [
+                "https://img.atcoder.jp/abc410/be5d090022ebeba5ad0aeea63ef1c38b.png"
+            ]
+        },
+        {
+            "input": "4\n1 8\n2 7\n3 6\n4 5\n",
+            "output": "4\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "3\n1 2\n3 4\n5 6\n",
+            "output": "2\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "jp"
+}

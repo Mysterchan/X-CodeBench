@@ -1,0 +1,28 @@
+{
+    "Title": "AtCoder Beginner Contest 405",
+    "Source": "atcoder",
+    "Name": "Chord Crossing",
+    "Time Limit": "3 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "On a circle, 2N points are placed at equal intervals and numbered 1,2,\\dots,2N in clockwise order starting from an arbitrary point.\nThere are M line segments numbered 1,2,\\dots,M connecting these points. Segment i connects points A_i and B_i.\nHere, A_i and B_i are distinct even numbers.\nIt is guaranteed that no two of these segments share a point.\nProcess Q queries. The j‑th query is as follows:\n- You are given two distinct odd numbers C_j and D_j. Among the M segments 1,2,\\dots,M, find how many share a point with the segment connecting points C_j and D_j.",
+    "Statement Images": [],
+    "Constraints": "- 2 ≤ N ≤ 10^6\n- 1≤ M ≤ \\min≤ft(\\lfloor\\frac{N}{2}\\rfloor, 2\\times 10^5\\right)\n- 1 ≤ Q ≤ 2 \\times 10^5\n- 1 ≤ A_i < B_i ≤ 2N\n- 1 ≤ C_j < D_j ≤ 2N\n- A_i and B_i are even.\n- C_j and D_j are odd.\n- For any i_1 and i_2 (i_1 \\neq i_2), segments i_1 and i_2 do not share a point.\n- All input values are integers.",
+    "IO Styles": "Input\nThe input is given from Standard Input in the following format:\nN M\r\nA_1 B_1\r\nA_2 B_2\r\n\\vdots\r\nA_M B_M\r\nQ\r\nC_1 D_1\r\nC_2 D_2\r\n\\vdots\r\nC_Q D_Q\r\nOutput\nOutput Q lines.\r\nThe j-th line (1≤ j ≤ Q) should contain the answer to the j‑th query.",
+    "Sample Detail": [
+        {
+            "input": "4 2\n2 4\n6 8\n3\n1 3\n3 7\n1 5\n",
+            "output": "1\n2\n0\n",
+            "explanation": "![image](1.png)\n\nThe figure above illustrates Sample Input 1. Black dots are the 2N\\ (=8) points, blue solid lines are the initial M\\ (=2) segments, and red dashed lines are the Q\\ (=3) query segments.\n\n- For the first query, the segment connecting points 1 and 3 intersects one initial segment: segment 1.\n- For the second query, the segment connecting points 3 and 7 intersects two initial segments: segments 1 and 2.\n- For the third query, the segment connecting points 1 and 5 intersects zero initial segments.",
+            "images": [
+                "https://img.atcoder.jp/abc405/7f9b7b9c988c95df92d0a5919a865fcc.png"
+            ]
+        },
+        {
+            "input": "20 7\n24 34\n26 28\n18 38\n2 14\n8 12\n30 32\n20 22\n10\n7 29\n31 39\n9 21\n19 29\n15 21\n11 39\n17 21\n15 31\n5 25\n25 31\n",
+            "output": "3\n3\n4\n1\n2\n2\n2\n3\n3\n1\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "en"
+}

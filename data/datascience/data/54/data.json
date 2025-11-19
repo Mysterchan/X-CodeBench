@@ -1,0 +1,11 @@
+{
+    "url": "https://stackoverflow.com/questions/70917937/how-to-set-a-specific-color-for-each-bar-in-a-barplot",
+    "source": "stackoverflow",
+    "title": "How to set a specific color for each bar in a barplot?",
+    "Description": "The bar plot is intended to display correlation coefficients for various categories, with each bar having a specific color defined in the list: ['black', 'red', 'green', 'orange', 'blue', 'limegreen', 'darkgreen', 'royalblue', 'navy']. Currently, all bars are colored 'deepskyblue' instead of the specified colors. The expected output shows a correctly colored bar for each category corresponding to the provided color list, aligning with their respective values.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "seaborn",
+        "data-visualization"
+    ]
+}

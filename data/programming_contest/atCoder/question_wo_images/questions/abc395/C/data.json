@@ -1,0 +1,32 @@
+{
+    "Title": "AtCoder Beginner Contest 395",
+    "Source": "atcoder",
+    "Name": "Shortest Duplicate Subarray",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "You are given a positive integer N and an integer sequence A = (A_1,A_2,\\dots,A_N) of length N.\nDetermine whether there exists a non-empty (contiguous) subarray of A that has a repeated value, occurring multiple times in A. If such a subarray exists, find the length of the shortest such subarray.",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ N ≤ 2 \\times 10^5\n- 1 ≤ A_i ≤ 10^6 \\ (1 ≤ i ≤ N)\n- All input values are integers.",
+    "IO Styles": "Input\nThe input is given from Standard Input in the following format:\nN\r\nA_1 A_2 \\dots A_N\r\nOutput\nIf there is no (contiguous) subarray satisfying the condition in the problem statement, print -1. Otherwise, print the length of the shortest such subarray.",
+    "Sample Detail": [
+        {
+            "input": "5\n3 9 5 3 1\n",
+            "output": "4\n",
+            "explanation": "(3,9,5,3) and (3,9,5,3,1) satisfy the condition. The shorter one is (3,9,5,3), which has length 4.",
+            "images": []
+        },
+        {
+            "input": "4\n2 5 3 1\n",
+            "output": "-1\n",
+            "explanation": "There is no subarray that satisfies the condition.",
+            "images": []
+        },
+        {
+            "input": "10\n1 1 2 3 5 8 13 21 34 55\n",
+            "output": "2\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "en"
+}

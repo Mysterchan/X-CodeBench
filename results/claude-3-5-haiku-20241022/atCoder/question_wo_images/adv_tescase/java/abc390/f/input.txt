@@ -1,0 +1,2 @@
+ans += (i + 1);
+seg.update(i, i - seg.query(0, i - 1));

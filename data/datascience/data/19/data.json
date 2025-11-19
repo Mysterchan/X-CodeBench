@@ -1,0 +1,11 @@
+{
+    "url": "https://github.com/matplotlib/matplotlib/issues/24260",
+    "source": "github",
+    "title": "[Bug]: Matplotlib lines are not aligned with scatter points when plotting to Pdf",
+    "Description": "When plotting a line and scatter points on the same axes, the line is not aligned with the scatter points in the output PDF file. The expected appearance should show the line and scatter points aligned correctly, but currently, they are misaligned, which affects the visual representation of the data.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "matplotlib",
+        "data-visualization"
+    ]
+}

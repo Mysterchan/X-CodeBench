@@ -1,0 +1,11 @@
+{
+    "url": "https://github.com/matplotlib/matplotlib/issues/27193",
+    "source": "github",
+    "title": "[Bug]: Axis3D not displaying in figure",
+    "Description": "In a Jupyter QTConsole session, the intended visualization is a 3D plot using an Axis3D object to display a line plotted with the ranges of 0 to 60 for each axis. Currently, the figure window does not display the axes or the data points, resulting in an empty graph. The expected behavior is to have a fully rendered 3D plot with visible axes and the plotted line.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "matplotlib",
+        "data-visualization"
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "url": "https://github.com/matplotlib/matplotlib/issues/29026",
+    "source": "github",
+    "title": "[ENH]: Polar Plots. YTicks. Allow placement also on the left side (for negative values)",
+    "Description": "The graph is intended to  be a Taylor Diagram using a Polar Plot to represent model standard deviations and Pearson correlation coefficients. The axes should clearly indicate the standard deviations and correlations, with appropriate tick labels on both the positive and negative sides. Currently, the negative y-tick labels are not positioned correctly; they are either on the axis or progressively lower down the graph area, leading to a visually incorrect placement. The desired behavior is for the negative labels to be accurately displayed in line with corresponding tick marks on the left half of the plot.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "matplotlib",
+        "data-visualization"
+    ]
+}

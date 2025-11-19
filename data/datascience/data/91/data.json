@@ -1,0 +1,11 @@
+{
+    "url": "https://stackoverflow.com/questions/63726234/how-to-draw-a-broken-y-axis-catplot-graphes-with-seaborn",
+    "source": "stackoverflow",
+    "title": "How to draw a broken y-axis catplot graphes with seaborn?",
+    "Description": "The intended visualization is a Seaborn catplot with violin plots, displaying pulse rates against time, grouped by exercise type (\"kind\"). The two axes should represent a broken y-axis to accommodate different scales: the first axis should range from 0 to 6.5, and the second axis should start from 13.5 and extend upwards. Currently, the graph does not display a broken y-axis, leading to overlapping data representations across the scales, making it difficult to differentiate between the two sets of data. The expected appearance includes a properly segmented y-axis that clearly separates the two scales for clarity in comparison.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "seaborn",
+        "data-visualization"
+    ]
+}

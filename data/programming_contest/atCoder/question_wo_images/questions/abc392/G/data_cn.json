@@ -1,0 +1,32 @@
+{
+    "Title": "Japan Registry Services (JPRS) Programming Contest 2025#1 (AtCoder Beginner Contest 392)",
+    "Source": "atcoder",
+    "Name": "Fine Triplets",
+    "Time Limit": "3 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "對於整數 A, B, C ( A < B < C )，如果它們滿足 B - A = C - B，則 (A, B, C) 被稱為一組良好三元組。\n給定一組 N 個不同的正整數 S = \\{ S_1, S_2, \\dots, S_N \\}。計算屬於 S 的良好三元組 (A, B, C) 的數量。",
+    "Statement Images": [],
+    "Constraints": "- 所有輸入值都是整數。\n- 1 ≤ N ≤ 10^6\n- 1 ≤ S_i ≤ 10^6\n- S 中的元素皆為不同。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nN\nS_1 S_2 \\dots S_N\n輸出\n以整數形式打印美好三元組的數量。",
+    "Sample Detail": [
+        {
+            "input": "5\n8 3 1 5 2\n",
+            "output": "3\n",
+            "explanation": "這裡，S = \\{8,3,1,5,2\\}。\n需要計算的重複三元組如下三個：\n\n- (1,2,3)\n- (1,3,5)\n- (2,5,8)",
+            "images": []
+        },
+        {
+            "input": "7\n300000 100000 499998 499999 200000 400000 500000\n",
+            "output": "5\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "10\n13 1 16 15 12 4 7 10 2 19\n",
+            "output": "10\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

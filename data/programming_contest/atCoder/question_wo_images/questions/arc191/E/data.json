@@ -1,0 +1,38 @@
+{
+    "Title": "AtCoder Regular Contest 191 (Div. 2)",
+    "Source": "atcoder",
+    "Name": "Unfair Game",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "You are given positive integers N, X, and Y, and two length-N sequences of non-negative integers A = (A_1,A_2,...,A_N) and B = (B_1,B_2,...,B_N).\nThere are N bags, numbered from 1 to N. Initially, bag i contains A_i gold coins and B_i silver coins.\nConsider the following game played by Takahashi and Aoki using these N bags. First, Takahashi takes some of these bags (possibly zero), and Aoki takes all remaining bags. Then, starting with Takahashi, the two players alternate performing the following operation.\n- Choose one bag held by the player with at least one gold coin or silver coin in it, and do one of the following two actions for that bag.\n- Remove one gold coin and add silver coins; the number of silver coins to be added is X for Takahashi and Y for Aoki. This action can only be done if the chosen bag has at least one gold coin.\n- Remove one silver coin. This action can only be done if the chosen bag has at least one silver coin.\n- Then, give the chosen bag to the other player.\nThe player who cannot perform the operation loses the game.\nFind the number, modulo 998244353, of ways Takahashi can initially take bags so that he will win under optimal play by both players.",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ N ≤ 2\\times 10^5\n- 1 ≤ X, Y ≤ 10^9\n- 0 ≤ A_i, B_i ≤ 10^9\n- All input values are integers.",
+    "IO Styles": "Input\nThe input is given from Standard Input in the following format:\nN X Y\nA_1 B_1\nA_2 B_2\n\\vdots\nA_N B_N\nOutput\nPrint the number, modulo 998244353, of ways Takahashi can initially take bags so that he will win under optimal play by both players.",
+    "Sample Detail": [
+        {
+            "input": "2 1 1\n1 0\n1 1\n",
+            "output": "2\n",
+            "explanation": "Consider the case where Takahashi initially takes bags 1 and 2. One possible progression of the game is as follows:\n\n- Takahashi chooses bag 2, removes 1 gold coin, and adds 1 silver coin. Then, he gives bag 2 to Aoki.\n- Takahashi holds bag 1 with 1 gold coin. Aoki holds bag 2 with 2 silver coins.\n\n\n- Aoki chooses bag 2 and removes 1 silver coin. Then, gives bag 2 to Takahashi.\n- Takahashi holds bags 1 with 1 gold coin and bag 2 with 1 silver coin. Aoki holds none.\n\n\n- Takahashi chooses bag 1, removes 1 gold coin, and adds 1 silver coin. Then, he gives bag 1 to Aoki.\n- Takahashi holds bag 2 with 1 silver coin. Aoki holds bag 1 with 1 silver coin.\n\n\n- Aoki chooses bag 1, removes 1 silver coin. Then, he gives bag 1 to Takahashi.\n- Takahashi holds bag 1 which is empty and bag 2 with 1 silver coin. Aoki holds none.\n\n\n- Takahashi chooses bag 2 and removes 1 silver coin. Then, he gives bag 2 to Aoki.\n- Takahashi holds bag 1 which is empty. Aoki holds bag 2 which is empty.\n\n\n- Aoki cannot perform the operation, so Aoki loses and Takahashi wins.\n\n\nTakahashi can win if he initially takes only bag 2, or if he takes both bags 1 and 2. Therefore, the answer is 2.",
+            "images": []
+        },
+        {
+            "input": "2 2 1\n1 2\n1 2\n",
+            "output": "3\n",
+            "explanation": "Takahashi wins if he initially takes bag 1, bag 2, or both.",
+            "images": []
+        },
+        {
+            "input": "5 8 3\n0 0\n0 0\n0 0\n0 0\n0 0\n",
+            "output": "0\n",
+            "explanation": "No matter how Takahashi chooses the bags initially, he will lose.",
+            "images": []
+        },
+        {
+            "input": "7 2025 191\n1323 9953\n2763 3225\n2624 5938\n6718 2998\n3741 7040\n9837 1681\n8817 4471\n",
+            "output": "40\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "en"
+}

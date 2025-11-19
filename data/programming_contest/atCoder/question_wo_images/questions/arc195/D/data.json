@@ -1,0 +1,20 @@
+{
+    "Title": "AtCoder Regular Contest 195 (Div. 2)",
+    "Source": "atcoder",
+    "Name": "Swap and Erase",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "There is a sequence A = (A_1,...,A_N). You can perform the following two types of operations any number of times in any order:\n- Let K be the length of A just before the operation. Choose an integer i such that 1 ≤ i ≤ K-1, and swap the i-th and (i+1)-th elements of A.\n- Let K be the length of A just before the operation. Choose an integer i such that 1 ≤ i ≤ K and all the values from the 1-st through the i-th elements of A are equal, and delete all the elements from the 1-st through the i-th of A.\nFind the minimum total number of operations required to make A an empty sequence.\nYou are given T test cases; solve each of them.",
+    "Statement Images": [],
+    "Constraints": "- 1≤ T≤ 10^5\n- 2 ≤ N ≤ 2 \\times 10^5\n- 1 ≤ A_i ≤ N\n- The sum of N over all test cases is at most 2\\times 10^5.\n- All input values are integers.",
+    "IO Styles": "Input\nThe input is given from Standard Input in the following format:\nT\n\\mathrm{case}_1\n\\mathrm{case}_2\n\\vdots\n\\mathrm{case}_T\nEach case is given in the following format:\nN\nA_1 A_2 ... A_N\nOutput\nPrint the answer for each test case in order, separated by newlines.",
+    "Sample Detail": [
+        {
+            "input": "3\n5\n1 1 2 1 2\n4\n4 2 1 3\n11\n1 2 1 2 1 2 1 2 1 2 1\n",
+            "output": "3\n4\n8\n",
+            "explanation": "For the 1st test case, A can be made empty by the following three operations:\n\n- Swap the 3rd and 4th elements of A. Now, A is (1,1,1,2,2).\n- Delete the 1st through 3rd elements of A. Now, A is (2,2).\n- Delete the 1st through 2nd elements of A. Now, A is an empty sequence.\n\n\nFor the 2nd test case, A can be made empty by deleting the 1st element four times. Also, it is impossible to make A empty in three or fewer operations.",
+            "images": []
+        }
+    ],
+    "Language": "en"
+}

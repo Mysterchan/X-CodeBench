@@ -1,0 +1,1 @@
+query.add(new int[]{f-1, e+2});

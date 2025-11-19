@@ -1,0 +1,23 @@
+{
+    "Title": "AtCoder Regular Contest 197 (Div. 2)",
+    "Source": "atcoder",
+    "Name": "Ancestor Relation",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "N\\times N 行列 A = (A_{i,j}) (1≤ i,j≤ N) が与えられます．A の成分は 0 または 1 です．\n頂点に 1 から N までの番号が付けられた N 頂点の木 G であって，次の条件を満たすものの個数を 998244353 で割った余りを求めてください．\n- A_{i,j}=1 であることと，以下の 2 条件のうち少なくともひとつが成り立つことは同値である：\n- 頂点 1 を根としたとき頂点 j は頂点 i の祖先である．つまり頂点 j は，頂点 1, i を結ぶ G 上のパス上にある．\n- 頂点 1 を根としたとき頂点 i は頂点 j の祖先である．つまり頂点 i は，頂点 1, j を結ぶ G 上のパス上にある．\nただし，パスの端点もパス上にあると見なします．G は木であるとき，2 頂点を結ぶ G 上のパスは一意に存在することにも注意してください．\nT 個のテストケースが与えられるので，それぞれについて解いてください．",
+    "Statement Images": [],
+    "Constraints": "- 1≤ T≤ 10^5\n- 2≤ N≤ 400\n- A_{i,j}\\in \\lbrace 0,1\\rbrace (1≤ i,j≤ N)\n- A_{i,i}=1 (1≤ i≤ N)\n- A_{i,j}=A_{j,i} (1≤ i,j≤ N)\n- すべてのテストケースにわたる N^2 の総和は 400^2 以下．",
+    "IO Styles": "入力\n入力は以下の形式で標準入力から与えられます．\nT\n\\text{case}_1\n\\vdots\n\\text{case}_T\n各ケースは以下の形式で与えられます．\nN\nA_{1,1} \\cdots A_{1,N}\n\\vdots\nA_{N,1} \\cdots A_{N,N}\n出力\nT 行出力してください．i 行目には i 番目のテストケースについて，条件を満たす N 頂点の木 G の個数を 998244353 で割った余りを出力してください．",
+    "Sample Detail": [
+        {
+            "input": "5\n3\n1 1 1\n1 1 0\n1 0 1\n3\n1 1 1\n1 1 1\n1 1 1\n3\n1 0 0\n0 1 0\n0 0 1\n3\n1 0 1\n0 1 1\n1 1 1\n7\n1 1 1 1 1 1 1\n1 1 0 1 0 1 1\n1 0 1 1 1 1 0\n1 1 1 1 1 1 1\n1 0 1 1 1 1 0\n1 1 1 1 1 1 1\n1 1 0 1 0 1 1\n",
+            "output": "1\n2\n0\n0\n8\n",
+            "explanation": "1 番目のテストケースでは次の 1 つの G が条件を満たします．\n![image](1.png)\n\n2 番目のテストケースでは次の 2 つの G が条件を満たします．\n![image](2.png)",
+            "images": [
+                "https://img.atcoder.jp/arc197/047f79d01c371fe5f47850c631892671.png",
+                "https://img.atcoder.jp/arc197/ff998867883faff858791a57f8497f6d.png"
+            ]
+        }
+    ],
+    "Language": "jp"
+}

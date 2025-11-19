@@ -1,0 +1,11 @@
+{
+    "url": "https://stackoverflow.com/questions/64721669/seaborn-lineplot-without-lines-between-points",
+    "source": "stackoverflow",
+    "title": "Seaborn lineplot without lines between points",
+    "Description": "The intention is to create a Seaborn line plot that displays only discrete points marked with circles and error bars, without any connecting lines between them. Currently, the plot shows connected lines between the points. The desired output should feature just the circular markers at each data point, along with the corresponding error bars, eliminating any lines that connect the markers.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "seaborn",
+        "data-visualization"
+    ]
+}

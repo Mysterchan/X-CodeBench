@@ -1,0 +1,32 @@
+{
+    "Title": "Japan Registry Services (JPRS) Programming Contest 2025#1 (AtCoder Beginner Contest 392)",
+    "Source": "atcoder",
+    "Name": "Who is Missing?",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "You are given a sequence of M integers A = (A_1, A_2, \\dots, A_M).\nEach element of A is an integer between 1 and N, inclusive, and all elements are distinct.\nList all integers between 1 and N that do not appear in A in ascending order.",
+    "Statement Images": [],
+    "Constraints": "- All input values are integers.\n- 1 ≤ M ≤ N ≤ 1000\n- 1 ≤ A_i ≤ N\n- The elements of A are distinct.",
+    "IO Styles": "Input\nThe input is given from Standard Input in the following format:\nN M\nA_1 A_2 \\dots A_M\nOutput\nLet (X_1, X_2, \\dots, X_C) be the sequence of all integers between 1 and N, inclusive, that do not appear in A, listed in ascending order.\nThe output should be in the following format:\nC\nX_1 X_2 \\dots X_C",
+    "Sample Detail": [
+        {
+            "input": "10 3\n3 9 2\n",
+            "output": "7\n1 4 5 6 7 8 10\n",
+            "explanation": "Here, A=(3,9,2).\nThe integers between 1 and 10 that do not appear in A, listed in ascending order, are 1,4,5,6,7,8,10.",
+            "images": []
+        },
+        {
+            "input": "6 6\n1 3 5 2 4 6\n",
+            "output": "0\n\n",
+            "explanation": "No integer between 1 and 6 is missing from A.\nIn this case, print 0 on the first line and leave the second line empty.",
+            "images": []
+        },
+        {
+            "input": "9 1\n9\n",
+            "output": "8\n1 2 3 4 5 6 7 8\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "en"
+}

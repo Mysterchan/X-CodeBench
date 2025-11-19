@@ -1,0 +1,11 @@
+{
+    "url": "https://stackoverflow.com/questions/62954185/hide-axis-lines-and-labels-in-matplotlib-except-min-max-y-label",
+    "source": "stackoverflow",
+    "title": "Hide axis lines and labels in matplotlib except min/max y-label",
+    "Description": "The goal is to create a plot that displays only the minimum and maximum labels on the y-axis while hiding all other axis lines and labels. The current graph shows the full axes, including all default tick marks and labels, which does not align with the requested display of selective y-axis labels. The expected outcome is a clean plot with no additional y-axis markings, only showing the lowest and highest y-values.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "matplotlib",
+        "data-visualization"
+    ]
+}

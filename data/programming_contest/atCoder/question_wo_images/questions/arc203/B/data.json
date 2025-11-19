@@ -1,0 +1,20 @@
+{
+    "Title": "AtCoder Regular Contest 203 (Div. 2)",
+    "Source": "atcoder",
+    "Name": "Swap If Equal Sum",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "You are given length-N integer sequences A=(A_1,A_2,\\dots,A_N) and B=(B_1,B_2,\\dots,B_N), each consisting of 0 and 1.\nLet A[i,j] denote the consecutive subsequence of A from the i-th through the j-th element. If i>j, then A[i,j] is a length-0 sequence.\nYou can perform the following operation on A any number of times:\n- Choose four integers a,b,c,d that satisfy the following two conditions: \n- 1 ≤ a ≤ b < c ≤ d ≤ N \n- \\sum_{i=a}^{b}{A_i}=\\sum_{i=c}^{d}{A_i} \n \n- Swap A[a,b] and A[c,d]. More precisely, replace A with the sequence formed by concatenating A[1,a-1], A[c,d], A[b+1,c-1], A[a,b], A[d+1,N] in this order. \nDetermine whether A can be made to match B.\nSolve T test cases for each input file.",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ T ≤ 10^5\n- 2 ≤ N ≤ 2 \\times 10^5\n- 0 ≤ A_i ≤ 1\n- 0 ≤ B_i ≤ 1\n- The sum of N over all test cases is at most 2\\times 10^5.\n- All input values are integers.",
+    "IO Styles": "Input\nThe input is given from Standard Input in the following format:\nT\r\ncase_1\r\ncase_2\r\n\\vdots\r\ncase_T\r\nEach case is given in the following format:\nN\r\nA_1 A_2 \\dots A_N\r\nB_1 B_2 \\dots B_N\r\nOutput\nOutput the answers in a total of T lines.\r\nThe t-th line should contain Yes if A can be made to match B for the t-th test case, and No otherwise.",
+    "Sample Detail": [
+        {
+            "input": "3\n6\n1 1 1 0 0 1\n0 1 1 0 1 1\n2\n0 0\n1 0\n3\n1 1 1\n1 1 1\n",
+            "output": "Yes\nNo\nYes\n",
+            "explanation": "In the first test case, A is initially (1,1,1,0,0,1).\r\nBy choosing (a,b,c,d)=(1,2,3,6) and performing the operation, A becomes (1,0,0,1,1,1).\r\nNext, by choosing (a,b,c,d)=(1,2,3,4) and performing the operation, A becomes (0,1,1,0,1,1), which matches B.\r\nIn the second test case, A cannot be made to match B.\r\nIn the third test case, A already matches B from the beginning.",
+            "images": []
+        }
+    ],
+    "Language": "en"
+}

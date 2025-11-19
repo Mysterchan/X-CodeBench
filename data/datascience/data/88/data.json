@@ -1,0 +1,11 @@
+{
+    "url": "https://stackoverflow.com/questions/61568935/seaborn-barplot-with-rounded-corners",
+    "source": "stackoverflow",
+    "title": "Seaborn barplot with rounded corners",
+    "Description": "The current bar plot does not have rounded edges, while the intended visualization requires bars to feature controlled roundness. The existing plot shows rectangular bars without any curvature. The expected appearance should display bars with smooth, rounded edges that reflect the specified roundness parameter.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "seaborn",
+        "data-visualization"
+    ]
+}

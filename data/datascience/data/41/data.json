@@ -1,0 +1,11 @@
+{
+    "url": "https://stackoverflow.com/questions/66837088/how-to-write-text-inside-the-bar-in-a-horizontal-bar-graph-matplotlib",
+    "source": "stackoverflow",
+    "title": "How to write text inside the bar in a horizontal bar graph matplotlib?",
+    "Description": "The bar chart should display the drug names within each horizontal bar to provide clear identification of the drugs associated with their respective phases of development. Currently, the graph shows only the drug names on the y-axis, and the individual bars are not labeled with the disease names. The expected output is a horizontal bar chart that includes disease names directly on or within the bars, enhancing clarity and information conveyed by the graph.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "matplotlib",
+        "data-visualization"
+    ]
+}

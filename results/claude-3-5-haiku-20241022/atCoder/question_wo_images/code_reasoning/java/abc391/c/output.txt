@@ -1,0 +1,57 @@
+Let me trace through the execution of this Java program step by step.
+
+**Initial Setup:**
+- N = 4, Q = 7
+- `cnt` array (size 5): `[1, 1, 1, 1, 1]` - counts pigeons in each nest
+- `pos` array (size 5): `[0, 1, 2, 3, 4]` - position (nest) of each pigeon
+- `ans` = 0 - count of nests with more than one pigeon
+
+**Processing Queries:**
+
+**Query 1: `2`**
+- Type 2: Output `ans`
+- Output: `0`
+
+**Query 2: `1 1 2`**
+- Type 1: Move pigeon 1 to nest 2
+- Current position of pigeon 1: `pos[1] = 1`
+- Check if `cnt[1] == 2`: No (it's 1), so don't decrement `ans`
+- `cnt[1]--` → `cnt[1] = 0`
+- `pos[1] = 2`
+- `cnt[2]++` → `cnt[2] = 2`
+- Check if `cnt[2] == 2`: Yes, so `ans++` → `ans = 1`
+
+**Query 3: `2`**
+- Type 2: Output `ans`
+- Output: `1`
+
+**Query 4: `1 3 2`**
+- Type 1: Move pigeon 3 to nest 2
+- Current position of pigeon 3: `pos[3] = 3`
+- Check if `cnt[3] == 2`: No (it's 1), so don't decrement `ans`
+- `cnt[3]--` → `cnt[3] = 0`
+- `pos[3] = 2`
+- `cnt[2]++` → `cnt[2] = 3`
+- Check if `cnt[2] == 2`: No (it's 3), so don't increment `ans`
+
+**Query 5: `2`**
+- Type 2: Output `ans`
+- Output: `1`
+
+**Query 6: `1 3 4`**
+- Type 1: Move pigeon 3 to nest 4
+- Current position of pigeon 3: `pos[3] = 2`
+- Check if `cnt[2] == 2`: No (it's 3), so don't decrement `ans`
+- `cnt[2]--` → `cnt[2] = 2`
+- `pos[3] = 4`
+- `cnt[4]++` → `cnt[4] = 2`
+- Check if `cnt[4] == 2`: Yes, so `ans++` → `ans = 2`
+
+**Query 7: `2`**
+- Type 2: Output `ans`
+- Output: `2`
+
+0
+1
+1
+2

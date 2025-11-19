@@ -1,0 +1,52 @@
+Let me trace through the execution of this code with the input `([])<>()`.
+
+The code uses a stack-based approach to check if the string is a valid colorful bracket sequence.
+
+**Initial state:**
+- `S = "([])<>()"`
+- `stack = []`
+- `dict_corresponding = {")": "(", "]": "[", ">": "<"}`
+
+**Processing each character:**
+
+1. `i=0`, `s='('`: Opening bracket → push to stack
+   - `stack = ['(']`
+
+2. `i=1`, `s='['`: Opening bracket → push to stack
+   - `stack = ['(', '[']`
+
+3. `i=2`, `s=']'`: Closing bracket
+   - `left = '['`
+   - `stack` is not empty, `stack[-1] = '['`
+   - `stack[-1] == left` → pop from stack
+   - `stack = ['(']`
+
+4. `i=3`, `s=')'`: Closing bracket
+   - `left = '('`
+   - `stack` is not empty, `stack[-1] = '('`
+   - `stack[-1] == left` → pop from stack
+   - `stack = []`
+
+5. `i=4`, `s='<'`: Opening bracket → push to stack
+   - `stack = ['<']`
+
+6. `i=5`, `s='>'`: Closing bracket
+   - `left = '<'`
+   - `stack` is not empty, `stack[-1] = '<'`
+   - `stack[-1] == left` → pop from stack
+   - `stack = []`
+
+7. `i=6`, `s='('`: Opening bracket → push to stack
+   - `stack = ['(']`
+
+8. `i=7`, `s=')'`: Closing bracket
+   - `left = '('`
+   - `stack` is not empty, `stack[-1] = '('`
+   - `stack[-1] == left` → pop from stack
+   - `stack = []`
+
+**Final check:**
+- `stack == []` is `True`
+- Print "Yes"
+
+Yes

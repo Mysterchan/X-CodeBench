@@ -1,0 +1,11 @@
+{
+    "url": "https://stackoverflow.com/questions/67037576/how-do-i-shift-the-x-axis-over-by-one-to-start-at-1-instead-of-0",
+    "source": "stackoverflow",
+    "title": "How do I shift the x-axis over by one to start at 1 instead of 0?",
+    "Description": "The plot should display the values starting at position 1 on the x-axis instead of 0. Currently, the x-axis begins at 0, which leads to a misalignment of the plotted points. The expected appearance is for the x-axis range to be adjusted so that the first data point corresponds to x=1, ensuring all plotted values align correctly with their intended x-positions.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "matplotlib",
+        "data-visualization"
+    ]
+}

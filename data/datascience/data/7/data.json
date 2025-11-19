@@ -1,0 +1,11 @@
+{
+    "url": "https://github.com/matplotlib/matplotlib/issues/27961",
+    "source": "github",
+    "title": "[Bug]: How do I make the lines on the plot frame and the markers on them fully visible?",
+    "Description": "The plot displays three data series with lines and markers that are not fully visible due to being covered by the plot frame. The intended visualization includes clear representation of these lines and markers, with properly positioned legends and labels on a logarithmic x-axis (scaling ratio) and linear y-axis (NC). Currently, the top and right spines are visible, which may obscure the markers. The desired outcome is for all markers and lines to be fully visible, without any obstruction from the plot frame.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "matplotlib",
+        "data-visualization"
+    ]
+}

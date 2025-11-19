@@ -1,0 +1,28 @@
+{
+    "Title": "Japan Registry Services (JPRS) Programming Contest 2025#1 (AtCoder Beginner Contest 392)",
+    "Source": "atcoder",
+    "Name": "Bib",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "有 N 個人，編號從 1 到 N。\n第 i 個人穿著標有數字 Q_i 的圍裙，並在盯著第 P_i 個人。\n對於每個 i = 1,2,...,N，找出第 i 個人盯著的那個人的圍裙上寫的數字。",
+    "Statement Images": [],
+    "Constraints": "- 2 ≤ N ≤ 3\\times 10^5\n- 1 ≤ P_i ≤ N\n- P_i 的值是不同的。\n- 1 ≤ Q_i ≤ N\n- Q_i 的值是不同的。\n- 所有輸入值都是整數。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nN\nP_1 P_2 \\dots P_N\nQ_1 Q_2 \\dots Q_N\n輸出\n令 S_i 為穿著編號 i 的人正盯著的人的號碼。按照此順序打印 S_1, S_2, ..., S_N，以單個空格分隔。",
+    "Sample Detail": [
+        {
+            "input": "4\n4 3 2 1\n2 3 1 4\n",
+            "output": "3 4 1 2\n",
+            "explanation": "第三個人穿著編號為1的背心，而第三個人所盯著的人，即第二個人，則穿著編號為3的背心。\n因此，i = 1的答案是3。",
+            "images": [
+                "https://img.atcoder.jp/abc392/965b8e458deb7426d2813e2dba014a5b.png"
+            ]
+        },
+        {
+            "input": "10\n2 6 4 3 7 8 9 10 1 5\n1 4 8 2 10 5 7 3 9 6\n",
+            "output": "4 8 6 5 3 10 9 2 1 7\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

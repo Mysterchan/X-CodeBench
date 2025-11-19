@@ -1,0 +1,23 @@
+{
+    "Title": "AtCoder Regular Contest 197 (Div. 2)",
+    "Source": "atcoder",
+    "Name": "Ancestor Relation",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "你將得到一個 N\\times N 的矩陣 A = (A_{i,j}) (1≤ i,j≤ N)，其條目為 0 或 1。  \n找到滿足以下條件的 N 個頂點編號為 1 到 N 的樹 G 的數量，模 998244353。  \n- 當且僅當以下至少有一項成立時，A_{i,j}=1：  \n  - 當 G 以頂點 1 為根時，頂點 j 是頂點 i 的祖先。也就是說，頂點 j 位於 G 中頂點 1 和頂點 i 之間的唯一路徑上。  \n  - 當 G 以頂點 1 為根時，頂點 i 是頂點 j 的祖先。也就是說，頂點 i 位於 G 中頂點 1 和頂點 j 之間的唯一路徑上。  \n這裡，路徑的端點被認為是在該路徑上。請注意，G 為樹體保證了任意兩個頂點之間路徑的唯一性。  \n有 T 個測試案例；解決每一個。",
+    "Statement Images": [],
+    "Constraints": "- 1≤ T≤ 10^5\n- 2≤ N≤ 400\n- A_{i,j} \\in \\{ 0,1 \\} (1≤ i,j≤ N)\n- A_{i,i}=1 (1≤ i≤ N)\n- A_{i,j}=A_{j,i} (1≤ i,j≤ N)\n- 所有測試案例的 N^2 之和最多為 400^2。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nT\n\\text{case}_1\n\\vdots\n\\text{case}_T\n每個案例以以下格式給出：\nN\nA_{1,1} \\cdots A_{1,N}\n\\vdots\nA_{N,1} \\cdots A_{N,N}\n輸出\n輸出 T 行。第 i 行應包含滿足第 i 個測試案例條件的樹 G 的數量，取模 998244353。",
+    "Sample Detail": [
+        {
+            "input": "5\n3\n1 1 1\n1 1 0\n1 0 1\n3\n1 1 1\n1 1 1\n1 1 1\n3\n1 0 0\n0 1 0\n0 0 1\n3\n1 0 1\n0 1 1\n1 1 1\n7\n1 1 1 1 1 1 1\n1 1 0 1 0 1 1\n1 0 1 1 1 1 0\n1 1 1 1 1 1 1\n1 0 1 1 1 1 0\n1 1 1 1 1 1 1\n1 1 0 1 0 1 1\n",
+            "output": "1\n2\n0\n0\n8\n",
+            "explanation": "在第一個測試案例中，以下一棵樹 G 滿足條件：\n![image](1.png)\n\n在第二個測試案例中，以下兩棵樹 G 滿足條件：\n![image](2.png)",
+            "images": [
+                "https://img.atcoder.jp/arc197/047f79d01c371fe5f47850c631892671.png",
+                "https://img.atcoder.jp/arc197/ff998867883faff858791a57f8497f6d.png"
+            ]
+        }
+    ],
+    "Language": "cn"
+}

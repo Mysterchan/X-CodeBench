@@ -1,0 +1,32 @@
+{
+    "Title": "AtCoder Beginner Contest 393",
+    "Source": "atcoder",
+    "Name": "A..B..C",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "給定一個字符串 S。\n找到在 S 中有 A、B 和 C 這三個字符按偶數間隔出現的地方的數量。\n具體來說，找到滿足以下所有條件的整數三元組 (i,j,k) 的數量。這裡，|S| 表示 S 的長度，S_x 表示 S 的第 x 個字符。\n- 1 ≤ i < j < k ≤ |S|\n- j - i = k - j\n- S_i = A\n- S_j = B\n- S_k = C",
+    "Statement Images": [],
+    "Constraints": "- S 是一個長度在 3 到 100 之間（包括 3 和 100）的英文大寫字母串。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nS\n輸出\n輸出答案。",
+    "Sample Detail": [
+        {
+            "input": "AABCC\n",
+            "output": "2\n",
+            "explanation": "有兩個三元組 (i,j,k) = (1,3,5) 和 (2,3,4) 滿足條件。",
+            "images": []
+        },
+        {
+            "input": "ARC\n",
+            "output": "0\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "AABAAABBAEDCCCD\n",
+            "output": "4\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

@@ -1,0 +1,9 @@
+if(A[f]==A[i]||A[f]==A[j]){
+    if(A[f]==1){
+        System.out.print("Yes");
+        return;
+    }else{
+        System.out.print("No");
+        return;
+    }
+}

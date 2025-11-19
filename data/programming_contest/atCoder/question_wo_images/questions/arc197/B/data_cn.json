@@ -1,0 +1,20 @@
+{
+    "Title": "AtCoder Regular Contest 197 (Div. 2)",
+    "Source": "atcoder",
+    "Name": "Greater Than Average",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "定義一個非空整數序列 x = (x_1, ..., x_n) 的分數為 x 中 estrictly 大於 x 的平均值的元素個數。\n也就是說，x 的分數是滿足 x_i > \\dfrac{x_1+\\cdots+x_n}{n} 的索引 i 的個數。\n給定一個長度為 N 的整數序列 A = (A_1, ..., A_N)。找出 A 的非空子序列的最大分數。\n總共有 T 個測試案例；解決每一個。\n子序列的定義\nA 的子序列是通過從 A 中刪除零個或多個元素並保持剩餘元素的原始順序而獲得的任何序列。",
+    "Statement Images": [],
+    "Constraints": "- 1≤ T≤ 2\\times 10^5\n- 2≤ N≤ 2\\times 10^5\n- 1≤ A_i≤ 10^9\n- 所有輸入值均為整數。\n- 所有測試案例中的 N 之和最多為 2\\times 10^5。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nT\n\\text{case}_1\n\\vdots\n\\text{case}_T\n每個案例的格式為：\nN\nA_1 \\cdots A_N\n輸出\n打印 T 行。第 i 行應該包含第 i 個測試案例中 A 的非空子序列的最大分數。",
+    "Sample Detail": [
+        {
+            "input": "3\n5\n2 6 5 7 5\n5\n10 10 10 10 10\n5\n1 10 100 1000 10000\n",
+            "output": "3\n0\n1\n",
+            "explanation": "對於第一個測試案例，下面是子序列的範例、它們的平均值和分數。\n\n- x = (A_1) = (2)：平均值是 2，分數是 0。\n- x = (A_3,A_5) = (5,5)：平均值是 5，分數是 0。\n- x = (A_1,A_3,A_4,A_5) = (2,5,7,5)：平均值是 \\frac{19}{4}，分數是 3。\n- x = (A_1,A_2,A_3,A_4,A_5) = (2,6,5,7,5)：平均值是 5，分數是 2。",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

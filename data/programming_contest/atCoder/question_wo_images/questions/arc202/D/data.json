@@ -1,0 +1,26 @@
+{
+    "Title": "AtCoder Regular Contest 202 (Div. 1)",
+    "Source": "atcoder",
+    "Name": "King",
+    "Time Limit": "15 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "There is a shogi (Japanese chess) board with H rows and W columns, and one king piece. The square at the i-th row from the top and j-th column from the left of the board is represented as (i, j).\nInitially, the king is placed at (A, B). You perform the following operation exactly T times.\n- Move the king to one of the eight adjacent squares of the current square. More precisely, if the king is at square (i, j), move the king to one of (i+1,j+1), (i+1,j), (i+1,j-1), (i,j+1), (i,j-1), (i-1,j+1), (i-1,j), (i-1,j-1). The king cannot leave the board.\nFind the number, modulo 998244353, of operation sequences such that the king is at (C, D) after completing all T operations. Two operation sequences are considered different if and only if there exists an integer i (1 ≤ i ≤ T) such that the king's position after the i-th operation is different.",
+    "Statement Images": [],
+    "Constraints": "- 2 ≤ H ≤ 3 \\times 10^5\n- 2 ≤ W ≤ 3 \\times 10^5\n- 1 ≤ T ≤ 3 \\times 10^5\n- 1 ≤ A ≤ H\n- 1 ≤ B ≤ W\n- 1 ≤ C ≤ H\n- 1 ≤ D ≤ W\n- All input values are integers.",
+    "IO Styles": "Input\nThe input is given from Standard Input in the following format:\nH W T A B C D\r\nOutput\nOutput the number, modulo 998244353, of operation sequences such that the king is at (C, D) after completing all T operations.",
+    "Sample Detail": [
+        {
+            "input": "3 4 3 2 1 3 4\n",
+            "output": "5\n",
+            "explanation": "There are five operation sequences that satisfy the conditions in the problem statement. The king's movements corresponding to each operation sequence are as follows.\n\n- (2, 1) \\to (1, 2) \\to (2, 3) \\to (3, 4)\n- (2, 1) \\to (2, 2) \\to (2, 3) \\to (3, 4)\n- (2, 1) \\to (2, 2) \\to (3, 3) \\to (3, 4)\n- (2, 1) \\to (3, 2) \\to (2, 3) \\to (3, 4)\n- (2, 1) \\to (3, 2) \\to (3, 3) \\to (3, 4)",
+            "images": []
+        },
+        {
+            "input": "202 123 456 20 25 7 20\n",
+            "output": "167373259\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "en"
+}

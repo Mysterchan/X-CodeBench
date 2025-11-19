@@ -1,0 +1,26 @@
+{
+    "Title": "日本レジストリサービス（JPRS）プログラミングコンテスト2025#1（AtCoder Beginner Contest 392）",
+    "Source": "atcoder",
+    "Name": "Insert",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "空の配列 A があります。 i=1,2,...,N の順に以下の操作を行います。\n- 数 i を、A の前から P_i 番目の位置になるように挿入する。\n- より正確には、「A の P_i-1 項目まで」「 i 」「A の P_i 項目以降」をこの順に連結したもので A を置き換える。\n全ての操作を終えた後の A を出力してください。",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ N ≤ 5\\times 10^5\n- 1 ≤ P_i ≤ i\n- 入力は全て整数である",
+    "IO Styles": "入力\n入力は以下の形式で標準入力から与えられる。\nN\r\nP_1 P_2 ... P_N\r\n出力\n全ての操作を終えた後の A を (A_1,...,A_N) とするとき、A_1,...,A_N をこの順に空白区切りで出力せよ。",
+    "Sample Detail": [
+        {
+            "input": "4\n1 1 2 1\n",
+            "output": "4 2 3 1\n",
+            "explanation": "操作は以下のように行われます。\n\n- 数 1 を、A の前から 1 番目の位置になるように挿入する。 A=(1) となる。\n- 数 2 を、A の前から 1 番目の位置になるように挿入する。 A=(2,1) となる。\n- 数 3 を、A の前から 2 番目の位置になるように挿入する。 A=(2,3,1) となる。\n- 数 4 を、A の前から 1 番目の位置になるように挿入する。 A=(4,2,3,1) となる。",
+            "images": []
+        },
+        {
+            "input": "5\n1 2 3 4 5\n",
+            "output": "1 2 3 4 5\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "jp"
+}

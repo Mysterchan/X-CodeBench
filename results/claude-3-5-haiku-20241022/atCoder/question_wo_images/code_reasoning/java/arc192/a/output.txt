@@ -1,0 +1,23 @@
+Let me trace through this code step by step.
+
+**Input:**
+- N = 12
+- arr = [0, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0]
+
+**Execution:**
+
+1. Initialize `set` as an empty HashSet
+2. Read n = 12
+3. Read array: arr = [0, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0]
+4. Set `indicator = false`
+
+5. Check `if (n % 4 == 0)`:
+   - 12 % 4 = 0, so this is **true**
+   - Set `indicator = true`
+   - Skip the `else if` and `else` blocks
+
+6. Check `if (indicator)`:
+   - indicator is true
+   - Print "Yes"
+
+**Output:** Yes

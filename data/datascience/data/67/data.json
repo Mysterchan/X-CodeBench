@@ -1,0 +1,11 @@
+{
+    "url": "https://stackoverflow.com/questions/70088196/two-sided-grouped-barplots-with-python-seaborn",
+    "source": "stackoverflow",
+    "title": "Two sided grouped barplots with Python seaborn",
+    "Description": "The intended visualization is a horizontal bar plot showing the mass of male and female individuals of different species (X, Y, Z) grouped by age (juvenile and adult). The mass values for juveniles should be shown on the left and adults on the right, differentiated by color (male/female) in a stacked format. The current graph displays both age groups together, with juveniles and adults overlapping, leading to confusion regarding the representation of the mass values. The desired appearance includes two distinct groups of bars for each species, separating males and females clearly, with juvenile bars on the left side and adult bars on the right, aligned appropriately with correct labeling.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "seaborn",
+        "data-visualization"
+    ]
+}

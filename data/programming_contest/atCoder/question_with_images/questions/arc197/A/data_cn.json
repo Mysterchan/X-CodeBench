@@ -1,0 +1,22 @@
+{
+    "Title": "AtCoder Regular Contest 197 (Div. 2)",
+    "Source": "atcoder",
+    "Name": "Union of Grid Paths",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "在一個 H×W 的格子中，讓 (h,w) 代表從最上方的第 h 行和從最左側的第 w 列的格子。此外，給定一個長度為 H+W-2 的字符串 S = S_1⋯ S_{H+W-2}，其中包含字母 D、R 和 ?。\n\n一開始，所有的格子都是白色的。你可以執行以下操作，該操作由三個步驟組成，可以執行任意次數：\n- 選擇一個長度為 H+W-2 的字符串 X = X_1⋯ X_{H+W-2}，並滿足以下所有條件。\n- X 中恰好包含 H-1 個 D 和 W-1 個 R。\n- 對於每個 1 ≤ i ≤ H+W-2，如果 S_i 是 D，則 X_i 也必須是 D。\n- 對於每個 1 ≤ i ≤ H+W-2，如果 S_i 是 R，則 X_i 也必須是 R。\n- 站在格子 (1,1) 位置。然後按順序執行 i=1,2,...，根據 X_i 指示的方向移動一格：如果 X_i 是 D，則向下移動一格；如果 X_i 是 R，則向右移動一格。可以證明，如果 X 符合第 1 步的條件，則目的地格子總是存在於格子中。\n- 對於第 2 步中你訪問的每個格子（包括起始格子和結束格子），如果該格子目前是白色，則將其塗成黑色。\n\n找出總共可以塗成黑色的格子的最大可能數量。\n共有 T 個測試案例，解決每一個。",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ T ≤ 2×10^5\n- 2 ≤ H, W ≤ 2×10^5\n- T, H, W 為整數。\n- S 是一個長度為 H + W - 2 的字串，包含 D、R 和 ?。\n- S 中的 D 最多出現 H - 1 次。\n- S 中的 R 最多出現 W - 1 次。\n- 所有測試案例中 H + W 的總和最多為 4×10^5。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nT\n\\text{case}_1\n\\vdots\n\\text{case}_T\n每個測試案例的格式如下：\nH W\nS\n輸出\n打印 T 行。第 i 行應該包含第 i 個測試案例中可以被塗成黑色的最大單元格數量。",
+    "Sample Detail": [
+        {
+            "input": "4\n4 5\nD?DRR?R\n4 5\nDDRRDRR\n4 5\n???????\n2 2\nDR\n",
+            "output": "12\n8\n20\n3\n",
+            "explanation": "對於第一個測試案例，通過在第一個操作中選擇 X 為 DRDRRDR，而在第二個操作中選擇 DDDRRRR，你可以將 12 個格子漆成黑色。",
+            "images": [
+                "https://img.atcoder.jp/arc197/fe14a42d236585f23bf6e59480bb45ac.png"
+            ]
+        }
+    ],
+    "Language": "cn"
+}

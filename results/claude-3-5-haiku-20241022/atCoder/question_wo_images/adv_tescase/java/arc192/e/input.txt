@@ -1,0 +1,2 @@
+int a = Math.max(i, W - i);
+int b = Math.max(j, H - j);

@@ -1,0 +1,29 @@
+Let me trace through the execution of this Java program with input `6`.
+
+**Initial state:**
+- `X = 6`
+- `N = 1`
+
+**Loop execution:**
+
+The loop continues while `X > 1`:
+
+**Iteration 1:**
+- `X = 6 > 1`, so enter loop
+- `N++` → `N = 2`
+- `X = X / N` → `X = 6 / 2 = 3`
+
+**Iteration 2:**
+- `X = 3 > 1`, so continue loop
+- `N++` → `N = 3`
+- `X = X / N` → `X = 3 / 3 = 1`
+
+**Iteration 3:**
+- `X = 1`, which is NOT > 1, so exit loop
+
+**Output:**
+- Print `N`, which is `3`
+
+This makes sense because 3! = 3 × 2 × 1 = 6, which matches the input.
+
+3

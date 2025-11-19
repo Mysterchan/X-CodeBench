@@ -1,0 +1,32 @@
+{
+    "Title": "AtCoder Regular Contest 202 (Div. 1)",
+    "Source": "atcoder",
+    "Name": "Repunits",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "正整数 n に対して R_n を「1 を n 個並べてできる文字列を 10 進表記された整数と解釈したもの」として定義します。例えば R_3 = 111 です。\n正整数列 A = (A_1, A_2, \\dots, A_N) が与えられます。\nk = 1, 2, \\dots, N について \\mathrm{LCM}(R_{A_1}, R_{A_2}, \\dots, R_{A_k}) \\bmod 998244353 を計算してください。ここで \\mathrm{LCM} は最小公倍数を計算する関数とします。",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ N ≤ 2 \\times 10^5\n- 1 ≤ A_i ≤ 2 \\times 10^5\n- 入力される値は全て整数",
+    "IO Styles": "入力\n入力は以下の形式で標準入力から与えられる。\nN\r\nA_1 A_2 \\dots A_N\r\n出力\nN 行出力せよ。k 行目には \\mathrm{LCM}(R_{A_1}, R_{A_2}, \\dots, R_{A_k}) \\bmod 998244353 を出力せよ。",
+    "Sample Detail": [
+        {
+            "input": "3\n2 4 6\n",
+            "output": "11\n1111\n11222211\n",
+            "explanation": "k=1 について、\\mathrm{LCM}(11) \\bmod 998244353 = 11 です。\nk=2 について、\\mathrm{LCM}(11,1111) \\bmod 998244353= 1111 です。\nk=3 について、\\mathrm{LCM}(11,1111,111111) \\bmod 998244353= 11222211 です。",
+            "images": []
+        },
+        {
+            "input": "1\n200000\n",
+            "output": "202819780\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "10\n47718 21994 98917 104184 160670 190107 125377 29127 7017 177076\n",
+            "output": "429620650\n844699313\n355160870\n608402385\n858856681\n605347397\n566966598\n429324494\n370941155\n567238109\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "jp"
+}

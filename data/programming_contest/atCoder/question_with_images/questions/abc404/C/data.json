@@ -1,0 +1,30 @@
+{
+    "Title": "AtCoder Beginner Contest 404",
+    "Source": "atcoder",
+    "Name": "Cycle Graph?",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "You are given a simple undirected graph with N vertices and M edges. The vertices are numbered 1,2,\\dots,N and the edges are numbered 1,2,\\dots,M. Edge i connects vertices A_i and B_i.\nDetermine whether this graph is a cycle graph.\nDefinition of simple undirected graph\nA simple undirected graph is a graph with undirected edges without self-loops or multi-edges.\nDefinition of cycle graph\nAn N-vertex graph with vertices labeled 1,2,\\dots,N is a cycle graph when there exists a permutation (v_1,v_2,\\dots,v_N) of (1,2,\\dots,N) such that:\n- For each i = 1,2,\\dots,N-1, there is an edge between vertices v_i and v_{i+1}. \n- There is an edge between vertices v_N and v_1. \n- No other edges exist.",
+    "Statement Images": [],
+    "Constraints": "- 3 ≤ N ≤ 2\\times 10^5\n- 0 ≤ M ≤ 2\\times 10^5\n- 1 ≤ A_i, B_i ≤ N\n- The given graph is simple.\n- All input values are integers.",
+    "IO Styles": "Input\nThe input is given from Standard Input in the following format:\nN M\nA_1 B_1\n\\vdots\nA_M B_M\nOutput\nOutput Yes if the given graph is a cycle graph; otherwise, print No.",
+    "Sample Detail": [
+        {
+            "input": "4 4\n2 4\n3 1\n4 1\n2 3\n",
+            "output": "Yes\n",
+            "explanation": "The given graph is as follows, and this is a cycle graph.\n\n![image](1.png)",
+            "images": [
+                "https://img.atcoder.jp/abc404/92ea02f287069bfd5e2142ffcafa0e3e.png"
+            ]
+        },
+        {
+            "input": "4 6\n1 2\n1 3\n1 4\n2 3\n2 4\n3 4\n",
+            "output": "No\n",
+            "explanation": "The given graph is as follows, and this is not a cycle graph.\n\n![image](2.png)",
+            "images": [
+                "https://img.atcoder.jp/abc404/a428538cd729b649a952c46a67afd8d7.png"
+            ]
+        }
+    ],
+    "Language": "en"
+}

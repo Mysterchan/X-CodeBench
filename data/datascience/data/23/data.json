@@ -1,0 +1,11 @@
+{
+    "url": "https://discourse.matplotlib.org/t/plot-legends-are-being-repeated-for-every-frame-during-matplotlib-animation/24356",
+    "source": "matplotlib",
+    "title": "Plot legends are being repeated for every frame during matplotlib animation",
+    "Description": "The animation is intended to display a 2D random walk simulation for multiple trials, with a single legend entry per trial shown only after that trial is completed. Currently, the legend for each trial appears at every animation step instead of only at the completion of the respective trial. The desired behavior is for the legend to be displayed only once each time a trial finishes, maintaining clarity in the visualization.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "matplotlib",
+        "data-visualization"
+    ]
+}

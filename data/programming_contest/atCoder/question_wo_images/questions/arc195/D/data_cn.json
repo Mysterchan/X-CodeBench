@@ -1,0 +1,20 @@
+{
+    "Title": "AtCoder Regular Contest 195 (Div. 2)",
+    "Source": "atcoder",
+    "Name": "Swap and Erase",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "有一個序列 A = (A_1,...,A_N)。你可以無限次以任意順序執行以下兩種操作：\n- 令 K 為操作前 A 的長度。選擇一個整數 i，使得 1 ≤ i ≤ K-1，並交換 A 的第 i 個和第 (i+1) 個元素。\n- 令 K 為操作前 A 的長度。選擇一個整數 i，使得 1 ≤ i ≤ K 且 A 的第 1 個到第 i 個元素的值都相等，然後刪除 A 的第 1 個到第 i 個元素。\n\n找出將 A 變為空序列所需的最小操作總數。\n你將獲得 T 個測試案例，請解決每一個。",
+    "Statement Images": [],
+    "Constraints": "- 1≤ T≤ 10^5\n- 2 ≤ N ≤ 2 \\times 10^5\n- 1 ≤ A_i ≤ N\n- 所有測試案例中 N 的總和最多為 2\\times 10^5。\n- 所有輸入值皆為整數。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nT\n\\mathrm{case}_1\n\\mathrm{case}_2\n\\vdots\n\\mathrm{case}_T\n每個案例的格式為：\nN\nA_1 A_2 ... A_N\n輸出\n依次打印每個測試案例的答案，以換行符分隔。",
+    "Sample Detail": [
+        {
+            "input": "3\n5\n1 1 2 1 2\n4\n4 2 1 3\n11\n1 2 1 2 1 2 1 2 1 2 1\n",
+            "output": "3\n4\n8\n",
+            "explanation": "對於第一個測試案例，A 可以透過以下三個操作變成空：\n\n- 交換 A 的第 3 和第 4 個元素。現在，A 是 (1,1,1,2,2)。\n- 刪除 A 的第 1 到第 3 個元素。現在，A 是 (2,2)。\n- 刪除 A 的第 1 到第 2 個元素。現在，A 是一個空序列。\n\n對於第二個測試案例，A 可以透過刪除第 1 個元素四次來變成空。此外，不可能在三次或更少的操作中將 A 變為空。",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

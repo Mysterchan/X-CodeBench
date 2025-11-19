@@ -1,0 +1,25 @@
+{
+    "Title": "Codeforces Round 1013 (Div. 3)",
+    "Source": "codeforces",
+    "Name": "Place of the Olympiad",
+    "Time Limit": "1 s",
+    "Memory Limit": "256 mb",
+    "Problem Statement": "最初のITキャンパス「NEIMARK」によるオリンピアードのファイナルのために、長方形の会場が用意されました。会場は$n$行に分かれ、それぞれに参加者のデスク用の$m$スポットがあります。合計で$k$名の参加者がファイナルに登録しており、各参加者は個別のデスクに座ります。今、運営委員会は会場内のデスクの配置を選ぶ必要があります。\n各デスクは行の$m$スポットのうちの1つを占有します。また、複数のデスクが同じ行の連続したスポットを占有している場合、そのデスクのグループをベンチと呼び、グループ内のデスクの数がベンチの長さになります。例えば、$3 \\times 4$の会場（$n = 3, m = 4$）に$7$名の参加者を座らせることは、次のように配置できます： ![image](1.png) \n上の図では、最初の行には長さ$3$のベンチが1つ、2番目の行には長さ$2$のベンチが1つ、3番目の行には長さ$1$のベンチが2つあります。\n運営委員会は、最も長いベンチの長さができるだけ小さくなるように配置を選びたいと考えています。特に、同じ$7$のデスクをより最適な方法で配置することができ、その場合すべてのベンチの長さが$2$を超えないようにできます！![image](2.png) \n整数$n$、$m$、$k$が与えられたとき、最も長いベンチの最小可能な長さを求めてください。",
+    "Statement Images": [
+        "https://espresso.codeforces.com/317328659933bccf6e074c99dc79c48007f8590a.png",
+        "https://espresso.codeforces.com/866854af56de91f98d6d3f7bc454c49515587b2f.png"
+    ],
+    "Constraints": "Time limit: 1 s\nMemory limit: 256 mb",
+    "IO Styles": "入力\n各テストには複数のテストケースが含まれています。最初の行にはテストケースの数 $t$ ($1 ≤ t ≤ 10^4$) が含まれます。テストケースの説明が続きます。\n各テストケースの1行には3つの正の整数 $n$, $m$, $k$ ($1 ≤ n, m, k ≤ 10^9$, $k ≤ n\\cdot m$) が含まれます。\n出力\n各テストケースについて、最長のベンチの最小可能な長さを1つの数として出力してください。",
+    "Sample Detail": [
+        {
+            "input": "5\n3 4 7\n5 5 5\n1 13 2\n2 4 7\n1 5 4",
+            "output": "2\n1\n1\n4\n2",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Notes": "It seems you've provided empty prompts for translation. Please provide an English text that you would like me to translate into Japanese.",
+    "Note Images": [],
+    "Language": "jp"
+}

@@ -1,0 +1,28 @@
+{
+    "Title": "AtCoder Regular Contest 201",
+    "Source": "atcoder",
+    "Name": "Total Area of Bounding Boxes",
+    "Time Limit": "3 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "There are N points numbered 1,2, \\dots, N on the 2-dimensional plane.\nThe coordinates of point i are (i,Y_i).\nIn this problem, it is guaranteed that Y=(Y_1,Y_2,\\dots ,Y_N) is a permutation of (1,2, \\dots ,N).\nFind the sum of the areas of bounding boxes for all subsets S of \\lbrace \\texttt{point}\\,1,\\texttt{point}\\,2,\\dots ,\\texttt{point}\\,N \\rbrace with at least 2 elements, modulo 998244353.\nThe bounding box for S refers to the minimum area rectangle with sides parallel to the x-axis that contains all points in S inside or on the boundary.",
+    "Statement Images": [],
+    "Constraints": "- 2 ≤ N ≤ 2 \\times 10^5\n- Y is a permutation of (1,2, \\dots ,N).\n- All input values are integers.",
+    "IO Styles": "Input\nThe input is given from Standard Input in the following format:\nN\nY_1 Y_2 ... Y_N\nOutput\nOutput the sum, modulo 998244353, of the areas of bounding boxes.",
+    "Sample Detail": [
+        {
+            "input": "4\n2 3 1 4\n",
+            "output": "50\n",
+            "explanation": "Each subset and the area of its bounding box are shown in the figure below. Output the sum of areas, which is 50.\n![image](1.png)",
+            "images": [
+                "https://img.atcoder.jp/arc201/d0a42940efeb582795eb4766786ddd68.png"
+            ]
+        },
+        {
+            "input": "26\n6 14 8 19 13 25 26 22 7 3 16 15 11 24 1 12 20 23 5 17 9 2 21 10 4 18\n",
+            "output": "575187918\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "en"
+}

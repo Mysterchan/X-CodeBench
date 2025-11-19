@@ -1,0 +1,1 @@
+for(int edge=max(i-k-1,0);edge<=j-k;edge++)

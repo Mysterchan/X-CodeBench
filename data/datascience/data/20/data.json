@@ -1,0 +1,11 @@
+{
+    "url": "https://github.com/matplotlib/matplotlib/issues/23992",
+    "source": "github",
+    "title": "[Bug]: Font-Fallback implemented in 3.6.0 does not work for title or labels",
+    "Description": "The plot is intended to display a title, xlabel, and ylabel using a string that contains Chinese characters and emoji. However, the text does not display properly, resulting in garbled characters in the title and labels. The expected behavior is for all text elements (title, xlabel, ylabel) to render correctly without any distortion or missing characters.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "matplotlib",
+        "data-visualization"
+    ]
+}

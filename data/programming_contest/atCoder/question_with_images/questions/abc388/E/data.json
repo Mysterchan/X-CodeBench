@@ -1,0 +1,35 @@
+{
+    "Title": "HHKB Programming Contest 2025(AtCoder Beginner Contest 388)",
+    "Source": "atcoder",
+    "Name": "Simultaneous Kagamimochi",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "There are N mochi (rice cakes), arranged in ascending order of size.\nThe size of the i-th mochi (1≤ i≤ N) is A_i.\nGiven two mochi A and B, with sizes a and b respectively, you can make one kagamimochi (a stacked rice cake) by placing mochi A on top of mochi B if and only if a is at most half of b.\nFind how many kagamimochi can be made simultaneously.\nMore precisely, find the maximum non-negative integer K for which the following is possible:\n- From the N mochi, choose 2K of them to form K pairs. For each pair, place one mochi on top of the other, to make K kagamimochi.",
+    "Statement Images": [],
+    "Constraints": "- 2 ≤ N ≤ 5 \\times 10^5\n- 1 ≤ A_i ≤ 10^9 \\ (1 ≤ i ≤ N)\n- A_i ≤ A_{i+1} \\ (1 ≤ i < N)\n- All input values are integers.",
+    "IO Styles": "Input\nThe input is given from Standard Input in the following format:\nN\r\nA_1 A_2 \\dotsc A_N\r\nOutput\nPrint the maximum K such that K kagamimochi can be made simultaneously.",
+    "Sample Detail": [
+        {
+            "input": "6\n2 3 4 4 7 10\n",
+            "output": "3\n",
+            "explanation": "The sizes of the given mochi are as follows:\n\n![image](1.png)\n\nIn this case, you can make the following three kagamimochi simultaneously:\n\n![image](2.png)\n\nIt is not possible to make four or more kagamimochi from six mochi, so print 3.",
+            "images": [
+                "https://img.atcoder.jp/abc388/29024766d11c2d88b06c92b2081129f5.png",
+                "https://img.atcoder.jp/abc388/26686710916fe3623058f6000669e049.png"
+            ]
+        },
+        {
+            "input": "3\n387 388 389\n",
+            "output": "0\n",
+            "explanation": "It is possible that you cannot make any kagamimochi.",
+            "images": []
+        },
+        {
+            "input": "24\n307 321 330 339 349 392 422 430 477 481 488 537 541 571 575 602 614 660 669 678 712 723 785 792\n",
+            "output": "6\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "en"
+}

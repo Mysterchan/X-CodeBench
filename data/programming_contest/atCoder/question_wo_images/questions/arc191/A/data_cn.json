@@ -1,0 +1,32 @@
+{
+    "Title": "AtCoder Regular Contest 191 (Div. 2)",
+    "Source": "atcoder",
+    "Name": "Replace Digits",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "給定一個長度為 N 的字符串 S 和一個長度為 M 的字符串 T，兩者均由 1 到 9 的數字組成。\n您將依次對 k=1,2,...,M 執行以下操作：\n- 選擇一個整數 i，滿足 1 ≤ i ≤ N。然後，將 S 的第 i 個字符替換為 T 的第 k 個字符。\n找到在執行 M 次操作後，將結果字符串 S 解釋為整數所能得到的最大可能值。",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ N,M ≤ 10^6\n- N 和 M 是整數。\n- S 是一個長度為 N 的字串，由 1 到 9 的數字組成。\n- T 是一個長度為 M 的字串，由 1 到 9 的數字組成。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nN M\nS\nT\n輸出\n打印在執行 M 次操作後，將字符串 S 解釋為整數的最大可能值。",
+    "Sample Detail": [
+        {
+            "input": "3 3\n191\n325\n",
+            "output": "593\n",
+            "explanation": "以下的操作序列是最佳的：\n\n- 對於 k=1：選擇 i=3。然後，S = 193。\n- 對於 k=2：選擇 i=1。然後，S = 293。\n- 對於 k=3：選擇 i=1。然後，S = 593。\n\n在這種情況下，S 被解釋為整數的值為 593，這是最大的。",
+            "images": []
+        },
+        {
+            "input": "3 9\n191\n998244353\n",
+            "output": "993\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "11 13\n31415926535\n2718281828459\n",
+            "output": "98888976555\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

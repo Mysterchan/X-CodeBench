@@ -1,0 +1,36 @@
+Let me trace through this code step by step.
+
+Initial state:
+- `now = 0`
+- `x = []` (empty list)
+- `id = 0`
+
+**Query 1: `1 5`** (type 1, add snake of length 5)
+- `x.add(now)` → `x.add(0)` → `x = [0]`
+- `now += 5` → `now = 5`
+
+**Query 2: `1 7`** (type 1, add snake of length 7)
+- `x.add(now)` → `x.add(5)` → `x = [0, 5]`
+- `now += 7` → `now = 12`
+
+**Query 3: `3 2`** (type 3, output head of 2nd snake)
+- `k = 2 - 1 = 1`
+- Output: `x.get(id + k) - x.get(id)` = `x.get(0 + 1) - x.get(0)` = `x.get(1) - x.get(0)` = `5 - 0` = `5`
+
+**Query 4: `1 3`** (type 1, add snake of length 3)
+- `x.add(now)` → `x.add(12)` → `x = [0, 5, 12]`
+- `now += 3` → `now = 15`
+
+**Query 5: `1 4`** (type 1, add snake of length 4)
+- `x.add(now)` → `x.add(15)` → `x = [0, 5, 12, 15]`
+- `now += 4` → `now = 19`
+
+**Query 6: `2`** (type 2, remove front snake)
+- `id++` → `id = 1`
+
+**Query 7: `3 3`** (type 3, output head of 3rd snake)
+- `k = 3 - 1 = 2`
+- Output: `x.get(id + k) - x.get(id)` = `x.get(1 + 2) - x.get(1)` = `x.get(3) - x.get(1)` = `15 - 5` = `10`
+
+5
+10

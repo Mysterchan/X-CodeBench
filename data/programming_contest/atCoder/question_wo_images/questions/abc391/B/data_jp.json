@@ -1,0 +1,26 @@
+{
+    "Title": "AtCoder Beginner Contest 391",
+    "Source": "atcoder",
+    "Name": "Seek Grid",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "N \\times N のグリッド S と M\\times M のグリッド T が与えられます。上から i 行目、左から j 列目のマス目をマス (i,j) と表します。\nS,T の各マスの色はそれぞれ N^2個の文字 S_{i,j} \\; (1≤ i,j≤ N) および M^2 個の文字 T_{i,j} \\; (1≤ i,j≤ M) によって表されます。\nS_{i,j} が . のとき S のマス (i,j) は白色、S_{i,j} が # のとき S のマス (i,j) は黒色で塗られています。T についても同様です。\nS の中から T を探してください。具体的には、以下の条件を満たす a,b \\; (1 ≤ a,b ≤ N-M+1) を出力してください。\n- すべての i,j \\; (1≤ i,j ≤ M) について、S_{a+i-1,b+j-1} = T_{i,j}",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ M ≤ N ≤ 50\n- N,M は整数\n- S_{i,j},T_{i,j} は . または #\n- 条件を満たす a,b はちょうど 1 組存在する。",
+    "IO Styles": "入力\n入力は以下の形式で標準入力から与えられる。\nN M\r\nS_{1,1}S_{1,2}\\dots S_{1,N}\r\nS_{2,1}S_{2,2}\\dots S_{2,N}\r\n\\vdots\r\nS_{N,1}S_{N,2}\\dots S_{N,N}\r\nT_{1,1}T_{1,2}\\dots T_{1,M}\r\nT_{2,1}T_{2,2}\\dots T_{2,M}\r\n\\vdots\r\nT_{M,1}T_{M,2}\\dots T_{M,M}\r\n出力\na,b をこの順に空白区切りで 1 行に出力せよ。",
+    "Sample Detail": [
+        {
+            "input": "3 2\n#.#\n..#\n##.\n.#\n#.\n",
+            "output": "2 2\n",
+            "explanation": "S の 2 行目から 3 行目、2 列目から 3 列目の 2 \\times 2 マスが T と一致します。",
+            "images": []
+        },
+        {
+            "input": "2 1\n#.\n##\n.\n",
+            "output": "1 2\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "jp"
+}

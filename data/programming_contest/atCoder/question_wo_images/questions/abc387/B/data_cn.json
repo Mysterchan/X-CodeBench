@@ -1,0 +1,32 @@
+{
+    "Title": "AtCoder Beginner Contest 387",
+    "Source": "atcoder",
+    "Name": "9x9 Sum",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "在 9 乘 9 的乘法表中，共有 81 個整數，找出那些不等於 X 的整數的總和。\n這是一個 9 乘 9 的格子。\n格子的每個單元格都包含一個整數：位於第 i 行第 j 列的單元格包含 i \\times j。\n給定一個整數 X。在這個格子中寫下的 81 個整數中，找出那些不等於 X 的整數的總和。如果相同的數值出現在多個單元格中，則對每個單元格進行加總。",
+    "Statement Images": [],
+    "Constraints": "- X 是一個介於 1 和 81 之間的整數，包括 1 和 81。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nX\n輸出\n打印在網格中除了 X 以外的 81 個整數的總和。",
+    "Sample Detail": [
+        {
+            "input": "1\n",
+            "output": "2024\n",
+            "explanation": "該網格中唯一含有 1 的單元格位於最上方的第 1 行和最左側的第 1 列。將所有不等於 1 的整數相加得 2024。",
+            "images": []
+        },
+        {
+            "input": "11\n",
+            "output": "2025\n",
+            "explanation": "在網格中沒有包含11的單元格。因此，答案是2025，即所有81個整數的總和。",
+            "images": []
+        },
+        {
+            "input": "24\n",
+            "output": "1929\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

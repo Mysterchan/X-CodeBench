@@ -1,0 +1,1 @@
+res+=f1*max(1ll,work(num,f1,len-1,1));

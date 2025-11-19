@@ -1,0 +1,32 @@
+{
+    "Title": "AtCoder Beginner Contest 387（Promotion of AtCoderJobs）",
+    "Source": "atcoder",
+    "Name": "9x9 Sum",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "九九の表に現れる 81 個の整数のうち、X でないものの総和を求めてください。\n縦 9 マス、横 9 マスのグリッドがあります。\nグリッドの各マスには整数が書きこまれていて、グリッドの上から i 行目、左から j 列目のマスには i \\times j が書きこまれています。\n整数 X が与えられます。グリッドに書きこまれた 81 個の整数のうち X でないものの総和を求めてください。値の等しい整数が異なるマスに書きこまれている場合は別々に加算する点に注意してください。",
+    "Statement Images": [],
+    "Constraints": "- X は 1 以上 81 以下の整数",
+    "IO Styles": "入力\n入力は以下の形式で標準入力から与えられる。\nX\r\n出力\nグリッドに書きこまれた 81 個の整数のうち X でないものの総和を出力せよ。",
+    "Sample Detail": [
+        {
+            "input": "1\n",
+            "output": "2024\n",
+            "explanation": "グリッドに 1 が書きこまれたマスは上から 1 行目、左から 1 列目のマスのみです。1 でない整数を全て足し合わせると総和は 2024 になります。",
+            "images": []
+        },
+        {
+            "input": "11\n",
+            "output": "2025\n",
+            "explanation": "グリッドに 11 が書きこまれたマスは存在しません。よって 81 個の整数全てを足し合わせた総和である 2025 が答えとなります。",
+            "images": []
+        },
+        {
+            "input": "24\n",
+            "output": "1929\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "jp"
+}

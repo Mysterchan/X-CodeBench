@@ -1,0 +1,11 @@
+{
+    "url": "https://stackoverflow.com/questions/38649501/labeling-boxplot-in-seaborn-with-median-value",
+    "source": "stackoverflow",
+    "title": "Labeling boxplot in seaborn with median value",
+    "Description": "The current Seaborn boxplot displays the distribution of total bills across different days but does not include median values labeled on each box. The expected output should show each boxplot labeled with its corresponding median value, centered within each box.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "seaborn",
+        "data-visualization"
+    ]
+}

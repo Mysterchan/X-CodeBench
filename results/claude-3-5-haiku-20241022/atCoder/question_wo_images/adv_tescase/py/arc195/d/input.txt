@@ -1,0 +1,1 @@
+dp1[i] = dp0[i-2] + cost_of_swap + new_boundary1_cost + new_boundary2_cost

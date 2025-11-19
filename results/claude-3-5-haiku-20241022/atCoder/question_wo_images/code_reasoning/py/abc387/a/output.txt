@@ -1,0 +1,9 @@
+Let me trace through the code with the given input.
+
+**Input:** `20 25`
+
+**Code execution:**
+1. `A, B = map(int, input().split())` → `A = 20`, `B = 25`
+2. `print((A+B) * (A+B))` → `print((20+25) * (20+25))` → `print(45 * 45)` → `print(2025)`
+
+**Output:** 2025

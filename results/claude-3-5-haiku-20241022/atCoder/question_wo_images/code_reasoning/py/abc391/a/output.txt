@@ -1,0 +1,14 @@
+Let me trace through the code with the input "N".
+
+1. `D = input().strip()` reads the input and strips whitespace, so `D = "N"`
+
+2. `opp = {'N':'S', 'S':'N', 'E':'W', 'W':'E'}` creates a dictionary mapping each direction character to its opposite
+
+3. `print(''.join(opp[ch] for ch in D))` iterates through each character in D and looks up its opposite in the dictionary, then joins them together
+
+For input "N":
+- The string D has one character: 'N'
+- `opp['N']` returns 'S'
+- `''.join(['S'])` returns "S"
+
+S

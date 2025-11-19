@@ -1,0 +1,26 @@
+{
+    "Title": "Toyota Programming Contest  2025（AtCoder Beginner Contest 389)",
+    "Source": "atcoder",
+    "Name": "tcaF",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "Вам дано целое число X, не меньшее 2.\nНайдите положительное целое число N такое, что N! = X.\nЗдесь N! обозначает факториал N, и гарантируется, что такое N единственно.",
+    "Statement Images": [],
+    "Constraints": "- 2 ≤ X ≤ 3 \\times 10^{18}\n- Существует ровно одно положительное целое число N такое, что N! = X.\n- Все входные значения - целые числа.",
+    "IO Styles": "Входные данные\nВходные данные подаются из стандартного ввода в следующем формате:\nX\nВыходные данные\nВыведите ответ.",
+    "Sample Detail": [
+        {
+            "input": "6\n",
+            "output": "3\n",
+            "explanation": "Из 3!=3\\times2\\times1=6 выведите 3.",
+            "images": []
+        },
+        {
+            "input": "2432902008176640000\n",
+            "output": "20\n",
+            "explanation": "Из 20!=2432902008176640000 выведите 20.",
+            "images": []
+        }
+    ],
+    "Language": "ru"
+}

@@ -1,0 +1,26 @@
+{
+    "Title": "AtCoder Regular Contest 203 (Div. 2)",
+    "Source": "atcoder",
+    "Name": "Insert XOR",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "0 と 1 からなる長さ N の整数列 A=(A_1,A_2,\\dots,A_N) があります。\nQ 個のクエリが与えられます。\nq 番目のクエリは以下のようなものです。\n- 1 以上 N 以下の整数 i_q が与えられる。A_{i_q} が 0 なら 1 に、1 なら 0 に変更する。\n各クエリを処理するたびに、以下の問題の答えを求めてください。\n0 と 1 からなる数列 B=(B_1,B_2,\\dots,B_{|B|}) のうち以下の条件を満たすものを考えます。\n- B に対して以下の操作を好きな回数行って、数列 A と一致させることができる。 \n- 1 以上 |B|-1 以下の整数 i を選ぶ。\n- B_i と B_{i+1} の間に B_i\\oplus B_{i+1} を挿入する。  \n条件を満たす B は必ず存在することが証明できます。\n|B| として考えられる値の最小値を求めてください。",
+    "Statement Images": [],
+    "Constraints": "- 3 ≤ N ≤ 2 \\times 10^5\n- 0 ≤ A_i ≤ 1\n- 1 ≤ Q ≤ 5 \\times 10^5\n- 1 ≤ i_q ≤ N\n- 入力される値は全て整数",
+    "IO Styles": "入力\n入力は以下の形式で標準入力から与えられる。\nN\nA_1 A_2 \\dots A_N\nQ\ni_1\ni_2\n\\vdots\ni_Q\n出力\n答えを合計 Q 行で出力せよ。\nq 行目には、q 番目のクエリを処理した後の問題の答えを出力せよ。",
+    "Sample Detail": [
+        {
+            "input": "3\n0 0 0\n2\n1\n2\n",
+            "output": "3\n2\n",
+            "explanation": "A=(1,0,0) のとき、|B| は B=(1,0,0) で最小となります。\nA=(1,1,0) のとき、|B| は B=(1,0) で最小となります。",
+            "images": []
+        },
+        {
+            "input": "8\n0 1 0 0 1 1 1 0\n3\n1\n4\n1\n",
+            "output": "5\n2\n3\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "jp"
+}

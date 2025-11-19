@@ -1,0 +1,26 @@
+{
+    "Title": "HHKBプログラミングコンテスト2025(AtCoder Beginner Contest 388)",
+    "Source": "atcoder",
+    "Name": "Heavy Snake",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "N 匹のヘビがいます。\nはじめ、i 匹目のヘビの太さは T_i、長さは L_i です。\nヘビの重さは太さと長さの積となります。\n1 ≤ k ≤ D を満たす各整数 k について、すべてのヘビの長さが k 伸びたときの最も重いヘビの重さを求めてください。",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ N, D ≤ 100\n- 1 ≤ T_i, L_i ≤ 100\n- 入力される値はすべて整数",
+    "IO Styles": "入力\n入力は以下の形式で標準入力から与えられる。\nN D\r\nT_1 L_1\r\nT_2 L_2\r\n\\vdots\r\nT_N L_N\r\n出力\nD 行出力せよ。k 行目には、すべてのヘビの長さが k 伸びたときの最も重いヘビの重さを出力せよ。",
+    "Sample Detail": [
+        {
+            "input": "4 3\n3 3\n5 1\n2 4\n1 10\n",
+            "output": "12\n15\n20\n",
+            "explanation": "すべてのヘビの長さが 1 伸びたとき、ヘビの重さはそれぞれ 12, 10, 10, 11 となるので 1 行目には 12 を出力します。\n\nすべてのヘビの長さが 2 伸びたとき、ヘビの重さはそれぞれ 15, 15, 12, 12 となるので 2 行目には 15 を出力します。\n\nすべてのヘビの長さが 3 伸びたとき、ヘビの重さはそれぞれ 18, 20, 14, 13 となるので 3 行目には 20 を出力します。",
+            "images": []
+        },
+        {
+            "input": "1 4\n100 100\n",
+            "output": "10100\n10200\n10300\n10400\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "jp"
+}

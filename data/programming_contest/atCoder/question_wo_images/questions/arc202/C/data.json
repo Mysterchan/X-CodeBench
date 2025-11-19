@@ -1,0 +1,32 @@
+{
+    "Title": "AtCoder Regular Contest 202 (Div. 1)",
+    "Source": "atcoder",
+    "Name": "Repunits",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "For a positive integer n, define R_n as \"the integer obtained by interpreting a string of n consecutive 1s as a decimal number\". For example, R_3 = 111.\nYou are given a positive integer sequence A = (A_1, A_2, \\dots, A_N).\nFor k = 1, 2, \\dots, N, calculate \\mathrm{LCM}(R_{A_1}, R_{A_2}, \\dots, R_{A_k}) \\bmod 998244353. Here, \\mathrm{LCM} is the function that calculates the least common multiple.",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ N ≤ 2 \\times 10^5\n- 1 ≤ A_i ≤ 2 \\times 10^5\n- All input values are integers.",
+    "IO Styles": "Input\nThe input is given from Standard Input in the following format:\nN\r\nA_1 A_2 \\dots A_N\r\nOutput\nOutput N lines. The k-th line should contain \\mathrm{LCM}(R_{A_1}, R_{A_2}, \\dots, R_{A_k}) \\bmod 998244353.",
+    "Sample Detail": [
+        {
+            "input": "3\n2 4 6\n",
+            "output": "11\n1111\n11222211\n",
+            "explanation": "For k=1, \\mathrm{LCM}(11) \\bmod 998244353 = 11.\r\nFor k=2, \\mathrm{LCM}(11,1111) \\bmod 998244353= 1111.\r\nFor k=3, \\mathrm{LCM}(11,1111,111111) \\bmod 998244353= 11222211.",
+            "images": []
+        },
+        {
+            "input": "1\n200000\n",
+            "output": "202819780\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "10\n47718 21994 98917 104184 160670 190107 125377 29127 7017 177076\n",
+            "output": "429620650\n844699313\n355160870\n608402385\n858856681\n605347397\n566966598\n429324494\n370941155\n567238109\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "en"
+}

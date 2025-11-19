@@ -1,0 +1,11 @@
+{
+    "url": "https://github.com/matplotlib/matplotlib/issues/29204",
+    "source": "github",
+    "title": "[Bug]: twiny in log scale can't set tick_params(top=False)",
+    "Description": "When using a secondary x-axis created with `ax.twiny()` in a logarithmic scale, the `tick_params(top=False, labeltop=False)` setting does not function as intended; the top ticks remain visible. The desired behavior is for the top ticks and labels to be disabled while retaining the logarithmic scale for the secondary axis.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "matplotlib",
+        "data-visualization"
+    ]
+}

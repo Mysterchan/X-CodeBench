@@ -1,0 +1,32 @@
+{
+    "Title": "AtCoder Beginner Contest 387（Promotion of AtCoderJobs）",
+    "Source": "atcoder",
+    "Name": "Prime Circuit",
+    "Time Limit": "12 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "頂点に 1 から N までの番号がついた N 頂点の単純無向連結グラフ G のうち次の条件を満たすものの個数を 998244353 で割った余りを求めてください。\n- G に含まれる任意の回路の辺数が素数である。\n ここで回路とは、同じ頂点を 2 回以上通ってもよい閉路を意味する。(同じ辺を 2 回以上通ってはならない)",
+    "Statement Images": [],
+    "Constraints": "- N は 1 以上 2.5 \\times 10^5 以下の整数",
+    "IO Styles": "入力\n入力は以下の形式で標準入力から与えられる。\nN\n出力\n問題文の条件を満たす単純無向連結グラフ G の個数を 998244353 で割った余りを出力せよ。",
+    "Sample Detail": [
+        {
+            "input": "3\n",
+            "output": "4\n",
+            "explanation": "条件を満たすグラフ G は以下の 4 個です。\n\n- (1, 2), (1, 3) を辺集合に持つグラフ\n- (1, 2), (2, 3) を辺集合に持つグラフ\n- (1, 3), (2, 3) を辺集合に持つグラフ\n- (1, 2), (1, 3), (2, 3) を辺集合に持つグラフ",
+            "images": []
+        },
+        {
+            "input": "2025\n",
+            "output": "879839321\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "61261\n",
+            "output": "202537766\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "jp"
+}

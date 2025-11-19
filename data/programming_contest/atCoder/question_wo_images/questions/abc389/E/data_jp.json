@@ -1,0 +1,26 @@
+{
+    "Title": "トヨタ自動車プログラミングコンテスト2025（AtCoder Beginner Contest 389）",
+    "Source": "atcoder",
+    "Name": "Square Price",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "N 種類の商品がそれぞれ 10^{100} 個ずつあります。\nあなたはこれらの商品を各種類について 0 個以上買うことが出来ます。i 番目の商品を k 個買うには k^2P_i 円かかります。\n購入金額の合計を M 円以下にするとき、最大何個の商品を買うことができるか求めてください。",
+    "Statement Images": [],
+    "Constraints": "- 1≤ N≤ 2\\times 10^{5}\n- 1≤ M≤ 10^{18}\n- 1≤ P_i≤ 2\\times 10^{9}\n- 入力される数値は全て整数",
+    "IO Styles": "入力\n入力は以下の形式で標準入力から与えられる。\nN M\r\nP_1 ... P_N\r\n出力\n答えを出力せよ。",
+    "Sample Detail": [
+        {
+            "input": "3 9\n4 1 9\n",
+            "output": "3\n",
+            "explanation": "1 種類目の商品を 1 個、2 種類目の商品を 2 個買うとき、購入金額の合計は 1^2 \\times 4+2^2\\times 1=8 です。\r\n購入金額の合計が 9 円以下で 4 個以上の商品を買うことはできないため、3 が答えとなります。",
+            "images": []
+        },
+        {
+            "input": "10 1000\n2 15 6 5 12 1 7 9 17 2\n",
+            "output": "53\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "jp"
+}

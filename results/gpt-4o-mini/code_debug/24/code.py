@@ -1,0 +1,15 @@
+import numpy as np
+from matplotlib import patches
+from matplotlib import pyplot as plt
+
+data = np.random.rand(5, 5)
+
+fig, (ax1, ax2) = plt.subplots(1, 2)
+ax1.imshow(data, interpolation='nearest', cmap='gray')
+ax2.imshow(data, interpolation='bilinear', cmap='gray')
+
+# Create the circle and add it to ax2
+art = patches.Circle((2, 2), 2, fill=False, color='black')
+ax2.add_artist(art)
+
+plt.show()

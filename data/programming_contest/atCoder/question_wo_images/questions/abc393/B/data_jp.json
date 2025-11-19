@@ -1,0 +1,32 @@
+{
+    "Title": "AtCoder Beginner Contest 393",
+    "Source": "atcoder",
+    "Name": "A..B..C",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "文字列 S が与えられます。\nS の中に A, B, C がこの順に等間隔に並んでいる場所が何箇所あるか求めてください。\n厳密には、3 つの整数の組 (i,j,k) であって、以下の条件をすべて満たすものの個数を求めてください。\nここで、|S| で S の長さを、S_x で S の x 文字目を表すものとします。\n- 1≤ i<j<k≤ |S|\n- j-i = k-j\n- S_i= A\n- S_j= B\n- S_k= C",
+    "Statement Images": [],
+    "Constraints": "- S は英大文字からなる長さ 3 以上 100 以下の文字列",
+    "IO Styles": "入力\n入力は以下の形式で標準入力から与えられる。\nS\r\n出力\n答えを出力せよ。",
+    "Sample Detail": [
+        {
+            "input": "AABCC\n",
+            "output": "2\n",
+            "explanation": "(i,j,k)=(1,3,5),(2,3,4) の 2 つの組が条件を満たします。",
+            "images": []
+        },
+        {
+            "input": "ARC\n",
+            "output": "0\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "AABAAABBAEDCCCD\n",
+            "output": "4\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "jp"
+}

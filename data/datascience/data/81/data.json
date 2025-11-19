@@ -1,0 +1,11 @@
+{
+    "url": "https://stackoverflow.com/questions/75247606/add-hue-to-seaborn-histogram-annotation",
+    "source": "stackoverflow",
+    "title": "Add hue to Seaborn Histogram annotation",
+    "Description": "The histogram should display two different colored bars representing two data categories ('R' and 'B'), with counts annotated above each bar. Currently, the annotations (counts) are not colored to match the corresponding bars. The expected appearance is for the annotation colors to align with the colors of their respective bins for better visual coherence.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "seaborn",
+        "data-visualization"
+    ]
+}

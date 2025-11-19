@@ -1,0 +1,43 @@
+Let me trace through the execution of this Java program with the input `([])<>()`.
+
+The program uses a stack to check if the bracket sequence is valid. It pushes opening brackets onto the stack and checks if closing brackets match the most recent opening bracket.
+
+**Input:** `([])<>()`
+
+**Execution trace:**
+
+1. `i=0`, `c='('`: Opening bracket → push `'('` onto stack. Stack: `['(']`
+
+2. `i=1`, `c='['`: Opening bracket → push `'['` onto stack. Stack: `['(', '[']`
+
+3. `i=2`, `c=']'`: Closing bracket
+   - Stack not empty ✓
+   - Pop opener: `'['`
+   - Check: `']'` matches `'['` ✓
+   - Stack: `['(']`
+
+4. `i=3`, `c=')'`: Closing bracket
+   - Stack not empty ✓
+   - Pop opener: `'('`
+   - Check: `')'` matches `'('` ✓
+   - Stack: `[]`
+
+5. `i=4`, `c='<'`: Opening bracket → push `'<'` onto stack. Stack: `['<']`
+
+6. `i=5`, `c='>'`: Closing bracket
+   - Stack not empty ✓
+   - Pop opener: `'<'`
+   - Check: `'>'` matches `'<'` ✓
+   - Stack: `[]`
+
+7. `i=6`, `c='('`: Opening bracket → push `'('` onto stack. Stack: `['(']`
+
+8. `i=7`, `c=')'`: Closing bracket
+   - Stack not empty ✓
+   - Pop opener: `'('`
+   - Check: `')'` matches `'('` ✓
+   - Stack: `[]`
+
+After processing all characters, the stack is empty, so the program prints "Yes".
+
+**Output:** Yes

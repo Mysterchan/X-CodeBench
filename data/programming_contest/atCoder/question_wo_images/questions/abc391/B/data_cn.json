@@ -1,0 +1,26 @@
+{
+    "Title": "AtCoder Beginner Contest 391",
+    "Source": "atcoder",
+    "Name": "Seek Grid",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "給定一個 N \\times N 的網格 S 和一個 M \\times M 的網格 T。從上到下第 i 行和從左到右第 j 列的單元格用 (i,j) 表示。\nS 和 T 中單元格的顏色分別由 N^2 個字符 S_{i,j} (1≤ i,j≤ N) 和 M^2 個字符 T_{i,j} (1≤ i,j≤ M) 來表示。在網格 S 中，如果 S_{i,j} 是 .，則單元格 (i,j) 為白色；如果 S_{i,j} 是 #，則該單元格為黑色。對於網格 T 亦然。\n在 S 中找到 T。更確切地說，輸出滿足以下條件的整數 a 和 b (1 ≤ a,b ≤ N-M+1)：\n- 對於每個 i,j (1≤ i,j ≤ M)，滿足 S_{a+i-1,b+j-1} = T_{i,j}。",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ M ≤ N ≤ 50\n- N 和 M 是整數。\n- 每個 S_{i,j} 和 T_{i,j} 的值為 . 或 #。\n- 恰好存在一對 (a,b) 滿足該條件。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nN M\nS_{1,1}S_{1,2}\\dots S_{1,N}\nS_{2,1}S_{2,2}\\dots S_{2,N}\n\\vdots\nS_{N,1}S_{N,2}\\dots S_{N,N}\nT_{1,1}T_{1,2}\\dots T_{1,M}\nT_{2,1}T_{2,2}\\dots T_{2,M}\n\\vdots\nT_{M,1}T_{M,2}\\dots T_{M,M}\n輸出\n在一行中按順序打印 a 和 b，並用空格分隔。",
+    "Sample Detail": [
+        {
+            "input": "3 2\n#.#\n..#\n##.\n.#\n#.\n",
+            "output": "2 2\n",
+            "explanation": "2 \\times 2 的 S 子網格從第 2 行到第 3 行及從第 2 列到第 3 列與 T 匹配。",
+            "images": []
+        },
+        {
+            "input": "2 1\n#.\n##\n.\n",
+            "output": "1 2\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

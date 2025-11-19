@@ -1,0 +1,11 @@
+{
+    "url": "https://stackoverflow.com/questions/60887648/colorize-the-background-of-a-seaborn-plot-using-a-column-in-dataframe",
+    "source": "stackoverflow",
+    "title": "Colorize the background of a seaborn plot using a column in dataframe",
+    "Description": "The current Seaborn line plot displays the signal data over time but lacks background shading based on a specific column in the dataframe. The intended visualization includes shaded regions behind the lines to indicate different events associated with each timepoint, using the 'background' column to determine the color zones. Currently, the graph shows only the lines for the 'stim' and 'cue' events without any colored background, which does not meet the expected appearance of the plot that includes distinct color-coded backgrounds for the specified segments of time.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "seaborn",
+        "data-visualization"
+    ]
+}

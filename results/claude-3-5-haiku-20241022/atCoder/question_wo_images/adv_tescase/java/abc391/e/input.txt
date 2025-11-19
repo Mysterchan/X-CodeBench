@@ -1,0 +1,6 @@
+while (current.size() > 1) {
+    next.add(getNext(current.poll(), current.poll(), current.poll()));
+    Deque<Unit> tmp = next;
+    next = current;
+    current = tmp;
+}

@@ -1,0 +1,20 @@
+{
+    "Title": "AtCoder Regular Contest 203 (Div. 2)",
+    "Source": "atcoder",
+    "Name": "Swap If Equal Sum",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "給定長度為 N 的整數序列 A=(A_1,A_2,\\dots,A_N) 和 B=(B_1,B_2,\\dots,B_N)，每個序列均由 0 和 1 組成。\n令 A[i,j] 表示 A 中從第 i 個到第 j 個元素的連續子序列。如果 i>j，則 A[i,j] 為長度為 0 的序列。\n你可以對 A 執行以下操作任意次：\n- 選擇四個整數 a,b,c,d，並滿足以下兩個條件：\n- 1 ≤ a ≤ b < c ≤ d ≤ N \n- \\sum_{i=a}^{b}{A_i}=\\sum_{i=c}^{d}{A_i}\n \n- 交換 A[a,b] 和 A[c,d]。更準確地說，用 A[1,a-1]、A[c,d]、A[b+1,c-1]、A[a,b]、A[d+1,N] 依此順序拼接而成的新序列來替換 A。\n判斷 A 是否可以變換成與 B 一致的序列。\n對每個輸入文件解決 T 個測試案例。",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ T ≤ 10^5\n- 2 ≤ N ≤ 2 \\times 10^5\n- 0 ≤ A_i ≤ 1\n- 0 ≤ B_i ≤ 1\n- 所有測試案例中 N 的總和至多為 2 \\times 10^5。\n- 所有輸入值均為整數。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nT\ncase_1\ncase_2\n\\vdots\ncase_T\n每個案例的格式如下：\nN\nA_1 A_2 \\dots A_N\nB_1 B_2 \\dots B_N\n輸出\n輸出答案，共 T 行。\n第 t 行應該包含 Yes，如果 A 可以被改變以匹配 B，否則應該包含 No。",
+    "Sample Detail": [
+        {
+            "input": "3\n6\n1 1 1 0 0 1\n0 1 1 0 1 1\n2\n0 0\n1 0\n3\n1 1 1\n1 1 1\n",
+            "output": "Yes\nNo\nYes\n",
+            "explanation": "在第一個測試案例中，A 最初為 (1,1,1,0,0,1)。\n通過選擇 (a,b,c,d)=(1,2,3,6) 並執行操作，A 變為 (1,0,0,1,1,1)。\n接著，通過選擇 (a,b,c,d)=(1,2,3,4) 並執行操作，A 變為 (0,1,1,0,1,1)，這與 B 匹配。\n在第二個測試案例中，A 無法與 B 匹配。\n在第三個測試案例中，A 從一開始就已經與 B 匹配。",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

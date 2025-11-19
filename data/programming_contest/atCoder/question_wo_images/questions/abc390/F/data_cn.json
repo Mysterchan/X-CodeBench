@@ -1,0 +1,32 @@
+{
+    "Title": "AtCoder Beginner Contest 390",
+    "Source": "atcoder",
+    "Name": "Double Sum 3",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "你有一個長度為 N 的整數序列 A=(A_1,A_2,...,A_N)。\n對於每一對整數 (L,R)，滿足 1 ≤ L ≤ R ≤ N，定義 f(L,R) 如下：\n- 從一個空白板開始。按順序將 R-L+1 個整數 A_L, A_{L+1}, ..., A_R 寫在黑板上。\n- 重複以下操作，直到黑板上的所有整數都被擦去：\n- 選擇整數 l, r，使得 l ≤ r，並且從 l 到 r 的每個整數至少在黑板上出現一次。然後，擦去黑板上所有從 l 到 r 的整數。\n- 令 f(L,R) 為擦除黑板上所有整數所需的最小操作次數。\n計算 \\displaystyle \\sum_{L=1}^N \\sum_{R=L}^N f(L,R)。",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ N ≤ 3 \\times 10^5\n- 1 ≤ A_i ≤ N\n- 所有輸入值均為整數。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nN\nA_1 A_2 ... A_N\n\n輸出\n印出答案。",
+    "Sample Detail": [
+        {
+            "input": "4\n1 3 1 4\n",
+            "output": "16\n",
+            "explanation": "例如，在（L,R）=(1,4)的情況下：\n\n- 黑板上有 1,3,1,4。\n- 選擇 (l,r)=(1,1)並擦除所有 1 的出現。黑板上現在有 3,4。\n- 選擇 (l,r)=(3,4)並擦除所有 3 和 4 的出現。黑板現在變得空蕩蕩的。\n- 不可能在少於兩次操作的情況下完成，因此 f(1,4) = 2。\n\n同樣地，你可以找到 f(2,4)=2、f(1,1)=1，等等。\n\n\\displaystyle \\sum_{L=1}^N \\sum_{R=L}^N f(L,R) = 16，因此輸出 16。",
+            "images": []
+        },
+        {
+            "input": "5\n3 1 4 2 4\n",
+            "output": "23\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "10\n5 1 10 9 2 5 6 9 1 6\n",
+            "output": "129\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

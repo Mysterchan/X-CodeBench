@@ -1,0 +1,46 @@
+I need to trace through this C++ code with the given input.
+
+**Input:**
+- N = 4, M = 2
+- A = [_, 1, 2, 1, 2] (1-indexed)
+- B = [_, 1, 2] (1-indexed, with B[0] = -1 and B[3] = -1 added)
+
+**Understanding the algorithm:**
+
+The code computes:
+1. `pre[i]`: length of longest prefix of B that matches a subsequence of A[1..i]
+2. `suf[i]`: starting position in B (from the end) for the longest suffix of B that matches a subsequence of A[i..n]
+
+Then it checks if there exists an index i where `pre[i] >= suf[i+1]`, meaning we can form B twice.
+
+**Computing pre array:**
+
+Initial: `pre[0] = 0`
+
+- i=1: a[1]=1, b[pre[0]+1]=b[1]=1, match! → pre[1] = 1
+- i=2: a[2]=2, b[pre[1]+1]=b[2]=2, match! → pre[2] = 2
+- i=3: a[3]=1, b[pre[2]+1]=b[3]=-1, no match → pre[3] = 2
+- i=4: a[4]=2, b[pre[3]+1]=b[3]=-1, no match → pre[4] = 2
+
+So `pre = [0, 1, 2, 2, 2]`
+
+**Computing suf array:**
+
+Initial: `suf[5] = 3` (m+1)
+
+- i=4: a[4]=2, b[suf[5]-1]=b[2]=2, match! → suf[4] = 2
+- i=3: a[3]=1, b[suf[4]-1]=b[1]=1, match! → suf[3] = 1
+- i=2: a[2]=2, b[suf[3]-1]=b[0]=-1, no match → suf[2] = 1
+- i=1: a[1]=1, b[suf[2]-1]=b[0]=-1, no match → suf[1] = 1
+
+So `suf = [_, 1, 1, 1, 2, 3]`
+
+**Checking condition:**
+
+For i from 1 to n-1=3:
+- i=1: pre[1]=1 >= suf[2]=1? Yes! → return true
+- (No need to check further)
+
+The function returns `true`, so the output is "Yes".
+
+Yes

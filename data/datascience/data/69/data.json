@@ -1,0 +1,11 @@
+{
+    "url": "https://stackoverflow.com/questions/67422810/how-to-use-hue-color-edgecolor-and-facecolor-in-seaborn",
+    "source": "stackoverflow",
+    "title": "How to use hue, color, edgecolor, and facecolor in seaborn",
+    "Description": "The goal is to create a horizontal bar plot using Seaborn where all the bars are displayed in red, with the 'value' on the x-axis and 'variable' on the y-axis. Currently, the bars are shown in blue instead of red. The legend indicates the hue 'prediction' as 'c1', but it does not match the intended color for the bars. The expected appearance is that all bars should be red, as shown in the provided expected graph.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "seaborn",
+        "data-visualization"
+    ]
+}

@@ -1,0 +1,33 @@
+Looking at this problem, I need to trace through the Java code with input "AABCC".
+
+Given input: S = "AABCC"
+- S.length() = 5
+
+First, let's determine `b`:
+- S.length() % 2 = 5 % 2 = 1 (odd)
+- So b = S.length()/2 - 1 = 5/2 - 1 = 2 - 1 = 1
+
+Next, the outer loop bound:
+- d goes from 1 to (S.length() + b)/3 = (5 + 1)/3 = 6/3 = 2
+
+Now let's trace through both iterations:
+
+**For d = 1:**
+- Inner loop: i goes from 1+1-1=1 to 5-1-1=3
+- i = 1: Check S[1-1]='A', S[1]='B', S[1+1]='C'
+  - S[0]='A', S[1]='A', S[2]='B' → 'A'=='A' ✓, 'A'=='B' ✗
+- i = 2: Check S[2-1]='A', S[2]='B', S[2+1]='C'
+  - S[1]='A', S[2]='B', S[3]='C' → 'A'=='A' ✓, 'B'=='B' ✓, 'C'=='C' ✓
+  - count++ → count = 1
+- i = 3: Check S[3-1]='A', S[3]='B', S[3+1]='C'
+  - S[2]='B', S[3]='C', S[4]='C' → 'B'=='A' ✗
+
+**For d = 2:**
+- Inner loop: i goes from 1+2-1=2 to 5-1-2=2
+- i = 2: Check S[2-2]='A', S[2]='B', S[2+2]='C'
+  - S[0]='A', S[2]='B', S[4]='C' → 'A'=='A' ✓, 'B'=='B' ✓, 'C'=='C' ✓
+  - count++ → count = 2
+
+Final count = 2
+
+Output: 2

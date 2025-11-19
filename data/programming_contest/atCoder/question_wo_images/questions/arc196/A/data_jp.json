@@ -1,0 +1,32 @@
+{
+    "Title": "AtCoder Regular Contest 196 (Div. 1)",
+    "Source": "atcoder",
+    "Name": "Adjacent Delete",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "長さ N の数列 A = (A_1, A_2, ..., A_N) が与えられます。\nあなたはこの数列の隣接する 2 数を選びどちらもこの数列から削除する、という操作を数列の長さが 1 以下になるまで繰り返します。\n一度の操作で得られるスコアは選んだ 2 数の差の絶対値です。\n得られるスコアの合計としてありうる最大値を求めてください。",
+    "Statement Images": [],
+    "Constraints": "- 2 ≤ N ≤ 3 \\times 10^5\n- 1 ≤ A_i ≤ 10^9\n- 入力はすべて整数",
+    "IO Styles": "入力\n入力は以下の形式で標準入力から与えられる。\nN\nA_1 A_2 ... A_N\n出力\n得られるスコアの合計としてありうる最大値を出力せよ。",
+    "Sample Detail": [
+        {
+            "input": "4\n1 2 5 3\n",
+            "output": "5\n",
+            "explanation": "まず、A_2 と A_3 を削除します。このとき得られるスコアは |A_2-A_3|=3 です。\n\n次に、A_1 と A_4 を削除します。前回の操作の影響で、この 2 数は隣接しているということに注意してください。このとき得られるスコアは |A_1-A_4|=2 です。\n\nよって、得られるスコアの合計は 5 となります。\n\n6 以上の合計スコアを達成することはできないので、5 を出力します。",
+            "images": []
+        },
+        {
+            "input": "7\n3 1 4 1 5 9 2\n",
+            "output": "14\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "5\n1 1 1 1 1\n",
+            "output": "0\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "jp"
+}

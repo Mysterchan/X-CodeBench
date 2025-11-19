@@ -1,0 +1,3 @@
+i64 cnt = (v[i].first - curr) / a;
+curr += cnt * a;
+curr = std::min(v[i].first - 1, curr + cnt * (b - a));

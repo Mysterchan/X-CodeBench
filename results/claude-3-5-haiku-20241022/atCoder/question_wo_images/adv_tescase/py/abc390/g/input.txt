@@ -1,0 +1,7 @@
+for i in range(1, n + 1):
+    x = str(i)
+    y = len(x)
+    z = (fact[n - 1] * (n)) % mod  # This is N * (N-1)! = N!
+    for j in range(y):
+        z = (z * 10) % mod
+    ans = (ans + (z * int(x)) % mod) % mod

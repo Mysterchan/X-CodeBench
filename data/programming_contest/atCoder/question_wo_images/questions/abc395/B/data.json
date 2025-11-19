@@ -1,0 +1,38 @@
+{
+    "Title": "AtCoder Beginner Contest 395",
+    "Source": "atcoder",
+    "Name": "Make Target",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "Overview: Create an N \\times N pattern as follows.\n###########\n#.........#\n#.#######.#\n#.#.....#.#\n#.#.###.#.#\n#.#.#.#.#.#\n#.#.###.#.#\n#.#.....#.#\n#.#######.#\n#.........#\n###########\nYou are given a positive integer N.\nConsider an N \\times N grid. Let (i,j) denote the cell at the i-th row from the top and the j-th column from the left. Initially, no cell is colored.\nThen, for i = 1,2,\\dots,N in order, perform the following operation:\n- Let j = N + 1 - i.\n- If i ≤ j, fill the rectangular region whose top-left cell is (i,i) and bottom-right cell is (j,j) with black if i is odd, or white if i is even. If some cells are already colored, overwrite their colors. \n- If i > j, do nothing.\nAfter all these operations, it can be proved that there are no uncolored cells. Determine the final color of each cell.",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ N ≤ 50\n- All input values are integers.",
+    "IO Styles": "Input\nThe input is given from Standard Input in the following format:\nN\nOutput\nPrint N lines. The i-th line should contain a length-N string S_i representing the colors of the i-th row of the grid after all operations, as follows:\n- If cell (i,j) is finally colored black, the j-th character of S_i should be #.\n- If cell (i,j) is finally colored white, the j-th character of S_i should be ..",
+    "Sample Detail": [
+        {
+            "input": "11\n",
+            "output": "###########\n#.........#\n#.#######.#\n#.#.....#.#\n#.#.###.#.#\n#.#.#.#.#.#\n#.#.###.#.#\n#.#.....#.#\n#.#######.#\n#.........#\n###########\n",
+            "explanation": "This matches the pattern shown in the Overview.",
+            "images": []
+        },
+        {
+            "input": "5\n",
+            "output": "#####\n#...#\n#.#.#\n#...#\n#####\n",
+            "explanation": "Colors are applied as follows, where ? denotes a cell not yet colored:\n i=1 i=2 i=3 i=4 i=5\n????? ##### ##### ##### ##### #####\n????? ##### #...# #...# #...# #...#\n????? -> ##### -> #...# -> #.#.# -> #.#.# -> #.#.#\n????? ##### #...# #...# #...# #...#\n????? ##### ##### ##### ##### #####",
+            "images": []
+        },
+        {
+            "input": "8\n",
+            "output": "########\n#......#\n#.####.#\n#.#..#.#\n#.#..#.#\n#.####.#\n#......#\n########\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "2\n",
+            "output": "##\n##\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "en"
+}

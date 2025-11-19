@@ -1,0 +1,11 @@
+{
+    "url": "https://stackoverflow.com/questions/59582503/matplotlib-how-to-draw-vertical-line-between-two-y-points",
+    "source": "stackoverflow",
+    "title": "Matplotlib how to draw vertical line between two Y points",
+    "Description": "The goal is to create a plot that connects each pair of y-values at corresponding x-values with thin lines. Currently, the graph only displays two series of markers (red squares and blue circles) without any connecting lines, and the plotted data does not represent the intended visualization. The desired output should visually link the markers to illustrate the relationships between the y-pairs clearly.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "matplotlib",
+        "data-visualization"
+    ]
+}

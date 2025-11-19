@@ -1,0 +1,26 @@
+{
+    "Title": "HHKB Programming Contest 2025(AtCoder Beginner Contest 388)",
+    "Source": "atcoder",
+    "Name": "Heavy Snake",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "有 N 條蛇。\n最初，第 i 條蛇的厚度為 T_i，長度為 L_i。\n蛇的重量定義為其厚度與長度的乘積。\n對於每個滿足 1 ≤ k ≤ D 的整數 k，找出當每條蛇的長度都增加 k 時，最重蛇的重量。",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ N, D ≤ 100  \n- 1 ≤ T_i, L_i ≤ 100  \n- 所有輸入值都是整數。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nN D\nT_1 L_1\nT_2 L_2\n\\vdots\nT_N L_N\n\n輸出\n輸出 D 行。第 k 行應該包含當每條蛇的長度增加 k 後，最重的蛇的重量。",
+    "Sample Detail": [
+        {
+            "input": "4 3\n3 3\n5 1\n2 4\n1 10\n",
+            "output": "12\n15\n20\n",
+            "explanation": "當每條蛇的長度增加 1 時，蛇的重量變為 12、10、10、11，因此在第一行輸出 12。\n\n當每條蛇的長度增加 2 時，蛇的重量變為 15、15、12、12，因此在第二行輸出 15。\n\n當每條蛇的長度增加 3 時，蛇的重量變為 18、20、14、13，因此在第三行輸出 20。",
+            "images": []
+        },
+        {
+            "input": "1 4\n100 100\n",
+            "output": "10100\n10200\n10300\n10400\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

@@ -1,0 +1,26 @@
+{
+    "Title": "Toyota Programming Contest  2025（AtCoder Beginner Contest 389)",
+    "Source": "atcoder",
+    "Name": "Square Price",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "有 N 種產品，每種產品的庫存為 10^{100} 單位。  \n你可以購買每種產品任意非負數量的單位。購買第 i 種產品的 k 單位需要花費 k^2 P_i 日元。  \n如果你的總購買成本不超過 M 日元，則你最多能購買多少單位的產品？",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ N ≤ 2 \\times 10^{5}\n- 1 ≤ M ≤ 10^{18}\n- 1 ≤ P_i ≤ 2 \\times 10^{9}\n- 所有輸入值均為整數。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nN M\nP_1 ... P_N\n輸出\n請輸出答案。",
+    "Sample Detail": [
+        {
+            "input": "3 9\n4 1 9\n",
+            "output": "3\n",
+            "explanation": "如果你購買1單位的第一種產品和2單位的第二種產品，則總購買成本為 1^2 \\times 4 + 2^2 \\times 1 = 8。無法在總成本不超過9日元的情況下購買四個或更多單位，因此答案是3。",
+            "images": []
+        },
+        {
+            "input": "10 1000\n2 15 6 5 12 1 7 9 17 2\n",
+            "output": "53\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

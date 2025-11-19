@@ -1,0 +1,16 @@
+—
+Comments:
+Functional Correctness: The Candidate Image includes the required plot elements and successfully implements the change to the y-axis tick labels by displaying negative values in red and positive values in black, as specified in the Natural-Language Specification. All necessary elements are present, leading to full credit in this category. (25/25)
+
+Visual Fidelity: The Candidate Image closely matches the Reference Image in terms of geometry, relative positions, scaling, axes ranges, and overall appearance. There are no noticeable discrepancies. (20/20)
+
+Text & Annotations: The y-axis ticks are correctly colored as per the specification, and there are no additional titles, labels, or annotations required for this task. (15/15)
+
+Style & Aesthetics: The color scheme and use of line style appear consistent with the Reference Image. The candidate maintains a clean aesthetic that adheres to the specifications. (15/15)
+
+Data Faithfulness: The visualization correctly represents the data with respect to differentiating the positive and negative values. The trends shown in the Candidate Image match the expectations, confirming the data representation is appropriate. (15/15)
+
+Code Quality & Repair Validity: The candidate code effectively addresses the initial bug related to coloring the y-axis tick labels while executing without errors. The code is well-structured, and the fix meets the specifications. (10/10)
+
+Score: 100
+—

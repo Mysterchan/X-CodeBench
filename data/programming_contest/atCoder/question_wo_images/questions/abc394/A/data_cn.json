@@ -1,0 +1,32 @@
+{
+    "Title": "KAJIMA CORPORATION CONTEST 2025 (AtCoder Beginner Contest 394)",
+    "Source": "atcoder",
+    "Name": "22222",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "給定一個由數字組成的字符串 S。\n從 S 中刪除所有字符，只保留 2，然後按照原始順序將剩餘的字符連接起來形成一個新字符串。",
+    "Statement Images": [],
+    "Constraints": "- S 是一個由數字組成的字串，長度在 1 到 100 之間（包括 1 和 100）。\n- S 至少包含一個 2。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nS\n輸出\n輸出答案。",
+    "Sample Detail": [
+        {
+            "input": "20250222\n",
+            "output": "22222\n",
+            "explanation": "透過從 20250222 中移除 0、5 和 0，然後按原來的順序連接剩餘的字符，得到的字串是 22222。",
+            "images": []
+        },
+        {
+            "input": "2\n",
+            "output": "2\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "22222000111222222\n",
+            "output": "22222222222\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

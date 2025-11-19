@@ -1,0 +1,35 @@
+{
+    "Title": "HHKB Programming Contest 2025(AtCoder Beginner Contest 388)",
+    "Source": "atcoder",
+    "Name": "Simultaneous Kagamimochi",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "有 N 個麻糬（米餅），按大小升序排列。\n第 i 個麻糬的大小為 A_i (1≤ i≤ N)。\n給定兩個麻糬 A 和 B，大小分別為 a 和 b，只有當 a 至多為 b 的一半時，可以將麻糬 A 放在麻糬 B 的上面來製作一個鏡餅（疊層米餅）。\n找出可以同時製作多少個鏡餅。\n更精確地說，找出最大的非負整數 K，使得以下情況成立：\n- 從 N 個麻糬中選擇 2K 個，形成 K 對。對於每一對，將一個麻糬放在另一個麻糬的上面，以製作 K 個鏡餅。",
+    "Statement Images": [],
+    "Constraints": "- 2 ≤ N ≤ 5 \\times 10^5\n- 1 ≤ A_i ≤ 10^9 \\ (1 ≤ i ≤ N)\n- A_i ≤ A_{i+1} \\ (1 ≤ i < N)\n- 所有輸入值都是整數。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nN\nA_1 A_2 \\dotsc A_N\n輸出\n打印出可以同時製作的最大 K 代幣餅的數量。",
+    "Sample Detail": [
+        {
+            "input": "6\n2 3 4 4 7 10\n",
+            "output": "3\n",
+            "explanation": "給定的麻糬大小如下：\n\n![image](1.png)\n\n在這種情況下，您可以同時製作以下三個鏡餅：\n\n![image](2.png)\n\n無法從六個麻糬中製作四個或更多的鏡餅，因此請輸出 3。",
+            "images": [
+                "https://img.atcoder.jp/abc388/29024766d11c2d88b06c92b2081129f5.png",
+                "https://img.atcoder.jp/abc388/26686710916fe3623058f6000669e049.png"
+            ]
+        },
+        {
+            "input": "3\n387 388 389\n",
+            "output": "0\n",
+            "explanation": "有可能你無法做出任何鏡餅。",
+            "images": []
+        },
+        {
+            "input": "24\n307 321 330 339 349 392 422 430 477 481 488 537 541 571 575 602 614 660 669 678 712 723 785 792\n",
+            "output": "6\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

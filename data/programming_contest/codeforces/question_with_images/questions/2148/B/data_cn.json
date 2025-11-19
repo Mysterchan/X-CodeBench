@@ -1,0 +1,24 @@
+{
+    "Title": "Codeforces Round 1050 (Div. 4)",
+    "Source": "codeforces",
+    "Name": "Lasers",
+    "Time Limit": "2 s",
+    "Memory Limit": "256 mb",
+    "Problem Statement": "在一個從 $(0,0)$ 延伸到 $(x, y)$ 的 2D 坐標平面上，你位於 $(0,0)$ 要前往 $(x, y)$。然而，有 $n$ 條水平激光，第 $i$ 條激光持續延伸從 $(0, a_i)$ 到 $(x, a_i)$。此外，還有 $m$ 條垂直激光，第 $i$ 條激光持續延伸從 $(b_i, 0)$ 到 $(b_i, y)$。  \n你可以朝任意方向移動以到達 $(x, y)$，但你的移動必須是一條連續的曲線，並且必須位於平面內。每次穿越一條垂直或水平激光時，算作一次穿越。特別地，如果你通過了兩條激光的交點，則算作兩次穿越。  \n例如，如果 $x = y = 2$，$n = m = 1$，$a = [1]$，$b = [1]$，則移動可以如下所示： ![image](1.png)  \n到達 $(x, y)$ 所需的最小穿越次數是多少？",
+    "Statement Images": [
+        "https://espresso.codeforces.com/44cd14d5698957fd058be07680bad092035229a0.png"
+    ],
+    "Constraints": "Time limit: 2 s\nMemory limit: 256 mb",
+    "IO Styles": "輸入\n第一行包含 $t$ ($1 ≤ t ≤ 10^4$)  — 測試案例的數量。\n每個測試案例的第一行包含四個整數 $n$, $m$, $x$, 和 $y$ ($1 ≤ n, m ≤ 2 \\cdot 10^5, 2 ≤ x ,y ≤ 10^9$)。\n接下來的行包含 $n$ 個整數 $a_1, a_2, ..., a_n$ ($0 < a_i < y$)  — 水平激光的 y 坐標。保證對於所有 $i > 1$，$a_i > a_{i-1}$。\n接下來的行包含 $m$ 個整數 $b_1, b_2, ..., b_m$ ($0 < b_i < x$)  — 垂直激光的 x 坐標。保證對於所有 $i > 1$，$b_i > b_{i-1}$。\n保證所有測試案例中 $n$ 和 $m$ 的總和不超過 $2 \\cdot 10^5$。\n輸出\n對於每個測試案例，輸出到達 $(x, y)$ 所需的最小交叉數。",
+    "Sample Detail": [
+        {
+            "input": "2\n1 1 2 2\n1\n1\n2 1 100000 100000\n42 58\n32",
+            "output": "2\n3",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Notes": "請提供您希望翻譯的內容！",
+    "Note Images": [],
+    "Language": "cn"
+}

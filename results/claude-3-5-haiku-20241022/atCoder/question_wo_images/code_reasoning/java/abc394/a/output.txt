@@ -1,0 +1,16 @@
+Let me trace through the execution of this Java program with the input "20250222".
+
+1. The program reads the string S = "20250222"
+2. It creates an empty StringBuilder called `result`
+3. It iterates through each character in S:
+   - i=0: c='2' → c == '2' is true → append '2' to result → result = "2"
+   - i=1: c='0' → c == '2' is false → skip
+   - i=2: c='2' → c == '2' is true → append '2' to result → result = "22"
+   - i=3: c='5' → c == '2' is false → skip
+   - i=4: c='0' → c == '2' is false → skip
+   - i=5: c='2' → c == '2' is true → append '2' to result → result = "222"
+   - i=6: c='2' → c == '2' is true → append '2' to result → result = "2222"
+   - i=7: c='2' → c == '2' is true → append '2' to result → result = "22222"
+4. The program prints result.toString() which is "22222"
+
+22222

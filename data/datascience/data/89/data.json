@@ -1,0 +1,11 @@
+{
+    "url": "https://stackoverflow.com/questions/62516092/plot-lineplot-on-top-of-seaborn-heatmap-using-same-axes",
+    "source": "stackoverflow",
+    "title": "Plot lineplot on top of seaborn heatmap using same axes",
+    "Description": "The intended visualization is a heatmap displaying a diagonal line that takes up most of the space within the axes. Currently, the line is short and does not extend across the heatmap effectively. The desired outcome is for the diagonal line to stretch from the bottom left corner to the top right corner of the heatmap, giving it a more prominent appearance.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "seaborn",
+        "data-visualization"
+    ]
+}

@@ -1,0 +1,6 @@
+for (int j = i; j >= 0; j--) {
+    if (cnt + j <= i) {
+        dp[i + 1][cnt + j] += dp[j][cnt];
+        dp[i + 1][cnt + j] %= MOD;
+    }
+}

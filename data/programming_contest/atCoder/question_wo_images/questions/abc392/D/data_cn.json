@@ -1,0 +1,26 @@
+{
+    "Title": "Japan Registry Services (JPRS) Programming Contest 2025#1 (AtCoder Beginner Contest 392)",
+    "Source": "atcoder",
+    "Name": "Doubles",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "有 N 顆骰子。\n第 i 顆骰子有 K_i 個面，面上寫著數字 A_{i,1}, A_{i,2}, ..., A_{i,K_i}。\n當你擲這顆骰子時，每個面出現的機率為 \\frac{1}{K_i}。\n你從這 N 顆骰子中選擇兩顆並擲出它們。\n當骰子被最優選擇時，判斷兩顆骰子顯示相同數字的最大機率。",
+    "Statement Images": [],
+    "Constraints": "- 2 ≤ N ≤ 100  \n- 1 ≤ K_i  \n- K_1 + K_2 + \\dots + K_N ≤ 10^5  \n- 1 ≤ A_{i,j} ≤ 10^5  \n- 所有輸入值均為整數。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nN\nK_1 A_{1,1} A_{1,2} \\dots A_{1,K_1}\n\\vdots\nK_N A_{N,1} A_{N,2} \\dots A_{N,K_N}\n輸出\n輸出答案。\n如果您的答案與真實解的絕對誤差或相對誤差不超過 10^{-8}，則視為正確。",
+    "Sample Detail": [
+        {
+            "input": "3\n3 1 2 3\n4 1 2 2 1\n6 1 2 3 4 5 6\n",
+            "output": "0.333333333333333\n",
+            "explanation": "- 當選擇第一和第二個骰子時，結果相同的概率為 \\frac{1}{3}。\n- 當選擇第一和第三個骰子時，概率為 \\frac{1}{6}。\n- 當選擇第二和第三個骰子時，概率為 \\frac{1}{6}。\n\n因此，最大的概率為 \\frac{1}{3} = 0.3333333333....",
+            "images": []
+        },
+        {
+            "input": "3\n5 1 1 1 1 1\n4 2 2 2 2\n3 1 1 2\n",
+            "output": "0.666666666666667\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

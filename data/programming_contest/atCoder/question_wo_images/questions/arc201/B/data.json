@@ -1,0 +1,20 @@
+{
+    "Title": "AtCoder Regular Contest 201",
+    "Source": "atcoder",
+    "Name": "Binary Knapsack",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "There are N items numbered 1,2,\\dots,N.\nItem i has weight 2^{X_i} and value Y_i.\nWhen choosing 0 or more items such that the sum of weights is at most W, find the maximum possible sum of values.\nT test cases are given, so find the answer for each.",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ T ≤ 10^5\n- 1 ≤ N ≤ 2 \\times 10^5\n- 1 ≤ W ≤ 10^{18}\n- 0 ≤ X_i \\lt 60\n- 1 ≤ Y_i ≤ 10^9\n- The sum of N over all test cases is at most 2 \\times 10^5.\n- All input values are integers.",
+    "IO Styles": "Input\nThe input is given from Standard Input in the following format:\nT\n\\text{case}_1\n\\text{case}_2\n\\vdots\n\\text{case}_T\nEach test case is given in the following format:\nN W\nX_1 Y_1\nX_2 Y_2\n\\vdots\nX_N Y_N\nOutput\nOutput T lines.\nThe i-th line should contain the maximum possible sum of values for the i-th test case.",
+    "Sample Detail": [
+        {
+            "input": "3\n4 16\n0 3\n3 2\n4 5\n3 4\n1 576460752303423487\n59 1000000000\n15 23752394551518\n42 457687868\n42 527769950\n41 336200204\n42 555090674\n32 452384\n42 697175056\n38 62269946\n39 24293218\n40 214670437\n37 6306990\n39 103832403\n41 205334902\n37 20326312\n35 4723060\n42 176783630\n",
+            "output": "7\n0\n3102936938\n",
+            "explanation": "For the first test case, the pairs of weight and value for items 1,2,3,4 are (1,3),(8,2),(16,5),(8,4), respectively.\n\nIf we choose items 1 and 4, the sum of weights is 1+8=9 (≤ 16) and the sum of values is 3+4=7.\n\nFor the second test case, note that it is allowed to choose 0 items.",
+            "images": []
+        }
+    ],
+    "Language": "en"
+}

@@ -1,0 +1,24 @@
+{
+    "Title": "Codeforces Round 1014 (Div. 2)",
+    "Source": "codeforces",
+    "Name": "She knows...",
+    "Time Limit": "2 s",
+    "Memory Limit": "256 mb",
+    "Problem Statement": "D. Pippy is preparing for a \"black-and-white\" party at his home. He only needs to repaint the floor in his basement, which can be represented as a board of size $n \\times m$.\nAfter the last party, the entire board is painted green, except for some $k$ cells $(x_1, y_1), (x_2, y_2), ..., (x_k, y_k)$, each of which is painted either white or black. For the upcoming party, D. Pippy wants to paint each of the remaining green cells either black or white. At the same time, he wants the number of pairs of adjacent cells with different colors on the board to be even after repainting.\nFormally, if $A = ≤ft\\{((i_1, j_1), (i_2, j_2)) \\ | \\ 1 ≤ i_1, i_2 ≤ n, 1 ≤ j_1, j_2 ≤ m, i_1+j_1<i_2+j_2, |i_1-i_2|+|j_1-j_2| = 1, \\operatorname{color}(i_1, j_1) \\neq \\operatorname{color}(i_2, j_2) \\right\\},$ where $\\operatorname{color}(x, y)$ denotes the color of the cell $(x, y)$, then it is required that $|A|$ be even.\nHelp D. Pippy find the number of ways to repaint the floor so that the condition is satisfied. Since this number can be large, output the remainder of its division by $10^9 + 7$.",
+    "Statement Images": [],
+    "Constraints": "Time limit: 2 s\nMemory limit: 256 mb",
+    "IO Styles": "Input\nEach test consists of several test cases. The first line of the input data contains one integer $t$ ($1 ≤ t ≤ 10^4$) — the number of test cases. The description of the test cases follows.\nThe first line of each test case contains three integers $n, m, k$ ($3 ≤ n, m ≤ 10^9$; $1 ≤ k ≤ 2 \\cdot 10^5$) — the dimensions of the board and the number of cells that are initially not green.\nIn the $i$-th of the following $k$ lines of each test case, there are three integers $x_i, y_i$ and $c_i$ ($1 ≤ x_i ≤ n; 1 ≤ y_i ≤ m$; $c_i \\in \\{0, 1\\}$) — the coordinates of the cell and its color (if white, then $c_i = 0$; if black, then $c_i = 1$). It is guaranteed that all cells are distinct.\nIt is guaranteed that the sum of $k$ across all test cases does not exceed $2 \\cdot 10^5$.\nOutput\nFor each test case, output a single integer — the answer modulo $10^9 + 7$.",
+    "Sample Detail": [
+        {
+            "input": "2\n3 3 6\n1 1 0\n1 2 1\n1 3 0\n3 1 1\n3 2 0\n3 3 1\n3 4 12\n1 1 0\n1 2 1\n1 3 0\n1 4 1\n2 1 1\n2 2 0\n2 3 1\n2 4 0\n3 1 0\n3 2 1\n3 3 0\n3 4 1",
+            "output": "4\n0",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Notes": "Note\nIn the first test case, there are exactly $4$ ways to paint the green cells $(2, 1), (2, 2), (2, 3)$, namely: $(1, 1, 0), (0, 0, 1), (1, 0, 0), (0, 1, 1)$ (the colors are indicated in the same order as the cells), as shown below. ![image](1.png) Example 1. \nIn the second test case, all cells of the board are already painted, and the number of pairs of adjacent cells with different colors on the board is odd, so the answer is zero.",
+    "Note Images": [
+        "https://espresso.codeforces.com/675afbf168b04d13cafb66dda4b563200ddc256d.png"
+    ],
+    "Language": "en"
+}

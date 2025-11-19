@@ -1,0 +1,11 @@
+{
+    "url": "https://stackoverflow.com/questions/61748441/how-to-fix-the-values-displayed-in-a-confusion-matrix-in-exponential-form-to-nor",
+    "source": "stackoverflow",
+    "title": "how to fix the values displayed in a confusion matrix in exponential form to normal form",
+    "Description": "The heatmap is intended to display a confusion matrix with the values annotated within each cell. Currently, values of 1102 and 725 are displayed in exponential notation (1.1e+03 and 7.2e+02) instead of their full integer values. The expected result is for the values to appear as 1102 and 725, respectively, within the cells of the heatmap.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "seaborn",
+        "data-visualization"
+    ]
+}

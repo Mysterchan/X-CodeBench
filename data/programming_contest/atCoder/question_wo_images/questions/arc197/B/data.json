@@ -1,0 +1,20 @@
+{
+    "Title": "AtCoder Regular Contest 197 (Div. 2)",
+    "Source": "atcoder",
+    "Name": "Greater Than Average",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "Define the score of a non-empty integer sequence x = (x_1, ..., x_n) as the number of elements of x that are strictly greater than the average of x.\nThat is, the score of x is the count of indices i satisfying x_i > \\dfrac{x_1+\\cdots+x_n}{n}.\nYou are given a length-N integer sequence A = (A_1, ..., A_N). Find the maximum score of a non-empty subsequence of A.\nThere are T test cases; solve each one.\nDefinition of subsequence\nA subsequence of A is any sequence obtained by deleting zero or more elements from A and keeping the remaining elements in their original order.",
+    "Statement Images": [],
+    "Constraints": "- 1≤ T≤ 2\\times 10^5\n- 2≤ N≤ 2\\times 10^5\n- 1≤ A_i≤ 10^9\n- All input values are integers.\n- The sum of N over all test cases is at most 2\\times 10^5.",
+    "IO Styles": "Input\nThe input is given from Standard Input in the following format:\nT\n\\text{case}_1\n\\vdots\n\\text{case}_T\nEach case is given in the following format:\nN\nA_1 \\cdots A_N\nOutput\nPrint T lines. The i-th line should contain the maximum score of a non-empty subsequence of A for the i-th test case.",
+    "Sample Detail": [
+        {
+            "input": "3\n5\n2 6 5 7 5\n5\n10 10 10 10 10\n5\n1 10 100 1000 10000\n",
+            "output": "3\n0\n1\n",
+            "explanation": "For the first test case, below are examples of subsequences, their averages, and their scores.\n\n- x = (A_1) = (2): the average is 2, and the score is 0.\n- x = (A_3,A_5) = (5,5): the average is 5, and the score is 0.\n- x = (A_1,A_3,A_4,A_5) = (2,5,7,5): the average is \\frac{19}{4}, and the score is 3.\n- x = (A_1,A_2,A_3,A_4,A_5) = (2,6,5,7,5): the average is 5, and the score is 2.",
+            "images": []
+        }
+    ],
+    "Language": "en"
+}

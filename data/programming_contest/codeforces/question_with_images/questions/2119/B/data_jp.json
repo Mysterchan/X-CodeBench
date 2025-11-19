@@ -1,0 +1,26 @@
+{
+    "Title": "Codeforces Round 1035 (Div. 2)",
+    "Source": "codeforces",
+    "Name": "Line Segments",
+    "Time Limit": "1.5 s",
+    "Memory Limit": "256 mb",
+    "Problem Statement": "PIKASONIC - Lost My Mind (feat.nakotanmaru)\nユークリッド平面上の2点$(p_x,p_y)$と$(q_x,q_y)$が与えられます。\n出発点$(p_x,p_y)$から始めて、$n$回の操作を行います。$i$回目の操作では、現在の位置とその点とのユークリッド距離$^{\\text{∗}}$がちょうど$a_i$になるような任意の点を選び、その点に移動しなければなりません。\nすべての操作を行った後に終点$(q_x,q_y)$に到達できるかどうかを判定してください。\n$^{\\text{∗}}$点$(x_1, y_1)$と$(x_2, y_2)$間のユークリッド距離は$\\sqrt{(x_1 - x_2)^2 + (y_1 - y_2)^2}$です。",
+    "Statement Images": [],
+    "Constraints": "Time limit: 1.5 s\nMemory limit: 256 mb",
+    "IO Styles": "入力\n各テストには複数のテストケースが含まれています。最初の行にはテストケースの数 $t$ ($1 ≤ t ≤ 10^4$) が含まれています。テストケースの説明が続きます。\n各テストケースの最初の行には、整数 $n$ ($1≤ n ≤ 10^3$) が含まれています — 配列 $a$ の長さです。\n各テストケースの2行目には、4つの整数 $p_x,p_y,q_x,q_y$ ($1≤ p_x,p_y,q_x,q_y≤ 10^7$) が含まれています — 開始点と終点の座標です。\n各テストケースの3行目には、$n$ 個の整数 $a_1,a_2,...,a_n$ ($1 ≤ a_i ≤ 10^4$) が含まれています — 各操作で移動する距離です。\nすべてのテストケースにおける $n$ の合計は $2\\cdot 10^5$ を超えないことが保証されています。\n出力\n各テストケースについて、すべての操作の後に終点 $(q_x,q_y)$ に到達可能であれば \"Yes\" を出力し、そうでなければ \"No\" を出力してください。\n回答は大文字または小文字のいずれでも出力できます。例えば、\"yEs\"、\"yes\"、\"Yes\"、\"YES\" などの文字列は肯定的な応答として認識されます。",
+    "Sample Detail": [
+        {
+            "input": "5\n2\n1 1 5 1\n3 3\n3\n1 1 3 3\n2 3 4\n2\n100 100 100 100\n4 5\n1\n5 1 1 4\n5\n2\n10000000 10000000 10000000 10000000\n10000 10000",
+            "output": "Yes\nYes\nNo\nYes\nYes",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Notes": "注意\nこちらは、最初のテストケースの可能な動きを示す画像です。点 $r_1$ の座標は $(3,1+\\sqrt{5})$ です。 ![image](1.png) 最初のテストケース。\nこちらは、2番目のテストケースの可能な動きを示す画像です。点 $r_1$ の座標は $(1+\\sqrt{3},0)$ で、点 $r_2$ の座標は $≤ft(-\\frac{(\\sqrt{3}+4)(3\\sqrt{3(149-24\\sqrt{3})}-7\\sqrt{3}-38)}{104},-\\frac{\\sqrt{3(1331-764\\sqrt{3})}+12\\sqrt{3}-27}{104}\\right)$ です。 ![image](2.png) 2番目のテストケース。\n3番目のテストケースについては、すべての要件を満たす動きのセットが存在しないことが示されます。\nこちらは、4番目のテストケースの可能な動きを示す画像です。 ![image](3.png) 4番目のテストケース。",
+    "Note Images": [
+        "https://espresso.codeforces.com/4bb380de077bba6d4efe150c19f8ecefdf92f011.png",
+        "https://espresso.codeforces.com/6616aa240a030d50075aca3ca14cf54501d4f21d.png",
+        "https://espresso.codeforces.com/db54fedff28db688eddb8b1f7d23c4f549dfbe25.png"
+    ],
+    "Language": "jp"
+}

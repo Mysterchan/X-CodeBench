@@ -1,0 +1,32 @@
+{
+    "Title": "AtCoder Regular Contest 205 (Div. 2)",
+    "Source": "atcoder",
+    "Name": "Subset Product Problem",
+    "Time Limit": "6 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "You are given a length-N sequence of non-negative integers A=(A_1,A_2,...,A_N).\nFor k=1,2,...,N, solve the following problem.\n- Find the product, modulo 998244353, of A_i for all integers i between 1 and k, inclusive, such that the bitwise \\mathrm{OR} operation of A_i and A_k equals A_k.\n What is bitwise \\mathrm{OR} operation?\n \n The bitwise \\mathrm{OR} of non-negative integers X and Y, denoted X\\ \\mathrm{OR}\\ Y, is defined as follows.\n \n- When X\\ \\mathrm{OR}\\ Y is written in binary, the digit at the 2^k (k ≥ 0) place is 1 if at least one of the digits at the 2^k place when X and Y are written in binary is 1, and 0 otherwise.\n For example, 3\\ \\mathrm{OR}\\ 5 = 7 (in binary: 011\\ \\mathrm{OR}\\ 101 = 111).",
+    "Statement Images": [],
+    "Constraints": "- 1≤ N≤ 4\\times 10^5\n- 0≤ A_i < 2^{20}\n- All input values are integers.",
+    "IO Styles": "Input\nThe input is given from Standard Input in the following format:\nN\nA_1 A_2 ... A_N\nOutput\nOutput N lines.\nThe i-th line (1≤ i≤ N) should contain the answer for the case k=i.",
+    "Sample Detail": [
+        {
+            "input": "4\n1 2 3 5\n",
+            "output": "1\n2\n6\n5\n",
+            "explanation": "- When k=1: For i=1, the bitwise \\mathrm{OR} operation of A_i and A_k is 1. Therefore, the answer for the case k=1 is A_1=1.\n- When k=2: For i=1,2, the bitwise \\mathrm{OR} operation of A_i and A_k is 3,2, respectively. Therefore, the answer for the case k=2 is A_2=2.\n- When k=3: For i=1,2,3, the bitwise \\mathrm{OR} operation of A_i and A_k is all 3. Therefore, the answer for the case k=3 is A_1\\times A_2\\times A_3=6.\n- When k=4: For i=1,2,3,4, the bitwise \\mathrm{OR} operation of A_i and A_k is 5,7,7,5, respectively. Therefore, the answer for the case k=4 is A_1\\times A_4=5.",
+            "images": []
+        },
+        {
+            "input": "9\n3 1 4 1 5 9 2 6 5\n",
+            "output": "3\n1\n4\n1\n20\n9\n2\n48\n100\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "12\n437926 528156 284664 1038330 692060 720863 602077 1027766 868190 532252 982711 876446\n",
+            "output": "437926\n528156\n284664\n94842632\n158208162\n985930968\n548875758\n875494466\n345599613\n605424119\n111381243\n768586512\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "en"
+}

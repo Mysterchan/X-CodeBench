@@ -1,0 +1,5 @@
+count=0
+for k in tmp:
+    if k==0:
+        count+=1
+votes[n-1].append(max(2-count,0))

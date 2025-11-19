@@ -1,0 +1,32 @@
+{
+    "Title": "AtCoder Beginner Contest 393",
+    "Source": "atcoder",
+    "Name": "Swap to Gather",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "給定一個長度為 N 的字符串 S，該字符串由 0 和 1 組成。保證 S 至少包含一個 1。\n你可以隨意次數（可能為零）執行以下操作：\n- 選擇一個整數 i (1 ≤ i ≤ N-1)，並交換 S 中第 i 個和第 (i+1) 個字符。\n找出使所有的 1 連續所需的最小操作次數。\n在這裡，所有的 1 說是連續的當且僅當存在整數 l 和 r (1 ≤ l ≤ r ≤ N)，使得 S 中第 i 個字符是 1 當且僅當 l ≤ i ≤ r，否則為 0。",
+    "Statement Images": [],
+    "Constraints": "- 2 ≤ N ≤ 5 \\times 10^5\n- N 是一個整數。\n- S 是長度為 N 的由 0 和 1 組成的字串。\n- S 至少包含一個 1。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nN\r\nS\n輸出\n輸出答案。",
+    "Sample Detail": [
+        {
+            "input": "7\n0101001\n",
+            "output": "3\n",
+            "explanation": "例如，以下三個操作可以使所有的 1 連續：\n\n- 選擇 i=2，交換第 2 個和第 3 個字符。然後，S= 0011001。\n- 選擇 i=6，交換第 6 個和第 7 個字符。然後，S= 0011010。\n- 選擇 i=5，交換第 5 個和第 6 個字符。然後，S= 0011100。\n\n在兩次或更少的交換中無法做到這一點，因此答案是 3。",
+            "images": []
+        },
+        {
+            "input": "3\n100\n",
+            "output": "0\n",
+            "explanation": "所有的 1 已經是連續的，因此不需要進行任何交換。",
+            "images": []
+        },
+        {
+            "input": "10\n0101001001\n",
+            "output": "7\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

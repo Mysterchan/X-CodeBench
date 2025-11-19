@@ -1,0 +1,28 @@
+{
+    "Title": "AtCoder Grand Contest 072",
+    "Source": "atcoder",
+    "Name": "Human Exercise",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "AtCoder City is represented by an N \\times N grid. Let (i, j) denote the cell at the i‑th row from the top (1 ≤ i ≤ N) and the j‑th column from the left (1 ≤ j ≤ N).\nAoki performed the following exercise K times for marathon training.\n- Start from cell (1, 1).\n- Repeat the following action 2N-2 times to reach cell (N, N): \n- Move one cell down or right. If both moves are possible, choose the one whose destination cell has been visited fewer times in the previous exercises. If the counts are equal, choose the downward move.\nPrint the path taken in the K‑th exercise.",
+    "Statement Images": [],
+    "Constraints": "- 2 ≤ N ≤ 100\n- 1 ≤ K ≤ 10^{18}\n- All input values are integers.",
+    "IO Styles": "Input\nThe input is given from Standard Input in the following format:\nN K\r\nOutput\nPrint a string of length 2N-2. The i‑th character should be D if the i‑th move in the K‑th exercise goes downward, and R if it goes rightward.",
+    "Sample Detail": [
+        {
+            "input": "5 4\n",
+            "output": "RRDDRRDD\n",
+            "explanation": "The 1st, 2nd, 3rd, and 4th exercises go as follows, so the answer is RRDDRRDD.\n\n![image](1.png)",
+            "images": [
+                "https://img.atcoder.jp/agc072/bf631afab80dc49bc5ffd8d3ac085b08.png"
+            ]
+        },
+        {
+            "input": "10 869120\n",
+            "output": "RDRRRDRDRDRDRDDDRD\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "en"
+}

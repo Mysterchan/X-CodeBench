@@ -1,0 +1,32 @@
+{
+    "Title": "KAJIMA CORPORATION CONTEST 2025 (AtCoder Beginner Contest 394)",
+    "Source": "atcoder",
+    "Name": "Alkane",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "給定一棵無向樹 T，擁有 N 個頂點，編號為 1, 2, ..., N。第 i 條邊是一條連接頂點 A_i 和 B_i 的無向邊。\n一個圖被定義為烷類（alkane）當且僅當它滿足以下條件：\n- 該圖是一棵無向樹。\n- 每個頂點的度數要麼為 1，要麼為 4，且至少存在一個度數為 4 的頂點。\n判定是否存在 T 的子圖是烷類，如果存在，則找出該子圖中頂點的最大數量。",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ N ≤ 2 \\times 10^5\n- 1 ≤ A_i, B_i ≤ N\n- 所給的圖是一棵無向樹。\n- 所有輸入值皆為整數。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nN\nA_1 B_1\nA_2 B_2\n\\vdots\nA_{N - 1} B_{N - 1}\n\n輸出\n如果存在一個子圖 T 使其為烷烴，則輸出該子圖中最大頂點數。否則，輸出 -1。",
+    "Sample Detail": [
+        {
+            "input": "9\n1 2\n2 3\n3 4\n4 5\n2 6\n2 7\n3 8\n3 9\n",
+            "output": "8\n",
+            "explanation": "令 (u, v) 表示頂點 u 和 v 之間的無向邊。\n\n由頂點 1、2、3、4、6、7、8、9 及邊 (1,2)、(2,3)、(3,4)、(2,6)、(2,7)、(3,8)、(3,9) 組成的子圖是一個烷烴。",
+            "images": []
+        },
+        {
+            "input": "7\n1 2\n1 3\n2 4\n2 5\n3 6\n3 7\n",
+            "output": "-1\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "15\n8 5\n2 9\n1 12\n6 11\n9 3\n15 1\n7 12\n7 13\n10 5\n6 9\n5 1\n1 9\n4 5\n6 14\n",
+            "output": "11\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

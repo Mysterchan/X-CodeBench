@@ -1,0 +1,32 @@
+{
+    "Title": "AtCoder Regular Contest 192 (Div. 2)",
+    "Source": "atcoder",
+    "Name": "Fraction Line",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "對於一個正有理數 x，定義 f(x) 如下：\n將 x 表示為 \\dfrac{P}{Q}，其中 P 和 Q 是互質的正整數。定義 f(x) 為 P\\times Q 的值。\n你將獲得一個正整數 N 和一個長度為 N-1 的正整數序列 A=(A_1,A_2,\\dots,A_{N-1})。\n如果一個長度為 N 的正整數序列 S=(S_1,S_2,\\dots,S_N) 滿足以下所有條件，則稱之為良好序列：\n- 對於每個整數 i，滿足 1≤ i≤ N-1，則有 f\\left(\\dfrac{S_i}{S_{i+1}}\\right)=A_i。\n- \\gcd(S_1,S_2,\\dots,S_N)=1。\n定義一個序列的分數為其所有元素的乘積。\n可以證明良好序列的數量是有限的。找到所有良好序列的分數之和，並對 998244353 取模。",
+    "Statement Images": [],
+    "Constraints": "- 2≤ N≤ 1000\n- 1≤ A_i≤ 1000 (1≤ i≤ N-1)\n- 所有輸入值為整數。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nN\nA_1 A_2 \\dots A_{N-1}\n輸出\n輸出所有良好序列的分數總和，對 998244353 取模。",
+    "Sample Detail": [
+        {
+            "input": "6\n1 9 2 2 9\n",
+            "output": "939634344\n",
+            "explanation": "例如，(2,2,18,9,18,2) 和 (18,18,2,1,2,18) 都是良好序列，並且它們的分數都是 23328。\n\n總共有 16 個良好序列，所有序列的分數總和為 939634344。",
+            "images": []
+        },
+        {
+            "input": "2\n9\n",
+            "output": "18\n",
+            "explanation": "有 2 條良好序列，得分均為 9。",
+            "images": []
+        },
+        {
+            "input": "25\n222 299 229 22 999 922 99 992 22 292 222 229 992 922 22 992 222 222 99 29 92 999 2 29\n",
+            "output": "192457116\n",
+            "explanation": "中文：不要忘記計算總和取模 998244353。",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

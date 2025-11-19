@@ -1,0 +1,25 @@
+{
+    "Title": "Codeforces Round 1022 (Div. 2)",
+    "Source": "codeforces",
+    "Name": "Fallen Towers",
+    "Time Limit": "3 s",
+    "Memory Limit": "256 mb",
+    "Problem Statement": "Pizano 建造了一個包含 $n$ 座塔的陣列 $a$，每座塔的積木數量為 $a_i ≥ 0$。\nPizano 可以摧毀一座塔，使得接下來的 $a_i$ 座塔的高度增加 $1$。換句話說，他可以將元素 $a_i$ 的值增加到接下來的 $a_i$ 個元素上，然後將 $a_i$ 設定為 $0$。落下的積木將會消失。如果 Pizano 摧毀的是一座高度為 $0$ 的塔，則不會有任何變化。\nPizano 希望以任意順序摧毀所有 $n$ 座塔，每座塔恰好被摧毀一次。也就是說，對於每個 $i$ 從 $1$ 到 $n$，他將恰好摧毀位置為 $i$ 的塔一次。\n此外，結果產生的塔的高度陣列必須是非減少的。這意味著在他摧毀所有 $n$ 座塔之後，對於任何 $i < j$，位置 $i$ 的塔的高度不得高於位置 $j$ 的塔的高度。\n您需要輸出結果塔高度陣列的最大 $\\text{MEX}$。\n一個陣列的 $\\text{MEX}$ 是該陣列中不存在的最小非負整數。",
+    "Statement Images": [],
+    "Constraints": "Time limit: 3 s\nMemory limit: 256 mb",
+    "IO Styles": "輸入\n每個測試包含多個測試案例。第一行包含測試案例的數量 $t$ ($1 ≤ t ≤ 10^4$)。接下來是測試案例的描述。\n每個測試案例的第一行包含一個整數 $n$ ($1 ≤ n ≤ 10^5$) — 塔的數量。\n每個測試案例的第二行包含 $n$ 個整數 — 塔的初始高度 $a_1, ..., a_n$ ($0 ≤ a_i ≤ 10^9$)。\n可以保證所有測試案例中 $n$ 的總和不超過 $10^5$。\n輸出\n對於每個測試案例，輸出一個整數 — 最終數組的最大 $\\text{MEX}$。",
+    "Sample Detail": [
+        {
+            "input": "8\n2\n1 2\n4\n2 1 0 0\n10\n5 9 3 7 1 5 1 5 4 3\n10\n1 1 1 1 1 1 1 1 1 1\n10\n3 2 1 0 3 2 1 0 3 2\n5\n5 2 0 5 5\n1\n1000000000\n7\n4 0 1 0 2 7 7",
+            "output": "2\n3\n7\n4\n5\n4\n1\n3",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Notes": "注意\n第一個測試案例的解釋。 ![image](1.png) \n第二個測試案例的解釋。注意到所有的塔樓都被擊倒了恰好一次，並且最終的高度陣列是非遞減的。 ![image](2.png)",
+    "Note Images": [
+        "https://espresso.codeforces.com/95dc78937181377d85bb2440281047a8fa88de5d.png",
+        "https://espresso.codeforces.com/acf09459014b6676f09ee372ca3e24483dd28723.png"
+    ],
+    "Language": "cn"
+}

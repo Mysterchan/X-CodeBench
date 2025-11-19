@@ -1,0 +1,34 @@
+{
+    "Title": "AtCoder Beginner Contest 395",
+    "Source": "atcoder",
+    "Name": "Pigeon Swap",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "有 N 隻鴿子標記為 1, 2, ..., N 和 N 個巢穴標記為 1, 2, ..., N。\n最初，鴿子 i (1 ≤ i ≤ N) 在巢穴 i 中。\n你將對這些鴿子執行 Q 次操作。\n操作有三種類型：\n- 類型 1：給定整數 a 和 b (1 ≤ a ≤ N, 1 ≤ b ≤ N)。將鴿子 a 從其當前的巢穴中取出並移動到巢穴 b。\n- 類型 2：給定整數 a 和 b (1 ≤ a < b ≤ N)。將所有在巢穴 a 的鴿子移動到巢穴 b，並將所有在巢穴 b 的鴿子移動到巢穴 a。這兩個移動同時發生。\n- 類型 3：給定整數 a (1 ≤ a ≤ N)。鴿子 a 報告其當前所在的巢穴的標籤。\n按操作給出的順序打印每次類型 3 操作的結果。",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ N ≤ 10^6\n- 1 ≤ Q ≤ 3 \\times 10^5\n- 每個操作都是類型 1、2 或 3。\n- 所有操作都是根據問題陳述有效的。\n- 至少有一個類型 3 的操作。\n- 所有輸入值都是整數。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nN Q\nop _ 1\nop _ 2\n\\vdots\nop _ Q\n這裡，op _ i 在第 i+1 行代表第 i 次操作，其格式為以下之一。\n如果第 i 次操作為類型 1，op _ i 的格式為：\n1 a b\n這對應於一個類型 1 操作，給定的整數為 a 和 b。\n如果第 i 次操作為類型 2，op _ i 的格式為：\n2 a b\n這對應於一個類型 2 操作，給定的整數為 a 和 b。\n如果第 i 次操作為類型 3，op _ i 的格式為：\n3 a\n這對應於一個類型 3 操作，給定的整數為 a。\n輸出\n設類型 3 操作的數量為 q。打印 q 行。第 i 行 (1 ≤ i ≤ q) 應該包含在第 i 次類型 3 操作中報告的 nest 數。",
+    "Sample Detail": [
+        {
+            "input": "6 8\n1 2 4\n1 3 6\n3 2\n2 4 5\n3 2\n1 4 2\n3 4\n3 2\n",
+            "output": "4\n5\n2\n5\n",
+            "explanation": "在給定的操作中，鴿子按照下面的圖示移動：\n\n![image](1.png)\n\n需要報告的第3類操作的巢穴編號為4、5、2、5。請在單獨的行上打印4、5、2、5。",
+            "images": [
+                "https://img.atcoder.jp/abc395/e82ad720223ef5e6d6cf8d1d51daa621.png"
+            ]
+        },
+        {
+            "input": "1 2\n1 1 1\n3 1\n",
+            "output": "1\n",
+            "explanation": "類型 1 操作的目標巢穴可以是鸽子目前所在的巢穴。",
+            "images": []
+        },
+        {
+            "input": "30 15\n3 3\n2 8 30\n2 12 15\n2 2 17\n1 19 1\n2 7 30\n3 12\n3 8\n2 25 26\n1 13 10\n1 16 10\n2 16 29\n2 1 21\n2 6 11\n1 21 8\n",
+            "output": "3\n15\n7\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

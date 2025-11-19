@@ -1,0 +1,35 @@
+{
+    "Title": "AtCoder Beginner Contest 422",
+    "Source": "atcoder",
+    "Name": "Eat and Ride",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "There is a connected undirected graph with N vertices and M edges.\nThe vertices are numbered vertex 1, vertex 2,..., vertex N, and the i-th edge (1≤ i≤ M) connects vertices u _ i and v _ i.\nFor i=1,2,...,N, solve the following problem:\nInitially, Takahashi's weight is 0.\nHe travels by car to visit vertex 1 and moves toward vertex i.\nWhen he visits vertex v\\ (1≤ v≤ N), his weight increases by W _ v.\nThe car he is riding can move along the edges.\nWhen he passes through an edge, letting X be his weight at that time, the car consumes X fuel.\nFind the minimum amount of fuel consumed for him to reach vertex i.",
+    "Statement Images": [],
+    "Constraints": "- 1≤ N≤5000\n- 1≤ M≤5000\n- 1≤ W _ i≤10 ^ 9\\ (1≤ i≤ N)\n- 1≤ u _ i≤ v _ i≤ N\\ (1≤ i≤ M)\n- The given graph is connected.\n- All input values are integers.",
+    "IO Styles": "Input\nThe input is given from Standard Input in the following format:\nN M\r\nW _ 1 W _ 2 ... W _ N\r\nu _ 1 v _ 1\r\nu _ 2 v _ 2\r\n\\vdots\r\nu _ M v _ M\r\nOutput\nOutput over N lines.\r\nOn the i-th line (1≤ i≤ N), output the amount of fuel needed for Takahashi to reach vertex i.",
+    "Sample Detail": [
+        {
+            "input": "5 6\n3 1 4 1 5\n1 2\n1 3\n2 3\n2 4\n3 5\n4 5\n",
+            "output": "0\n3\n3\n7\n10\n",
+            "explanation": "The given graph is as follows:\n\n![image](1.png)\n\nFor example, Takahashi can reach vertex 5 by visiting vertex 1 and then acting as follows:\n\n- He visits vertex 1. His weight increases by 3, becoming 3.\n- He consumes 3 fuel to move to vertex 3. His weight increases by 4, becoming 7.\n- He consumes 7 fuel to move to vertex 5. His weight increases by 5, becoming 12.\n\n\n![image](2.png)\n\nBy acting this way, he can reach vertex 5 by consuming 10 fuel.\r\nIt is impossible to reduce the fuel consumption to 9 or less, so output 10 on the 5th line.",
+            "images": [
+                "https://img.atcoder.jp/abc422/070ca7759e00a4745da87b3331be5c16.png",
+                "https://img.atcoder.jp/abc422/9aab83c1ebccad7294d7976f0ea277aa.png"
+            ]
+        },
+        {
+            "input": "5 4\n1000000000 1000000000 1000000000 1000000000 1000000000\n1 2\n2 3\n3 4\n4 5\n",
+            "output": "0\n1000000000\n3000000000\n6000000000\n10000000000\n",
+            "explanation": "Note that the answer may exceed 2 ^ {32}.",
+            "images": []
+        },
+        {
+            "input": "10 20\n74931 58277 33783 91022 53003 11085 65924 63548 78622 77307\n1 8\n3 6\n5 10\n4 6\n1 3\n1 7\n2 6\n7 10\n8 9\n3 4\n4 4\n4 6\n6 6\n5 10\n1 7\n4 5\n1 2\n3 7\n2 3\n5 8\n",
+            "output": "0\n74931\n74931\n183645\n213410\n183645\n74931\n74931\n213410\n215786\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "en"
+}

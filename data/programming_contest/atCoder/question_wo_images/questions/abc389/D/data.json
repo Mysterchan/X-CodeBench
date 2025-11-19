@@ -1,0 +1,32 @@
+{
+    "Title": "Toyota Programming Contest  2025（AtCoder Beginner Contest 389)",
+    "Source": "atcoder",
+    "Name": "Squares in Circle",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "On the two-dimensional coordinate plane, there is an infinite tiling of 1 \\times 1 squares.\nConsider drawing a circle of radius R centered at the center of one of these squares. How many of these squares are completely contained inside the circle?\nMore precisely, find the number of integer pairs (i,j) such that all four points (i+0.5,j+0.5), (i+0.5,j-0.5), (i-0.5,j+0.5), and (i-0.5,j-0.5) are at a distance of at most R from the origin.",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ R ≤ 10^{6}\n- All input values are integers.",
+    "IO Styles": "Input\nThe input is given from Standard Input in the following format:\nR\r\nOutput\nPrint the answer.",
+    "Sample Detail": [
+        {
+            "input": "2\n",
+            "output": "5\n",
+            "explanation": "There are a total of five squares completely contained in the circle: the square whose center matches the circle’s center, plus the four squares adjacent to it.",
+            "images": []
+        },
+        {
+            "input": "4\n",
+            "output": "37\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "26\n",
+            "output": "2025\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "en"
+}

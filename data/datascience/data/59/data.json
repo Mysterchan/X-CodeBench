@@ -1,0 +1,11 @@
+{
+    "url": "https://stackoverflow.com/questions/69661290/re-order-stacked-histplot-in-pythons-seaborn",
+    "source": "stackoverflow",
+    "title": "Re-order stacked histplot in Python's seaborn",
+    "Description": "The intention is to create a stacked histogram where the order of the 'Value' categories is reversed so that the blue part (representing 1) is at the bottom and the dark orange part (representing 4) is on top, in accordance with the order displayed in the legend. The colors assigned to each 'Value' should remain consistent (1 = blue, 2 = light orange, etc.). Currently, the order of the segments in the stacked bar plot does not match the desired configuration, as the highest value (4) is at the bottom instead of the top. The expected plot should reflect the correct stacking order.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "seaborn",
+        "data-visualization"
+    ]
+}

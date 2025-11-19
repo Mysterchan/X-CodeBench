@@ -1,0 +1,18 @@
+Let me trace through the execution of this Java program with the input `3x8`.
+
+1. The program reads the string `S = "3x8"`
+
+2. It extracts the first character: `firstChar = '3'`
+
+3. It extracts the third character (index 2): `thirdChar = '8'`
+
+4. It converts the first character to an integer:
+   - `n1 = '3' - '0' = 51 - 48 = 3`
+
+5. It converts the third character to an integer:
+   - `n2 = '8' - '0' = 56 - 48 = 8`
+
+6. It calculates and prints the product:
+   - `n1 * n2 = 3 * 8 = 24`
+
+24

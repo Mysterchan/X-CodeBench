@@ -1,0 +1,32 @@
+{
+    "Title": "KAJIMA CORPORATION CONTEST 2025 (AtCoder Beginner Contest 394)",
+    "Source": "atcoder",
+    "Name": "22222",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "You are given a string S consisting of digits.\nRemove all characters from S except for 2, and then concatenate the remaining characters in their original order to form a new string.",
+    "Statement Images": [],
+    "Constraints": "- S is a string consisting of digits with length between 1 and 100, inclusive.\n- S contains at least one 2.",
+    "IO Styles": "Input\nThe input is given from Standard Input in the following format:\nS\r\nOutput\nPrint the answer.",
+    "Sample Detail": [
+        {
+            "input": "20250222\n",
+            "output": "22222\n",
+            "explanation": "By removing 0, 5, and 0 from 20250222 and then concatenating the remaining characters in their original order, the string 22222 is obtained.",
+            "images": []
+        },
+        {
+            "input": "2\n",
+            "output": "2\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "22222000111222222\n",
+            "output": "22222222222\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "en"
+}

@@ -1,0 +1,54 @@
+8
+2 1 1
+X
+X
+2 1 1
+#
+#
+5 1 2
+X
+X
+X
+X
+X
+4 4 1
+X#X#
+X#X#
+X#X#
+X#X#
+6 6 2
+######
+#XXXXX
+#XXX##
+#XXX##
+#X##X#
+XXXXXX
+8 10 1
+##########
+##########
+##########
+##########
+X##X####XX
+##########
+##########
+#X########
+8 10 3
+#XX##XXX#X
+XXXXXXXXX#
+#X#XXX###X
+XX##XX#X##
+X#XXXXX#XX
+XXX##XXX##
+XXXX##XXXX
+##XXXXX##X
+10 12 4
+XXXXXXXXXXXX
+############
+XXXXXXXXXXXX
+############
+XXXXXXXXXXXX
+############
+XXXXXXXXXXXX
+############
+XXXXXXXXXXXX
+############

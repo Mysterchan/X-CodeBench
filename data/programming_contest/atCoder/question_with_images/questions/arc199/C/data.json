@@ -1,0 +1,29 @@
+{
+    "Title": "AtCoder Regular Contest 199 (Div. 1)",
+    "Source": "atcoder",
+    "Name": "Circular Tree Embedding",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "In this problem, we simply call a tree with N vertices numbered 1,2,...,N and unnumbered edges an N-vertex tree.\nWhen an N-vertex tree T and a permutation Q=(Q_1,Q_2,...,Q_N) of (1,2,...,N) satisfy the following condition, the permutation Q is called a good permutation of tree T:\nThere are N points 1,2,...,N arranged counterclockwise at equal intervals on a circle in this order. For each edge \\lbrace u,v\\rbrace of tree T, draw a line segment connecting the two points Q_u,Q_v. Then, among the N-1 line segments drawn, no two of them have a common point except at their endpoints.\nYou are given M permutations of (1,2,...,N): P^1=(P^1_1,P^1_2,...,P^1_N),P^2=(P^2_1,P^2_2,...,P^2_N),...,P^M=(P^M_1,P^M_2,...,P^M_N).\nFind the number, modulo 998244353, of N-vertex trees such that P^1,P^2,...,P^M are all good permutations.",
+    "Statement Images": [],
+    "Constraints": "- 2≤ N,M≤ 500\n- P^1,P^2,...,P^M are permutations of (1,2,...,N).\n- All input values are integers.",
+    "IO Styles": "Input\nThe input is given from Standard Input in the following format:\nN M\nP^1_1 P^1_2 ... P^1_N\nP^2_1 P^2_2 ... P^2_N\n\\vdots\nP^M_1 P^M_2 ... P^M_N\nOutput\nOutput the number, modulo 998244353, of N-vertex trees such that P^1,P^2,...,P^M are all good permutations.",
+    "Sample Detail": [
+        {
+            "input": "4 2\n1 4 2 3\n3 1 4 2\n",
+            "output": "8\n",
+            "explanation": "For example, for the following two trees, both P^1,P^2 are good permutations. (The blue numbers represent vertex numbers.)\n\n![image](1.png)\n\nOn the other hand, for the following tree, P^2 is not a good permutation.\n\n![image](2.png)\n\nThere are 8 four-vertex trees in total such that both P^1,P^2 are good permutations.",
+            "images": [
+                "https://img.atcoder.jp/arc199/9f18f81fa8fb939d65e4d941450a2dbf.png",
+                "https://img.atcoder.jp/arc199/6b602382a1f4bc4e7d6f792c0b2f7d20.png"
+            ]
+        },
+        {
+            "input": "12 3\n7 9 1 10 8 12 2 6 11 5 4 3\n8 10 4 12 11 7 6 3 1 2 9 5\n10 4 9 7 5 1 3 11 8 12 6 2\n",
+            "output": "540\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "en"
+}

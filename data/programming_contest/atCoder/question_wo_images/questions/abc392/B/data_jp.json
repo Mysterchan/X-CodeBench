@@ -1,0 +1,32 @@
+{
+    "Title": "日本レジストリサービス（JPRS）プログラミングコンテスト2025#1（AtCoder Beginner Contest 392）",
+    "Source": "atcoder",
+    "Name": "Who is Missing?",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "長さ M の整数列 A=(A_1,A_2,\\dots,A_M) が与えられます。\nA の各要素は 1 以上 N 以下で、全ての要素は相異なります。\nA の要素として含まれない 1 以上 N 以下の整数を、昇順に全て列挙してください。",
+    "Statement Images": [],
+    "Constraints": "- 入力は全て整数\n- 1 ≤ M ≤ N ≤ 1000\n- 1 ≤ A_i ≤ N\n- A の要素は相異なる",
+    "IO Styles": "入力\n入力は以下の形式で標準入力から与えられる。\nN M\nA_1 A_2 \\dots A_M\n出力\nA の要素として含まれない 1 以上 N 以下の整数を昇順に全て挙げた列が (X_1,X_2,\\dots,X_C) であるとき、以下の形式で出力せよ。\nC\nX_1 X_2 \\dots X_C",
+    "Sample Detail": [
+        {
+            "input": "10 3\n3 9 2\n",
+            "output": "7\n1 4 5 6 7 8 10\n",
+            "explanation": "A=(3,9,2) です。\nA の要素として含まれない 1 以上 10 以下の整数を昇順に全て挙げると、 1,4,5,6,7,8,10 となります。",
+            "images": []
+        },
+        {
+            "input": "6 6\n1 3 5 2 4 6\n",
+            "output": "0\n\n",
+            "explanation": "A の要素として含まれない 1 以上 6 以下の整数がひとつもありません。 \nこの場合、 1 行目に 0 と出力し、 2 行目は空行としてください。",
+            "images": []
+        },
+        {
+            "input": "9 1\n9\n",
+            "output": "8\n1 2 3 4 5 6 7 8\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "jp"
+}

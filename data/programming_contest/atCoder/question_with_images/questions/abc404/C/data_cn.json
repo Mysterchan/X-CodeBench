@@ -1,0 +1,30 @@
+{
+    "Title": "AtCoder Beginner Contest 404",
+    "Source": "atcoder",
+    "Name": "Cycle Graph?",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "你將得到一個具有 N 個頂點和 M 條邊的簡單無向圖。頂點編號為 1,2,\\dots,N，邊編號為 1,2,\\dots,M。邊 i 連接頂點 A_i 和 B_i。  \n判斷這個圖是否為循環圖。  \n\n簡單無向圖的定義  \n簡單無向圖是指沒有自環或多重邊的無向邊圖。  \n\n循環圖的定義  \n一個 N 個頂點的圖，其頂點標籤為 1,2,\\dots,N，當存在一個 (1,2,\\dots,N) 的排列 (v_1,v_2,\\dots,v_N) 使得：  \n- 對於每個 i = 1,2,\\dots,N-1，頂點 v_i 和頂點 v_{i+1} 之間有一條邊。  \n- 頂點 v_N 和頂點 v_1 之間有一條邊。  \n- 不存在其他邊。",
+    "Statement Images": [],
+    "Constraints": "- 3 ≤ N ≤ 2\\times 10^5\n- 0 ≤ M ≤ 2\\times 10^5\n- 1 ≤ A_i, B_i ≤ N\n- 所給的圖是簡單圖。\n- 所有輸入值都是整數。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nN M\nA_1 B_1\n\\vdots\nA_M B_M\n\n輸出\n如果給定的圖是循環圖則輸出 Yes；否則，輸出 No。",
+    "Sample Detail": [
+        {
+            "input": "4 4\n2 4\n3 1\n4 1\n2 3\n",
+            "output": "Yes\n",
+            "explanation": "給定的圖形如下，這是一個循環圖。 \n\n![image](1.png)",
+            "images": [
+                "https://img.atcoder.jp/abc404/92ea02f287069bfd5e2142ffcafa0e3e.png"
+            ]
+        },
+        {
+            "input": "4 6\n1 2\n1 3\n1 4\n2 3\n2 4\n3 4\n",
+            "output": "No\n",
+            "explanation": "給定的圖形如下，這不是一個循環圖。 \n\n![image](2.png)",
+            "images": [
+                "https://img.atcoder.jp/abc404/a428538cd729b649a952c46a67afd8d7.png"
+            ]
+        }
+    ],
+    "Language": "cn"
+}

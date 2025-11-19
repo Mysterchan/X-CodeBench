@@ -1,0 +1,26 @@
+{
+    "Title": "Toyota Programming Contest  2025（AtCoder Beginner Contest 389)",
+    "Source": "atcoder",
+    "Name": "9x9",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "You are given a 3-character string S, where the first character is a digit, the second character is the character x, and the third character is a digit.\nFind the product of the two numbers in S.",
+    "Statement Images": [],
+    "Constraints": "- S is a 3-character string where the first character is an integer between 1 and 9, inclusive, the second character is the character x, and the third character is an integer between 1 and 9, inclusive.",
+    "IO Styles": "Input\nThe input is given from Standard Input in the following format:\nS\nOutput\nPrint the answer as an integer.",
+    "Sample Detail": [
+        {
+            "input": "3x8\n",
+            "output": "24\n",
+            "explanation": "From 3 \\times 8 = 24, print 24.",
+            "images": []
+        },
+        {
+            "input": "9x9\n",
+            "output": "81\n",
+            "explanation": "From 9 \\times 9 = 81, print 81.",
+            "images": []
+        }
+    ],
+    "Language": "en"
+}

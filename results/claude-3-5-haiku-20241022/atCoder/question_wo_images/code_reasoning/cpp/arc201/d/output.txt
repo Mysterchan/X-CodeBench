@@ -1,0 +1,66 @@
+I need to trace through this C++ code step by step for each test case.
+
+The algorithm:
+1. Sorts array `a` in descending order
+2. Sorts array `b` in ascending order
+3. Creates extended array where `a[i+n] = a[i] - M`
+4. Uses binary search to find optimal matching position
+5. Computes the maximum of `(a[i] + b[i]) mod M`
+
+**Test Case 1:** N=3, M=6
+- A = [3, 1, 4], B = [2, 0, 1]
+- After sorting: a = [4, 3, 1], b = [0, 1, 2]
+- Extended a: [4, 3, 1, -2, -3, -5]
+
+Binary search for p (l=1, r=4):
+- m=2: Check indices 2,3 → b[2]+a[3]=1+1=2≥0 ✓, b[3]+a[4]=2+(-2)=0≥0 ✓ → p=2, l=3
+- m=3: Check indices 1,2,3 → b[1]+a[3]=0+1=1≥0 ✓, b[2]+a[4]=1+(-2)=-1<0 ✗ → r=2
+- m=2: (already checked) → p=2, l=3
+- l>r, stop with p=2
+
+Calculate answer with p=2:
+- i=1: a[2]+b[1] = 3+0 = 3
+- i=2: a[3]+b[2] = 1+1 = 2
+- i=3: a[4]+b[3] = -2+2 = 0
+- ans = max(3, 2, 0) = 3
+
+**Test Case 2:** N=1, M=1000000000
+- A = [999999999], B = [999999999]
+- After sorting: a = [999999999], b = [999999999]
+- Extended a: [999999999, -1]
+
+Binary search for p (l=1, r=2):
+- m=1: Check index 1 → b[1]+a[1]=999999999+999999999=1999999998≥0 ✓ → p=1, l=2
+- m=2: Check index 0 (none to check since n-m+2=0) → all checks pass → p=2, l=3
+- l>r, stop with p=2
+
+Calculate answer with p=2:
+- i=1: a[2]+b[1] = -1+999999999 = 999999998
+- ans = 999999998
+
+**Test Case 3:** N=10, M=201
+- A = [144, 150, 176, 154, 110, 187, 38, 136, 111, 46]
+- B = [96, 109, 73, 63, 85, 1, 156, 7, 13, 171]
+- After sorting: a descending = [187, 176, 154, 150, 144, 136, 111, 110, 46, 38]
+- After sorting: b ascending = [1, 7, 13, 63, 73, 85, 96, 109, 156, 171]
+- Extended a: [187, 176, 154, 150, 144, 136, 111, 110, 46, 38, -14, -25, -47, -51, -57, -65, -90, -91, -155, -163]
+
+Binary search finds optimal p, then calculates maximum.
+After working through the binary search (checking conditions), p=10.
+
+With p=10:
+- i=1: a[10]+b[1] = 38+1 = 39
+- i=2: a[11]+b[2] = -14+7 = -7
+- i=3: a[12]+b[3] = -25+13 = -12
+- i=4: a[13]+b[4] = -47+63 = 16
+- i=5: a[14]+b[5] = -51+73 = 22
+- i=6: a[15]+b[6] = -57+85 = 28
+- i=7: a[16]+b[7] = -65+96 = 31
+- i=8: a[17]+b[8] = -90+109 = 19
+- i=9: a[18]+b[9] = -91+156 = 65
+- i=10: a[19]+b[10] = -155+171 = 16
+- ans = max = 65
+
+3
+999999998
+65

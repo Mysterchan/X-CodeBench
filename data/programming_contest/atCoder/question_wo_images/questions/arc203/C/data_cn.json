@@ -1,0 +1,20 @@
+{
+    "Title": "AtCoder Regular Contest 203 (Div. 2)",
+    "Source": "atcoder",
+    "Name": "Destruction of Walls",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "房間以 H 行 W 列的網格排列。\n相鄰且共用一個邊的房間之間有牆壁。\n當你在房間 A 且房間 B 在四個方向（上、下、左、右）中的某一個方向與房間 A 相鄰，而房間 A 和房間 B 之間的牆壁已被拆除時，你可以從房間 A 移動到房間 B。\n找出選擇 K 道牆的總方式數，取模 998244353，並滿足以下條件：\n- 當所有選擇的牆壁都被拆除時，可以從左上角的房間移動到右下角的房間，且必須經過某些房間。\n對於每個輸入文件，解決 T 個測試案例。",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ T ≤ 2 \\times 10^5\n- 2 ≤ H ≤ 2 \\times 10^5\n- 2 ≤ W ≤ 2 \\times 10^5\n- \\boldsymbol{0 ≤ K ≤ H+W}\n- 所有輸入值均為整數。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nT\ncase_1\ncase_2\n\\vdots\ncase_T\n每個案例的格式如下：\nH W K\n輸出\n輸出共 T 行答案。\n第 t 行應該包含第 t 個測試案例中滿足條件的選擇 K 面牆的方式總數，模 998244353。",
+    "Sample Detail": [
+        {
+            "input": "6\n2 2 1\n2 2 3\n2 2 2\n2 2 4\n200000 200000 400000\n2 203 203\n",
+            "output": "0\n4\n2\n1\n387815582\n203\n",
+            "explanation": "在第一種情況下，拆除任何一堵牆都無法讓從左上角房間移動到右下角房間。\n在第二種情況下，選擇並拆除四堵牆中的任何三堵牆可以讓從左上角房間移動到右下角房間。",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

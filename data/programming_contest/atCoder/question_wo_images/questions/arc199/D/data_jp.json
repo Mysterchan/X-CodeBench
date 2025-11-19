@@ -1,0 +1,32 @@
+{
+    "Title": "AtCoder Regular Contest 199 (Div. 1)",
+    "Source": "atcoder",
+    "Name": "Limestone",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "正整数 H,W が与えられます．\nH 行 W 列の行列 A=(A_{i,j})\\ (1≤ i≤ H,1≤ j≤ W) があり，はじめ全ての要素は 0 です．\nこの行列に対して，以下の 2 種類の操作を好きな順番で何度でも行うことができます．\n- 整数 r,c\\ (1≤ r≤ H,1≤ c≤ W) を選ぶ．A_{r,1},A_{r,2},...,A_{r,c} を全て 1 にする．\n- 整数 r,c\\ (1≤ r≤ H,1≤ c≤ W) を選ぶ．A_{1,c},A_{2,c},...,A_{r,c} を全て 1 にする．\n上記の操作を繰り返して得られる行列全てに対する \\displaystyle \\sum_{i=1}^H\\sum_{j=1}^W A_{i,j} の総和を 998244353 で割った余りを求めてください．",
+    "Statement Images": [],
+    "Constraints": "- 1≤ H,W\n- HW≤ 2\\times 10^5\n- 入力は全て整数",
+    "IO Styles": "入力\n入力は以下の形式で標準入力から与えられる．\nH W\n出力\n操作を繰り返して得られる行列全てに対する \\displaystyle \\sum_{i=1}^H\\sum_{j=1}^W A_{i,j} の総和を 998244353 で割った余りを出力せよ．",
+    "Sample Detail": [
+        {
+            "input": "2 2\n",
+            "output": "29\n",
+            "explanation": "操作を繰り返して得られる行列は以下の 14 通りあります．\n\n\\begin{pmatrix}0&0 \\\\ 0&0\\end{pmatrix} \n \\begin{pmatrix}1&0 \\\\ 0&0\\end{pmatrix} \n \\begin{pmatrix}0&1 \\\\ 0&0\\end{pmatrix} \n \\begin{pmatrix}1&1 \\\\ 0&0\\end{pmatrix} \n \\begin{pmatrix}0&0 \\\\ 1&0\\end{pmatrix} \n \\begin{pmatrix}1&0 \\\\ 1&0\\end{pmatrix} \n \\begin{pmatrix}0&1 \\\\ 1&0\\end{pmatrix} \n \\begin{pmatrix}1&1 \\\\ 1&0\\end{pmatrix} \n \\begin{pmatrix}0&1 \\\\ 0&1\\end{pmatrix} \n \\begin{pmatrix}1&1 \\\\ 0&1\\end{pmatrix} \n \\begin{pmatrix}0&0 \\\\ 1&1\\end{pmatrix} \n \\begin{pmatrix}1&0 \\\\ 1&1\\end{pmatrix} \n \\begin{pmatrix}0&1 \\\\ 1&1\\end{pmatrix} \n \\begin{pmatrix}1&1 \\\\ 1&1\\end{pmatrix}\n\n\n\n答えは 0+1+1+2+1+2+2+3+2+3+2+3+3+4=29 です．\n\n\\begin{pmatrix}0&0 \\\\ 0&1\\end{pmatrix} や \\begin{pmatrix}1&0 \\\\ 0&1\\end{pmatrix} はどのように操作しても得ることができません．",
+            "images": []
+        },
+        {
+            "input": "1 10\n",
+            "output": "5120\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "123 456\n",
+            "output": "428623282\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "jp"
+}

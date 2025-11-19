@@ -1,0 +1,11 @@
+{
+    "url": "https://stackoverflow.com/questions/68622348/how-to-stack-only-one-bar-in-sns-countplot",
+    "source": "stackoverflow",
+    "title": "How to stack only one bar in sns countplot",
+    "Description": "The intended visualization is a horizontal stacked bar plot that displays the count of respondents who answered \"Yes\" and \"No\" to their travel last year, with the \"Yes\" segment further broken down by the mode of transportation used (Airplane, Car, Train). Currently, the graph shows two separate bars for \"Yes\" and \"No,\" with the \"Yes\" bar not displaying the distribution of transportation types. The expected behavior is for the \"Yes\" bar to be divided into segments representing each transportation type, along with a legend indicating the colors for each mode of transport, and the percentage annotations for each segment displayed appropriately.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "seaborn",
+        "data-visualization"
+    ]
+}

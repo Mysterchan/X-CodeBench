@@ -1,0 +1,11 @@
+{
+    "url": "https://stackoverflow.com/questions/66740158/plot-stacked-barplot-with-seaborn-catplot",
+    "source": "stackoverflow",
+    "title": "Plot stacked barplot with seaborn catplot",
+    "Description": "The intended visualization is a stacked bar plot using Seaborn's `catplot`, where the `diet` categories are on the x-axis and the `percentage%` values on the y-axis, with the `kind` variable represented as different colors. The current graph displays separate bars for each `kind` within the `diet` categories rather than stacking them. The desired appearance of the graph is to have the bars stacked on top of each other in the `diet` categories, showing the cumulative percentage for each `kind`.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "seaborn",
+        "data-visualization"
+    ]
+}

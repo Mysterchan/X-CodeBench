@@ -1,0 +1,35 @@
+{
+    "Title": "AtCoder Beginner Contest 407（Promotion of AtCoderJobs）",
+    "Source": "atcoder",
+    "Name": "Domino Covering XOR",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "H 行 W 列のマス目があります。\n上から i 行目 (1≤ i≤ H)、左から j 列目 (1≤ j≤ W) のマスをマス (i,j) と呼ぶことにします。\nマス (i,j)\\ (1≤ i≤ H,1≤ j≤ W) には非負整数 A _ {i,j} が書かれています。\nこのマス目にドミノを 0 個以上置きます。\n1 つのドミノは隣り合う 2 つのマス、つまり\n- 1≤ i≤ H,1≤ j\\lt W に対するマス (i,j) とマス (i,j+1)\n- 1≤ i\\lt H,1≤ j≤ W に対するマス (i,j) とマス (i+1,j)\nのどれかに置くことができます。\nただし、同じマスに対して複数のドミノを置くことはできません。\nドミノの置き方に対して、置き方のスコアをドミノが置かれていないマスに書かれた整数すべてのビットごとの排他的論理和として定めます。\nドミノの置き方のスコアとしてありうる最大値を求めてください。\n ビットごとの排他的論理和とは\n \n 非負整数 A, B のビットごとの排他的論理和 A \\oplus B は、以下のように定義されます。\n \n- A \\oplus B を二進表記した際の 2^k (k ≥ 0) の位の数は、A, B を二進表記した際の 2^k の位の数のうち一方のみが 1 であれば 1、そうでなければ 0 である。\n 例えば、3 \\oplus 5 = 6 となります (二進表記すると: 011 \\oplus 101 = 110)。 \n 一般に k 個の非負整数 p_1, p_2, p_3, \\dots, p_k のビット単位 \\mathrm{XOR} は (\\dots ((p_1 \\oplus p_2) \\oplus p_3) \\oplus \\dots \\oplus p_k) と定義され、これは p_1, p_2, p_3, \\dots, p_k の順番によらないことが証明できます。",
+    "Statement Images": [],
+    "Constraints": "- 1≤ H\n- 1≤ W\n- HW≤20\n- 0≤ A _ {i,j}\\lt 2 ^ {60}\\ (1≤ i≤ H,1≤ j≤ W)\n- 入力はすべて整数",
+    "IO Styles": "入力\n入力は以下の形式で標準入力から与えられる。\nH W\nA _ {1,1} A _ {1,2} ... A _ {1,W}\nA _ {2,1} A _ {2,2} ... A _ {2,W}\n\\vdots\nA _ {H,1} A _ {H,2} ... A _ {H,W}\n出力\n答えを出力せよ。",
+    "Sample Detail": [
+        {
+            "input": "3 4\n1 2 3 8\n4 0 7 10\n5 2 4 2\n",
+            "output": "15\n",
+            "explanation": "与えられたマス目は以下のようになります。\n\n![image](1.png)\n\n例えば、次のようにドミノを置くことでスコアを 15 とすることができます。\n\n![image](2.png)\n\nスコアを 16 以上にすることはできないため、15 を出力してください。",
+            "images": [
+                "https://img.atcoder.jp/abc407/94c95682a450cf6729c030a2affc50d6.png",
+                "https://img.atcoder.jp/abc407/f3c61ccaee45e12aae41bf4880a7d501.png"
+            ]
+        },
+        {
+            "input": "1 11\n1 2 4 8 16 32 64 128 256 512 1024\n",
+            "output": "2047\n",
+            "explanation": "ドミノを 1 枚も置かないこともできます。",
+            "images": []
+        },
+        {
+            "input": "4 5\n74832 16944 58683 32965 97236\n52995 43262 51959 40883 58715\n13846 24919 65627 11492 63264\n29966 98452 75577 40415 77202\n",
+            "output": "131067\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "jp"
+}

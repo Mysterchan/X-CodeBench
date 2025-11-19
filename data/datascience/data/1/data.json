@@ -1,0 +1,11 @@
+{
+    "url": "https://github.com/matplotlib/matplotlib/issues/29913",
+    "source": "github",
+    "title": "[Bug]: plt.ticklabel_format(style='plain') puts the y axis label out of frame",
+    "Description": "When using plt.ticklabel_format(style='plain') the y axis label is put out of frame. Any methods to fix this issue while keeping the plain style?",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "matplotlib",
+        "data-visualization"
+    ]
+}

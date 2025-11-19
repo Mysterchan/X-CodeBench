@@ -1,0 +1,1 @@
+S=1, T=2, with edge 1-2 only

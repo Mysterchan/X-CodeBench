@@ -1,0 +1,35 @@
+{
+    "Title": "HHKBプログラミングコンテスト2025(AtCoder Beginner Contest 388)",
+    "Source": "atcoder",
+    "Name": "Various Kagamimochi",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "N 個の餅が小さいほうから順に並んでいます。\ni 番目 (1≤ i≤ N) の餅の大きさは A _ i です。\n2 つの餅 A,B の大きさをそれぞれ a,b としたとき、a が b の半分以下であるとき、かつそのときに限り、餅 A を餅 B の上に乗せて鏡餅を 1 つ作ることができます。\nN 個の餅から 2 つの餅を選び、一方をもう一方の上に乗せることで鏡餅を 1 つ作ります。\n何種類の鏡餅を作ることができるか求めてください。\nただし、鏡餅を構成する餅の大きさが同じでも、少なくとも一方が異なる餅であれば別の種類の鏡餅として数えます。",
+    "Statement Images": [],
+    "Constraints": "- 2≤ N≤ 5\\times 10 ^ 5\n- 1≤ A _ i≤ 10 ^ 9\\ (1≤ i≤ N)\n- A _ i≤ A _ {i+1}\\ (1≤ i\\lt N)\n- 入力はすべて整数",
+    "IO Styles": "入力\n入力は以下の形式で標準入力から与えられる。\nN\r\nA _ 1 A _ 2 \\cdots A _ N\r\n出力\n作ることができる鏡餅の種類数を出力せよ。",
+    "Sample Detail": [
+        {
+            "input": "6\n2 3 4 4 7 10\n",
+            "output": "8\n",
+            "explanation": "与えられた餅の大きさは以下のようになっています。\n\n![image](1.png)\n\nこのとき、以下の 8 種類の鏡餅を作ることができます。\n\n![image](2.png)\n\n大きさ 4 の餅の上に大きさ 2 の餅を乗せた鏡餅や、大きさ 10 の餅の上に大きさ 4 の餅を乗せた鏡餅は 2 種類あることに注意してください。",
+            "images": [
+                "https://img.atcoder.jp/abc388/29024766d11c2d88b06c92b2081129f5.png",
+                "https://img.atcoder.jp/abc388/0b69fbe457f2c4298173acce2faab37e.png"
+            ]
+        },
+        {
+            "input": "3\n387 388 389\n",
+            "output": "0\n",
+            "explanation": "鏡餅を 1 種類も作ることができない場合もあります。",
+            "images": []
+        },
+        {
+            "input": "32\n1 2 4 5 8 10 12 16 19 25 33 40 50 64 87 101 149 175 202 211 278 314 355 405 412 420 442 481 512 582 600 641\n",
+            "output": "388\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "jp"
+}

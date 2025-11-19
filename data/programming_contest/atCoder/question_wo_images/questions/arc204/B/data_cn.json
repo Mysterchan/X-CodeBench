@@ -1,0 +1,32 @@
+{
+    "Title": "AtCoder Regular Contest 204 (Div. 1)",
+    "Source": "atcoder",
+    "Name": "Sort Permutation",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "你被給予正整數 N、K 和一個排列 P = (P_{1}, P_{2}, \\dots, P_{NK})，該排列是 (1, 2, \\dots, NK) 的重新排列。  \n愛麗絲重複執行以下操作以將 P 進行升序排序。  \n- 選擇整數 i 和 j (i \\neq j)，其中 1 ≤ i, j ≤ NK，並交換 P_{i} 和 P_{j}。如果 |i - j| 是 N 的倍數，愛麗絲將獲得 1 分。  \n愛麗絲在執行最少操作次數的情況下將 P 進行升序排序，同時最大化她獲得的分數總和。  \n輸出愛麗絲獲得的分數總和。",
+    "Statement Images": [],
+    "Constraints": "- 1≤ N≤ 500\n- 1≤ K≤ 10\n- (P_{1}, P_{2}, \\dots , P_{NK}) 是 (1, 2, \\dots, NK) 的一種排列\n- 所有輸入值均為整數。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nN K\nP_{1} P_{2} \\dots P_{NK}\n輸出\n輸出答案。",
+    "Sample Detail": [
+        {
+            "input": "3 2\n1 6 5 3 2 4\n",
+            "output": "2\n",
+            "explanation": "例如，P 可以透過以下四個操作以升序排序。\n\n- 執行操作 (i, j) = (2, 5)。操作後，P = (1, 2, 5, 3, 6, 4)。\n- 執行操作 (i, j) = (4, 6)。操作後，P = (1, 2, 5, 4, 6, 3)。\n- 執行操作 (i, j) = (3, 5)。操作後，P = (1, 2, 6, 4, 5, 3)。\n- 執行操作 (i, j) = (3, 6)。操作後，P = (1, 2, 3, 4, 5, 6)。\n\n在上述四個操作中，Alice 從第 1 次和第 4 次操作中各獲得 1 分，因此 Alice 總共獲得 2 分。\n\n這一系列操作是以最少的操作次數將 P 進行升序排序並在該條件下最大化總分數的方式之一，因此輸出 2。",
+            "images": []
+        },
+        {
+            "input": "1 1\n1\n",
+            "output": "0\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "4 6\n10 24 3 4 8 14 5 2 22 9 21 1 15 6 13 23 18 12 7 17 19 16 20 11\n",
+            "output": "7\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

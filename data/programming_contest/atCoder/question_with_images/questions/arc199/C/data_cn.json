@@ -1,0 +1,29 @@
+{
+    "Title": "AtCoder Regular Contest 199 (Div. 1)",
+    "Source": "atcoder",
+    "Name": "Circular Tree Embedding",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "在這個問題中，我們簡單地稱擁有 N 個頂點編號為 1,2,...,N 且邊未編號的樹為 N-頂點樹。\n當 N-頂點樹 T 和一個排列 Q=(Q_1,Q_2,...,Q_N) 為 (1,2,...,N) 滿足以下條件時，我們稱排列 Q 是樹 T 的良好排列：\n在一個圓上以此順序均勻地排列 N 個點 1,2,...,N。對於樹 T 的每一條邊 \\{u,v\\}，畫一條連接兩個點 Q_u 和 Q_v 的線段。然後，在畫出的 N-1 條線段中，除了其端點之外，沒有兩條線段有共同點。\n給定 M 個排列 (1,2,...,N)：P^1=(P^1_1,P^1_2,...,P^1_N),P^2=(P^2_1,P^2_2,...,P^2_N),...,P^M=(P^M_1,P^M_2,...,P^M_N)。\n找出滿足 P^1,P^2,...,P^M 都是良好排列的 N-頂點樹的數量，取模 998244353。",
+    "Statement Images": [],
+    "Constraints": "- 2≤ N,M≤ 500\n- P^1,P^2,...,P^M 是 (1,2,...,N) 的排列。\n- 所有輸入值均為整數。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nN M\nP^1_1 P^1_2 ... P^1_N\nP^2_1 P^2_2 ... P^2_N\n\\vdots\nP^M_1 P^M_2 ... P^M_N\n輸出\n輸出模 998244353 的 N 頂點樹的數量，使得 P^1,P^2,...,P^M 都是好的排列。",
+    "Sample Detail": [
+        {
+            "input": "4 2\n1 4 2 3\n3 1 4 2\n",
+            "output": "8\n",
+            "explanation": "例如，對於以下兩棵樹，兩者 P^1 和 P^2 都是好的排列。（藍色數字表示頂點編號。）\n\n![image](1.png)\n\n另一方面，對於以下這棵樹，P^2 不是好的排列。\n\n![image](2.png)\n\n總共有 8 棵四個頂點的樹，這些樹的 P^1 和 P^2 都是好的排列。",
+            "images": [
+                "https://img.atcoder.jp/arc199/9f18f81fa8fb939d65e4d941450a2dbf.png",
+                "https://img.atcoder.jp/arc199/6b602382a1f4bc4e7d6f792c0b2f7d20.png"
+            ]
+        },
+        {
+            "input": "12 3\n7 9 1 10 8 12 2 6 11 5 4 3\n8 10 4 12 11 7 6 3 1 2 9 5\n10 4 9 7 5 1 3 11 8 12 6 2\n",
+            "output": "540\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

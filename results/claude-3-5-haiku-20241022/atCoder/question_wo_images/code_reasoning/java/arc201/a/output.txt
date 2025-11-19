@@ -1,0 +1,49 @@
+Looking at this code, I need to trace through the execution for each test case.
+
+The algorithm for each test case:
+1. For each writer, calculate:
+   - `tmpDiv1 = min(a, b)` (max Div.1 contests from this writer)
+   - `tmpDiv2 = min(b - tmpDiv1, c)` (max Div.2 contests after using medium problems for Div.1)
+   - `tmpFree = min(tmpDiv1, min(b - tmpDiv2, c - tmpDiv2))` (problems that could be reallocated)
+2. Accumulate `div1Max`, `div2Min`, and `free`
+3. If `div1Max < div2Min`, answer is `div1Max`
+   Otherwise, answer is `min((div1Max + div2Min) / 2, div2Min + free)`
+
+**Test Case 1:** N=2, writers: (3,1,4) and (1,5,3)
+- Writer 1: tmpDiv1=1, tmpDiv2=0, tmpFree=0
+- Writer 2: tmpDiv1=1, tmpDiv2=3, tmpFree=1
+- div1Max=2, div2Min=3, free=1
+- Since 2 < 3: output **2**
+
+**Test Case 2:** N=1, writer: (1,1,1)
+- tmpDiv1=1, tmpDiv2=0, tmpFree=0
+- div1Max=1, div2Min=0, free=0
+- Since 1 ≥ 0: min((1+0)/2, 0+0) = min(0, 0) = **0**
+
+**Test Case 3:** N=3, writers: (5,7,5), (1,11,99), (3,1,2)
+- Writer 1: tmpDiv1=5, tmpDiv2=2, tmpFree=2
+- Writer 2: tmpDiv1=1, tmpDiv2=10, tmpFree=1
+- Writer 3: tmpDiv1=1, tmpDiv2=0, tmpFree=0
+- div1Max=7, div2Min=12, free=3
+- Since 7 < 12: output **7**
+
+**Test Case 4:** N=5, all writers: (1000000000, 1000000000, 1000000000)
+- Each writer: tmpDiv1=1000000000, tmpDiv2=0, tmpFree=0
+- div1Max=5000000000, div2Min=0, free=0
+- Since 5000000000 ≥ 0: min((5000000000+0)/2, 0+0) = min(2500000000, 0) = **0**
+
+**Test Case 5:** N=6, writers with given values
+- Writer 1 (835549144, 866512240, 105679868): tmpDiv1=835549144, tmpDiv2=30963096, tmpFree=30963096
+- Writer 2 (473233032, 625162103, 823002638): tmpDiv1=473233032, tmpDiv2=151929071, tmpFree=151929071
+- Writer 3 (125467290, 37501686, 380787083): tmpDiv1=37501686, tmpDiv2=0, tmpFree=0
+- Writer 4 (8043910, 721085797, 254272563): tmpDiv1=8043910, tmpDiv2=254272563, tmpFree=8043910
+- Writer 5 (97327826, 744196952, 18713225): tmpDiv1=97327826, tmpDiv2=18713225, tmpFree=18713225
+- Writer 6 (978152989, 90127986, 33086297): tmpDiv1=90127986, tmpDiv2=0, tmpFree=0
+- div1Max=1541783584, div2Min=455877955, free=209649302
+- Since 1541783584 ≥ 455877955: min((1541783584+455877955)/2, 455877955+209649302) = min(998830769, 665527257) = **665527257**
+
+2
+0
+7
+0
+665527257

@@ -1,0 +1,11 @@
+{
+    "url": "https://discourse.matplotlib.org/t/subfigure-legend-disappearing-beyond-window-frame-despite-tight-layout/23489",
+    "source": "matplotlib",
+    "title": "Subfigure legend disappearing beyond window/frame despite tight_layout",
+    "Description": "The visualization is intended to display a bar plot with a line plot overlay in the top subplot, and a table directly below it in the second subplot. The top subplot should include a legend that describes the \"Actual\" and \"Target\" data series. Currently, the legend is not displayed, leading to confusion about the data representation. The expected outcome is for the legend to be visible and distinct, appropriately indicating the two data series on the bar and line plots.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "matplotlib",
+        "data-visualization"
+    ]
+}

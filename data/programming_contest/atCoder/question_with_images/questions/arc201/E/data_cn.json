@@ -1,0 +1,28 @@
+{
+    "Title": "AtCoder Regular Contest 201",
+    "Source": "atcoder",
+    "Name": "Total Area of Bounding Boxes",
+    "Time Limit": "3 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "在二維平面上有 N 個編號為 1, 2, \\dots, N 的點。\n點 i 的坐標為 (i,Y_i)。\n在這個問題中，保證 Y=(Y_1,Y_2,\\dots ,Y_N) 是 (1,2, \\dots ,N) 的一個排列。\n找出所有子集 S 的邊界框面積的總和，其中 S 包含至少 2 個元素，並對 998244353 取模。\nS 的邊界框是指包含 S 中所有點內部或邊界的與 x 軸平行的最小矩形面積。",
+    "Statement Images": [],
+    "Constraints": "- 2 ≤ N ≤ 2 \\times 10^5\n- Y 是 (1,2, \\dots ,N) 的排列。\n- 所有輸入值是整數。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nN\nY_1 Y_2 ... Y_N\n輸出\n輸出邊界框面積的和，取模 998244353。",
+    "Sample Detail": [
+        {
+            "input": "4\n2 3 1 4\n",
+            "output": "50\n",
+            "explanation": "每個子集及其包絡框的面積在下圖中顯示。輸出面積的總和，即 50。\n![image](1.png)",
+            "images": [
+                "https://img.atcoder.jp/arc201/d0a42940efeb582795eb4766786ddd68.png"
+            ]
+        },
+        {
+            "input": "26\n6 14 8 19 13 25 26 22 7 3 16 15 11 24 1 12 20 23 5 17 9 2 21 10 4 18\n",
+            "output": "575187918\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

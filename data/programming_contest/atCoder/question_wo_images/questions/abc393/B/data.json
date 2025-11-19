@@ -1,0 +1,32 @@
+{
+    "Title": "AtCoder Beginner Contest 393",
+    "Source": "atcoder",
+    "Name": "A..B..C",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "A string S is given.\nFind how many places in S have A, B, and C in this order at even intervals.\nSpecifically, find the number of triples of integers (i,j,k) that satisfy all of the following conditions. Here, |S| denotes the length of S, and S_x denotes the x-th character of S.\n- 1 ≤ i < j < k ≤ |S|\n- j - i = k - j\n- S_i = A\n- S_j = B\n- S_k = C",
+    "Statement Images": [],
+    "Constraints": "- S is an uppercase English string with length between 3 and 100, inclusive.",
+    "IO Styles": "Input\nThe input is given from Standard Input in the following format:\nS\r\nOutput\nPrint the answer.",
+    "Sample Detail": [
+        {
+            "input": "AABCC\n",
+            "output": "2\n",
+            "explanation": "There are two triples (i,j,k) = (1,3,5) and (2,3,4) that satisfy the conditions.",
+            "images": []
+        },
+        {
+            "input": "ARC\n",
+            "output": "0\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "AABAAABBAEDCCCD\n",
+            "output": "4\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "en"
+}

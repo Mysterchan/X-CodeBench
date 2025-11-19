@@ -1,0 +1,32 @@
+{
+    "Title": "AtCoder Regular Contest 204 (Div. 1)",
+    "Source": "atcoder",
+    "Name": "Use Udon Coupon",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "You are given positive integers N, L, R and length-N positive integer sequences A = (A_{1}, A_{2}, \\dots, A_{N}), B = (B_{1}, B_{2}, \\dots, B_{N}).\nUsing a sequence Q initialized as empty, a variable C initialized to 0, and a variable i initialized to 1, perform the following operation 2N times.\n- Choose one of the following actions 1, 2 and perform it.\n- Action 1 : Insert i at the end of Q, replace C with \\max(0, C - A_{i}). Then, increase i by 1. This action can only be performed when i before the operation is at most N.\n- Action 2 : Let x be the first number in Q, and add B_{x} to C. Then, remove the first element of Q. This action can only be performed when Q before the operation is not empty.\nFind the number, modulo 998244353, of ways to perform 2N operations such that the final value of C is between L and R, inclusive.",
+    "Statement Images": [],
+    "Constraints": "- 1≤ N≤ 5000\n- 1≤ L ≤ R ≤ \\sum B\n- 1≤ A_{i}≤ 5000\n- 1≤ B_{i}≤ 5000\n- All input values are integers.",
+    "IO Styles": "Input\nThe input is given from Standard Input in the following format:\nN L R\nA_{1} A_{2} \\dots A_{N}\nB_{1} B_{2} \\dots B_{N}\nOutput\nOutput the answer.",
+    "Sample Detail": [
+        {
+            "input": "2 100 1000\n2001 167\n924 178\n",
+            "output": "1\n",
+            "explanation": "For example, you can perform four operations as follows.\n\n- Perform action 1. Then, Q = (1), C = 0, i = 2.\n- Perform action 2. Then, Q = (), C = 924, i = 2.\n- Perform action 1. Then, Q = (2), C = 757, i = 3.\n- Perform action 2. Then, Q = (), C = 935, i = 3.\n\n\nPerforming operations as above makes the final value of C between 100 and 1000 (inclusive). This is the only such way to perform operations, so output 1.",
+            "images": []
+        },
+        {
+            "input": "3 10 10\n1 6 7\n9 2 4\n",
+            "output": "0\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "15 167 924\n122 122 111 85 97 108 115 82 84 82 105 103 113 102 135\n116 122 110 106 71 85 70 94 86 110 73 97 101 86 73\n",
+            "output": "9576277\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "en"
+}

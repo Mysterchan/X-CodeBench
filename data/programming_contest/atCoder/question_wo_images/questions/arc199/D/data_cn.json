@@ -1,0 +1,32 @@
+{
+    "Title": "AtCoder Regular Contest 199 (Div. 1)",
+    "Source": "atcoder",
+    "Name": "Limestone",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "給定正整數 H, W。\n有一個 H \\times W 的矩陣 A=(A_{i,j})\\ (1≤ i≤ H,1≤ j≤ W)，其中所有元素最初都是 0。\n你可以以任意順序和任意次數對這個矩陣執行以下兩種類型的操作：\n- 選擇整數 r,c\\ (1≤ r≤ H,1≤ c≤ W)。將所有的 A_{r,1},A_{r,2},...,A_{r,c} 設置為 1。\n- 選擇整數 r,c\\ (1≤ r≤ H,1≤ c≤ W)。將所有的 A_{1,c},A_{2,c},...,A_{r,c} 設置為 1。\n找出所有可以通過重複上述操作得到的矩陣的 \\displaystyle \\sum_{i=1}^H\\sum_{j=1}^W A_{i,j} 的總和，並對 998244353 取模。",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ H, W  \n- HW ≤ 2×10^5  \n- 所有輸入值都是整數。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nH W\n輸出\n輸出所有可以通過重複操作獲得的矩陣上 \\displaystyle \\sum_{i=1}^H\\sum_{j=1}^W A_{i,j} 的總和，取模 998244353。",
+    "Sample Detail": [
+        {
+            "input": "2 2\n",
+            "output": "29\n",
+            "explanation": "有 14 個矩陣可以通過重複以下操作獲得：\n\n\\begin{pmatrix}0&0 \\\\ 0&0\\end{pmatrix} \n \\begin{pmatrix}1&0 \\\\ 0&0\\end{pmatrix} \n \\begin{pmatrix}0&1 \\\\ 0&0\\end{pmatrix} \n \\begin{pmatrix}1&1 \\\\ 0&0\\end{pmatrix} \n \\begin{pmatrix}0&0 \\\\ 1&0\\end{pmatrix} \n \\begin{pmatrix}1&0 \\\\ 1&0\\end{pmatrix} \n \\begin{pmatrix}0&1 \\\\ 1&0\\end{pmatrix} \n \\begin{pmatrix}1&1 \\\\ 1&0\\end{pmatrix} \n \\begin{pmatrix}0&1 \\\\ 0&1\\end{pmatrix} \n \\begin{pmatrix}1&1 \\\\ 0&1\\end{pmatrix} \n \\begin{pmatrix}0&0 \\\\ 1&1\\end{pmatrix} \n \\begin{pmatrix}1&0 \\\\ 1&1\\end{pmatrix} \n \\begin{pmatrix}0&1 \\\\ 1&1\\end{pmatrix} \n \\begin{pmatrix}1&1 \\\\ 1&1\\end{pmatrix}\n\n答案是 0+1+1+2+1+2+2+3+2+3+2+3+3+4=29。\n\n\\begin{pmatrix}0&0 \\\\ 0&1\\end{pmatrix} 和 \\begin{pmatrix}1&0 \\\\ 0&1\\end{pmatrix} 不能通過任何操作序列獲得。",
+            "images": []
+        },
+        {
+            "input": "1 10\n",
+            "output": "5120\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "123 456\n",
+            "output": "428623282\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

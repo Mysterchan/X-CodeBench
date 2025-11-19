@@ -1,0 +1,32 @@
+{
+    "Title": "トヨタ自動車プログラミングコンテスト2025（AtCoder Beginner Contest 389）",
+    "Source": "atcoder",
+    "Name": "Squares in Circle",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "二次元座標平面上に 1\\times 1 の正方形が無限に敷き詰められています。\nある正方形の中心を中心として、半径 R の円を描いたとき、円に完全に内包される正方形は何個あるでしょうか？\nより厳密には、整数組 (i,j) であって、4 点 (i+0.5,j+0.5),(i+0.5,j-0.5),(i-0.5,j+0.5),(i-0.5,j-0.5) 全てが原点との距離が R 以下という条件を満たすものの個数を求めてください。",
+    "Statement Images": [],
+    "Constraints": "- 1≤ R≤ 10^{6}\n- 入力される数値は全て整数",
+    "IO Styles": "入力\n入力は以下の形式で標準入力から与えられる。\nR\r\n出力\n答えを出力せよ。",
+    "Sample Detail": [
+        {
+            "input": "2\n",
+            "output": "5\n",
+            "explanation": "正方形の中心が円の中心と一致するような正方形、及びその正方形に隣接する正方形 4 個の、合計 5 個の正方形が円に完全に内包されています。",
+            "images": []
+        },
+        {
+            "input": "4\n",
+            "output": "37\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "26\n",
+            "output": "2025\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "jp"
+}

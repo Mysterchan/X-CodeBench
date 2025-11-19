@@ -1,0 +1,26 @@
+{
+    "Title": "Toyota Programming Contest  2025（AtCoder Beginner Contest 389)",
+    "Source": "atcoder",
+    "Name": "9x9",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "給定一個 3 個字符的字符串 S，第一個字符是一個數字，第二個字符是字符 x，第三個字符也是一個數字。找出 S 中這兩個數字的乘積。",
+    "Statement Images": [],
+    "Constraints": "- S 是一個 3 個字符的字符串，其中第一個字符是介於 1 和 9 之間（含 1 和 9）的整數，第二個字符是字符 x，第三個字符是介於 1 和 9 之間（含 1 和 9）的整數。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nS\n輸出\n以整數形式輸出答案。",
+    "Sample Detail": [
+        {
+            "input": "3x8\n",
+            "output": "24\n",
+            "explanation": "從 3 \\times 8 = 24，輸出 24。",
+            "images": []
+        },
+        {
+            "input": "9x9\n",
+            "output": "81\n",
+            "explanation": "從 9 \\times 9 = 81，輸出 81。",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

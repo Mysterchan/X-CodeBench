@@ -1,0 +1,32 @@
+{
+    "Title": "AtCoder Beginner Contest 390",
+    "Source": "atcoder",
+    "Name": "Geometric Sequence",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "長さ N の正整数列 A=(A_1,A_2,...,A_N) が与えられます。\nA が等比数列であるか判定してください。",
+    "Statement Images": [],
+    "Constraints": "- 2≤ N≤ 100\n- 1≤ A_i≤ 10^9\n- 入力はすべて整数",
+    "IO Styles": "入力\n入力は以下の形式で標準入力から与えられる。\nN\r\nA_1 A_2 ... A_N\r\n出力\nA が 等比数列ならば Yes を、そうでないならば No を出力せよ。",
+    "Sample Detail": [
+        {
+            "input": "5\n3 6 12 24 48\n",
+            "output": "Yes\n",
+            "explanation": "A=(3,6,12,24,48) です。\nA は初項 3, 公比 2, 項数 5 の等比数列となっています。\r\nよって、Yes を出力します。",
+            "images": []
+        },
+        {
+            "input": "3\n1 2 3\n",
+            "output": "No\n",
+            "explanation": "A=(1,2,3) です。\nA_1:A_2=1:2\\neq 2:3=A_2:A_3 より、A は等比数列ではありません。\r\nよって、No を出力します。",
+            "images": []
+        },
+        {
+            "input": "2\n10 8\n",
+            "output": "Yes\n",
+            "explanation": "A は初項 10, 公比 0.8, 項数 2 の等比数列となっています。\r\nよって、Yes を出力します。",
+            "images": []
+        }
+    ],
+    "Language": "jp"
+}

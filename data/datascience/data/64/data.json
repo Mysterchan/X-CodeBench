@@ -1,0 +1,11 @@
+{
+    "url": "https://stackoverflow.com/questions/72651896/how-to-fill-intervals-under-kde-curve-with-different-colors",
+    "source": "stackoverflow",
+    "title": "How to fill intervals under KDE curve with different colors",
+    "Description": "The intended visualization is a density plot using Seaborn's `kdeplot`, with colored areas filled under the curve. The area for the interval \\( x < 0 \\) should be filled with one color, and the area for \\( x \\geq 0 \\) should be filled with a different color. The current graph only displays a black line representing the density without any filled areas. The expected graph shows two distinct colored regions beneath the density curve, clearly differentiating the intervals with the respective colors.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "seaborn",
+        "data-visualization"
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "Title": "鹿島建設プログラミングコンテスト2025（AtCoder Beginner Contest 394）",
+    "Source": "atcoder",
+    "Name": "22222",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "数字からなる文字列 S が与えられます。\nS から 2 以外の文字を削除し、残った文字を順序を保って結合した文字列を求めてください。",
+    "Statement Images": [],
+    "Constraints": "- S は数字からなる長さ 1 以上 100 以下の文字列\n- S は 2 を 1 つ以上含む",
+    "IO Styles": "入力\n入力は以下の形式で標準入力から与えられる。\nS\r\n出力\n答えを出力せよ。",
+    "Sample Detail": [
+        {
+            "input": "20250222\n",
+            "output": "22222\n",
+            "explanation": "20250222 から 0, 5, 0 を削除し、残った文字を順序を保って結合することで文字列 22222 が得られます。",
+            "images": []
+        },
+        {
+            "input": "2\n",
+            "output": "2\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "22222000111222222\n",
+            "output": "22222222222\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "jp"
+}

@@ -1,0 +1,44 @@
+Let me trace through the execution of this code step by step.
+
+Input: `WACWA`
+
+The code processes the string in reverse order and uses a stack (`ans` list).
+
+**Initial state:**
+- `s = "WACWA"`
+- `ans = []`
+
+**Processing each character in reverse (from right to left):**
+
+1. `i = 'A'` (last character)
+   - Not 'W', so append 'A'
+   - `ans = ['A']`
+
+2. `i = 'W'` (4th character)
+   - `i == 'W'` and `ans[-1] == 'A'` ✓
+   - Replace last 'A' with 'C': `ans[-1] = 'C'`
+   - Append 'A': `ans.append('A')`
+   - `ans = ['C', 'A']`
+
+3. `i = 'C'` (3rd character)
+   - Not 'W', so append 'C'
+   - `ans = ['C', 'A', 'C']`
+
+4. `i = 'A'` (2nd character)
+   - Not 'W', so append 'A'
+   - `ans = ['C', 'A', 'C', 'A']`
+
+5. `i = 'W'` (1st character)
+   - `i == 'W'` and `ans[-1] == 'A'` ✓
+   - Replace last 'A' with 'C': `ans[-1] = 'C'`
+   - Append 'A': `ans.append('A')`
+   - `ans = ['C', 'A', 'C', 'C', 'A']`
+
+**After processing, reverse the list:**
+- `ans.reverse()`
+- `ans = ['A', 'C', 'C', 'A', 'C']`
+
+**Output:**
+- `''.join(ans)` = `"ACCAC"`
+
+ACCAC

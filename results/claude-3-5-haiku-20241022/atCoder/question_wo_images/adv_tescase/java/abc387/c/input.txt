@@ -1,0 +1,11 @@
+for (int i = 1; i <= len; i++) {
+    if (i == len) {
+        total++;
+        break;
+    }
+    int head = dig[0];
+    total += power(head, len - 1 - i) * Math.min(head, dig[i]);
+    if (dig[i] >= head) {
+        break;
+    }
+}

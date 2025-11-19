@@ -1,0 +1,25 @@
+{
+    "Title": "Codeforces Round 1048 (Div. 1)",
+    "Source": "codeforces",
+    "Name": "Maple and Tree Beauty (Hard Version)",
+    "Time Limit": "6 s",
+    "Memory Limit": "1024 mb",
+    "Problem Statement": "這是問題的困難版本。版本之間的不同在於，在這個版本中，$t$ 和 $n$ 的約束更大。只有在解決了這個問題的所有版本後，您才能進行破解。\nMaple 被給予了一棵由 $n$ 個編號從 $1$ 到 $n$ 的頂點組成的根樹，根的索引為 $1$。樹的每個頂點被標記為零或一。不幸的是，Maple 忘記了這些頂點是如何標記的，只記得有正好 $k$ 個零和 $n - k$ 個一。\n對於每個頂點，我們定義該頂點的名字為從根到該頂點的標籤所形成的二進位字符串。更正式地，$\\text{name}_1 = \\text{label}_1$，並且對於所有 $2 ≤ u ≤ n$，$\\text{name}_u = \\text{name}_{p_u} + \\text{label}_u$，其中 $p_u$ 是頂點 $u$ 的父母，$+$ 代表字符串串接。\n這棵樹的美麗等於所有葉子名字的最長公共子序列$^{\\text{∗}}$ 的長度。您的任務是確定在所有正好有 $k$ 個零和 $n - k$ 個一的樹標記中，最大的美麗值。\n$^{\\text{∗}}$ 序列 $a$ 是序列 $b$ 的子序列，如果 $a$ 可以通過刪除 $b$ 中若干（可能為零或全部）元素而獲得。字符串 $s_1, s_2, ... s_m$ 的最長公共子序列是所有 $s_1, s_2, ..., s_m$ 的子序列中最長的字符串。\n$^{\\text{†}}$ 樹葉是指沒有子女的任何頂點。",
+    "Statement Images": [],
+    "Constraints": "Time limit: 6 s\nMemory limit: 1024 mb",
+    "IO Styles": "輸入\n每個測試包含多個測試案例。第一行包含測試案例的數量 $t$ （$1 ≤ t ≤ 10^4$）。接下來是測試案例的描述。\n每個測試案例的第一行包含兩個整數 $n$ 和 $k$ （$2 ≤ n ≤ 2 \\cdot 10 ^ 5$，$0 ≤ k ≤ n$）— 頂點的數量和標記為零的頂點數量。\n第二行包含 $n - 1$ 個整數 $p_2, p_3, ..., p_{n}$ （$1 ≤ p_i ≤ i - 1$）— 頂點 $i$ 的父節點。\n保證所有測試案例的 $n$ 的總和不超過 $2 \\cdot 10^5$。\n輸出\n對於每個測試案例，輸出一個整數，表示所有標記為恰好 $k$ 個零和 $n - k$ 個一的樹的最大美觀值。",
+    "Sample Detail": [
+        {
+            "input": "5\n7 3\n1 1 2 2 3 3\n7 2\n1 1 2 3 1 1\n5 0\n1 2 3 4\n5 2\n1 1 1 1\n5 4\n1 1 1 1",
+            "output": "3\n2\n5\n1\n2",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Notes": "注意 ![image](1.png) 在第一個測試案例中，最大美感為 $3$，當頂點標記為 $[0, 0, 0, 1, 1, 1, 1]$ 時，最長公共子序列為 001。 ![image](2.png) 在第二個測試案例中，最大美感為 $2$，當頂點標記為 $[1, 0, 0, 1, 1, 1, 1]$ 時，最長公共子序列為 11。",
+    "Note Images": [
+        "https://espresso.codeforces.com/1f47a18ed60774e1e086fda1e69e6a508ece64a4.png",
+        "https://espresso.codeforces.com/f2f618bf41cbf9ec7e446bf2fd42534266263584.png"
+    ],
+    "Language": "cn"
+}

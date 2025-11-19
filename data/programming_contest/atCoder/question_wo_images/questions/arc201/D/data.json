@@ -1,0 +1,20 @@
+{
+    "Title": "AtCoder Regular Contest 201",
+    "Source": "atcoder",
+    "Name": "Match, Mod, Minimize",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "You are given sequences of non-negative integers A=(A_1,A_2,\\dots ,A_N),B=(B_1,B_2,\\dots ,B_N) of length N and a positive integer M.\nWhen the elements of A can be rearranged freely, find the minimum possible value of \\max_{1≤ i≤ N} ((A_i+B_i) \\bmod M).\nT test cases are given, so find the answer for each.",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ T ≤ 10^5\n- 1 ≤ N ≤ 3 \\times 10^5\n- 1 ≤ M ≤ 10^9\n- 0 ≤ A_i,B_i \\lt M\n- The sum of N over all test cases is at most 3 \\times 10^5.\n- All input values are integers.",
+    "IO Styles": "Input\nThe input is given from Standard Input in the following format:\nT\n\\text{case}_1\n\\text{case}_2\n\\vdots\n\\text{case}_T\nEach test case is given in the following format:\nN M\nA_1 A_2 ... A_N\nB_1 B_2 ... B_N\nOutput\nOutput T lines.\nThe j-th line should contain the minimum possible value of \\max_{1≤ i≤ N} ((A_i+B_i) \\bmod M) for the j-th test case.",
+    "Sample Detail": [
+        {
+            "input": "3\n3 6\n3 1 4\n2 0 1\n1 1000000000\n999999999\n999999999\n10 201\n144 150 176 154 110 187 38 136 111 46\n96 109 73 63 85 1 156 7 13 171\n",
+            "output": "3\n999999998\n111\n",
+            "explanation": "For the first test case, if we rearrange A to 4,3,1, then (A_i+B_i) \\bmod M becomes 0,3,2 respectively, and the \\max of these is 3.",
+            "images": []
+        }
+    ],
+    "Language": "en"
+}

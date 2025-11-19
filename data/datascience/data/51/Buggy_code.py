@@ -1,0 +1,12 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+data = {'X': [13, 13, 13, 12, 11], 'Y':[14, 11, 13, 15, 20], 'NumberOfPlanets':[2, 5, 2, 1, 2]}
+cts = pd.DataFrame(data=data)
+
+plt.figure(figsize=(10,10))
+sns.scatterplot(data=cts, x='X', y='Y', size='NumberOfPlanets', sizes=(50,500), legend=False)
+sns.lineplot(data=cts, x='X', y='Y',estimator='max', color='red')
+plt.show()

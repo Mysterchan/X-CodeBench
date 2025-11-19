@@ -1,0 +1,24 @@
+{
+    "Title": "UNIQUE VISION Programming Contest 2025 Summer (AtCoder Beginner Contest 411)",
+    "Source": "atcoder",
+    "Name": "Contraction",
+    "Time Limit": "4 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "You are given an undirected graph G_0 with N vertices and M edges.\nThe vertices and edges of G_0 are numbered as vertices 1, 2, ..., N and edges 1, 2, ..., M, respectively, and\nedge i (1≤ i≤ M) connects vertices U_i and V_i.\nTakahashi has a graph G and N pieces numbered as pieces 1, 2, ..., N.\nInitially, G=G_0, and piece i (1≤ i≤ N) is placed on vertex i of G.\nHe will now perform Q operations in order.\nThe i-th operation (1≤ i≤ Q) gives an integer X_i between 1 and M, inclusive, and performs the following operation:\nIn G, if pieces U_{X_i} and V_{X_i} are placed on different vertices and\nthere exists an edge e (on G) between them, create a graph G' by contracting that edge.\nIn this case, if self-loops are created, remove them, and if multi-edges exist, replace them with simple edges. \nThen, all pieces that were placed on the two vertices connected by edge e in G are placed on the newly generated vertex by the contraction of e in G'.\nPieces that were placed on other vertices in G are placed on the corresponding vertices in G'.\nFinally, set this resulting G' as the new G.\nIf pieces U_{X_i} and V_{X_i} are placed on the same vertex, or if the vertices they are placed on are not connected by an edge, do nothing.\nFor each of the operations i=1,2,..., Q, output the number of edges in G after the i-th operation.\nEdge Contraction\nEdge contraction of an edge connecting vertices u and v is an operation that merges vertices u,v into one vertex. \nMore precisely, a graph obtained by performing edge contraction on G refers to the result of performing the following operations on G:\n\n- Add a new vertex w to G.\n- For each vertex x other than u,v in G, if and only if at least one of the edge connecting u and x or the edge connecting v and x exists, add an edge connecting w and x.\n- Delete vertices u,v and remove all edges connecting vertices u and v, as well as all edges connecting vertex u or vertex v with other vertices.",
+    "Statement Images": [],
+    "Constraints": "- 2≤ N≤ 3\\times 10^5\n- 1≤ M≤ 3\\times 10^5\n- 1≤ U_i<V_i≤ N\n- (U_i,V_i)\\neq (U_j,V_j) if i\\neq j. \n- 1≤ Q≤ 3\\times 10^5\n- 1≤ X_i≤ M\n- All input values are integers.",
+    "IO Styles": "Input\nThe input is given from Standard Input in the following format:\nN M\r\nU_1 V_1\r\nU_2 V_2\r\n\\vdots\r\nU_M V_M\r\nQ\r\nX_1 X_2 ... X_Q\r\nOutput\nOutput Q lines.\r\nOn the i-th line (1≤ i≤ Q), output the number of edges in G after the i-th operation.",
+    "Sample Detail": [
+        {
+            "input": "7 7\n1 2\n1 3\n2 3\n1 4\n1 5\n2 5\n6 7\n5\n1 2 3 1 5\n",
+            "output": "4\n3\n3\n3\n2\n",
+            "explanation": "Initially, G is as shown in the figure below. The circled numbers represent pieces with those numbers.\n\n![image](1.png)\n\nIn the 1st operation, we contract the edge between the vertices where pieces 1 and 2 are placed (left figure below).\r\nAfter the operation, G becomes as shown in the right figure below, and in particular, the number of edges is 4.\r\nNote that self-loops have been removed and multi-edges have been replaced with simple edges.\n\n![image](2.png)\n\nIn the 2nd operation, we contract the edge between the vertices where pieces 1 and 3 are placed.\r\nAfter the operation, G becomes as shown in the left figure below, and the number of edges becomes 3.\r\nIn the 3rd operation, since pieces 2 and 3 are placed on the same vertex, G remains unchanged, and the number of edges remains 3.\r\nIn the 4th operation as well, since pieces 1 and 2 are placed on the same vertex, G remains unchanged, and the number of edges remains 3. \r\nIn the 5th operation, we contract the edge between the vertices where pieces 1 and 5 are placed.\r\nAfter the operation, G becomes as shown in the right figure below, and the number of edges becomes 2. \n\nThus, output 4,3,3,3,2 in this order, separated by newlines.\n\n![image](3.png)",
+            "images": [
+                "https://img.atcoder.jp/abc411/9469e5c08fdb8fb3b5da9f88dc121dec.png",
+                "https://img.atcoder.jp/abc411/412aba64d94291e89c051b3c547e4c29.png",
+                "https://img.atcoder.jp/abc411/c176efe296aa93c69cfb48c793c8bb64.png"
+            ]
+        }
+    ],
+    "Language": "en"
+}

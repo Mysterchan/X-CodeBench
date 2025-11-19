@@ -1,0 +1,22 @@
+6
+2 2
+AA
+AA
+2 2
+BB
+BB
+2 3
+ABA
+BAB
+3 2
+BA
+AB
+BA
+2 4
+AAAA
+BBBB
+4 2
+BA
+BA
+BA
+BA

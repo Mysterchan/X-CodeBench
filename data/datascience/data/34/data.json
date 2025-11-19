@@ -1,0 +1,11 @@
+{
+    "url": "https://stackoverflow.com/questions/68087386/how-can-i-smoothen-a-line-chart-in-matplotlib",
+    "source": "stackoverflow",
+    "title": "How can I smoothen a line chart in matplotlib?",
+    "Description": "The intended visualization is a smooth line chart displaying values over the months from January to May. The current graph shows a jagged line connecting the data points, which results in an unsatisfactory appearance. The expected behavior is for the line to appear smooth rather than having sharp angles between points.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "matplotlib",
+        "data-visualization"
+    ]
+}

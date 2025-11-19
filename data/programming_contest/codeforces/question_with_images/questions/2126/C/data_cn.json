@@ -1,0 +1,24 @@
+{
+    "Title": "Codeforces Round 1037 (Div. 3)",
+    "Source": "codeforces",
+    "Name": "I Will Definitely Make It",
+    "Time Limit": "1 s",
+    "Memory Limit": "256 mb",
+    "Problem Statement": "給定 $n$ 座塔，編號從 $1$ 到 $n$。塔 $i$ 的高度為 $h_i$。在時間 $0$，你在編號為 $k$ 的塔上，當前水位為 $1$。每秒鐘，水位上升 $1$ 單位。在任何時刻，如果水位嚴格大於你所在塔的高度，你將會淹死。\n\n你擁有一項魔法能力：在時刻 $x$ 時，你可以開始從塔 $i$ 傳送到塔 $j$，這將花費 $\\lvert h_i - h_j \\rvert$ 秒。也就是說，在時刻 $x + \\lvert h_i - h_j \\rvert$ 之前，你會待在塔 $i$，而在時刻 $x + \\lvert h_i - h_j \\rvert$ 時，你將移動到塔 $j$。在你剛抵達塔 $j$ 的同時，你可以開始新的傳送。\n\n例如，如果 $n=k=4$，$h=[4, 4, 4, 2]$，那麼如果你在時刻 $0$ 從塔 $4$ 傳送到塔 $1$，則移動的過程如下：![image](1.png) \n注意，如果塔 $1$ 的高度是 $5$，你將無法立即傳送到那裡，因為你將在時刻 $2$ 被淹沒。\n\n你的目標是在水淹沒你之前，抵達任意一座高度最大的塔。判定這是否可行。",
+    "Statement Images": [
+        "https://espresso.codeforces.com/93a9fcf710028ea862e93a2ab50ac2f9ba42b212.png"
+    ],
+    "Constraints": "Time limit: 1 s\nMemory limit: 256 mb",
+    "IO Styles": "輸入\n每個測試由幾個測試案例組成。第一行包含一個整數 $t$ ($1 ≤ t ≤ 10^4$) — 測試案例的數量。接下來是測試案例的描述。\n每個測試案例的第一行包含兩個整數 $n$ 和 $k$ ($1 ≤ k ≤ n ≤ 10^5$) — 塔的數量和你最初所在的塔的索引。\n第二行包含 $n$ 個整數 $h_1, h_2, \\dots, h_n$ ($1 ≤ h_i ≤ 10^9$) — 塔的高度。\n保證所有測試案例中的所有 $n$ 的總和不會超過 $10^5$。\n輸出\n對於每個測試案例，輸出一行：若在水淹沒你之前可以到達最高的塔，則輸出 \"YES\"，否則輸出 \"NO\"。\n你可以以任意大小寫輸出每個字母（小寫或大寫）。例如，\"yEs\"、\"yes\"、\"Yes\" 和 \"YES\" 都將被視為正確答案。",
+    "Sample Detail": [
+        {
+            "input": "5\n5 3\n3 2 1 4 5\n3 1\n1 3 4\n4 4\n4 4 4 2\n6 2\n2 3 6 9 1 2\n4 2\n1 2 5 6",
+            "output": "YES\nNO\nYES\nYES\nNO",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Notes": "注意\n在第一個測試案例中，唯一可能的路徑是：$3 \\rightarrow 2 \\rightarrow 1 \\rightarrow 4 \\rightarrow 5$。\n在第二個測試案例中，無論順序如何，都無法到達最高的塔。\n在第三個測試案例中，可能的路徑之一是：$4 \\rightarrow 1$。",
+    "Note Images": [],
+    "Language": "cn"
+}

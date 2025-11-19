@@ -1,0 +1,32 @@
+{
+    "Title": "AtCoder Regular Contest 192 (Div. 2)",
+    "Source": "atcoder",
+    "Name": "Fennec VS. Snuke 2",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "フェネックとすぬけくんがボードゲームで遊んでいます。\n正整数 N と、長さ N の正整数列 A=(A_1,A_2,\\dots,A_N) が与えられます。また、集合 S があり、はじめ S は空集合です。\nフェネックとすぬけくんは、フェネックから順に次の一連の操作を交互に行います。\n- 1≤ A_i なる i を選ぶ。A_i から 1 を引き、i\\notin S ならば S に i を追加する。\n- S=\\lbrace 1,2,\\dots,N \\rbrace となっていたら、最後に操作したプレイヤーを勝者としてゲームを終了する。\nなお、勝者が決定してゲームが終了するまでは常にプレイヤーは操作が可能である（1≤ A_i なる i は存在する）ことが証明できます。\nフェネックとすぬけくんは、どちらも自身が勝者になることを目指して最適な行動を行います。どちらが勝者になるか判定してください。",
+    "Statement Images": [],
+    "Constraints": "- 1≤ N≤ 2\\times 10^5\n- 1≤ A_i≤ 10^9 (1≤ i≤ N)\n- 入力はすべて整数",
+    "IO Styles": "入力\n入力は以下の形式で標準入力から与えられる。\nN\nA_1 A_2 \\dots A_N\n出力\n勝者がフェネックならば Fennec と、すぬけくんならば Snuke と出力せよ。\n正誤判定器は大文字と小文字を区別せず、どちらも受理する。例えば、答えが Fennec となるときに fennec や FENNEC、fEnNeC などと出力しても正解と判定される。",
+    "Sample Detail": [
+        {
+            "input": "3\n1 9 2\n",
+            "output": "Fennec\n",
+            "explanation": "例えば、ゲームは以下のように進行します。\n\n- はじめ、A=(1,9,2) で、S は空集合である。\n- フェネックが 2 を選ぶ。A=(1,8,2)、S=\\lbrace 2 \\rbrace となる。\n- すぬけくんが 2 を選ぶ。A=(1,7,2)、S=\\lbrace 2 \\rbrace となる。\n- フェネックが 1 を選ぶ。A=(0,7,2)、S=\\lbrace 1,2 \\rbrace となる。\n- すぬけくんが 2 を選ぶ。A=(0,6,2)、S=\\lbrace 1,2 \\rbrace となる。\n- フェネックが 3 を選ぶ。A=(0,6,1)、S=\\lbrace 1,2,3 \\rbrace となる。フェネックを勝者としてゲームを終了する。\n\n\nこれは両者が最適に行動しているとは限りませんが、両者が最適に行動してもフェネックが勝者となることが示せます。",
+            "images": []
+        },
+        {
+            "input": "2\n25 29\n",
+            "output": "Snuke\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "6\n1 9 2 25 2 9\n",
+            "output": "Snuke\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "jp"
+}

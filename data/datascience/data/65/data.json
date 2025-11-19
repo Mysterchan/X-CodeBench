@@ -1,0 +1,11 @@
+{
+    "url": "https://stackoverflow.com/questions/60314500/seaborn-barplot-label-bars-with-3rd-variable",
+    "source": "stackoverflow",
+    "title": "Seaborn barplot label bars with 3rd variable",
+    "Description": "The intended visualization is a bar plot showing the frequency of occurrences for each month on the x-axis and the 'freq' values on the y-axis. Each bar should be labeled with a corresponding word from the 'word' column of the dataset, positioned on top of the respective bars. Currently, the graph does not display any labels on the bars, making it impossible to identify which word corresponds to each month. The expected appearance includes the words \"hello,\" \"world,\" \"seaborn,\" and \"python\" appearing on their respective bars for the months Jan-2019, Feb-2019, Mar-2019, and so on.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "seaborn",
+        "data-visualization"
+    ]
+}

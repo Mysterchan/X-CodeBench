@@ -1,0 +1,22 @@
+{
+    "Title": "AtCoder Beginner Contest 417",
+    "Source": "atcoder",
+    "Name": "A Path in A Dictionary",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "N 頂点 M 辺の単純連結無向グラフ G が与えられます。\nG の頂点は頂点 1, 頂点 2, ..., 頂点 N と番号付けられており、\ni (1≤ i≤ M) 本目の辺は頂点 U_i と頂点 V_i を結んでいます。\nG における頂点 X から頂点 Y への単純パスのうち辞書順最小のものを求めてください。\nすなわち、以下の条件をみたす整数列 P=(P_1,P_2,...,P_{\\lvert P\\rvert}) の中で辞書順最小のものを求めてください。\n- 1≤ P_i≤ N\n- i\\neq j ならば P_i\\neq P_j\n- P_1=X かつ P_{\\lvert P\\rvert}=Y\n- 1≤ i≤ \\lvert P\\rvert-1 について、頂点 P_i と頂点 P_{i+1} を結ぶ辺が存在する。\nなお、本問題の制約下で条件をみたすようなものが必ず存在することが証明できます。\nT 個のテストケースが与えられるので、それぞれについて答えを求めてください。\n整数列の辞書順 とは\n整数列 S=(S_1,S_2,...,S_{\\lvert S\\rvert}) が整数列 T=(T_1,T_2,...,T_{\\lvert T\\rvert}) より辞書順で小さいとは、下記の 1. と 2. のどちらかが成り立つことを言います。 ここで、\\lvert S\\rvert, \\lvert T\\rvert はそれぞれ S,T の長さを表します。\n- \\lvert S\\rvert<\\lvert T\\rvert かつ (S_1,S_2,...,S_{\\lvert S\\rvert})=(T_1,T_2,...,T_{\\lvert S\\rvert})。\n- ある 1≤ i≤ \\min(\\lvert S\\rvert,\\lvert T\\rvert) が存在して (S_1,S_2,...,S_{i-1})=(T_1,T_2,...,T_{i-1}) かつ S_i< T_i。",
+    "Statement Images": [],
+    "Constraints": "- 1≤ T≤ 500\n- 2≤ N≤ 1000\n- N-1≤ M≤ \\min≤ft( \\frac{N(N-1)}{2},5\\times 10^4\\right)\n- 1≤ X,Y ≤ N\n- X\\neq Y\n- 1≤ U_i<V_i ≤ N\n- i\\neq j ならば (U_i,V_i)\\neq (U_j,V_j)\n- 与えられるグラフは連結である。\n- 1 つの入力における N の総和は 1000 以下である。\n- 1 つの入力における M の総和は 5\\times 10^4 以下である。\n- 入力はすべて整数",
+    "IO Styles": "入力\n入力は以下の形式で標準入力から与えられる。\nT\n\\mathrm{case}_1\n\\mathrm{case}_2\n\\vdots\n\\mathrm{case}_T\n\\mathrm{case}_i は i 番目のテストケースを表す。\n各テストケースは以下の形式で与えられる。\nN M X Y \nU_1 V_1\nU_2 V_2\n\\vdots\nU_M V_M\n出力\nT 行出力せよ。\ni 行目 (1≤ i≤ T) には、i 個目のテストケースの答えとなる単純パス上の頂点番号を、順に空白区切りで出力せよ。\nすなわち i 個目のテストケースに対する答えが P=(P_1,P_2,...,P_{\\lvert P\\rvert}) であるとき、\nP_1, P_2, ..., P_{\\lvert P\\rvert} を i 行目にこの順に空白区切りで出力せよ。",
+    "Sample Detail": [
+        {
+            "input": "2\n6 10 3 5\n1 2\n1 3\n1 5\n1 6\n2 4\n2 5\n2 6\n3 4\n3 5\n5 6\n3 2 3 2\n1 3\n2 3\n",
+            "output": "3 1 2 5\n3 2\n",
+            "explanation": "1 つめのテストケースについて、グラフ G は次のようになっています。\n\n![image](1.png)\n\nG 上の頂点 3 から頂点 5 への単純パスを辞書順に列挙すると、次のとおりになります。\n\n- (3,1,2,5)\n- (3,1,2,6,5)\n- (3,1,5)\n- (3,1,6,2,5)\n- (3,1,6,5)\n- (3,4,2,1,5)\n- (3,4,2,1,6,5)\n- (3,4,2,5)\n- (3,4,2,6,1,5)\n- (3,4,2,6,5)\n- (3,5)\n\n\nこのうち、辞書順最小のものは (3,1,2,5) であるため、1 行目には 3,1,2,5 を空白区切りで出力します。\n\n2 つめのテストケースにおいては、(3,2) が頂点 3 から頂点 2 への唯一の単純パスです。",
+            "images": [
+                "https://img.atcoder.jp/abc417/12ddd13a59ff48977cc238502d4fa41a.png"
+            ]
+        }
+    ],
+    "Language": "jp"
+}

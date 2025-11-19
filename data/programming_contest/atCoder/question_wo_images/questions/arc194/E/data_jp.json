@@ -1,0 +1,26 @@
+{
+    "Title": "AtCoder Regular Contest 194 (Div. 2)",
+    "Source": "atcoder",
+    "Name": "Swap 0^X and 1^Y",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "0 と 1 のみからなる長さ N の文字列 S, T と、正整数 X, Y が与えられます。\ni = 1, 2, ..., N について、S の i 文字目を S_i で表します。\n「下記の操作 A と操作 B のどちらかを行う」ことを好きな回数（ 0 回でも良い）だけ繰り返すことで、S を T に一致させることができるかどうかを判定してください。\n- \n（操作 A）1 ≤ i ≤ N-(X+Y)+1, S_{i} = S_{i+1} = \\cdots = S_{i+X-1} = 0, S_{i+X} = S_{i+X+1} = \\cdots = S_{i+X+Y-1} = 1 を満たす整数 i を選び、S_{i}, S_{i+1}, ..., S_{i+Y-1} をそれぞれ 1 に、S_{i+Y}, S_{i+Y+1}, ..., S_{i+Y+X-1} をそれぞれ 0 に変更する。\n- \n（操作 B）1 ≤ i ≤ N-(X+Y)+1, S_{i} = S_{i+1} = \\cdots = S_{i+Y-1} = 1, S_{i+Y} = S_{i+Y+1} = \\cdots = S_{i+Y+X-1} = 0 を満たす整数 i を選び、S_{i}, S_{i+1}, ..., S_{i+X-1} をそれぞれ 0 に、S_{i+X}, S_{i+X+1}, ..., S_{i+X+Y-1} をそれぞれ 1 に変更する。",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ N ≤ 5 \\times 10^5\n- 1 ≤ X, Y ≤ N\n- S, T はそれぞれ 0 と 1 のみからなる長さ N の文字列\n- 入力はすべて整数",
+    "IO Styles": "入力\n入力は以下の形式で標準入力から与えられる。\nN X Y\r\nS\r\nT\r\n出力\nS を T に一致させることが可能な場合は Yes を、そうでない場合は No を出力せよ。",
+    "Sample Detail": [
+        {
+            "input": "9 2 1\n000111001\n011000011\n",
+            "output": "Yes\n",
+            "explanation": "下記の手順によって S を T に一致させることができます。\n\n- まず、i = 2 として操作 A を行う。その結果、S = 010011001 となる。\n- 次に、i = 6 として操作 B を行う。その結果、S = 010010011 となる。\n- 最後に、i = 3 として操作 A を行う。その結果、S = 011000011 となる。\n\n\nよって、Yes を出力します。",
+            "images": []
+        },
+        {
+            "input": "1 1 1\n0\n1\n",
+            "output": "No\n",
+            "explanation": "S を T に一致させることはできません。よって、No を出力します。",
+            "images": []
+        }
+    ],
+    "Language": "jp"
+}

@@ -1,0 +1,22 @@
+{
+    "Title": "AtCoder Regular Contest 205 (Div. 2)",
+    "Source": "atcoder",
+    "Name": "Non-Ancestor Matching",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "頂点に 1 から N までの番号がついた N 頂点の根付き木が与えられます。頂点 1 が根で、頂点 i (2 ≤ i ≤ N) の親は頂点 p_i (1≤ p_i < i) です。はじめ、全ての頂点は白で塗られています。\nあなたは以下の一連の操作を 0 回以上何回でも行うことができます。\n- 以下の条件を全て満たす整数の組 (u,v) を選ぶ。\n- 1≤ u < v ≤ N\n- 頂点 u と頂点 v はどちらも白で塗られている。\n- u は v の祖先 ではない。\n- 頂点 u と頂点 v を黒で塗る。\nただし、「u は v の祖先ではない」とは頂点 v から今いる頂点の親に移動する操作を何回行っても頂点 u に到達できないことを意味します。\nあなたが適切な順序で操作を行ったとき、最大で何回操作ができるか求めてください。\nT 個のテストケースが与えられるので、それぞれについて答えを求めてください。",
+    "Statement Images": [],
+    "Constraints": "- 1≤ T≤ 5\\times 10^4\n- 2≤ N≤ 5\\times 10^5\n- 1≤ p_i < i\n- 全てのテストケースにおける N の総和は 5\\times 10^5 以下\n- 入力される値は全て整数",
+    "IO Styles": "入力\n入力は以下の形式で標準入力から与えられる。\nT\r\n\\text{case}_1\r\n\\text{case}_2\r\n\\vdots\r\n\\text{case}_T\r\n各テストケース \\text{case}_i は以下の形式で与えられる。\nN\r\np_2 p_3 ... p_N\r\n出力\nT 行出力せよ。\ni 行目 (1≤ i≤ T) には i 番目のテストケースについての答えを出力せよ。",
+    "Sample Detail": [
+        {
+            "input": "4\n6\n1 2 2 2 5\n7\n1 2 3 4 5 6\n7\n1 2 3 4 2 4\n12\n1 1 2 2 2 4 4 4 7 7 7\n",
+            "output": "2\n0\n2\n5\n",
+            "explanation": "1 番目のテストケースについて考えます。\n\n![image](1.png)\n\n以下のように 2 回操作を行うことができます。\n\n- (u,v)=(3,5) を選ぶ。頂点 3 と頂点 5 を黒で塗る。\n- (u,v)=(4,6) を選ぶ。頂点 4 と頂点 6 を黒で塗る。\n\n\n操作を 2 回より多く行うことはできないので、 1 行目には 2 を出力してください。",
+            "images": [
+                "https://img.atcoder.jp/arc205/6734339acfecc9c4c7ae80a268dda726.png"
+            ]
+        }
+    ],
+    "Language": "jp"
+}

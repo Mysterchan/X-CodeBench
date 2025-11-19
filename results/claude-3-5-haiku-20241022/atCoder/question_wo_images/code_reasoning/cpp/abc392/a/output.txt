@@ -1,0 +1,13 @@
+Looking at this problem, I need to determine if any permutation of the three numbers (3, 15, 5) can satisfy the equation B₁ × B₂ = B₃.
+
+Let me trace through the code:
+1. The program reads three integers: a=3, b=15, c=5
+2. It checks three conditions:
+   - Does a×b == c? → 3×15 == 5? → 45 == 5? → No
+   - Does a×c == b? → 3×5 == 15? → 15 == 15? → Yes!
+   
+Since one condition is true (3×5 = 15), the program prints "Yes".
+
+This makes sense because we can arrange the numbers as B = (3, 5, 15) where B₁ × B₂ = B₃ (3 × 5 = 15).
+
+Yes

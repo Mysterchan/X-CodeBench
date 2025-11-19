@@ -1,0 +1,32 @@
+{
+    "Title": "Japan Registry Services (JPRS) Programming Contest 2025#1 (AtCoder Beginner Contest 392)",
+    "Source": "atcoder",
+    "Name": "Shuffled Equation",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "Вам дана последовательность целых чисел A = (A_1, A_2, A_3). \nПусть B = (B_1, B_2, B_3) — это любая перестановка A. \nОпределите, возможно ли, что B_1 \\times B_2 = B_3.",
+    "Statement Images": [],
+    "Constraints": "- Все входные значения являются целыми числами.\n- 1 ≤ A_1, A_2, A_3 ≤ 100",
+    "IO Styles": "Входные данные\nВходные данные подаются из стандартного ввода в следующем формате:\nA_1 A_2 A_3\nВыходные данные\nЕсли возможно, что B_1 \\times B_2 = B_3, выведите Yes; в противном случае выведите No.",
+    "Sample Detail": [
+        {
+            "input": "3 15 5\n",
+            "output": "Yes\n",
+            "explanation": "Здесь A=(3,15,5).\nПутём перестановки мы получаем B=(3,5,15), что позволяет удовлетворить условие B_1 \\times B_2 = B_3.",
+            "images": []
+        },
+        {
+            "input": "5 3 2\n",
+            "output": "No\n",
+            "explanation": "Ни одна перестановка B не удовлетворяет равенству B_1 \\times B_2 = B_3.",
+            "images": []
+        },
+        {
+            "input": "3 3 9\n",
+            "output": "Yes\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "ru"
+}

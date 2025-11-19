@@ -1,0 +1,32 @@
+{
+    "Title": "Japan Registry Services (JPRS) Programming Contest 2025#1 (AtCoder Beginner Contest 392)",
+    "Source": "atcoder",
+    "Name": "Who is Missing?",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "給定一個長度為 M 的整數序列 A = (A_1, A_2, \\dots, A_M)。  \nA 的每個元素都是介於 1 和 N 之間的整數（包含邊界），並且所有元素都是不重複的。  \n請按升序列出所有介於 1 和 N 之間不在 A 中出現的整數。",
+    "Statement Images": [],
+    "Constraints": "- 所有輸入值都是整數。\n- 1 ≤ M ≤ N ≤ 1000\n- 1 ≤ A_i ≤ N\n- A 的元素是不同的。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nN M\nA_1 A_2 \\dots A_M\n\n輸出\n令 (X_1, X_2, \\dots, X_C) 為所有介於 1 和 N 之間（包含 1 和 N）的整數序列，這些整數不出現在 A 中，並按升序列出。\n輸出應以以下格式給出：\nC\nX_1 X_2 \\dots X_C",
+    "Sample Detail": [
+        {
+            "input": "10 3\n3 9 2\n",
+            "output": "7\n1 4 5 6 7 8 10\n",
+            "explanation": "這裡，A=(3,9,2)。\n在1到10之間不出現在A中的整數，按升序排列為1,4,5,6,7,8,10。",
+            "images": []
+        },
+        {
+            "input": "6 6\n1 3 5 2 4 6\n",
+            "output": "0\n\n",
+            "explanation": "沒有任何介於 1 和 6 之間的整數缺失於 A 中。\n在這種情況下，第一行輸出 0，第二行保持空白。",
+            "images": []
+        },
+        {
+            "input": "9 1\n9\n",
+            "output": "8\n1 2 3 4 5 6 7 8\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

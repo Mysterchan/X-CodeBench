@@ -1,0 +1,26 @@
+{
+    "Title": "Atto Round 1 (Codeforces Round 1041, Div. 1 + Div. 2)",
+    "Source": "codeforces",
+    "Name": "23 Rises Again",
+    "Time Limit": "5 s",
+    "Memory Limit": "1024 mb",
+    "Problem Statement": "基亞拉什正在採摘草莓帶回家...\n一個圖形被稱為糖果圖（candy），當且僅當圖中每個頂點的度數至多為 $2$。\n給定一個簡單的、無向的、連通的圖 $G$，其頂點數 $n ≤ 30$，並具有一個特別的性質：每個頂點最多屬於 $5$ 個簡單回路$^{\\text{∗}}$。\n在所有 $G$ 的子圖$^{\\text{†}}$ 中，糖果圖的最大邊數是多少？\n$^{\\text{∗}}$簡單回路是一個連通的子圖，其中每個頂點的度數恰好為 $2$\n$^{\\text{†}}$$G$ 的子圖是其頂點和邊是 $G$ 的子集的圖。",
+    "Statement Images": [],
+    "Constraints": "Time limit: 5 s\nMemory limit: 1024 mb",
+    "IO Styles": "輸入\n每個測試包含多個測試案例。第一行包含測試案例的數量 $t$ ($1 ≤ t ≤ 50$)。接下來是測試案例的描述。\n每個測試案例的第一行包含兩個整數 $n$ 和 $m$ ($3 ≤ n ≤ 30$, $n-1 ≤ m ≤ \\frac{n(n-1)}{2}$) — 顶点的數量和邊的數量。\n然後跟隨 $m$ 行，第 $i$ 行包含兩個整數 $u$ 和 $v$ ($1 ≤ u, v ≤ n$) — 第 $i$ 條邊連接的兩個頂點。\n可以保證所給的圖是簡單且連通的，且每個頂點最多屬於 $5$ 個簡單循環。\n可以保證所有測試案例中 $n^2$ 的總和不會超過 $900$。\n輸出\n對於每個測試案例，輸出一個整數 — 所有是糖果圖的子圖中邊的最大數量。",
+    "Sample Detail": [
+        {
+            "input": "3\n4 4\n1 2\n1 3\n2 3\n3 4\n7 10\n1 2\n1 3\n1 4\n2 4\n3 4\n4 5\n4 6\n5 6\n5 7\n6 7\n9 10\n1 2\n1 3\n3 4\n3 7\n4 5\n4 6\n5 6\n7 8\n7 9\n8 9",
+            "output": "3\n7\n8",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Notes": "備註\n在第一個測試案例中，你可以選擇下圖中標記的邊。另一方面，你不能選擇所有的邊，因為頂點 $3$ 的度數會超過 $2$。所以所有糖果子圖中邊的最大數量是 $3$。![image](1.png)  \n在第二個測試案例中，你可以選擇下圖中標記的邊。可以證明任何糖果子圖最多有 $7$ 條邊。![image](2.png)  \n在第三個測試案例中，下圖顯示了邊的最大數量的糖果子圖之一。![image](3.png)",
+    "Note Images": [
+        "https://espresso.codeforces.com/064ddc2958e039754419c0809080eb64468e41f1.png",
+        "https://espresso.codeforces.com/1f1c025a0afadc5f6ce636777fd36d8f79e6e48e.png",
+        "https://espresso.codeforces.com/31dbb8574b4f90301036b5ef9e29ce75cdef9a97.png"
+    ],
+    "Language": "cn"
+}

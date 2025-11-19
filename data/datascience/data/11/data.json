@@ -1,0 +1,11 @@
+{
+    "url": "https://github.com/matplotlib/matplotlib/issues/30637",
+    "source": "github",
+    "title": "[Bug]: axvline doesn't draw line correctly on second axes",
+    "Description": "When using axvline on the second axes of a subplot, the line is not drawn correctly. Additionally, setting ymin=0 and ymax=10 with ylim=(-1, 11) results in the line being short instead of y=0 to y=10. How can this be fixed?",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "matplotlib",
+        "data-visualization"
+    ]
+}

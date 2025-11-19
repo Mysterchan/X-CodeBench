@@ -1,0 +1,32 @@
+{
+    "Title": "AtCoder Regular Contest 204 (Div. 1)",
+    "Source": "atcoder",
+    "Name": "Maximize Sum of Mex",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "正整数 N と (1, 2, \\dots , N) の順列 P = (P_{1}, P_{2}, \\dots, P_{N})が与えられます。\nQ 個のクエリを処理してください。各クエリでは非負整数 A_{0}, A_{1}, A_{2} が与えられるので以下の問題の答えを出力してください。なお、A_{0} + A_{1} + A_{2} = N であることが保証されます。\n長さ N の数列 B であって、以下の条件をすべて満たす数列を good な数列とします。\n- B_{i} = 0 が成り立つ 1 以上 N 以下の整数 i はちょうど A_{0} 個\n- B_{i} = 1 が成り立つ 1 以上 N 以下の整数 i はちょうど A_{1} 個\n- B_{i} = 2 が成り立つ 1 以上 N 以下の整数 i はちょうど A_{2} 個\n長さ N の数列 B に対して、スコアを以下のように定義します。\n- \\displaystyle\\sum_{i = 1}^{N}\\mathrm{MEX}(B_{i}, B_{P_{i}})\nただし、\\mathrm{MEX}(x, y) は x でも y でもない最小の非負整数であると定義します。\ngood な数列全てに対するスコアの最大値を求めてください。",
+    "Statement Images": [],
+    "Constraints": "- 1≤ N≤ 3\\times 10^{5}\n- (P_{1}, P_{2}, \\dots , P_{N}) は (1, 2, \\dots , N) の順列\n- 1≤ Q≤ 3\\times 10^{5}\n- 0≤ A_{i}\n- それぞれのクエリに対して A_{0} + A_{1} + A_{2} = N\n- 入力は全て整数",
+    "IO Styles": "入力\n入力は以下の形式で標準入力から与えられます。\nN\nP_{1} P_{2} \\dots P_{N}\nQ\nquery_{1}\nquery_{2}\n\\cdots\nquery_{Q}\nここで query_{i} は i 番目のクエリであり、以下の形式で与えられます。\nA_{0} A_{1} A_{2}\n出力\nQ 行出力してください。i 行目には i 番目のクエリの答えを出力してください。",
+    "Sample Detail": [
+        {
+            "input": "3\n2 3 1\n2\n1 1 1\n1 0 2\n",
+            "output": "3\n2\n",
+            "explanation": "1 番目のクエリについて、B = (0, 1, 2) は good な数列です。この数列のスコアは \\mathrm{MEX}(0, 1) + \\mathrm{MEX}(1, 2) + \\mathrm{MEX}(2, 0) = 2 + 0 + 1 = 3 より 3 です。3 よりスコアが大きい good な数列は存在しないので、1 行目には 3 を出力します。",
+            "images": []
+        },
+        {
+            "input": "7\n6 3 4 5 2 1 7\n4\n2 2 3\n4 1 2\n0 3 4\n1 2 4\n",
+            "output": "8\n9\n0\n4\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "9\n1 6 7 3 5 8 9 2 4\n10\n5 3 1\n0 7 2\n0 6 3\n1 3 5\n4 0 5\n4 2 3\n1 5 3\n4 5 0\n2 2 5\n2 5 2\n",
+            "output": "14\n0\n0\n4\n7\n11\n4\n13\n8\n8\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "jp"
+}

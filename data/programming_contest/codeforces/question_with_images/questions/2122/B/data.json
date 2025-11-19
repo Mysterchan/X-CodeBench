@@ -1,0 +1,26 @@
+{
+    "Title": "Order Capital Round 1 (Codeforces Round 1038, Div. 1 + Div. 2)",
+    "Source": "codeforces",
+    "Name": "Pile Shuffling",
+    "Time Limit": "1 s",
+    "Memory Limit": "256 mb",
+    "Problem Statement": "You are given $n$ binary piles, the $i$-th of which consists of $a_i$ zeros on the top and $b_i$ ones on the bottom.\nIn one operation, you can take the top element of any pile and move it to any position in any pile, including the pile it was taken from.  ![image](1.png) Solution of the first example test case.  Calculate the minimum number of operations required to make it so that the $i$-th pile consists of $c_i$ zeros on the top and $d_i$ ones on the bottom.",
+    "Statement Images": [
+        "https://espresso.codeforces.com/0db537ae486941d1359d90287005ddee63578545.png"
+    ],
+    "Constraints": "Time limit: 1 s\nMemory limit: 256 mb",
+    "IO Styles": "Input\nEach test contains multiple test cases. The first line contains the number of test cases $t$ ($1 ≤ t ≤ 10^4$). The description of the test cases follows. \nThe first line of each test case contains a single integer $n$ ($1 ≤ n ≤ 2 \\cdot 10^5$) — the number of piles.\nThen $n$ lines follow, the $i$-th containing four integers $a_i$, $b_i$, $c_i$, $d_i$ ($0 ≤ a_i, b_i, c_i, d_i ≤ 10^9$) — the original and target state of the $i$-th pile.\nIt is guaranteed that there exists a sequence of operations that transforms the piles into the target state.\nIt is guaranteed that the sum of $n$ over all test cases does not exceed $2 \\cdot 10^5$. \nOutput\nFor each test case, output one integer — the minimum number of operations required to achieve the target state.",
+    "Sample Detail": [
+        {
+            "input": "3\n2\n1 3 1 2\n1 1 1 2\n3\n2 0 2 2\n0 1 1 0\n1 1 0 0\n3\n1 2 1 2\n3 4 3 4\n0 0 0 0",
+            "output": "2\n3\n0",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Notes": "Note\nThe solution of the first test case is shown in the statement.\nIn the second test case, an optimal solution is to do the following:  ![image](2.png) \nIn the third test case, all piles are already in their target state.",
+    "Note Images": [
+        "https://espresso.codeforces.com/cd402da4da4d022bd71d8e9811598affac4deadd.png"
+    ],
+    "Language": "en"
+}

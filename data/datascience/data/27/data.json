@@ -1,0 +1,11 @@
+{
+    "url": "https://stackoverflow.com/questions/63560005/draw-curved-lines-to-connect-points-in-matplotlib",
+    "source": "stackoverflow",
+    "title": "Draw curved lines to connect points in matplotlib",
+    "Description": "The intended visualization is a plot of curved lines connecting a series of points based on rank data for multiple teams over weeks. The x-axis should represent weeks, while the y-axis should represent rankings, with points plotted as circles. Currently, the curves connecting these points do not match the expected appearance, resulting in an unsatisfactory representation of the relationships between the points. The desired outcome is for the curves to accurately reflect the intended shape when connecting the scatter points in a smooth manner.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "matplotlib",
+        "data-visualization"
+    ]
+}

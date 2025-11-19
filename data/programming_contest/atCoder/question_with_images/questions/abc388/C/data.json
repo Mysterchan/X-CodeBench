@@ -1,0 +1,35 @@
+{
+    "Title": "HHKB Programming Contest 2025(AtCoder Beginner Contest 388)",
+    "Source": "atcoder",
+    "Name": "Various Kagamimochi",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "There are N mochi (rice cakes) arranged in ascending order of size.\nThe size of the i-th mochi (1 ≤ i ≤ N) is A_i.\nGiven two mochi A and B, with sizes a and b respectively, you can make one kagamimochi (a stacked rice cake) by placing mochi A on top of mochi B if and only if a is at most half of b.\nYou choose two mochi out of the N mochi, and place one on top of the other to form one kagamimochi.\nFind how many different kinds of kagamimochi can be made.\nTwo kagamimochi are distinguished if at least one of the mochi is different, even if the sizes of the mochi are the same.",
+    "Statement Images": [],
+    "Constraints": "- 2 ≤ N ≤ 5 \\times 10^5\n- 1 ≤ A_i ≤ 10^9 \\ (1 ≤ i ≤ N)\n- A_i ≤ A_{i+1} \\ (1 ≤ i < N)\n- All input values are integers.",
+    "IO Styles": "Input\nThe input is given from Standard Input in the following format:\nN\r\nA_1 A_2 \\cdots A_N\r\nOutput\nPrint the number of different kinds of kagamimochi that can be made.",
+    "Sample Detail": [
+        {
+            "input": "6\n2 3 4 4 7 10\n",
+            "output": "8\n",
+            "explanation": "The sizes of the given mochi are as follows:\n\n![image](1.png)\n\nIn this case, you can make the following eight kinds of kagamimochi:\n\n![image](2.png)\n\nNote that there are two kinds of kagamimochi where a mochi of size 4 is topped by a mochi of size 2, and two kinds where a mochi of size 10 is topped by a mochi of size 4.",
+            "images": [
+                "https://img.atcoder.jp/abc388/29024766d11c2d88b06c92b2081129f5.png",
+                "https://img.atcoder.jp/abc388/0b69fbe457f2c4298173acce2faab37e.png"
+            ]
+        },
+        {
+            "input": "3\n387 388 389\n",
+            "output": "0\n",
+            "explanation": "It is possible that you cannot make any kagamimochi.",
+            "images": []
+        },
+        {
+            "input": "32\n1 2 4 5 8 10 12 16 19 25 33 40 50 64 87 101 149 175 202 211 278 314 355 405 412 420 442 481 512 582 600 641\n",
+            "output": "388\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "en"
+}

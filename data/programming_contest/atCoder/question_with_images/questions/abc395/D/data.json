@@ -1,0 +1,34 @@
+{
+    "Title": "AtCoder Beginner Contest 395",
+    "Source": "atcoder",
+    "Name": "Pigeon Swap",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "There are N pigeons labeled 1, 2, ..., N and N nests labeled 1, 2, ..., N.\nInitially, pigeon i (1 ≤ i ≤ N) is in nest i.\nYou will perform Q operations on these pigeons.\nThere are three types of operations:\n- Type 1: You are given integers a and b (1 ≤ a ≤ N, 1 ≤ b ≤ N). Take pigeon a out of its current nest and move it to nest b.\n- Type 2: You are given integers a and b (1 ≤ a < b ≤ N). Move all pigeons in nest a to nest b, and move all pigeons in nest b to nest a. These two moves happen simultaneously.\n- Type 3: You are given an integer a (1 ≤ a ≤ N). Pigeon a reports the label of the nest it is currently in.\nPrint the result of each Type 3 operation in the order the operations are given.",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ N ≤ 10^6\n- 1 ≤ Q ≤ 3 \\times 10^5\n- Every operation is of Type 1, 2, or 3.\n- All operations are valid according to the problem statement.\n- There is at least one Type 3 operation.\n- All input values are integers.",
+    "IO Styles": "Input\nThe input is given from Standard Input in the following format:\nN Q\r\nop _ 1\r\nop _ 2\r\n\\vdots\r\nop _ Q\r\nHere, op _ i on the line i+1 represents the i-th operation in one of the following formats.\nIf the i-th operation is of Type 1, op _ i is in the following format:\n1 a b\r\nThis corresponds to a Type 1 operation with the given integers being a and b.\nIf the i-th operation is of Type 2, op _ i is in the following format:\n2 a b\r\nThis corresponds to a Type 2 operation with the given integers being a and b.\nIf the i-th operation is of Type 3, op _ i is in the following format:\n3 a\r\nThis corresponds to a Type 3 operation with the given integer being a.\nOutput\nLet the number of Type 3 operations be q. Print q lines. The i-th line (1 ≤ i ≤ q) should contain the nest number reported in the i-th Type 3 operation.",
+    "Sample Detail": [
+        {
+            "input": "6 8\n1 2 4\n1 3 6\n3 2\n2 4 5\n3 2\n1 4 2\n3 4\n3 2\n",
+            "output": "4\n5\n2\n5\n",
+            "explanation": "In the operations given, the pigeons move as shown in the figure below:\n\n![image](1.png)\n\nThe nest numbers to be reported for the Type 3 operations are 4,5,2,5. Print 4, 5, 2, 5 on separate lines.",
+            "images": [
+                "https://img.atcoder.jp/abc395/e82ad720223ef5e6d6cf8d1d51daa621.png"
+            ]
+        },
+        {
+            "input": "1 2\n1 1 1\n3 1\n",
+            "output": "1\n",
+            "explanation": "The destination nest of a Type 1 operation may be the same as the nest the pigeon is currently in.",
+            "images": []
+        },
+        {
+            "input": "30 15\n3 3\n2 8 30\n2 12 15\n2 2 17\n1 19 1\n2 7 30\n3 12\n3 8\n2 25 26\n1 13 10\n1 16 10\n2 16 29\n2 1 21\n2 6 11\n1 21 8\n",
+            "output": "3\n15\n7\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "en"
+}

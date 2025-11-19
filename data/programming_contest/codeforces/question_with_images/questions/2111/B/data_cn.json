@@ -1,0 +1,24 @@
+{
+    "Title": "Educational Codeforces Round 179 (Rated for Div. 2)",
+    "Source": "codeforces",
+    "Name": "Fibonacci Cubes",
+    "Time Limit": "2 s",
+    "Memory Limit": "512 mb",
+    "Problem Statement": "有 $n$ 個 Fibonacci 立方體，該第 $i$ 個立方體的邊長等於 $f_{i}$，其中 $f_{i}$ 是第 $i$ 個 Fibonacci 數。\n在這個問題中，Fibonacci 數定義如下： \n- $f_{1} = 1$ \n- $f_{2} = 2$ \n- $f_{i} = f_{i - 1} + f_{i - 2}$，當 $i > 2$ 時。 \n\n還有 $m$ 個空盒子，其中第 $i$ 個盒子的寬度為 $w_{i}$，長度為 $l_{i}$，高度為 $h_{i}$。\n對於每一個 $m$ 個盒子，你需要判斷所有的立方體是否能夠放入該盒子內。立方體必須按照以下規則放置在盒子內：\n- 立方體只能以使其邊與盒子邊平行的方式堆疊在盒子內；\n- 每個立方體必須放在盒子的底部，或在其他立方體上放置，並確保立方體下面的所有空間都被佔據；\n- 較大的立方體不能放在較小的立方體上面。",
+    "Statement Images": [],
+    "Constraints": "Time limit: 2 s\nMemory limit: 512 mb",
+    "IO Styles": "輸入\n每個測試包含幾個測試案例。第一行包含一個整數 $t$ ($1 ≤ t ≤ 10^{3}$) — 測試案例的數量。測試案例的描述隨後給出。\n在每個測試案例的第一行，有兩個整數 $n$ 和 $m$ ($2 ≤ n ≤ 10, 1 ≤ m ≤ 2 \\cdot 10^{5}$) — 立方體的數量和空盒子的數量。\n每個測試案例接下來的 $m$ 行包含 $3$ 個整數 $w_{i}$, $l_{i}$ 和 $h_{i}$ ($1 ≤ w_{i}, l_{i}, h_{i} ≤ 150$) — 第 $i$ 個盒子的尺寸。\n關於輸入的額外約束：- 所有測試案例中 $m$ 的總和不超過 $2 \\cdot 10^{5}$。 \n輸出\n對於每個測試案例，輸出一個長度為 $m$ 的字符串，其中第 $i$ 個字符等於 \"1\" 如果所有 $n$ 個立方體可以放入第 $i$ 個盒子；否則，第 $i$ 個字符等於 \"0\"。",
+    "Sample Detail": [
+        {
+            "input": "2\n5 4\n3 1 2\n10 10 10\n9 8 13\n14 7 20\n2 6\n3 3 3\n1 2 1\n2 1 2\n3 2 2\n2 3 1\n3 2 4",
+            "output": "0010\n100101",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Notes": "注意\n在第一個測試案例中，只有一個盒子是合適的。立方體可以按照以下方式放入其中：![image](1.png)",
+    "Note Images": [
+        "https://espresso.codeforces.com/340ee01a170541f7d4b306492d48982aeeb3e49f.png"
+    ],
+    "Language": "cn"
+}

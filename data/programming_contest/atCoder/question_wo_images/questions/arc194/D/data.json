@@ -1,0 +1,26 @@
+{
+    "Title": "AtCoder Regular Contest 194 (Div. 2)",
+    "Source": "atcoder",
+    "Name": "Reverse Brackets",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "A string is defined to be a valid parenthesis sequence if and only if it satisfies one of the following conditions:\n- It is an empty string.\n- There exists a valid parenthesis sequence A such that the string is obtained by concatenating (, A, and ) in this order.\n- There exist non-empty valid parenthesis sequences A and B such that the string is obtained by concatenating A and B in this order.\nYou are given a valid parenthesis sequence S of length N. You can perform the following operation any number of times:\n- Choose a contiguous substring of S that is a valid parenthesis sequence, and reverse it.\nHere, reversing the substring of S from the l-th character to the r-th character means the following:\n- For every integer i satisfying l ≤ i ≤ r, simultaneously replace S_i with ) if S_{l+r-i} is (, and with ( if S_{l+r-i} is ).(Note that reversing here is different from the usual definition of reversing.)\nFind the number, modulo 998244353, of distinct strings S that you can have at the end of the process.",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ N ≤ 5000\n- |S| = N\n- S is a valid parenthesis sequence.",
+    "IO Styles": "Input\nThe input is given from Standard Input in the following format:\nN\r\nS\r\nOutput\nPrint the answer.",
+    "Sample Detail": [
+        {
+            "input": "6\n(())()\n",
+            "output": "2\n",
+            "explanation": "For example, you can transform S into ()(()) by doing the following:\n\n- Choose the substring from the 1st to the 6th character of S. This is a valid parenthesis sequence. S becomes ()(()).\n\n\nThe only other string that can be formed is (())(). Thus, the answer is 2.",
+            "images": []
+        },
+        {
+            "input": "2\n()\n",
+            "output": "1\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "en"
+}

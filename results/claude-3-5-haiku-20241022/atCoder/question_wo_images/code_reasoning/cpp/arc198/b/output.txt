@@ -1,0 +1,7 @@
+void solve()
+{
+    int a, b, c; cin >> a >> b >> c;
+    if(!c && (b & 1)) return cout << "No\n", void();
+    if(max((b + 1) / 2, c) > a)  return cout << "No\n", void();
+    cout << "Yes\n";
+}

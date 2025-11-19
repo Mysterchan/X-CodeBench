@@ -1,0 +1,11 @@
+{
+    "url": "https://github.com/matplotlib/matplotlib/issues/28995",
+    "source": "github",
+    "title": "[Bug]: The Z-axis of 3D figures cannot be visualized properly.",
+    "Description": "The 3D surface plot is intended to display the Z-axis vertically, but currently, it appears tilted. Additionally, the Z-axis label is not fully visible in the graph. The plot should ensure the Z-axis is upright and that the Z-axis label is clearly displayed without obstruction.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "matplotlib",
+        "data-visualization"
+    ]
+}

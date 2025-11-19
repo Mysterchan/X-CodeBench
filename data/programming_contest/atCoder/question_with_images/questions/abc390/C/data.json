@@ -1,0 +1,35 @@
+{
+    "Title": "AtCoder Beginner Contest 390",
+    "Source": "atcoder",
+    "Name": "Paint to make a rectangle",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "You are given a grid of H rows and W columns.\nLet (i,j) denote the cell at row i (1 ≤ i ≤ H) from the top and column j (1 ≤ j ≤ W) from the left.\nThe state of the grid is represented by H strings S_1, S_2, ..., S_H, each of length W, as follows:\n- If the j-th character of S_i is #, cell (i,j) is painted black.\n- If the j-th character of S_i is ., cell (i,j) is painted white.\n- If the j-th character of S_i is ?, cell (i,j) is not yet painted.\nTakahashi wants to paint each not-yet-painted cell white or black so that all the black cells form a rectangle.\nMore precisely, he wants there to exist a quadruple of integers (a,b,c,d) (1 ≤ a ≤ b ≤ H, 1 ≤ c ≤ d ≤ W) such that:\nFor each cell (i,j) (1 ≤ i ≤ H, 1 ≤ j ≤ W),\nif a ≤ i ≤ b and c ≤ j ≤ d, the cell is black;\notherwise, the cell is white.\nDetermine whether this is possible.",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ H, W ≤ 1000\n- H and W are integers.\n- Each S_i is a string of length W consisting of #, ., ?.\n- There is at least one cell that is already painted black.",
+    "IO Styles": "Input\nThe input is given from Standard Input in the following format:\nH W\r\nS_1\r\nS_2\r\n\\vdots\r\nS_H\r\nOutput\nIf it is possible to paint all the not-yet-painted cells so that the black cells form a rectangle, print Yes; otherwise, print No.",
+    "Sample Detail": [
+        {
+            "input": "3 5\n.#?#.\n.?#?.\n?...?\n",
+            "output": "Yes\n",
+            "explanation": "The grid is in the following state. ? indicates a cell that are not yet painted.\n\n![image](1.png)\n\nBy painting cells (1,3), (2,2), and (2,4) black and cells (3,1) and (3,5) white, the black cells can form a rectangle as follows:\n\n![image](2.png)\n\nTherefore, print Yes.",
+            "images": [
+                "https://img.atcoder.jp/abc390/85b372e4c19d09eb4f842736d40de3b9.png",
+                "https://img.atcoder.jp/abc390/535404bb0565608276c41ef49d8f2336.png"
+            ]
+        },
+        {
+            "input": "3 3\n?##\n#.#\n##?\n",
+            "output": "No\n",
+            "explanation": "To form a rectangle with all black cells, you would need to paint cell (2,2) black, but it is already painted white.\r\nTherefore, it is impossible to make all black cells form a rectangle, so print No.",
+            "images": []
+        },
+        {
+            "input": "1 1\n#\n",
+            "output": "Yes\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "en"
+}

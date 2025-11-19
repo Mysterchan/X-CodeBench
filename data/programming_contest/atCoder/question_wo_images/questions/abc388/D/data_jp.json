@@ -1,0 +1,32 @@
+{
+    "Title": "HHKBプログラミングコンテスト2025(AtCoder Beginner Contest 388)",
+    "Source": "atcoder",
+    "Name": "Coming of Age Celebration",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "ある星には N 人の宇宙人がおり、全員未成年です。\ni 人目の宇宙人は現在 A_i 個の石を所持しており、ちょうど i 年後に成人します。\nこの星では誰かが成人するとき、石を 1 個以上所持している成人全員が、成人する宇宙人に成人祝いとして石を 1 個渡します。\nN 年後に各宇宙人が所持している石の個数を求めてください。\nただし、今後新たな宇宙人は産まれないものとします。",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ N ≤ 5 \\times 10^5\n- 0 ≤ A_i ≤ 5 \\times 10^5\n- 入力される値はすべて整数",
+    "IO Styles": "入力\n入力は以下の形式で標準入力から与えられる。\nN\r\nA_1 A_2 ... A_N\r\n出力\nN 年後に i 人目の宇宙人が所持している石の個数を B_i として B_1, B_2, ..., B_N をこの順に空白区切りで出力せよ。",
+    "Sample Detail": [
+        {
+            "input": "4\n5 0 9 3\n",
+            "output": "2 0 10 5\n",
+            "explanation": "i 人目の宇宙人が持っている石の個数を C_i で表します。\n\nはじめ (C_1, C_2, C_3, C_4) = (5, 0, 9, 3) です。\n\n1 年後には (C_1, C_2, C_3, C_4) = (5, 0, 9, 3) となります。\n\n2 年後には (C_1, C_2, C_3, C_4) = (4, 1, 9, 3) となります。\n\n3 年後には (C_1, C_2, C_3, C_4) = (3, 0, 11, 3) となります。\n\n4 年後には (C_1, C_2, C_3, C_4) = (2, 0, 10, 5) となります。",
+            "images": []
+        },
+        {
+            "input": "5\n4 6 7 2 5\n",
+            "output": "0 4 7 4 9\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "10\n2 9 1 2 0 4 6 7 1 5\n",
+            "output": "0 2 0 0 0 4 7 10 4 10\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "jp"
+}

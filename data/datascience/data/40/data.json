@@ -1,0 +1,11 @@
+{
+    "url": "https://stackoverflow.com/questions/60564240/change-the-colors-of-matplotlibs-ticklabels-based-on-a-condition",
+    "source": "stackoverflow",
+    "title": "Change the colors of Matplotlib's ticklabels based on a condition",
+    "Description": "The goal is to modify the y-axis tick labels in the plot so that negative values are displayed in red and positive values are displayed in black. Currently, all y-axis tick labels are displayed in a single color (black), regardless of whether the values are negative or positive. The expected behavior is to visually distinguish the negative values with a red color while keeping the positive values in black.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "matplotlib",
+        "data-visualization"
+    ]
+}

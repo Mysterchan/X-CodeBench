@@ -1,0 +1,1 @@
+x = x ^ b if x ^ b < x else x

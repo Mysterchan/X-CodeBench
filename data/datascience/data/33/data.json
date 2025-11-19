@@ -1,0 +1,11 @@
+{
+    "url": "https://stackoverflow.com/questions/59684765/is-it-possible-to-put-numbers-on-top-of-a-matplot-histogram",
+    "source": "stackoverflow",
+    "title": "Putting numbers on top of a Matplotlib histogram",
+    "Description": "The histogram should display the frequency of values in a dataset using bars, with each bar showing the count of occurrences within a defined range. Currently, the graph does not annotate the bars with their respective values on top, making it difficult to quickly assess the counts represented by each bar. The expected outcome is a histogram where the height of each bar is clearly labeled with its corresponding count placed above the bar for better clarity.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "matplotlib",
+        "data-visualization"
+    ]
+}

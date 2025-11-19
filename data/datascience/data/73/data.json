@@ -1,0 +1,11 @@
+{
+    "url": "https://stackoverflow.com/questions/66897981/change-heatmaps-yticks-for-multi-index-dataframe",
+    "source": "stackoverflow",
+    "title": "Change heatmap's yticks for multi-index dataframe",
+    "Description": "The current heatmap displays y-ticks that include both years and months, which is not the intended visualization. The desired output should show only the years on the y-axis, without the month indicators.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "seaborn",
+        "data-visualization"
+    ]
+}

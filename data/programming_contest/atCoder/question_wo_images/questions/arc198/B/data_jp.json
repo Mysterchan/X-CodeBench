@@ -1,0 +1,20 @@
+{
+    "Title": "AtCoder Regular Contest 198 (Div. 2)",
+    "Source": "atcoder",
+    "Name": "Rivalry",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "X 個の 0、Y 個の 1、Z 個の 2 からなる長さ X+Y+Z の非負整数列 A=(A_1,A_2,\\dots,A_{X+Y+Z}) であって、以下の条件を満たすものが存在するか判定してください。\n- 全ての i(1 ≤ i ≤ X+Y+Z) に対して、A_{i-1},A_{i+1} のうち A_i 未満のものはちょうど A_i 個である。\nただし、A_0 = A_{X+Y+Z},A_{X+Y+Z+1} = A_1 とします。\nT 個のテストケースが与えられるので、それぞれについて答えを求めてください。",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ T ≤ 2 \\times 10^5\n- 0 ≤ X,Y,Z ≤ 10^9\n- 3 ≤ X + Y + Z",
+    "IO Styles": "入力\n入力は以下の形式で標準入力から与えられる。\nT\n\\mathrm{case}_1\n\\mathrm{case}_2\n\\vdots\n\\mathrm{case}_T\n各ケースは以下の形式で与えられる。\nX\\ Y\\ Z\n出力\nT 行出力せよ。i(1 ≤ i ≤ T) 行目には、i 個目のテストケースにおいて条件を満たすものが存在するなら Yes を、そうでないならば No を出力せよ。",
+    "Sample Detail": [
+        {
+            "input": "4\n2 1 1\n3 4 5\n1359 1998 1022\n392848293 683919483 822948689\n",
+            "output": "Yes\nNo\nYes\nNo\n",
+            "explanation": "1 個目のテストケースについて、A = (2,0,0,1) とすると条件を満たします。\n\n2 個目のテストケースについて、条件を満たす数列は存在しません。",
+            "images": []
+        }
+    ],
+    "Language": "jp"
+}

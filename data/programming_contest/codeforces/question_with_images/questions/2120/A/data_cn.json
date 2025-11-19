@@ -1,0 +1,24 @@
+{
+    "Title": "Codeforces Round 1033 (Div. 2) and CodeNite 2025",
+    "Source": "codeforces",
+    "Name": "Square of Rectangles",
+    "Time Limit": "1 s",
+    "Memory Limit": "256 mb",
+    "Problem Statement": "Aryan 是一位熱愛正方形卻厭惡矩形的人（是的，他知道所有的正方形都是矩形）。但 Harshith 喜歡對 Aryan 進行捉弄。Harshith 給了 Aryan 三個矩形，尺寸為 $l_1\\times b_1$、$l_2\\times b_2$ 和 $l_3\\times b_3$，滿足 $l_3 \\leq l_2 \\leq l_1$ 且 $b_3 \\leq b_2 \\leq b_1$。為了打敗 Harshith，Aryan 決定將這三個矩形排列成一個正方形，使得沒有兩個矩形重疊且矩形沿邊緣對齊。矩形不允許旋轉。幫助 Aryan 判斷他是否能夠打敗 Harshith。",
+    "Statement Images": [],
+    "Constraints": "Time limit: 1 s\nMemory limit: 256 mb",
+    "IO Styles": "輸入\n每個測試有多個測試案例。第一行包含測試案例的數量 $t$ ($1 ≤ t ≤ 100$)。隨後是測試案例的描述。\n每個測試案例包含一行，該行由 $6$ 個以空格分隔的整數 $l_1, b_1, l_2, b_2, l_3$ 和 $b_3$ 組成 ($1 ≤ l_3≤ l_2≤ l_1≤ 100$, $1≤ b_3≤ b_2≤ b_1 ≤ 100$) — 三個矩形的尺寸。\n輸出\n對於每個測試案例，若矩形可以排列成一個正方形，則輸出 \"YES\"；否則輸出 \"NO\"。\n您可以以任意大小寫輸出答案（大寫或小寫）。例如，字串 \"yEs\"、\"yes\"、\"Yes\" 和 \"YES\" 都將被視為正面的回應。",
+    "Sample Detail": [
+        {
+            "input": "5\n100 100 10 10 1 1\n5 3 5 1 5 1\n2 3 1 2 1 1\n8 5 3 5 3 3\n3 3 3 3 2 1",
+            "output": "NO\nYES\nYES\nNO\nNO",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Notes": "注意\n在第二個測試案例中，三個矩形 $5\\times 3$、$5\\times 1$ 和 $5\\times 1$ 可以排列如下以形成一個正方形。 ![image](1.png) \n在第四個測試案例中，可以證明這些矩形無法在給定的限制下排列成一個正方形。",
+    "Note Images": [
+        "https://espresso.codeforces.com/1d9464d4f577e3d9c6bf987d26fea814cf98ee12.png"
+    ],
+    "Language": "cn"
+}

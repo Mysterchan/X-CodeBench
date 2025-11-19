@@ -1,0 +1,24 @@
+{
+    "Title": "Codeforces Round 1009 (Div. 3)",
+    "Source": "codeforces",
+    "Name": "Draw a Square",
+    "Time Limit": "1 s",
+    "Memory Limit": "256 mb",
+    "Problem Statement": "The pink soldiers have given you $4$ distinct points on the plane. The $4$ points' coordinates are $(-l,0)$, $(r,0)$, $(0,-d)$, $(0,u)$ correspondingly, where $l$, $r$, $d$, $u$ are positive integers. ![image](1.png) In the diagram, a square is drawn by connecting the four points $L$, $R$, $D$, $U$. \nPlease determine if it is possible to draw a square$^{\\text{∗}}$ with the given points as its vertices.\n$^{\\text{∗}}$A square is defined as a polygon consisting of $4$ vertices, of which all sides have equal length and all inner angles are equal. No two edges of the polygon may intersect each other.",
+    "Statement Images": [
+        "https://espresso.codeforces.com/280d7475bd2765cb5054e65e90e80526f8b96081.png"
+    ],
+    "Constraints": "Time limit: 1 s\nMemory limit: 256 mb",
+    "IO Styles": "Input\nEach test contains multiple test cases. The first line contains the number of test cases $t$ ($1 ≤ t ≤ 10^4$). The description of the test cases follows. \nThe first line of each test case contains four integers $l$, $r$, $d$, $u$ ($1 ≤ l,r,d,u ≤ 10$).\nOutput\nFor each test case, if you can draw a square using the four points, output \"Yes\". Otherwise, output \"No\".\nYou can output the answer in any case. For example, the strings \"yEs\", \"yes\", and \"YES\" will also be recognized as positive responses.",
+    "Sample Detail": [
+        {
+            "input": "2\n2 2 2 2\n1 2 3 4",
+            "output": "Yes\nNo",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Notes": "Note\nOn the first test case, the four given points form a square, so the answer is \"Yes\".\nOn the second test case, the four given points do not form a square, so the answer is \"No\".",
+    "Note Images": [],
+    "Language": "en"
+}

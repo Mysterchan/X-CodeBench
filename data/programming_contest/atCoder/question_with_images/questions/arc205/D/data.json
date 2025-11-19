@@ -1,0 +1,22 @@
+{
+    "Title": "AtCoder Regular Contest 205 (Div. 2)",
+    "Source": "atcoder",
+    "Name": "Non-Ancestor Matching",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "You are given a rooted tree with N vertices numbered from 1 to N. Vertex 1 is the root, and the parent of vertex i (2 ≤ i ≤ N) is vertex p_i (1≤ p_i < i). Initially, all vertices are colored white.\nYou can perform the following sequence of operations zero or more times.\n- Choose a pair of integers (u,v) that satisfies all of the following conditions.\n- 1≤ u < v ≤ N\n- Both vertices u and v are colored white.\n- u is not an ancestor of v.\n- Color vertices u and v black.\nHere, \"u is not an ancestor of v\" means that you cannot reach vertex u from vertex v no matter how many times you perform the operation of moving to the parent of the current vertex.\nFind the maximum number of operations you can perform when you perform operations in an appropriate order.\nYou are given T test cases, so find the answer for each of them.",
+    "Statement Images": [],
+    "Constraints": "- 1≤ T≤ 5\\times 10^4\n- 2≤ N≤ 5\\times 10^5\n- 1≤ p_i < i\n- The sum of N over all test cases is at most 5\\times 10^5.\n- All input values are integers.",
+    "IO Styles": "Input\nThe input is given from Standard Input in the following format:\nT\r\n\\text{case}_1\r\n\\text{case}_2\r\n\\vdots\r\n\\text{case}_T\r\nEach test case \\text{case}_i is given in the following format:\nN\r\np_2 p_3 ... p_N\r\nOutput\nOutput T lines.\nThe i-th line (1≤ i≤ T) should contain the answer for the i-th test case.",
+    "Sample Detail": [
+        {
+            "input": "4\n6\n1 2 2 2 5\n7\n1 2 3 4 5 6\n7\n1 2 3 4 2 4\n12\n1 1 2 2 2 4 4 4 7 7 7\n",
+            "output": "2\n0\n2\n5\n",
+            "explanation": "Consider the first test case.\n\n![image](1.png)\n\nYou can perform two operations as follows.\n\n- Choose (u,v)=(3,5). Color vertices 3 and 5 black.\n- Choose (u,v)=(4,6). Color vertices 4 and 6 black.\n\n\nYou cannot perform more than two operations, so output 2 on the first line.",
+            "images": [
+                "https://img.atcoder.jp/arc205/6734339acfecc9c4c7ae80a268dda726.png"
+            ]
+        }
+    ],
+    "Language": "en"
+}

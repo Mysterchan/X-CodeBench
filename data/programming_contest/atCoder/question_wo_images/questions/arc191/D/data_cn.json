@@ -1,0 +1,32 @@
+{
+    "Title": "AtCoder Regular Contest 191 (Div. 2)",
+    "Source": "atcoder",
+    "Name": "Moving Pieces on Graph",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "給定一個簡單的連通無向圖，包含 N 個頂點和 M 條邊，其中頂點編號為 1 到 N，邊編號為 1 到 M。邊 i 在雙向上連接頂點 u_i 和頂點 v_i。\n最初，棋子 A 位於頂點 S，棋子 B 位於頂點 T。此處，S 和 T 以輸入形式提供。\n你可以任意次數且以任意順序執行以下操作：\n- 選擇棋子 A 或棋子 B，並通過邊將其從當前頂點移動到相鄰的頂點。但是，你不能進行使兩個棋子最終停留在同一個頂點的移動。\n你的目標是使棋子 A 位於頂點 T，棋子 B 位於頂點 S。\n請確定是否可能實現這一目標，如果可以，找出達成它所需的最小操作次數。",
+    "Statement Images": [],
+    "Constraints": "- 2 ≤ N ≤ 2\\times 10^5  \n- \\displaystyle N-1 ≤ M ≤ \\min\\left(\\frac{N(N-1)}{2},\\,2\\times 10^5\\right)  \n- 1 ≤ u_i < v_i ≤ N  \n- 所給的圖是簡單且連通的。  \n- 1 ≤ S, T ≤ N  \n- S ≠ T  \n- 所有輸入值均為整數。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nN M S T\nu_1 v_1\nu_2 v_2\n\\vdots\nu_M v_M\n\n輸出\n如果無法達成目標，輸出 -1。\n如果可以達成，輸出所需的最少操作次數。",
+    "Sample Detail": [
+        {
+            "input": "4 4 3 4\n2 4\n1 4\n3 4\n2 3\n",
+            "output": "3\n",
+            "explanation": "例如，以下操作序列在三步內完成目標：\n\n- 將棋子 A 移動到頂點 2。\n- 現在棋子 A 在頂點 2，棋子 B 在頂點 4。\n\n- 將棋子 B 移動到頂點 3。\n- 現在棋子 A 在頂點 2，棋子 B 在頂點 3。\n\n- 將棋子 A 移動到頂點 4。\n- 現在棋子 A 在頂點 4，棋子 B 在頂點 3。\n\n不可能在少於三步的情況下完成目標，因此打印 3。",
+            "images": []
+        },
+        {
+            "input": "2 1 1 2\n1 2\n",
+            "output": "-1\n",
+            "explanation": "無論您如何移動棋子，都無法達成目標。",
+            "images": []
+        },
+        {
+            "input": "5 6 3 5\n1 2\n2 3\n1 5\n2 4\n1 3\n2 5\n",
+            "output": "4\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

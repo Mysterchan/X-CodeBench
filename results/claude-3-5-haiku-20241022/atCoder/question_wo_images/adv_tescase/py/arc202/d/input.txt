@@ -1,0 +1,4 @@
+if (t - i) % 2 == 1:
+    ans = (ans - term + MOD) % MOD
+else:
+    ans = (ans + term) % MOD

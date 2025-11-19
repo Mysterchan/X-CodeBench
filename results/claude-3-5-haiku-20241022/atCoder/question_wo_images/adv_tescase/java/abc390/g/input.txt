@@ -1,0 +1,1 @@
+cur = (cur + (cnt * j) % MOD * pow10[(int) (len + getLen(j))] % MOD) % MOD;

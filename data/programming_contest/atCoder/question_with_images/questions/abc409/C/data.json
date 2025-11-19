@@ -1,0 +1,34 @@
+{
+    "Title": "AtCoder Beginner Contest 409",
+    "Source": "atcoder",
+    "Name": "Equilateral Triangle",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "There is a circle with circumference L, and points 1,2,...,N are placed on this circle. For i=1,2,...,N-1, point i+1 is located at a position that is d_i clockwise from point i on the circle.\nFind the number of integer triples (a,b,c)\\ (1≤ a\\lt b\\lt c≤ N) that satisfy both of the following conditions:\n- The three points a, b, and c are all at different positions.\n- The triangle with vertices at the three points a, b, and c is an equilateral triangle.",
+    "Statement Images": [],
+    "Constraints": "- 3≤ L,N≤ 3\\times 10^5\n- 0≤ d_i\\lt L\n- All input values are integers.",
+    "IO Styles": "Input\nThe input is given from Standard Input in the following format:\nN L\r\nd_1 d_2 ... d_{N-1}\r\nOutput\nOutput the answer.",
+    "Sample Detail": [
+        {
+            "input": "5 6\n4 3 1 2\n",
+            "output": "2\n",
+            "explanation": "The arrangement of the five points is as follows. Two pairs satisfy the conditions: (a,b,c)=(1,2,4),(1,4,5).\n\n![image](1.png)",
+            "images": [
+                "https://img.atcoder.jp/abc409/58e1047b72e249e1390cc813d4e78a2f.png"
+            ]
+        },
+        {
+            "input": "4 4\n1 1 1\n",
+            "output": "0\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "10 12\n4 4 5 7 1 7 0 8 5\n",
+            "output": "13\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "en"
+}

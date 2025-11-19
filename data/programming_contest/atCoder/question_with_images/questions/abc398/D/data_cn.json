@@ -1,0 +1,40 @@
+{
+    "Title": "UNIQUE VISION Programming Contest 2025 Spring (AtCoder Beginner Contest 398)",
+    "Source": "atcoder",
+    "Name": "Bonfire",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "在一個無限大的二維網格上，坐標 (0,0) 有一個營火。\n在時間 t=0 時，煙霧僅存在於單元格 (0,0)。\n給定一個長度為 N 的字串 S，由 N、W、S、E 組成。在時間 t=1,2,\\dots,N 時，依次發生以下情況：\n- 風吹起來，當前所有的煙霧會按照以下規則移動：\n- 如果 S 的第 t 個字符是 N，則單元格 (r,c) 中的煙霧移動到單元格 (r-1,c)。\n- 如果是 W，則單元格 (r,c) 中的煙霧移動到單元格 (r,c-1)。\n- 如果是 S，則單元格 (r,c) 中的煙霧移動到單元格 (r+1,c)。\n- 如果是 E，則單元格 (r,c) 中的煙霧移動到單元格 (r,c+1)。\n- 如果單元格 (0,0) 中沒有煙霧，則在單元格 (0,0) 中產生新的煙霧。\nTakahashi 站在單元格 (R,C)。\n對於每個整數 1 ≤ t ≤ N，判斷在時間 t+0.5 時單元格 (R,C) 中是否存在煙霧，並根據要求的格式打印回應。",
+    "Statement Images": [],
+    "Constraints": "- N 是一個介於 1 和 200000 之間的整數（包含 1 和 200000）。\n- S 是一個長度為 N 的字符串，其中字符可以是 N、W、S、E。\n- R 和 C 是介於 -N 和 N 之間的整數（包含 -N 和 N）。\n- (R,C) \\neq (0,0)",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nN R C\nS\n輸出\n打印一個由 0 和 1 組成的 N 字符串。\n第 t 個字符 (1 ≤ t ≤ N) 應為：\n- 如果在時間 t+0.5 時，位置 (R,C) 有煙，則為 1；\n- 否則為 0。",
+    "Sample Detail": [
+        {
+            "input": "6 -2 1\nNNEEWS\n",
+            "output": "001010\n",
+            "explanation": "有時在 1.5、2.5、4.5、6.5 時，單元格 (-2,1) 沒有煙霧。在 3.5、5.5 時，單元格 (-2,1) 有煙霧。\n因此，輸出 001010。\n\n在下面的圖中，以有篝火的單元格 (0,0) 作為參考，單元格 (r,c) 被繪製如下：\n\n- 當 r < 0 時，向上畫 -r 個單元格，\n- 當 r ≥ 0 時，向下畫 r 個單元格，\n- 當 c < 0 時，向左畫 -c 個單元格，\n- 當 c ≥ 0 時，向右畫 c 個單元格。\n\n在 0.5 時的網格如下所示：\n\n![image](1.png)\n\n在 1.5 時的網格如下所示：\n\n![image](2.png)\n\n在 2.5 時的網格如下所示：\n\n![image](3.png)\n\n在 3.5 時的網格如下所示：\n\n![image](4.png)\n\n在 4.5 時的網格如下所示：\n\n![image](5.png)\n\n在 5.5 時的網格如下所示：\n\n![image](6.png)\n\n在 6.5 時的網格如下所示：\n\n![image](7.png)",
+            "images": [
+                "https://img.atcoder.jp/abc398/pmRbLy1F_D_t0.png",
+                "https://img.atcoder.jp/abc398/pmRbLy1F_D_t1.png",
+                "https://img.atcoder.jp/abc398/pmRbLy1F_D_t2.png",
+                "https://img.atcoder.jp/abc398/pmRbLy1F_D_t3.png",
+                "https://img.atcoder.jp/abc398/pmRbLy1F_D_t4.png",
+                "https://img.atcoder.jp/abc398/pmRbLy1F_D_t5.png",
+                "https://img.atcoder.jp/abc398/pmRbLy1F_D_t6.png"
+            ]
+        },
+        {
+            "input": "10 1 2\nNEESESWEES\n",
+            "output": "0001101011\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "20 -1 -2\nWWNNWSWEWNSWWENSNWWN\n",
+            "output": "00100111111000101111\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

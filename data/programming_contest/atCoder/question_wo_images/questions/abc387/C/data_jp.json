@@ -1,0 +1,32 @@
+{
+    "Title": "AtCoder Beginner Contest 387（Promotion of AtCoderJobs）",
+    "Source": "atcoder",
+    "Name": "Snake Numbers",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "10 以上の正整数のうち、十進数表記したときに先頭の桁（最も大きい位）の数字がそれ以外のどの桁の数字よりも真に大きくなるようなものを ヘビ数 とよびます。\n例えば、31 や 201 はヘビ数ですが、35 や 202 はヘビ数ではありません。\nL 以上 R 以下のヘビ数が何個あるか求めてください。",
+    "Statement Images": [],
+    "Constraints": "- 10≤ L ≤ R ≤ 10^{18}\n- 入力は全て整数",
+    "IO Styles": "入力\n入力は以下の形式で標準入力から与えられる。\nL R\n出力\n答えを出力せよ。",
+    "Sample Detail": [
+        {
+            "input": "97 210\n",
+            "output": "6\n",
+            "explanation": "97 以上 210 以下のヘビ数は、97,98,100,200,201,210 の 6 個です。",
+            "images": []
+        },
+        {
+            "input": "1000 9999\n",
+            "output": "2025\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "252509054433933519 760713016476190692\n",
+            "output": "221852052834757\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "jp"
+}

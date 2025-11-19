@@ -1,0 +1,6 @@
+a
+tc
+oder
+
+Concatenated output:
+atcoder

@@ -1,0 +1,32 @@
+{
+    "Title": "AtCoder Beginner Contest 390",
+    "Source": "atcoder",
+    "Name": "Geometric Sequence",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "You are given a length-N sequence A=(A_1,A_2,...,A_N) of positive integers.\nDetermine whether A is a geometric progression.",
+    "Statement Images": [],
+    "Constraints": "- 2 ≤ N ≤ 100\n- 1 ≤ A_i ≤ 10^9\n- All input values are integers.",
+    "IO Styles": "Input\nThe input is given from Standard Input in the following format:\nN\r\nA_1 A_2 ... A_N\r\nOutput\nIf A is a geometric progression, print Yes; otherwise, print No.",
+    "Sample Detail": [
+        {
+            "input": "5\n3 6 12 24 48\n",
+            "output": "Yes\n",
+            "explanation": "A=(3,6,12,24,48).\nA is a geometric progression with first term 3, common ratio 2, and five terms.\r\nTherefore, print Yes.",
+            "images": []
+        },
+        {
+            "input": "3\n1 2 3\n",
+            "output": "No\n",
+            "explanation": "A=(1,2,3).\r\nSince A_1 : A_2 = 1 : 2 \\neq 2 : 3 = A_2 : A_3, A is not a geometric progression.\r\nTherefore, print No.",
+            "images": []
+        },
+        {
+            "input": "2\n10 8\n",
+            "output": "Yes\n",
+            "explanation": "A is a geometric progression with first term 10, common ratio 0.8, and two terms.\r\nTherefore, print Yes.",
+            "images": []
+        }
+    ],
+    "Language": "en"
+}

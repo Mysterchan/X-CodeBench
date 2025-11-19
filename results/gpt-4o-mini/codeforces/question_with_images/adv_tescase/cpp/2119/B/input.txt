@@ -1,0 +1,3 @@
+1 1 1 3 3 1 1 2 1 1 2 1 1 1 1 2 2 2 2 2 2 1 2 2 2 1 1 1 1 1 1 1 1 1 1 1 1 1 2 1 1 1 1 1 1 2 1 1 2 2 2 2 2 2 2 1 1 1 1 1 1 1 2 1 2 2 2 2 2 1 1 1 1 1 1 2 2 2 1 1 1 2 2 2 2 2 2 2 1 1 1 1 1 1 1 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2
+
+This test case will expose issues in the buggy code related to the calculation of the required distances and the logic surrounding the maximum distance. It intentionally creates a situation where the implementation's logic will inaccurately determine if reaching the terminal point is possible.

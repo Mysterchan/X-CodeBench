@@ -1,0 +1,38 @@
+{
+    "Title": "AtCoder Beginner Contest 387",
+    "Source": "atcoder",
+    "Name": "Happy New Year 2025",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "Вам даны два положительных целых числа A и B.\nВыведите квадрат суммы A и B.",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ A,B ≤ 2025\n- Все входные значения являются целыми числами.",
+    "IO Styles": "Входные данные\nВходные данные поступают из стандартного ввода в следующем формате:\nA B\nВыходные данные\nВыведите ответ.",
+    "Sample Detail": [
+        {
+            "input": "20 25\n",
+            "output": "2025\n",
+            "explanation": "(20+25)^2=2025.",
+            "images": []
+        },
+        {
+            "input": "30 25\n",
+            "output": "3025\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "45 11\n",
+            "output": "3136\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "2025 1111\n",
+            "output": "9834496\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "ru"
+}

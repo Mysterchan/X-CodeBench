@@ -1,0 +1,15 @@
+import matplotlib.pyplot as plt
+
+
+def plot_graph():
+    text = 'There are 多个汉字 👈👉 in between!'
+    plt.rcParams['font.family'] = ['Segoe UI Emoji', 'SimHei']
+    fig, ax = plt.subplots(figsize=(6, 3))
+    plt.figtext(0.3, 0.7, text)
+    plt.title(text)
+    plt.xlabel(text)
+    plt.ylabel(text)
+    plt.show()
+
+
+plot_graph()

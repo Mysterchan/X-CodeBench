@@ -1,0 +1,11 @@
+{
+    "url": "https://github.com/matplotlib/matplotlib/issues/25869",
+    "source": "github",
+    "title": "[Bug]: Plot 3d vector",
+    "Description": "When plotting a 3D vector at the coordinates [1, 1, -1] with a view angle set by view_init(elev=-45, azim=45), the point does not appear to show correctly in the view. The expectation is that the vector would be visible as a distinct point in the 3D space, but it currently blends into the mesh grid, making it hard to identify.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "matplotlib",
+        "data-visualization"
+    ]
+}

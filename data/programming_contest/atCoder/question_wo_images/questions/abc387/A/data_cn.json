@@ -1,0 +1,38 @@
+{
+    "Title": "AtCoder Beginner Contest 387",
+    "Source": "atcoder",
+    "Name": "Happy New Year 2025",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "給定兩個正整數 A 和 B。\n輸出 A + B 的平方。",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ A,B ≤ 2025\n- 所有輸入值均為整數。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nA B\n\n輸出\n輸出答案。",
+    "Sample Detail": [
+        {
+            "input": "20 25\n",
+            "output": "2025\n",
+            "explanation": "(20+25)^2=2025。",
+            "images": []
+        },
+        {
+            "input": "30 25\n",
+            "output": "3025\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "45 11\n",
+            "output": "3136\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "2025 1111\n",
+            "output": "9834496\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

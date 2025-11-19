@@ -1,0 +1,34 @@
+{
+    "Title": "AtCoder Beginner Contest 396",
+    "Source": "atcoder",
+    "Name": "Flip Row or Col",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "H 行 W 列のグリッドがあり、それぞれのマスには 0 または 1 が書かれています。上から i 行目、左から j 行目のマスには整数 A_{i,j} が書かれています。\nこのグリッドに対して、2 種類の操作を好きな順番で何度でも行うことができます。\n- 操作 X: 整数 x\\ (1≤ x≤ H) を選ぶ。各整数 1≤ y≤ W に対して A_{x,y} を 1-A_{x,y} で置き換える。\n- 操作 Y: 整数 y\\ (1≤ y≤ W) を選ぶ。各整数 1≤ x≤ H に対して A_{x,y} を 1-A_{x,y} で置き換える。\n操作が終了した後の \\displaystyle \\sum_{x=1}^H\\sum_{y=1}^W A_{x,y} としてあり得る最小値を求めてください。",
+    "Statement Images": [],
+    "Constraints": "- 1≤ H≤ 2\\times 10^5\n- 1≤ W≤ 18\n- H,W は整数\n- A_{i,1}A_{i,2}... A_{i,W} は 0 および 1 からなる長さ W の文字列",
+    "IO Styles": "入力\n入力は以下の形式で標準入力から与えられる。\nH W\nA_{1,1}A_{1,2}... A_{1,W}\nA_{2,1}A_{2,2}... A_{2,W}\n\\vdots\nA_{H,1}A_{H,2}... A_{H,W}\n出力\n答えを出力せよ。",
+    "Sample Detail": [
+        {
+            "input": "3 3\n100\n010\n110\n",
+            "output": "2\n",
+            "explanation": "以下のように操作すると、グリッドの状態は下図のように変化し \\displaystyle \\sum_{x=1}^H\\sum_{y=1}^W A_{x,y}=2 にすることができます。\n\n- 操作 Y で y=1 を選ぶ\n- 操作 X で x=2 を選ぶ\n\n\n![image](1.png)\n\n\\displaystyle \\sum_{x=1}^H\\sum_{y=1}^W A_{x,y}≤ 1 にすることはできないので答えは 2 です。",
+            "images": [
+                "https://img.atcoder.jp/abc396/efeef604adf229d32bc42042f0a4e066.png"
+            ]
+        },
+        {
+            "input": "3 4\n1111\n1111\n1111\n",
+            "output": "0\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "10 5\n10000\n00111\n11000\n01000\n10110\n01110\n10101\n00100\n00100\n10001\n",
+            "output": "13\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "jp"
+}

@@ -1,0 +1,34 @@
+{
+    "Title": "AtCoder Regular Contest 190 (Div. 1)",
+    "Source": "atcoder",
+    "Name": "L Partition",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "在一個 N × N 的網格中，讓 (i,j) 表示從上方數的第 i 行和從左方數的第 j 列的單元格。對於 K = 1, 2, ..., N，一個 K 級 L 形狀是一組滿足以下四個條件中至少一個的 2K - 1 個單元格：\n- 所有從某個單元格 (i,j) 開始，可以通過向下或向右移動 0 到 K-1 個單元格（包括）可達的單元格（其中 1 ≤ i ≤ N-K+1，1 ≤ j ≤ N-K+1）。\n- 所有從某個單元格 (i,j) 開始，可以通過向下或向左移動 0 到 K-1 個單元格（包括）可達的單元格（其中 1 ≤ i ≤ N-K+1，K ≤ j ≤ N）。\n- 所有從某個單元格 (i,j) 開始，可以通過向上或向右移動 0 到 K-1 個單元格（包括）可達的單元格（其中 K ≤ i ≤ N，1 ≤ j ≤ N-K+1）。\n- 所有從某個單元格 (i,j) 開始，可以通過向上或向左移動 0 到 K-1 個單元格（包括）可達的單元格（其中 K ≤ i ≤ N，K ≤ j ≤ N）。\n\n你被給定了一個單元格 (a,b) 和 Q 個查詢 k_1, ..., k_Q。對於每個 i，打印出對於整個網格進行恰好分成一個級別 1 L 形狀、一個級別 2 L 形狀、...，以及一個級別 N L 形狀的方式的數量，取 modulo 998244353，使得單元格 (a,b) 包含在級別 k_i L 形狀中。",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ N ≤ 10^7\n- 1 ≤ a ≤ N\n- 1 ≤ b ≤ N\n- 1 ≤ Q ≤ \\min\\lbrace N, 200000 \\rbrace\n- 1 ≤ k_1 < \\cdots < k_Q ≤ N\n- 所有輸入值皆為整數。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nN a b\nQ\nk_1 \\cdots k_Q\n\n輸出\n輸出 Q 行。\n第 i 行應該包含數字，取模 998244353，表示將網格劃分為恰好一個 1 級 L 形狀、一個 2 級 L 形狀，...，以及一個 N 級 L 形狀的方式數，使得單元格 (a,b) 包含在級別 k_i 的 L 形狀內。",
+    "Sample Detail": [
+        {
+            "input": "3 1 2\n1\n2\n",
+            "output": "6\n",
+            "explanation": "這幅圖中顯示的六種方式是解決方案。在圖中，單元格中的整數 k 表示該單元格屬於第 k 級 L 形。",
+            "images": [
+                "https://img.atcoder.jp/arc190/d853bd693f0d3848c725803512dc382a.png"
+            ]
+        },
+        {
+            "input": "5 2 5\n3\n1 3 5\n",
+            "output": "4\n32\n128\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "100 50 50\n4\n1 10 50 100\n",
+            "output": "934228871\n758172260\n444239843\n0\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

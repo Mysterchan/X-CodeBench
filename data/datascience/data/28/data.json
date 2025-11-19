@@ -1,0 +1,11 @@
+{
+    "url": "https://stackoverflow.com/questions/59644751/show-both-value-and-percentage-on-a-pie-chart",
+    "source": "stackoverflow",
+    "title": "Show both value and percentage on a pie chart",
+    "Description": "The pie chart should display both the value counts (False and True) and their corresponding percentages on each slice. Currently, the percentages are shown with four decimal places, which is unnecessary and does not effectively communicate the data. The chart should clearly label each segment with the value counts alongside the percentages in a more concise format.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "matplotlib",
+        "data-visualization"
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "url": "https://stackoverflow.com/questions/70859757/how-to-add-vertically-centered-labels-in-bar-chart-matplotlib",
+    "source": "stackoverflow",
+    "title": "How to add vertically centered labels in bar chart matplotlib?",
+    "Description": "The intended visualization is a bar chart with vertically centered labels on the bars. Currently, the labels may not be positioned correctly, disrupting the clarity of the chart. The desired appearance is for the labels to be aligned vertically at the center of each bar, enhancing readability and visual appeal.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "matplotlib",
+        "data-visualization"
+    ]
+}

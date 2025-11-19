@@ -1,0 +1,38 @@
+{
+    "Title": "AtCoder Beginner Contest 387（Promotion of AtCoderJobs）",
+    "Source": "atcoder",
+    "Name": "Happy New Year 2025",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "正整数 A,B が与えられます。\nA+B の二乗を出力してください。",
+    "Statement Images": [],
+    "Constraints": "- 1≤ A,B ≤ 2025\n- 入力は全て整数",
+    "IO Styles": "入力\n入力は以下の形式で標準入力から与えられる。\nA B\r\n出力\n答えを出力せよ。",
+    "Sample Detail": [
+        {
+            "input": "20 25\n",
+            "output": "2025\n",
+            "explanation": "(20+25)^2=2025 です。",
+            "images": []
+        },
+        {
+            "input": "30 25\n",
+            "output": "3025\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "45 11\n",
+            "output": "3136\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "2025 1111\n",
+            "output": "9834496\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "jp"
+}

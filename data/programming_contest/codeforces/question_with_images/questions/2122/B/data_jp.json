@@ -1,0 +1,26 @@
+{
+    "Title": "Order Capital Round 1 (Codeforces Round 1038, Div. 1 + Div. 2)",
+    "Source": "codeforces",
+    "Name": "Pile Shuffling",
+    "Time Limit": "1 s",
+    "Memory Limit": "256 mb",
+    "Problem Statement": "あなたは$n$個のバイナリの山を与えられます。$i$番目の山は、上に$a_i$個のゼロがあり、下に$b_i$個のワンがあります。\n1回の操作で、任意の山の上の要素を取り出し、それを任意の山の任意の位置に移動することができます。移動先は、取り出した山でも構いません。  \n最初の例のテストケースの解法。  \n$i$番目の山が上に$c_i$個のゼロ、下に$d_i$個のワンを持つようにするために必要な最小操作回数を計算してください。",
+    "Statement Images": [
+        "https://espresso.codeforces.com/0db537ae486941d1359d90287005ddee63578545.png"
+    ],
+    "Constraints": "Time limit: 1 s\nMemory limit: 256 mb",
+    "IO Styles": "入力\n各テストには複数のテストケースが含まれています。最初の行にはテストケースの数 $t$ が含まれます ($1 ≤ t ≤ 10^4$)。テストケースの説明が続きます。\n各テストケースの最初の行には、単一の整数 $n$ ($1 ≤ n ≤ 2 \\cdot 10^5$) が含まれています — 段の数。\n次に $n$ 行が続き、$i$ 番目の行には4つの整数 $a_i$, $b_i$, $c_i$, $d_i$ ($0 ≤ a_i, b_i, c_i, d_i ≤ 10^9$) が含まれています — $i$ 番目の段の元の状態と目標状態。\n段を目標状態に変換する操作のシーケンスが存在することが保証されています。\n全てのテストケースにおける $n$ の合計は $2 \\cdot 10^5$ を超えないと保証されています。\n出力\n各テストケースに対して、目標状態を達成するために必要な最小の操作回数を1つの整数として出力してください。",
+    "Sample Detail": [
+        {
+            "input": "3\n2\n1 3 1 2\n1 1 1 2\n3\n2 0 2 2\n0 1 1 0\n1 1 0 0\n3\n1 2 1 2\n3 4 3 4\n0 0 0 0",
+            "output": "2\n3\n0",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Notes": "日本語: 注\n最初のテストケースの解法は問題文に示されている。\n2番目のテストケースでは、最適な解法は次のようにすることです: ![image](2.png)\n3番目のテストケースでは、すべての山はすでに目標状態にあります。",
+    "Note Images": [
+        "https://espresso.codeforces.com/cd402da4da4d022bd71d8e9811598affac4deadd.png"
+    ],
+    "Language": "jp"
+}

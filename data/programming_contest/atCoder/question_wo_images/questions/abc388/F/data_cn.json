@@ -1,0 +1,32 @@
+{
+    "Title": "HHKB Programming Contest 2025(AtCoder Beginner Contest 388)",
+    "Source": "atcoder",
+    "Name": "Dangerous Sugoroku",
+    "Time Limit": "4 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "有 N 個方塊排列成一行，從左到右標記為 1, 2, ..., N。\n您將獲得 M 對整數 (L_1, R_1), ..., (L_M, R_M)。\n如果存在某個 i 使得 L_i ≤ j ≤ R_i，則方塊 j 被定義為壞方塊。\n判斷您是否可以從方塊 1 移動到方塊 N，通過不斷執行以下操作：\n- 讓您當前的方塊為 x。選擇一個滿足所有以下條件的整數 i，然後移動到方塊 x + i。\n- A ≤ i ≤ B\n- x + i ≤ N\n- 方塊 x + i 不是壞方塊。",
+    "Statement Images": [],
+    "Constraints": "- 2 ≤ N ≤ 10^{12}\n- 0 ≤ M ≤ 2 \\times 10^4\n- 1 ≤ A ≤ B ≤ 20\n- 1 < L_i ≤ R_i < N \\ (1 ≤ i ≤ M)\n- R_i < L_{i+1} \\ (1 ≤ i ≤ M - 1)\n- 所有輸入值均為整數。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nN M A B\nL_1 R_1\nL_2 R_2\n\\vdots\nL_M R_M\n\n輸出\n如果可以通過重複問題陳述中所描述的動作來到達方格 N，則輸出 Yes。否則，輸出 No。",
+    "Sample Detail": [
+        {
+            "input": "24 2 3 5\n7 8\n17 20\n",
+            "output": "Yes\n",
+            "explanation": "你可以這樣移動到方格 N：1 \\to 6 \\to 9 \\to 12 \\to 16 \\to 21 \\to 24。",
+            "images": []
+        },
+        {
+            "input": "30 1 5 8\n4 24\n",
+            "output": "No\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "100 4 10 11\n16 18\n39 42\n50 55\n93 99\n",
+            "output": "Yes\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

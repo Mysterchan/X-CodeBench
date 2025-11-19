@@ -1,0 +1,5 @@
+for(int i=1;i<n;i++)for(int j=1;j<m;j++){
+   (ans+=f[n-i][m-j]*binom(n,i)%mod*binom(m,j)%mod*(i+j&1?mod-C:C))%=mod;
+}
+if(~n&1&&~m&1)(ans+=5*C)%=mod;
+else (ans+=C)%=mod;

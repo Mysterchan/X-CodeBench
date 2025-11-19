@@ -1,0 +1,32 @@
+{
+    "Title": "AtCoder Regular Contest 194 (Div. 2)",
+    "Source": "atcoder",
+    "Name": "Minimum Cost Sort",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "(1,2,...,N) の順列 P=(P_1,P_2,...,P_N) が与えられます。\n高橋君は P に対して次の操作を繰り返し(0回でも良い)行う事ができます。\n- 1≤ i≤ N-1 をみたす整数を 1 つ選ぶ。コスト i を支払い、P_i と P_{i+1} を交換する。\nP を昇順にソートするために必要なコストの総和の最小値を求めてください。",
+    "Statement Images": [],
+    "Constraints": "- 2 ≤ N ≤ 2\\times 10^5\n- (P_1,P_2,...,P_N) は (1,2,...,N) の順列\n- 入力はすべて整数",
+    "IO Styles": "入力\n入力は以下の形式で標準入力から与えられる。\nN\nP_1 P_2 ... P_N\n出力\nP を昇順にソートするために必要なコストの総和の最小値を出力せよ。",
+    "Sample Detail": [
+        {
+            "input": "3\n3 2 1\n",
+            "output": "4\n",
+            "explanation": "高橋君のは次のようにして P を昇順にソートすることができます。\n\n- コストを 1 支払い、P_1=3 と P_2=2 を交換する。P=(2,3,1) となる。\n- コストを 2 支払い、P_2=3 と P_3=1 を交換する。P=(2,1,3) となる。\n- コストを 1 支払い、P_1=2 と P_2=1 を交換する。P=(1,2,3) となる。\n\n\nこのように操作を行ったときコストの総和は 4 であり、このときが最小となります。",
+            "images": []
+        },
+        {
+            "input": "5\n2 4 1 3 5\n",
+            "output": "6\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "2\n1 2\n",
+            "output": "0\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "jp"
+}

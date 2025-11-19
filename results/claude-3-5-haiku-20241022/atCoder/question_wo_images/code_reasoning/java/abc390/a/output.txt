@@ -1,0 +1,34 @@
+Let me trace through the execution of this Java program with the input `1 2 4 3 5`.
+
+**Initial Setup:**
+- Array A = [1, 2, 4, 3, 5]
+- canBeSorted = false
+
+**The program tries swapping each pair of adjacent elements:**
+
+**Iteration i=0:** Swap positions 0 and 1
+- temp = [2, 1, 4, 3, 5]
+- Check if sorted: Is temp[0]=2 equal to 1? No → not sorted
+- canBeSorted remains false
+
+**Iteration i=1:** Swap positions 1 and 2
+- temp = [1, 4, 2, 3, 5]
+- Check if sorted: Is temp[0]=1 equal to 1? Yes. Is temp[1]=4 equal to 2? No → not sorted
+- canBeSorted remains false
+
+**Iteration i=2:** Swap positions 2 and 3
+- temp = [1, 2, 3, 4, 5]
+- Check if sorted: 
+  - temp[0]=1 equals 1? Yes
+  - temp[1]=2 equals 2? Yes
+  - temp[2]=3 equals 3? Yes
+  - temp[3]=4 equals 4? Yes
+  - temp[4]=5 equals 5? Yes
+- All elements match! isSorted returns true
+- canBeSorted = true
+- break out of loop
+
+**Output:**
+Since canBeSorted is true, the program prints "Yes"
+
+Yes

@@ -1,0 +1,34 @@
+{
+    "Title": "AtCoder Beginner Contest 410",
+    "Source": "atcoder",
+    "Name": "Longest Chord Chain",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "在一個圓上有 2N 個互不相同的點，編號從 1 到 2N。從點 1 開始，按順時針方向排列點為 2、3、...、2N。\n你被給予圓上的 N 條弦。第 i 條弦的端點是點 A_i 和 B_i，且 2N 個值 A_1,...,A_N,B_1,...,B_N 都是不同的。\n對這個圓執行以下操作，按順序各執行一次：\n- 在圓上的 N 條弦中選擇任意數量的弦，使得所選的弦之間不相交，然後刪除其餘的弦。\n- 隨意新增一條弦到圓上。\n找出在操作完成後，弦之間可能出現的最大交點數。",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ N ≤ 2\\times 10^5\n- 1 ≤ A_i,B_i ≤ 2N\n- 2N 個值 A_1, ..., A_N, B_1,...,B_N 是兩兩互不相同的。\n- 所有的輸入值都是整數。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nN\nA_1 B_1\nA_2 B_2\n\\vdots\nA_N B_N\n\n輸出\n輸出答案。",
+    "Sample Detail": [
+        {
+            "input": "3\n1 5\n6 3\n4 2\n",
+            "output": "2\n",
+            "explanation": "最初，圓上有 3 條弦，如圖所示。\n在刪除連接點 3 和 6 的弦並通過操作添加一條新弦後，弦之間的交點數量為 2。\n\n![image](1.png)\n\n無法使弦之間的交點數量達到 3 或更多，因此答案為 2。\n\n最後添加的弦的端點不需要是任何點 1,..., 2N 的端點。",
+            "images": [
+                "https://img.atcoder.jp/abc410/be5d090022ebeba5ad0aeea63ef1c38b.png"
+            ]
+        },
+        {
+            "input": "4\n1 8\n2 7\n3 6\n4 5\n",
+            "output": "4\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "3\n1 2\n3 4\n5 6\n",
+            "output": "2\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

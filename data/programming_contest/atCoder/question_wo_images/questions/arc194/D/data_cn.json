@@ -1,0 +1,26 @@
+{
+    "Title": "AtCoder Regular Contest 194 (Div. 2)",
+    "Source": "atcoder",
+    "Name": "Reverse Brackets",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "一個字符串被定義為有效的括號序列，當且僅當它滿足以下條件之一：\n- 它是一個空字符串。\n- 存在一個有效的括號序列 A，使得該字符串是通過按此順序串接 (，A，) 得到的。\n- 存在非空的有效括號序列 A 和 B，使得該字符串是通過按此順序串接 A 和 B 得到的。\n\n你給定了一個長度為 N 的有效括號序列 S。你可以任意次執行以下操作：\n- 選擇 S 的一個連續子字符串，該子字符串是一個有效的括號序列，並將其反轉。\n\n在這裡，反轉 S 中從 l-th 字符到 r-th 字符的子字符串是指：\n- 對於每一個整數 i 滿足 l ≤ i ≤ r，同時將 S_i 替換為 ) 如果 S_{l+r-i} 是 (，並將 S_{l+r-i} 替換為 ( 如果 S_{l+r-i} 是 )。（注意，這裡的反轉與通常的反轉定義不同。）\n\n找出你可以在過程結束時得到的不同字符串 S 的數量，結果對 998244353 取模。",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ N ≤ 5000\n- |S| = N\n- S 是一個有效的括號序列。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nN\nS\n輸出\n輸出答案。",
+    "Sample Detail": [
+        {
+            "input": "6\n(())()\n",
+            "output": "2\n",
+            "explanation": "例如，您可以透過以下方式將 S 轉換為 ()(())：\n\n- 選擇 S 的第 1 個到第 6 個字元的子字串。這是一個有效的括號序列。S 變成 ()(())。\n\n唯一可以形成的其他字串是 (())()。因此，答案是 2。",
+            "images": []
+        },
+        {
+            "input": "2\n()\n",
+            "output": "1\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

@@ -1,0 +1,25 @@
+{
+    "Title": "Codeforces Round 1045 (Div. 2)",
+    "Source": "codeforces",
+    "Name": "Painting With Two Colors",
+    "Time Limit": "1 s",
+    "Memory Limit": "256 mb",
+    "Problem Statement": "給定三個正整數 $n$, $a$, 和 $b$ ($1≤ a,b ≤ n$)。考慮一排 $n$ 個單元格，初始時全部為白色，索引從 $1$ 到 $n$。您將按照以下兩個步驟進行操作：\n\n- 選擇一個整數 $x$ 使得 $1 ≤ x ≤ n - a + 1$，並將 $a$ 個連續的單元格 $x, x+1, ..., x+a-1$ 塗成紅色。\n- 選擇一個整數 $y$ 使得 $1 ≤ y ≤ n - b + 1$，並將 $b$ 個連續的單元格 $y, y+1, ..., y+b-1$ 塗成藍色。\n\n如果一個單元格同時被塗成紅色和藍色，則其最終顏色為藍色。\n\n一個網格的著色被視為對稱的，如果對於每一個整數 $i$ 從 $1$ 到 $n$（包括 $n$），單元格 $i$ 的顏色與單元格 $(n+1-i)$ 的顏色相同。您的任務是確定是否存在整數 $x$ 和 $y$ 使得網格的最終著色是對稱的。",
+    "Statement Images": [],
+    "Constraints": "Time limit: 1 s\nMemory limit: 256 mb",
+    "IO Styles": "輸入\n每個測試包含多個測試案例。第一行包含測試案例的數量 $t$ ($1 ≤ t ≤ 500$)。接下來是測試案例的描述。\n每個測試案例的第一行也是唯一一行包含三個整數 $n$, $a$, 和 $b$ ($1 ≤ n ≤ 10^9$, $1 ≤ a,b ≤ n$) — 網格的單元格數量以及每次步驟中要塗色的單元格數量。\n輸出\n對於每個測試案例，如果最終的網格著色可以是對稱的，則輸出 \"YES\"；否則，輸出 \"NO\"。\n您可以以任何形式輸出答案（大寫或小寫）。例如，字符串 \"yEs\", \"yes\", \"Yes\", 和 \"YES\" 都會被識別為正確的回答。",
+    "Sample Detail": [
+        {
+            "input": "7\n5 3 1\n4 1 2\n7 7 4\n8 3 7\n1 1 1\n1000000000 1000000000 1000000000\n3 2 1",
+            "output": "YES\nYES\nNO\nNO\nYES\nYES\nNO",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Notes": "注意\n在第一個測試案例中，當選擇 $x = 2$ 和 $y = 3$ 時，網格變得對稱，因此答案是 \"YES\"。以下圖示說明著色過程中的每一步： ![image](1.png) \n在第二個測試案例中，當選擇 $x = 2$ 和 $y = 2$ 時，網格變得對稱，因此答案是 \"YES\"。以下圖示說明著色過程中的每一步： ![image](2.png) \n在第三和第四個測試案例中，可以證明沒有任何 $x$ 和 $y$ 的選擇會產生對稱的網格，因此答案是 \"NO\"。",
+    "Note Images": [
+        "https://espresso.codeforces.com/49b5127f3ce78dd6088ae912c84849f1627365f9.png",
+        "https://espresso.codeforces.com/bc5bb23e8338ec0254fa51d7d8fddd12c7074f66.png"
+    ],
+    "Language": "cn"
+}

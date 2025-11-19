@@ -1,0 +1,78 @@
+Looking at this problem, I need to trace through the code's execution with the given input.
+
+**Input:**
+- N=4, M=4, S=3, T=4
+- Edges: (2,4), (1,4), (3,4), (2,3)
+
+**Graph adjacency list:**
+- g[1] = [4]
+- g[2] = [4, 3]
+- g[3] = [4, 2]
+- g[4] = [2, 1, 3]
+
+**First BFS: bfs(g, s=3, t=4)**
+
+The BFS avoids vertex t=4 during traversal, then considers edges to t at the end.
+
+Starting from s=3:
+- d[3] = 0
+- Process vertex 3: neighbors are 4 and 2
+  - Skip 4 (it's t)
+  - Visit 2: d[2] = 1, p[2] = 3
+- Process vertex 2: neighbors are 4 and 3
+  - Skip 4 (it's t)
+  - 3 already visited
+- After BFS, check edges to t=4:
+  - From vertex 2: d[4] = min(inf, 1+1) = 2, p[4] = 2
+  - From vertex 1: d[1] = inf, so skip
+  - From vertex 3: d[4] = min(2, 0+1) = 1, p[4] = 3
+
+Result: ds[1]=inf, ds[2]=1, ds[3]=0, ds[4]=1
+
+**Second BFS: bfs(g, s=4, t=3)**
+
+Starting from s=4:
+- d[4] = 0
+- Process vertex 4: neighbors are 2, 1, 3
+  - Skip 3 (it's t)
+  - Visit 2: d[2] = 1, p[2] = 4
+  - Visit 1: d[1] = 1, p[1] = 4
+- Process vertices 2 and 1:
+  - From 2: neighbors 4(visited), 3(skip)
+  - From 1: neighbors 4(visited)
+- Check edges to t=3:
+  - From vertex 4: d[3] = min(inf, 0+1) = 1, p[3] = 4
+  - From vertex 2: d[3] = min(1, 1+1) = 1
+
+Result: dt[1]=1, dt[2]=1, dt[3]=1, dt[4]=0
+
+**Path from s=3 to t=4:**
+- V=4, p[4]=3 → path=[4]
+- V=3, V==s, stop → path=[4,3]
+- Reverse: path=[3,4]
+- used[3]=1, used[4]=1
+
+**Finding minimum:**
+- ans = inf
+- Check vertices not on path (v=1,2):
+  - v=1: ans = min(inf, inf+1) = inf
+  - v=2: ans = min(inf, 1+1) = 2
+
+**First iteration of loop (v=3, s=3):**
+- len=0, v=3
+- Neighbors of 3 not used: 2 (since 4 is used)
+- cnt=1, len=1
+- Since cnt==1, not >1, mark used[3]=1, move to v=2
+- Neighbors of 2 not used: none (both 4 and 3 are now used)
+- cnt=0, len=2, break
+
+**Second iteration (swap s,t: s=4, t=3):**
+- v=4, len=0
+- Neighbors of 4 not used: 2,1 (since 3 is used)
+- cnt=2, len=1
+- cnt>1: ans = min(2, dt[3] + 4*1) = min(2, 1+4) = 2
+
+**Final output:**
+ans + ds[t] = 2 + ds[4] = 2 + 1 = 3
+
+3

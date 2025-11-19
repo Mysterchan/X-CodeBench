@@ -1,0 +1,17 @@
+Looking at the buggy code, I need to identify the logical errors:
+
+1. When input is 'W', it appends 'W' (should be 'E')
+2. When input is 'E', it appends 'W' (correct)
+
+So the bug is that West ('W') is not being flipped to East ('E').
+
+Let me find a minimal test case that exposes this bug:
+
+**W**
+
+This test case:
+- Input: W
+- Expected output: E (opposite of West is East)
+- Buggy output: W (because the code incorrectly appends 'W' when it sees 'W')
+
+This is minimal and clearly demonstrates the bug.

@@ -1,0 +1,7 @@
+6
+abcdef
+fabcde
+efabcd
+defabc
+cdefab
+bcdefa

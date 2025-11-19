@@ -1,0 +1,42 @@
+{
+    "Title": "Denso Create Programming Contest 2025（AtCoder Beginner Contest 413）",
+    "Source": "atcoder",
+    "Name": "Big Banned Grid",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "有一個 H × W 的網格。\n設 (i,j) 表示從上方第 i 行 (1 ≤ i ≤ H) 和從左側第 j 列 (1 ≤ j ≤ W) 的單元格。\n網格中的每個單元格要麼有障礙物，要麼什麼都沒有。共有 K 個單元格上有障礙物：單元格 (r_1,c_1),(r_2,c_2),...,(r_K,c_K)。\nTakahashi 最初位於單元格 (1,1)，他想通過不斷地移動到相鄰的單元格（上、下、左、右）來到達單元格 (H,W)，這些相鄰的單元格上什麼都沒有。\n更準確地說，他可以隨意重複以下操作：\n- 選擇以下四個操作中的一個並執行所選操作：\n- 如果 1 < i 且單元格 (i-1,j) 上什麼都沒有，則移動到單元格 (i-1,j)。否則，不移動。\n- 如果 1 < j 且單元格 (i,j-1) 上什麼都沒有，則移動到單元格 (i,j-1)。否則，不移動。\n- 如果 i < H 且單元格 (i+1,j) 上什麼都沒有，則移動到單元格 (i+1,j)。否則，不移動。\n- 如果 j < W 且單元格 (i,j+1) 上什麼都沒有，則移動到單元格 (i,j+1)。否則，不移動。\n判斷他是否可以從單元格 (1,1) 移動到單元格 (H,W)。",
+    "Statement Images": [],
+    "Constraints": "- 1≤ H≤2\\times10^5  \n- 1≤ W≤2\\times10^5  \n- 0≤ K≤2\\times10^5  \n- 1≤ r_i≤ H\\ (1≤ i≤ K)  \n- 1≤ c_i≤ W\\ (1≤ i≤ K)  \n- (r_i,c_i)\\ne(1,1)\\ (1≤ i≤ K)  \n- (r_i,c_i)\\ne(H,W)\\ (1≤ i≤ K)  \n- (r_i,c_i)\\ne(r_j,c_j)\\ (1≤ i\\lt j≤ K)  \n- 所有輸入值為整數。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nH W K\nr_1 c_1\nr_2 c_2\n\\vdots\nr_K c_K\n輸出\n如果高橋可以通過重複問題中描述的操作從單元格 (1,1) 移動到單元格 (H,W)，則輸出 \"Yes\"；否則，輸出 \"No\"。",
+    "Sample Detail": [
+        {
+            "input": "4 5 5\n1 4\n2 3\n3 2\n3 4\n4 2\n",
+            "output": "No\n",
+            "explanation": "網格看起來如下：\n\n![image](1.png)\n\nTakahashi 無法從單元格 (1,1) 移動到單元格 (4,5)。",
+            "images": [
+                "https://img.atcoder.jp/abc413/b20c1350e9da21a02c8c6a46f0b58a35.png"
+            ]
+        },
+        {
+            "input": "2 7 3\n1 2\n2 4\n1 6\n",
+            "output": "Yes\n",
+            "explanation": "網格的樣子如下：\n\n![image](2.png)\n\n他可以通過圖中所示的方式從單元格 (1,1) 移動到單元格 (2,7)。",
+            "images": [
+                "https://img.atcoder.jp/abc413/0e45dcbb4a025ab811e485f6c91ceb36.png"
+            ]
+        },
+        {
+            "input": "1 1 0\n",
+            "output": "Yes\n",
+            "explanation": "注意，可能會有他不需要移動或沒有障礙物的情況。",
+            "images": []
+        },
+        {
+            "input": "10 12 20\n8 3\n1 11\n6 4\n3 7\n10 4\n5 7\n4 7\n5 5\n4 3\n6 1\n1 6\n2 7\n6 7\n1 3\n6 3\n2 12\n9 6\n7 3\n3 11\n9 7\n",
+            "output": "Yes\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

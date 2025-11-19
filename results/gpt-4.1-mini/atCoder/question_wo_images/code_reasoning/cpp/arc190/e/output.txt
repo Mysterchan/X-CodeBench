@@ -1,0 +1,5 @@
+A[0] = [-INF, -v, -INF, -INF, -INF]
+A[1] = [-INF, -v, v, -INF, 1]
+A[2] = [-v, -INF, -INF, -INF, -INF]
+A[3] = [-v, -INF, -INF, -INF, 1]
+A[4] = [-v, -INF, -INF, -1, -INF]

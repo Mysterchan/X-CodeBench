@@ -1,0 +1,20 @@
+{
+    "Title": "AtCoder Regular Contest 198 (Div. 2)",
+    "Source": "atcoder",
+    "Name": "Rivalry",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "Determine whether there exists a sequence A=(A_1,A_2,\\dots,A_{X+Y+Z}) of length X+Y+Z that contains exactly X zeros, Y ones, and Z twos, and satisfies the following condition:\n- For every i(1 ≤ i ≤ X+Y+Z), exactly A_i numbers among A_{i-1} and A_{i+1} are less than A_i.\nHere, assume A_0 = A_{X+Y+Z} and A_{X+Y+Z+1} = A_1.\nYou are given T test cases. Solve each of them.",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ T ≤ 2 \\times 10^{5}\n- 0 ≤ X,Y,Z ≤ 10^{9}\n- 3 ≤ X + Y + Z",
+    "IO Styles": "Input\nThe input is given from Standard Input in the following format:\nT\n\\mathrm{case}_1\n\\mathrm{case}_2\n\\vdots\n\\mathrm{case}_T\nEach test case is given in the following format:\nX\\ Y\\ Z\nOutput\nOutput T lines. The i-th (1 ≤ i ≤ T) line should contain Yes if such a sequence exists, and No otherwise.",
+    "Sample Detail": [
+        {
+            "input": "4\n2 1 1\n3 4 5\n1359 1998 1022\n392848293 683919483 822948689\n",
+            "output": "Yes\nNo\nYes\nNo\n",
+            "explanation": "For the first test case, the sequence A = (2,0,0,1) satisfies the condition.\n\nFor the second test case, no sequence satisfies the condition.",
+            "images": []
+        }
+    ],
+    "Language": "en"
+}

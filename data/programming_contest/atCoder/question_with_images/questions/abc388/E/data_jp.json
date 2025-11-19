@@ -1,0 +1,35 @@
+{
+    "Title": "HHKBプログラミングコンテスト2025(AtCoder Beginner Contest 388)",
+    "Source": "atcoder",
+    "Name": "Simultaneous Kagamimochi",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "N 個の餅が小さいほうから順に並んでいます。\ni 番目 (1≤ i≤ N) の餅の大きさは A _ i です。\n2 つの餅 A,B の大きさをそれぞれ a,b としたとき、a が b の半分以下であるとき、かつそのときに限り、餅 A を餅 B の上に乗せて鏡餅を 1 つ作ることができます。\n同時にいくつの鏡餅を作ることができるか求めてください。\nより厳密には、以下ができるような最大の非負整数 K を求めてください。\n- N 個の餅から 2K 個の餅を選んで K 個の 2 つ組に分け、それぞれの組について一方をもう一方の上に乗せることで鏡餅を K 個作る。",
+    "Statement Images": [],
+    "Constraints": "- 2≤ N≤ 5\\times 10 ^ 5\n- 1≤ A _ i≤ 10 ^ 9\\ (1≤ i≤ N)\n- A _ i≤ A _ {i+1}\\ (1≤ i\\lt N)\n- 入力はすべて整数",
+    "IO Styles": "入力\n入力は以下の形式で標準入力から与えられる。\nN\r\nA _ 1 A _ 2 \\dotsc A _ N\r\n出力\n同時に K 個鏡餅を作れるような最大の K を出力せよ。",
+    "Sample Detail": [
+        {
+            "input": "6\n2 3 4 4 7 10\n",
+            "output": "3\n",
+            "explanation": "与えられた餅の大きさは以下のようになっています。\n\n![image](1.png)\n\nこのとき、以下の 3 つの鏡餅を同時に作ることができます。\n\n![image](2.png)\n\n6 つの餅から 4 つ以上の鏡餅を作ることはできないので、3 を出力してください。",
+            "images": [
+                "https://img.atcoder.jp/abc388/29024766d11c2d88b06c92b2081129f5.png",
+                "https://img.atcoder.jp/abc388/26686710916fe3623058f6000669e049.png"
+            ]
+        },
+        {
+            "input": "3\n387 388 389\n",
+            "output": "0\n",
+            "explanation": "鏡餅を 1 つも作ることができない場合もあります。",
+            "images": []
+        },
+        {
+            "input": "24\n307 321 330 339 349 392 422 430 477 481 488 537 541 571 575 602 614 660 669 678 712 723 785 792\n",
+            "output": "6\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "jp"
+}

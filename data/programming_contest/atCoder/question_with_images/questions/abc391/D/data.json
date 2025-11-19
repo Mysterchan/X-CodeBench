@@ -1,0 +1,28 @@
+{
+    "Title": "AtCoder Beginner Contest 391",
+    "Source": "atcoder",
+    "Name": "Gravity",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "There is a grid with 10^9 rows and W columns. The cell at the x-th column from the left and the y-th row from the bottom is denoted by (x,y).\nThere are N blocks. Each block is a 1 \\times 1 square, and block i-th (1 ≤ i ≤ N) is located at cell (X_i,Y_i) at time 0.\nAt times t=1,2,\\dots,10^{100}, the blocks are moved according to the following rules:\n- If the entire bottom row is filled with blocks, then all blocks in the bottom row are removed.\n- For each remaining block, in order from bottom to top, perform the following:\n- If the block is in the bottom row, or if there is a block in the cell immediately below it, do nothing.\n- Otherwise, move the block one cell downward.\nYou are given Q queries. For the j-th query (1 ≤ j ≤ Q), answer whether block A_j exists at time T_j+0.5.",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ N ≤ 2 \\times 10^5\n- 1 ≤ W ≤ N\n- 1 ≤ X_i ≤ W\n- 1 ≤ Y_i ≤ 10^9\n- (X_i,Y_i) \\neq (X_j,Y_j) if i \\neq j.\n- 1 ≤ Q ≤ 2 \\times 10^5\n- 1 ≤ T_j ≤ 10^9\n- 1 ≤ A_j ≤ N\n- All input values are integers.",
+    "IO Styles": "Input\nThe input is given from Standard Input in the following format:\nN W\nX_1 Y_1\nX_2 Y_2\n\\vdots\nX_N Y_N\nQ\nT_1 A_1\nT_2 A_2\n\\vdots\nT_Q A_Q\nOutput\nPrint Q lines. The i-th line should contain Yes if block A_i exists at time T_i+0.5, and No otherwise.",
+    "Sample Detail": [
+        {
+            "input": "5 3\n1 1\n1 2\n2 2\n3 2\n2 3\n6\n1 1\n1 2\n2 3\n2 5\n3 4\n3 5\n",
+            "output": "Yes\nYes\nNo\nYes\nNo\nYes\n",
+            "explanation": "The positions of the blocks change as follows: (\"時刻\" means \"time.\")\n\n![image](1.png)\n\n- Query 1: At time 1.5, block 1 exists, so the answer is Yes.\n- Query 2: At time 1.5, block 2 exists, so the answer is Yes.\n- Query 3: Block 3 disappears at time 2, so it does not exist at time 2.5, and the answer is No.",
+            "images": [
+                "https://img.atcoder.jp/abc391/4a6590753edcbad7ea1e8ce7f172902a.png"
+            ]
+        },
+        {
+            "input": "3 2\n1 1\n2 1\n1 2\n4\n1 1\n1 2\n1 3\n2 3\n",
+            "output": "No\nNo\nYes\nYes\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "en"
+}

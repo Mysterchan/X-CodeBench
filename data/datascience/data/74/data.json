@@ -1,0 +1,11 @@
+{
+    "url": "https://stackoverflow.com/questions/62106343/ticks-position-in-heatmap-with-categorical-data-seaborn",
+    "source": "stackoverflow",
+    "title": "Ticks position in heatmap with categorical data (seaborn)",
+    "Description": "The heatmap is intended to display a color-coded matrix with axis labels properly aligned to the centers of the squares. Currently, the y-axis tick labels are positioned too high, and the x-axis tick labels are slightly off to the left. The expected outcome is for both the y-axis and x-axis tick labels to be adjusted so that they are centrally aligned with their respective squares.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "seaborn",
+        "data-visualization"
+    ]
+}

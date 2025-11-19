@@ -1,0 +1,11 @@
+{
+    "url": "https://stackoverflow.com/questions/69792774/how-to-draw-a-single-contour-line-in-matplotlib",
+    "source": "stackoverflow",
+    "title": "How to draw a single contour line in Matplotlib?",
+    "Description": "The current code produces a contour plot with 7 contour lines. The intention is to display a single contour line corresponding to the value 0.5. The expected output should feature only the contour line for the specified value, instead of multiple lines.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "matplotlib",
+        "data-visualization"
+    ]
+}

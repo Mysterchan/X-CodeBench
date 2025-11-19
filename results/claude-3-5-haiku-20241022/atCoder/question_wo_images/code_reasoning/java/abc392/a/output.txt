@@ -1,0 +1,17 @@
+Let me trace through the code with the given input.
+
+Input: `3 15 5`
+
+The code reads three integers:
+- `a = 3`
+- `b = 15`
+- `c = 5`
+
+Then it checks three conditions:
+1. `a * b == c` → `3 * 15 == 5` → `45 == 5` → `false`
+2. `a * c == b` → `3 * 5 == 15` → `15 == 15` → `true`
+3. `b * c == a` → `15 * 5 == 3` → `75 == 3` → `false`
+
+Since the second condition is true (we can arrange the permutation as B = (3, 5, 15) where 3 × 5 = 15), the output is:
+
+Yes

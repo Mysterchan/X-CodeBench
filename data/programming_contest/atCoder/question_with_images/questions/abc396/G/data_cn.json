@@ -1,0 +1,34 @@
+{
+    "Title": "AtCoder Beginner Contest 396",
+    "Source": "atcoder",
+    "Name": "Flip Row or Col",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "有一個 H \\times W 的網格，每個單元格包含 0 或 1。位於從上方向下的第 i 行和從左向右的第 j 列的單元格包含整數 A_{i,j}。\n你可以任意次數地以任意順序執行以下兩個操作：\n- 操作 X：選擇一個整數 x (1 ≤ x ≤ H)。對於每個整數 1 ≤ y ≤ W，將 A_{x,y} 替換為 1 - A_{x,y}。\n- 操作 Y：選擇一個整數 y (1 ≤ y ≤ W)。對於每個整數 1 ≤ x ≤ H，將 A_{x,y} 替換為 1 - A_{x,y}。\n找出在過程之後 \\displaystyle \\sum_{x=1}^H\\sum_{y=1}^W A_{x,y} 的最小可能值。",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ H ≤ 2×10^5\n- 1 ≤ W ≤ 18\n- H 和 W 為整數。\n- A_{i,1}A_{i,2}... A_{i,W} 是由 0 和 1 組成的長度為 W 的字串。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nH W\nA_{1,1}A_{1,2}... A_{1,W}\nA_{2,1}A_{2,2}... A_{2,W}\n\\vdots\nA_{H,1}A_{H,2}... A_{H,W}\n輸出\n輸出答案。",
+    "Sample Detail": [
+        {
+            "input": "3 3\n100\n010\n110\n",
+            "output": "2\n",
+            "explanation": "透過執行以下操作，網格變化如下所示，並且你得到 \\displaystyle \\sum_{x=1}^H\\sum_{y=1}^W A_{x,y} = 2。\n\n- 操作 Y，y=1\n- 操作 X，x=2\n\n![image](1.png)\n\n不可能使得 \\displaystyle \\sum_{x=1}^H\\sum_{y=1}^W A_{x,y} ≤ 1，因此答案是 2。",
+            "images": [
+                "https://img.atcoder.jp/abc396/efeef604adf229d32bc42042f0a4e066.png"
+            ]
+        },
+        {
+            "input": "3 4\n1111\n1111\n1111\n",
+            "output": "0\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "10 5\n10000\n00111\n11000\n01000\n10110\n01110\n10101\n00100\n00100\n10001\n",
+            "output": "13\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

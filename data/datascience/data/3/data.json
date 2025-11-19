@@ -1,0 +1,11 @@
+{
+    "url": "https://github.com/matplotlib/matplotlib/issues/28909",
+    "source": "github",
+    "title": "[Bug]: ax.set_yticklabels(list) skips first item of argument list.",
+    "Description": "The y-axis of the plot is missing the label for the first state 'init', resulting in the last label appearing empty. Additionally, there are eight states labeled on the y-axis, but the ax.imshow data contains only seven unique entries. The expected behavior is for all nine states, including 'init', to be displayed correctly on the y-axis.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "matplotlib",
+        "data-visualization"
+    ]
+}

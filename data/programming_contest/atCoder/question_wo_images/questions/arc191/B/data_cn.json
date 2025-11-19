@@ -1,0 +1,20 @@
+{
+    "Title": "AtCoder Regular Contest 191 (Div. 2)",
+    "Source": "atcoder",
+    "Name": "XOR = MOD",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "您給定兩個正整數 N 和 K。一個正整數 X 被稱為與 N 兼容，當滿足以下條件時：\n- X 與 N 的位元組 XOR 等於 X 除以 N 的餘數。\n判斷是否存在至少 K 個與 N 兼容的整數 X。如果存在，則找出第 K 小的此類整數。\n您將獲得 T 個測試案例；針對每個案例進行解答。\n關於 XOR\n\n非負整數 A 和 B 的位元組 XOR，記作 A\\ \\mathrm{XOR}\\ B，定義如下：\n\n- 在 A\\ \\mathrm{XOR}\\ B 的二進位表示中，2^k 位（當 k ≥ 0 時）上的數字為 1，當且僅當 A 和 B 中恰好有一個在其二進位表示的 2^k 位上有 1。否則，該位為 0。\n例如，3\\ \\mathrm{XOR}\\ 5 = 6（以二進位表示：011\\ \\mathrm{XOR}\\ 101 = 110）。",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ T ≤ 2\\times 10^5\n- 1 ≤ N,K ≤ 10^9\n- 所有輸入值都是整數。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nT\n\\text{case}_1\n\\text{case}_2\n\\vdots\n\\text{case}_T\n這裡，\\text{case}_i 表示第 i 個測試案例。\n每個測試案例以以下格式給出：\nN K\n\n輸出\n對於每個測試案例，如果存在至少 K 個正整數與 N 兼容，則輸出第 K 個最小的這樣的整數。否則，輸出 -1。",
+    "Sample Detail": [
+        {
+            "input": "4\n2 1\n2 2\n1 7\n20250126 191\n",
+            "output": "2\n3\n-1\n20381694\n",
+            "explanation": "考慮情況 N=2。\n\n- 當 X=1 時，X\\ \\mathrm{XOR}\\ N = 3，且 X 除以 N 的餘數為 1。因此，1 與 N 不相容。\n- 當 X=2 時，X\\ \\mathrm{XOR}\\ N = 0，且 X 除以 N 的餘數為 0。因此，2 與 N 相容。\n- 當 X=3 時，X\\ \\mathrm{XOR}\\ N = 1，且 X 除以 N 的餘數為 1。因此，3 與 N 相容。\n\n因此，在與 2 相容的數字中，最小的是 2，第二小的是 3。因此，\\text{case}_1 的答案是 2，\\text{case}_2 的答案是 3。",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

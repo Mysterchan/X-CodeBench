@@ -1,0 +1,3 @@
+The output for the given input is:
+
+8

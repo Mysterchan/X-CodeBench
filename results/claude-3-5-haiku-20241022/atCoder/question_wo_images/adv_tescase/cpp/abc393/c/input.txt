@@ -1,0 +1,4 @@
+if (u == v) ans++;
+if (u > v) swap(u, v);
+if (st.count({ u,v })) ans++;
+else st.insert({ u,v });

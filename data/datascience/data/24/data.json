@@ -1,0 +1,11 @@
+{
+    "url": "https://discourse.matplotlib.org/t/how-to-move-artists-to-other-axes/23537",
+    "source": "matplotlib",
+    "title": "How to move artists to other axes?",
+    "Description": "The code attempts to draw a circle on the second axes of a subplot after removing it from the first axes, but the circle does not appear in ax2. The desired outcome is for the circle to be visible on the image displayed in the second subplot, which utilizes bilinear interpolation.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "matplotlib",
+        "data-visualization"
+    ]
+}

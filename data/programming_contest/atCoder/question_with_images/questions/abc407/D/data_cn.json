@@ -1,0 +1,35 @@
+{
+    "Title": "AtCoder Beginner Contest 407",
+    "Source": "atcoder",
+    "Name": "Domino Covering XOR",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "在一個具有 H 行和 W 列的網格上。\n讓 (i,j) 表示從上方第 i 行（1≤ i≤ H）和從左側第 j 列（1≤ j≤ W）的單元格。\n單元格 (i,j)（1≤ i≤ H,1≤ j≤ W）上寫有一個非負整數 A_{i,j}。\n我們可以在網格上放置零個或多個多米諾骨牌。\n一個多米諾骨牌覆蓋兩個相鄰的單元格，即以下任一組：\n- 單元格 (i,j) 和 (i,j+1)，對於 1≤ i≤ H,1≤ j< W；\n- 單元格 (i,j) 和 (i+1,j)，對於 1≤ i< H,1≤ j≤ W。\n沒有單元格可以被多於一個的多米諾骨牌覆蓋。\n對於一個多米諾骨牌的放置，定義其分數為所有未被任何多米諾骨牌覆蓋的單元格中寫的整數的按位 XOR。\n找出可能的最大分數。\n什麼是按位 XOR？\n對於非負整數 A 和 B，它們的按位 XOR A ⊕ B 被定義如下：\n\n- 在二進制中，A ⊕ B 的 2^k 位（k ≥ 0）在 A 和 B 其中僅有一個在該位上為 1 時為 1，否則為 0。\n例如，3 ⊕ 5 = 6（在二進制中，011 ⊕ 101 = 110）。\n對於 k 個非負整數 p_1, p_2, p_3, \\dots, p_k，它們的按位 XOR 是 (\\dots ((p_1 ⊕ p_2) ⊕ p_3) ⊕ \\dots ⊕ p_k)，可以證明這與操作數的順序無關。",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ H\n- 1 ≤ W\n- HW ≤ 20\n- 0 ≤ A_{i,j} < 2^{60} (1 ≤ i ≤ H,\\ 1 ≤ j ≤ W)\n- 所有輸入值均為整數。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nH W\nA _ {1,1} A _ {1,2} ... A _ {1,W}\nA _ {2,1} A _ {2,2} ... A _ {2,W}\n\\vdots\nA _ {H,1} A _ {H,2} ... A _ {H,W}\n輸出\n輸出答案。",
+    "Sample Detail": [
+        {
+            "input": "3 4\n1 2 3 8\n4 0 7 10\n5 2 4 2\n",
+            "output": "15\n",
+            "explanation": "網格如下：\n\n![image](1.png)\n\n例如，下面的放置得到的分數是 15。\n\n![image](2.png)\n\n沒有任何放置能達到 16 分或更高，因此輸出 15。",
+            "images": [
+                "https://img.atcoder.jp/abc407/94c95682a450cf6729c030a2affc50d6.png",
+                "https://img.atcoder.jp/abc407/f3c61ccaee45e12aae41bf4880a7d501.png"
+            ]
+        },
+        {
+            "input": "1 11\n1 2 4 8 16 32 64 128 256 512 1024\n",
+            "output": "2047\n",
+            "explanation": "您也可以選擇不放置任何多米諾骨牌。",
+            "images": []
+        },
+        {
+            "input": "4 5\n74832 16944 58683 32965 97236\n52995 43262 51959 40883 58715\n13846 24919 65627 11492 63264\n29966 98452 75577 40415 77202\n",
+            "output": "131067\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

@@ -1,0 +1,26 @@
+{
+    "Title": "AtCoder Beginner Contest 391",
+    "Source": "atcoder",
+    "Name": "Seek Grid",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "You are given an N \\times N grid S and an M \\times M grid T. The cell at the i-th row from the top and the j-th column from the left is denoted by (i,j).\nThe colors of the cells in S and T are represented by N^2 characters S_{i,j} (1≤ i,j≤ N) and M^2 characters T_{i,j} (1≤ i,j≤ M), respectively. In grid S, cell (i,j) is white if S_{i,j} is ., and black if S_{i,j} is #. The same applies for grid T.\nFind T within S. More precisely, output integers a and b (1 ≤ a,b ≤ N-M+1) that satisfy the following condition:\n- S_{a+i-1,b+j-1} = T_{i,j} for every i,j (1≤ i,j ≤ M).",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ M ≤ N ≤ 50\n- N and M are integers.\n- Each of S_{i,j} and T_{i,j} is . or #.\n- There is exactly one pair (a,b) satisfying the condition.",
+    "IO Styles": "Input\nThe input is given from Standard Input in the following format:\nN M\r\nS_{1,1}S_{1,2}\\dots S_{1,N}\r\nS_{2,1}S_{2,2}\\dots S_{2,N}\r\n\\vdots\r\nS_{N,1}S_{N,2}\\dots S_{N,N}\r\nT_{1,1}T_{1,2}\\dots T_{1,M}\r\nT_{2,1}T_{2,2}\\dots T_{2,M}\r\n\\vdots\r\nT_{M,1}T_{M,2}\\dots T_{M,M}\r\nOutput\nPrint a and b in this order, separated by a space on one line.",
+    "Sample Detail": [
+        {
+            "input": "3 2\n#.#\n..#\n##.\n.#\n#.\n",
+            "output": "2 2\n",
+            "explanation": "The 2 \\times 2 subgrid of S from the 2nd to the 3rd row and from the 2nd to the 3rd column matches T.",
+            "images": []
+        },
+        {
+            "input": "2 1\n#.\n##\n.\n",
+            "output": "1 2\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "en"
+}

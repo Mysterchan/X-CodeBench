@@ -1,0 +1,32 @@
+{
+    "Title": "AtCoder Beginner Contest 395",
+    "Source": "atcoder",
+    "Name": "Strictly Increasing?",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "正整数 N と、長さ N の正整数列 A=(A_1,A_2,\\dots,A_N) が与えられます。\nA が狭義単調増加であるとは、 1≤ i\\lt N なるすべての整数 i について A_i\\lt A_{i+1} が成り立つことをを指します。\nA が狭義単調増加であるか判定してください。",
+    "Statement Images": [],
+    "Constraints": "- 2≤ N≤ 100\n- 1≤ A_i≤ 1000 (1≤ i≤ N)\n- 入力はすべて整数",
+    "IO Styles": "入力\n入力は以下の形式で標準入力から与えられる。\nN\nA_1 A_2 \\dots A_N\n出力\nA が狭義単調増加であるならば Yes と、そうでないならば No と出力せよ。\n正誤判定器は大文字と小文字を区別せず、どちらも受理する。例えば、答えが Yes となるときに yes や YES、yEs などと出力しても正解と判定される。",
+    "Sample Detail": [
+        {
+            "input": "3\n1 2 5\n",
+            "output": "Yes\n",
+            "explanation": "A_1\\lt A_2 かつ A_2\\lt A_3 なので A は狭義単調増加です。",
+            "images": []
+        },
+        {
+            "input": "3\n3 9 5\n",
+            "output": "No\n",
+            "explanation": "A_1\\lt A_2 ですが、A_2\\lt A_3 でないので A は狭義単調増加ではありません。",
+            "images": []
+        },
+        {
+            "input": "10\n1 1 2 3 5 8 13 21 34 55\n",
+            "output": "No\n",
+            "explanation": "A_1\\lt A_2 でないので A は狭義単調増加ではありません。",
+            "images": []
+        }
+    ],
+    "Language": "jp"
+}

@@ -1,0 +1,10 @@
+if ru == rv:
+    if size[ru] % 2 == 1:
+        print('No')
+        return
+else:
+    if size[ru] < size[rv]:
+        (ru, rv) = (rv, ru)
+    parent[rv] = ru
+    size[ru] += size[rv]
+    edge_cnt[ru] += edge_cnt[ru] + edge_cnt[rv] + 1

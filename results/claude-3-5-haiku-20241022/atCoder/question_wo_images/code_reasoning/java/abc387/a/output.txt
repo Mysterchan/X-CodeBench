@@ -1,0 +1,12 @@
+I need to trace through the Java code with the given input.
+
+Given input: `20 25`
+
+1. `Scanner sc = new Scanner(System.in);` - creates a Scanner object
+2. `int a = sc.nextInt();` - reads the first integer: `a = 20`
+3. `int b = sc.nextInt();` - reads the second integer: `b = 25`
+4. `System.out.println((a+b)*(a+b));` - calculates and prints `(20+25)*(20+25)`
+   - `a + b = 20 + 25 = 45`
+   - `45 * 45 = 2025`
+
+2025

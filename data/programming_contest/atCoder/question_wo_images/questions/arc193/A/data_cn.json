@@ -1,0 +1,26 @@
+{
+    "Title": "AtCoder Regular Contest 193 (Div. 1)",
+    "Source": "atcoder",
+    "Name": "Complement Interval Graph",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "對於整數 l, r，讓 [l, r] 表示從 l 到 r 的所有整數集合。即，[l, r] = \\lbrace l, l+1, l+2, ..., r-1, r\\rbrace。\n你將獲得 N 對整數 (L_1, R_1), (L_2, R_2), ..., (L_N, R_N)。\n基於這些對，考慮一個無向圖 G 定義如下：\n- 它有 N 個編號為 1, 2, ..., N 的頂點。\n- 對於所有 i, j \\in [1, N]，當且僅當 [L_i, R_i] 與 [L_j, R_j] 的交集為空時，頂點 i 和 j 之間存在一條無向邊。\n此外，對於每一個 i = 1, 2, ..., N，定義頂點 i 的權重為 W_i。\n你將獲得 Q 條有關 G 的查詢。按照給定的順序處理這些查詢。\n對於每一個 i = 1, 2, ..., Q，第 i 條查詢如下：\n給定整數 s_i 和 t_i（均在 1 和 N 之間，包括 1 和 N），且滿足 s_i \\neq t_i。確定是否存在一條從頂點 s_i 到頂點 t_i 的路徑。如果存在，請輸出這條路徑的最小可能權重。\n這裡，從頂點 s 到頂點 t 的路徑權重定義為該路徑上所有頂點的權重之和（包括兩個端點 s 和 t）。",
+    "Statement Images": [],
+    "Constraints": "- 2 ≤ N ≤ 2 \\times 10^5\n- 1 ≤ Q ≤ 2 \\times 10^5\n- 1 ≤ W_i ≤ 10^9\n- 1 ≤ L_i ≤ R_i ≤ 2N\n- 1 ≤ s_i, t_i ≤ N\n- s_i \\neq t_i\n- 所有輸入值均為整數。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nN\nW_1 W_2 \\cdots W_N\nL_1 R_1\nL_2 R_2\n\\vdots\nL_N R_N\nQ\ns_1 t_1\ns_2 t_2\n\\vdots\ns_Q t_Q\n輸出\n列印 Q 行。\n對於每個 i = 1, 2, ..., Q，在第 i 行，如果從頂點 s_i 到頂點 t_i 存在一條路徑，則列印該路徑的最小可能權重，否則列印 -1。",
+    "Sample Detail": [
+        {
+            "input": "5\n5 1 4 2 2\n2 4\n1 2\n7 8\n4 5\n2 7\n3\n1 4\n4 3\n5 2\n",
+            "output": "11\n6\n-1\n",
+            "explanation": "G 是一個包含四條無向邊的圖：\\lbrace 1, 3\\rbrace, \\lbrace 2, 3\\rbrace, \\lbrace 2, 4\\rbrace, \\lbrace 3, 4\\rbrace。\n\n- 對於第一個查詢，從頂點 1 到頂點 4 存在一條路徑，該路徑為 1 \\to 3 \\to 4。這條路徑的權重為 W_1 + W_3 + W_4 = 5 + 4 + 2 = 11，這是可能的最小值。\n- 對於第二個查詢，從頂點 4 到頂點 3 存在一條路徑，該路徑為 4 \\to 3。這條路徑的權重為 W_4 + W_3 = 2 + 4 = 6，這是可能的最小值。\n- 對於第三個查詢，從頂點 5 到頂點 2 沒有路徑可達。因此，輸出 -1。",
+            "images": []
+        },
+        {
+            "input": "8\n44 75 49 4 78 79 12 32\n5 13\n10 16\n6 8\n6 15\n12 15\n5 7\n1 15\n1 2\n5\n5 6\n3 2\n7 5\n4 5\n5 4\n",
+            "output": "157\n124\n-1\n114\n114\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

@@ -1,0 +1,7 @@
+X = int(input())  # X = 6
+M = 3*10          # M = 30
+r = 1
+for n in range(1, M):  # n from 1 to 29
+	r = r*n
+	if r >= X: break
+if r == X: print(n)

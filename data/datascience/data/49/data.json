@@ -1,0 +1,11 @@
+{
+    "url": "https://stackoverflow.com/questions/62820959/use-precalculated-error-bars-with-seaborn-and-barplot",
+    "source": "stackoverflow",
+    "title": "Use Precalculated Error Bars With Seaborn and Barplot",
+    "Description": "The intended visualization is a bar plot displaying average values on the y-axis against concentration levels on the x-axis, with different colors for each channel represented in the legend. The plot should include error bars calculated from the precomputed standard deviations for each average value. Currently, the plot only shows the average values without any error bars, making it difficult to assess variability. The expected appearance includes error bars extending above and below each bar, accurately reflecting the standard deviation values.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "seaborn",
+        "data-visualization"
+    ]
+}

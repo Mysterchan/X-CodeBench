@@ -1,0 +1,32 @@
+{
+    "Title": "AtCoder Regular Contest 191 (Div. 2)",
+    "Source": "atcoder",
+    "Name": "Replace Digits",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "長さ N の文字列 S と長さ M の文字列 T が与えられます。ここで、 S,T はどちらも 1 から 9 までの数字からなります。\nあなたは以下の操作を k=1,2,...,M の順に行います。\n- 1≤ i≤ N を満たす整数 i を選ぶ。そして、 S の i 文字目を T の k 文字目で置き換える。\nM 回の操作が終わった後の文字列 S を整数としてみた値の最大値を求めてください。",
+    "Statement Images": [],
+    "Constraints": "- 1≤ N,M≤ 10^6\n- N,M は整数\n- S は 1 から 9 までの数字からなる長さ N の文字列\n- T は 1 から 9 までの数字からなる長さ M の文字列",
+    "IO Styles": "入力\n入力は以下の形式で標準入力から与えられる。\nN M\nS\nT\n出力\nM 回の操作が終わった後の文字列 S を整数としてみた値の最大値を出力せよ。",
+    "Sample Detail": [
+        {
+            "input": "3 3\n191\n325\n",
+            "output": "593\n",
+            "explanation": "以下の操作方法が最適です。\n\n- k=1 のとき： i=3 を選ぶ。 S= 193 となる。\n- k=2 のとき： i=1 を選ぶ。 S= 293 となる。\n- k=3 のとき： i=1 を選ぶ。 S= 593 となる。\n\n\nこの場合 S を整数としてみた値は 593 となり、これが最大です。",
+            "images": []
+        },
+        {
+            "input": "3 9\n191\n998244353\n",
+            "output": "993\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "11 13\n31415926535\n2718281828459\n",
+            "output": "98888976555\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "jp"
+}

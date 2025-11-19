@@ -1,0 +1,12 @@
+Let me trace through this C++ program with the given input.
+
+**Input:** 20 25
+
+**Execution:**
+1. Two integers `a` and `b` are declared
+2. A `long long int` variable `result` is declared
+3. `cin>>a>>b;` reads: `a = 20`, `b = 25`
+4. `result = (a+b)*(a+b);` calculates: `result = (20+25)*(20+25) = 45*45 = 2025`
+5. `cout<<result;` outputs the result
+
+2025

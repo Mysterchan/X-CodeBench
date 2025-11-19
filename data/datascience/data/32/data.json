@@ -1,0 +1,11 @@
+{
+    "url": "https://github.com/matplotlib/matplotlib/issues/30308",
+    "source": "github",
+    "title": "[Bug]: Zorder issue for lines drawn with ConnectionPatch over inset_axes/plot axes",
+    "Description": "The intended visualization is a main plot with inset axes, where `ConnectionPatch` lines are used to connect a zoomed-in section to the originals. Currently, the `ConnectionPatch` lines are drawn above the x-axis labels of both the inset and primary plots, obscuring them despite setting a higher zorder for the axes. The expected outcome is for the connection lines to be displayed below the x-axis labels of the inset axes while remaining visible above the box created by `indicate_zoom_inset` in the main plot area.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "matplotlib",
+        "data-visualization"
+    ]
+}

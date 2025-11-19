@@ -1,0 +1,35 @@
+{
+    "Title": "AtCoder Beginner Contest 407",
+    "Source": "atcoder",
+    "Name": "Domino Covering XOR",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "There is a grid with H rows and W columns.\nLet (i,j) denote the cell at the i-th row from the top (1≤ i≤ H) and the j-th column from the left (1≤ j≤ W).\nCell (i,j)\\ (1≤ i≤ H,1≤ j≤ W) has a non-negative integer A_{i,j} written on it.\nLet us place zero or more dominoes on the grid.\nA domino covers two adjacent cells, namely one of the following pairs:\n- cells (i,j) and (i,j+1) for 1≤ i≤ H,1≤ j\\lt W;\n- cells (i,j) and (i+1,j) for 1≤ i\\lt H,1≤ j≤ W.\nNo cell may be covered by more than one domino.\nFor a placement of dominoes, define its score as the bitwise XOR of all integers written in cells not covered by any domino.\nFind the maximum possible score.\nWhat is bitwise XOR?\n For non-negative integers A and B, their bitwise XOR A \\oplus B is defined as follows:\n \n- In binary, the 2^k bit (k ≥ 0) of A \\oplus B is 1 if exactly one of A and B has 1 in that bit, and 0 otherwise.\n For example, 3 \\oplus 5 = 6 (in binary, 011 \\oplus 101 = 110).\n For k non-negative integers p_1, p_2, p_3, \\dots, p_k, their bitwise XOR is (\\dots ((p_1 \\oplus p_2) \\oplus p_3) \\oplus \\dots \\oplus p_k), which can be proved to be independent of the order of the operands.",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ H\n- 1 ≤ W\n- HW ≤ 20\n- 0 ≤ A_{i,j} < 2^{60} (1 ≤ i ≤ H,\\ 1 ≤ j ≤ W)\n- All input values are integers.",
+    "IO Styles": "Input\nThe input is given from Standard Input in the following format:\nH W\nA _ {1,1} A _ {1,2} ... A _ {1,W}\nA _ {2,1} A _ {2,2} ... A _ {2,W}\n\\vdots\nA _ {H,1} A _ {H,2} ... A _ {H,W}\nOutput\nOutput the answer.",
+    "Sample Detail": [
+        {
+            "input": "3 4\n1 2 3 8\n4 0 7 10\n5 2 4 2\n",
+            "output": "15\n",
+            "explanation": "The grid is as follows:\n\n![image](1.png)\n\nFor example, the placement below yields a score of 15.\n\n![image](2.png)\n\nNo placement achieves a score of 16 or higher, so output 15.",
+            "images": [
+                "https://img.atcoder.jp/abc407/94c95682a450cf6729c030a2affc50d6.png",
+                "https://img.atcoder.jp/abc407/f3c61ccaee45e12aae41bf4880a7d501.png"
+            ]
+        },
+        {
+            "input": "1 11\n1 2 4 8 16 32 64 128 256 512 1024\n",
+            "output": "2047\n",
+            "explanation": "You may also choose to place no dominoes.",
+            "images": []
+        },
+        {
+            "input": "4 5\n74832 16944 58683 32965 97236\n52995 43262 51959 40883 58715\n13846 24919 65627 11492 63264\n29966 98452 75577 40415 77202\n",
+            "output": "131067\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "en"
+}

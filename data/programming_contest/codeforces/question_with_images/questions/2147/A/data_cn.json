@@ -1,0 +1,25 @@
+{
+    "Title": "Codeforces Global Round 29 (Div. 1 + Div. 2)",
+    "Source": "codeforces",
+    "Name": "Shortest Increasing Path",
+    "Time Limit": "1 s",
+    "Memory Limit": "256 mb",
+    "Problem Statement": "你在一個矩形網格的 $(0, 0)$ 位置，想要到達 $(x, y)$。\n為了做到這一點，你被允許執行一系列的步驟。\n每一步都包含向 $x$ 軸或 $y$ 軸的正方向移動一個正整數的長度。\n第一步必須沿著 $x$ 軸進行，第二步沿著 $y$ 軸，第三步再次沿著 $x$ 軸，依此類推。正式來說，如果我們按照執行的順序對步驟進行編號，那麼奇數編號的步驟必須沿著 $x$ 軸，偶數編號的步驟必須沿著 $y$ 軸。\n此外，每一步的長度必須嚴格大於前一步的長度。\n輸出到達 $(x, y)$ 所需的最小步數，或者如果不可能則輸出 $-1$。",
+    "Statement Images": [],
+    "Constraints": "Time limit: 1 s\nMemory limit: 256 mb",
+    "IO Styles": "輸入\n每個測試包含多個測試案例。第一行包含測試案例的數量 $t$ ($1 ≤ t ≤ 10^4$)。隨後是每個測試案例的描述。\n每個案例的第一行也是唯一一行，包含兩個整數 $x$ 和 $y$ ($1 ≤ x, y ≤ 10^9$)。\n\n輸出\n對於每個測試案例，輸出到達 $(x, y)$ 的最小步數，或者如果無法到達則輸出 $-1$。",
+    "Sample Detail": [
+        {
+            "input": "10\n1 2\n5 6\n4 2\n1 1\n2 1\n3 3\n5 1\n5 4\n752 18572\n95152 2322",
+            "output": "2\n2\n3\n-1\n-1\n-1\n-1\n-1\n2\n3",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Notes": "備註\n可視化鏈接\n在第二個測試案例中，您可以先沿著 $x$ 軸移動 $5$，到達 $(5, 0)$，然後沿著 $y$ 軸移動 $6$，到達 $(5, 6)$。![image](1.png) 在第三個測試案例中，您可以先移動到 $(1, 0)$，然後到 $(1, 2)$，最後到 $(4, 2)$。![image](2.png) 在第四個測試案例中，無法到達 $(1, 1)$，因為在沿著 $x$ 軸移動到 $(1, 0)$ 之後，您被迫至少沿著 $y$ 軸移動 $2$。",
+    "Note Images": [
+        "https://espresso.codeforces.com/d2004648d27b0293b7b5a2bf5c299b775a067848.png",
+        "https://espresso.codeforces.com/dba4a2a4e5028d5aa466d15009f7766286faac00.png"
+    ],
+    "Language": "cn"
+}

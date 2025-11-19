@@ -1,0 +1,80 @@
+I need to trace through this code step by step for each test case.
+
+The algorithm:
+1. Builds a directed graph where i → j if person i's interval [L_i, R_i] completely contains person j's interval [L_j, R_j]
+2. Performs topological sort using a max priority queue (to get lexicographically smallest result)
+3. Assigns seats in reverse order of topological sort
+
+**Test Case 1:**
+N = 3
+Person 1: L=1, R=5
+Person 2: L=2, R=3
+Person 3: L=4, R=6
+
+Building graph:
+- Person 1 contains Person 2? (1 ≤ 2 and 3 ≤ 5) → Yes, edge 1→2, in[2]++
+- No other containment relations
+
+in[] = {0, 0, 1, 0}
+Initial queue: {1, 3} (max heap, so 3 comes first)
+
+Process 3: ans[3] = 3 - 1 + 1 = 3, dfn = 1
+Process 1: ans[1] = 3 - 2 + 1 = 2, dfn = 2, decrease in[2] to 0, add 2
+Process 2: ans[2] = 3 - 3 + 1 = 1, dfn = 3
+
+Output: 2 1 3
+
+**Test Case 2:**
+N = 4
+Person 1: L=1, R=5
+Person 2: L=2, R=6
+Person 3: L=3, R=7
+Person 4: L=4, R=8
+
+Building graph:
+- Person 1 contains Person 2? (1 ≤ 2 and 6 ≤ 5) → No
+- No containment relations
+
+in[] = {0, 0, 0, 0, 0}
+Initial queue: {1, 2, 3, 4} (max heap, so 4, 3, 2, 1 order)
+
+Process 4: ans[4] = 4 - 1 + 1 = 4, dfn = 1
+Process 3: ans[3] = 4 - 2 + 1 = 3, dfn = 2
+Process 2: ans[2] = 4 - 3 + 1 = 2, dfn = 3
+Process 1: ans[1] = 4 - 4 + 1 = 1, dfn = 4
+
+Output: 1 2 3 4
+
+**Test Case 3:**
+N = 6
+Person 1: L=6, R=10
+Person 2: L=2, R=11
+Person 3: L=7, R=8
+Person 4: L=1, R=9
+Person 5: L=3, R=4
+Person 6: L=5, R=12
+
+Building graph:
+- Person 1 contains Person 3? (6 ≤ 7 and 8 ≤ 10) → Yes, edge 1→3
+- Person 2 contains: 1(6≤2? No), 3(2≤7 and 8≤11 Yes), 4(2≤1? No), 5(2≤3 and 4≤11 Yes), 6(2≤5? No)
+  - Edges: 2→3, 2→5
+- Person 4 contains: 1(1≤6 and 10≤9? No), 5(1≤3 and 4≤9 Yes)
+  - Edge: 4→5
+- Person 6 contains: 1(5≤6 and 10≤12 Yes), 2(5≤2? No), 3(5≤7 and 8≤12 Yes), 4(5≤1? No), 5(5≤3? No)
+  - Edges: 6→1, 6→3
+
+in[] = {0, 0, 1, 3, 0, 2, 0}
+Initial queue: {2, 4, 6} → max heap gives 6, 4, 2
+
+Process 6: ans[6] = 6 - 1 + 1 = 6, dfn = 1, decrease in[1] to 0, in[3] to 2, add 1
+Process 4: ans[4] = 6 - 2 + 1 = 5, dfn = 2, decrease in[5] to 1
+Process 2: ans[2] = 6 - 3 + 1 = 4, dfn = 3, decrease in[3] to 1, in[5] to 0, add 5
+Process 5: ans[5] = 6 - 4 + 1 = 3, dfn = 4
+Process 1: ans[1] = 6 - 5 + 1 = 2, dfn = 5, decrease in[3] to 0, add 3
+Process 3: ans[3] = 6 - 6 + 1 = 1, dfn = 6
+
+Output: 2 4 1 5 3 6
+
+2 1 3
+1 2 3 4
+2 4 1 5 3 6

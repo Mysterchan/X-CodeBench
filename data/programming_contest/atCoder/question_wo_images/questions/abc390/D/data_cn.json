@@ -1,0 +1,32 @@
+{
+    "Title": "AtCoder Beginner Contest 390",
+    "Source": "atcoder",
+    "Name": "Stone XOR",
+    "Time Limit": "3 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "有 N 個袋子，標記為袋子 1、袋子 2、...、袋子 N。\n袋子 i (1 ≤ i ≤ N) 內含有 A_i 顆石頭。\nTakahashi 可以執行以下操作任意次數，包括零次：\n選擇兩個袋子 A 和 B，並將袋子 A 中的所有石頭移動至袋子 B。\n在重複此操作後，找出以下值的不同可能數量：\n- B_1 \\oplus B_2 \\oplus \\cdots \\oplus B_N，其中 B_i 為袋子 i 最終的石頭數量。\n這裡，\\oplus 表示按位 XOR。\n關於按位 XOR\n對於非負整數 a 和 b，按位 XOR a \\oplus b 定義如下：\n\n在 a \\oplus b 的二進制表示中，2^k 位 (k ≥ 0) 的數字為 1 當且僅當在 a 和 b 的 2^k 位中恰好有一個數字為 1；否則為 0。\n\n例如，3 \\oplus 5 = 6 (在二進制中，011 \\oplus 101 = 110)。\n一般來說，對於 k 個非負整數 x_1, x_2, ..., x_k，它們的按位 XOR x_1 \\oplus x_2 \\oplus \\cdots \\oplus x_k 定義為 (\\cdots((x_1 \\oplus x_2) \\oplus x_3) \\oplus \\cdots) \\oplus x_k，這不依賴於 x_1, x_2, ..., x_k 的順序。\n可以證明，在本題的約束下，可能的值的數量是有限的。",
+    "Statement Images": [],
+    "Constraints": "- 2 ≤ N ≤ 12\n- 1 ≤ A_i ≤ 10^{17}\n- 所有輸入值都是整數。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nN\nA_1 A_2 ... A_N\n輸出\n輸出在重複運算後，B_1 \\oplus B_2 \\oplus \\cdots \\oplus B_N 的不同可能值的數量。",
+    "Sample Detail": [
+        {
+            "input": "3\n2 5 7\n",
+            "output": "3\n",
+            "explanation": "例如，如果貴志選擇袋子 1 和 3 進行操作，那麼袋子 1、2、3 中的石頭數量變為 0、5、9。\n如果他在這個時候停止，則 XOR 值為 0 \\oplus 5 \\oplus 9 = 12。\n\n重複操作後，其他可能的 XOR 值為 0 和 14。\n因此，可能的值為 0、12、14；一共有三個值，所以輸出為 3。",
+            "images": []
+        },
+        {
+            "input": "2\n100000000000000000 100000000000000000\n",
+            "output": "2\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "6\n71 74 45 34 31 60\n",
+            "output": "84\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

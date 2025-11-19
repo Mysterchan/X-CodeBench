@@ -1,0 +1,20 @@
+{
+    "Title": "AtCoder Regular Contest 197 (Div. 2)",
+    "Source": "atcoder",
+    "Name": "Removal of Multiples",
+    "Time Limit": "4 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "讓 S 是所有正整數的集合。\n依序處理 Q 個查詢。第 i 個查詢給你一個不小於 2 的整數 A_i 和一個正整數 B_i，因此按以下兩個步驟執行。\n- 從 S 中移除所有 A_i 的倍數。\n- 輸出 S 中第 B_i 小的元素。在給定的限制下，可以證明 S 在這個時候至少包含 B_i 個元素。",
+    "Statement Images": [],
+    "Constraints": "- 1≤ Q≤ 10^5\n- 2≤ A_i≤ 10^9\n- 1≤ B_i≤ 10^5\n- 所有輸入值均為整數。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nQ\nA_1 B_1\n\\vdots\nA_Q B_Q\n輸出\n輸出 Q 行。第 i 行應該包含在從 S 中移除所有 A_i 的倍數後，第 B_i 小的元素。",
+    "Sample Detail": [
+        {
+            "input": "5\n5 10\n6 1\n6 10\n9 10\n123456789 111\n",
+            "output": "12\n1\n14\n16\n178\n",
+            "explanation": "當 S 的元素按升序列出時，列表的開始部分如下演變。\n\n- 初始時，S=\\lbrace 1,2,3,4,5,6,7,8,9,10,...\\rbrace。\n- 第一次查詢移除 5 的倍數，結果為 S=\\lbrace 1,2,3,4,6,7,8,9,11,12,...\\rbrace。\n- 第二次查詢移除 6 的倍數，結果為 S=\\lbrace 1,2,3,4,7,8,9,11,13,14,...\\rbrace。\n- 第三次查詢移除 6 的倍數，結果為 S=\\lbrace 1,2,3,4,7,8,9,11,13,14,...\\rbrace。\n- 第四次查詢移除 9 的倍數，結果為 S=\\lbrace 1,2,3,4,7,8,11,13,14,16,...\\rbrace。\n- 第五次查詢移除 123456789 的倍數，結果為 S=\\lbrace 1,2,3,4,7,8,11,13,14,16,...\\rbrace。",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

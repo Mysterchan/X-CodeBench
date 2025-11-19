@@ -1,0 +1,40 @@
+{
+    "Title": "AtCoder Beginner Contest 421",
+    "Source": "atcoder",
+    "Name": "RLE Moving",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "There is an infinitely large grid. One cell of the grid is named cell (0,0).\nThe cell located r cells down and c cells right from cell (0,0) is called cell (r,c).\nHere, \"r cells down\" means \"|r| cells up\" when r is negative, and \"c cells right\" means \"|c| cells left\" when c is negative.\nSpecifically, the cells around cell (0,0) are as follows:\n![image](1.png)\nInitially, Takahashi is at cell (R_t,C_t) and Aoki is at cell (R_a,C_a). They will each make N moves according to strings S and T of length N consisting of U, D, L, R.\nFor each i, Takahashi's and Aoki's i-th moves occur simultaneously: Takahashi moves one cell up if the i-th character of S is U, down if D, left if L, and right if R; Aoki moves similarly according to the i-th character of T.\nFind the number of times Takahashi and Aoki are at the same cell immediately after a move during the N moves.\nSince N is very large, S and T are given in the form ((S'_1, A_1),...,(S'_M,A_M)) and ((T'_1,B_1),...,(T'_L,B_L)), where S is the string obtained by concatenating \"A_1 copies of character S'_1, \\dots, A_M copies of character S'_M\" in this order, and T is given similarly.",
+    "Statement Images": [
+        "https://img.atcoder.jp/abc421/550057ef5ef7d5545bf82cc405541482.png"
+    ],
+    "Constraints": "- -10^9 ≤ R_t,C_t,R_a,C_a ≤ 10^9\n- 1≤ N ≤ 10^{14}\n- 1≤ M,L ≤ 10^5\n- Each of S'_i and T'_i is one of U, D, L, R.\n- 1 ≤ A_i,B_i ≤ 10^9\n- A_1+\\dots+A_M=B_1+\\dots+B_L=N\n- All given values are integers.",
+    "IO Styles": "Input\nThe input is given from Standard Input in the following format:\nR_t C_t R_a C_a\nN M L\nS'_1 A_1\n\\vdots\nS'_M A_M\nT'_1 B_1\n\\vdots\nT'_L B_L\nOutput\nPrint the answer.",
+    "Sample Detail": [
+        {
+            "input": "0 0 4 2\n3 2 1\nR 2\nD 1\nU 3\n",
+            "output": "1\n",
+            "explanation": "In this case, S= RRD and T= UUU, and the movements proceed as follows:\n\n- Initially, Takahashi is at cell (0,0) and Aoki is at cell (4,2).\n- After the 1st move, Takahashi is at cell (0,1) and Aoki is at cell (3,2).\n- After the 2nd move, Takahashi is at cell (0,2) and Aoki is at cell (2,2).\n- After the 3rd move, Takahashi is at cell (1,2) and Aoki is at cell (1,2).\n\n\nThus, the number of times Takahashi and Aoki are at the same cell immediately after a move is 1.",
+            "images": []
+        },
+        {
+            "input": "1000000000 1000000000 -1000000000 -1000000000\n3000000000 3 3\nL 1000000000\nU 1000000000\nU 1000000000\nD 1000000000\nR 1000000000\nU 1000000000\n",
+            "output": "1000000001\n",
+            "explanation": "From the 2000000000-th move to the 3000000000-th move, Takahashi and Aoki are at the same cell immediately after a move for 1000000001 times.",
+            "images": []
+        },
+        {
+            "input": "3 3 3 2\n1 1 1\nL 1\nR 1\n",
+            "output": "0\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "0 0 0 0\n1 1 1\nL 1\nR 1\n",
+            "output": "0\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "en"
+}

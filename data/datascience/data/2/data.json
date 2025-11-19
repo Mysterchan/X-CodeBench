@@ -1,0 +1,11 @@
+{
+    "url": "https://github.com/matplotlib/matplotlib/issues/28944",
+    "source": "github",
+    "title": "[Bug]: calling title before making polar plot",
+    "Description": "The intended visualization is a polar plot with theta values ranging from 0 to 6 and corresponding radial values defined by the array r. Currently, the plot displays in a Cartesian coordinate system rather than as a polar plot, which does not represent the data appropriately. The desired outcome is for the plot to correctly visualize the relationship between theta and r in a polar format.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "matplotlib",
+        "data-visualization"
+    ]
+}

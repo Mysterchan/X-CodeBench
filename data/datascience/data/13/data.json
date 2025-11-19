@@ -1,0 +1,11 @@
+{
+    "url": "https://github.com/matplotlib/matplotlib/issues/26437",
+    "source": "github",
+    "title": "[Bug]: The vertical end line of BarAB is not center aligned with plot marker",
+    "Description": "The vertical end line of the annotation (BarAB) is not center-aligned with the plot markers at the specified points. The annotation should have its ends directly aligned with the markers at (x[1], y[1]) and (x[3], y[3]), but currently, the alignment appears off-center.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "matplotlib",
+        "data-visualization"
+    ]
+}

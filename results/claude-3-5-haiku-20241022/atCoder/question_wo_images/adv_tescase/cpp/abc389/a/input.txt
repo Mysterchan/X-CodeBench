@@ -1,0 +1,3 @@
+int a = (s[0]);
+int b = (s[2]);
+cout << a * b << endl;

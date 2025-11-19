@@ -1,0 +1,34 @@
+{
+    "Title": "AtCoder Beginner Contest 409",
+    "Source": "atcoder",
+    "Name": "Equilateral Triangle",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "有一個周長為 L 的圓，並且點 1, 2, ... , N 被放置在這個圓上。對於 i = 1, 2, ... , N-1，點 i+1 的位置是相對於點 i 在圓上順時針方向 d_i 的位置。\n找出滿足以下兩個條件的整數三元組 (a, b, c)\\ (1 ≤ a < b < c ≤ N) 的數量：\n- 三個點 a, b 和 c 的位置皆不同。\n- 由三個點 a, b 和 c 所形成的三角形是等邊三角形。",
+    "Statement Images": [],
+    "Constraints": "- 3≤ L,N≤ 3\\times 10^5\n- 0≤ d_i< L\n- 所有輸入值為整數。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nN L\nd_1 d_2 ... d_{N-1}\n輸出\n輸出答案。",
+    "Sample Detail": [
+        {
+            "input": "5 6\n4 3 1 2\n",
+            "output": "2\n",
+            "explanation": "五個點的排列如下。兩對滿足條件：(a,b,c)=(1,2,4),(1,4,5)。 \n\n![image](1.png)",
+            "images": [
+                "https://img.atcoder.jp/abc409/58e1047b72e249e1390cc813d4e78a2f.png"
+            ]
+        },
+        {
+            "input": "4 4\n1 1 1\n",
+            "output": "0\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "10 12\n4 4 5 7 1 7 0 8 5\n",
+            "output": "13\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

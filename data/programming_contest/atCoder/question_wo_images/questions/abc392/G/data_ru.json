@@ -1,0 +1,32 @@
+{
+    "Title": "Japan Registry Services (JPRS) Programming Contest 2025#1 (AtCoder Beginner Contest 392)",
+    "Source": "atcoder",
+    "Name": "Fine Triplets",
+    "Time Limit": "3 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "Для целых чисел A, B, C ( A < B < C ), если выполняется равенство B-A = C-B, то (A, B, C) называется хорошей тройкой. Вам дано множество N различных положительных целых чисел S = \\{ S_1, S_2, \\dots, S_N \\}. Найдите количество хороших тройок (A, B, C) с A, B, C ∈ S.",
+    "Statement Images": [],
+    "Constraints": "- Все входные значения являются целыми числами.\n- $1 ≤ N ≤ 10^6$\n- $1 ≤ S_i ≤ 10^6$\n- Элементы $S$ различны.",
+    "IO Styles": "Входные данные  \nВходные данные подаются из стандартного ввода в следующем формате:  \nN  \nS_1 S_2 \\dots S_N  \nВыходные данные  \nВыведите количество хороших троек в виде целого числа.",
+    "Sample Detail": [
+        {
+            "input": "5\n8 3 1 5 2\n",
+            "output": "3\n",
+            "explanation": "Здесь $S = \\{8,3,1,5,2\\}$.\nСчитаем следующие три подходящие тройки:\n\n- (1,2,3)\n- (1,3,5)\n- (2,5,8)",
+            "images": []
+        },
+        {
+            "input": "7\n300000 100000 499998 499999 200000 400000 500000\n",
+            "output": "5\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "10\n13 1 16 15 12 4 7 10 2 19\n",
+            "output": "10\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "ru"
+}

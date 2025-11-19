@@ -1,0 +1,32 @@
+{
+    "Title": "AtCoder Beginner Contest 395",
+    "Source": "atcoder",
+    "Name": "Shortest Duplicate Subarray",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "給定一個正整數 N 和一個長度為 N 的整數序列 A = (A_1,A_2,\\dots,A_N)。判斷是否存在一個非空（連續）子陣列 A，其中有一個值重複出現多次。如果存在這樣的子陣列，請找出最短的這種子陣列的長度。",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ N ≤ 2 \\times 10^5\n- 1 ≤ A_i ≤ 10^6 \\ (1 ≤ i ≤ N)\n- 所有輸入值均為整數。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nN\nA_1 A_2 \\dots A_N\n\n輸出\n如果沒有滿足題目陳述的條件的（連續）子陣列，請打印 -1。否則，請打印最短這樣的子陣列的長度。",
+    "Sample Detail": [
+        {
+            "input": "5\n3 9 5 3 1\n",
+            "output": "4\n",
+            "explanation": "(3,9,5,3) 和 (3,9,5,3,1) 滿足條件。較短的為 (3,9,5,3)，其長度為 4。",
+            "images": []
+        },
+        {
+            "input": "4\n2 5 3 1\n",
+            "output": "-1\n",
+            "explanation": "沒有任何子陣列滿足條件。",
+            "images": []
+        },
+        {
+            "input": "10\n1 1 2 3 5 8 13 21 34 55\n",
+            "output": "2\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

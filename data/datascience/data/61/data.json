@@ -1,0 +1,11 @@
+{
+    "url": "https://stackoverflow.com/questions/79608369/bars-not-fitting-to-x-axis-ticks-in-a-seaborn-distplot",
+    "source": "stackoverflow",
+    "title": "Bars not fitting to X-axis ticks in a Seaborn distplot",
+    "Description": "The current seaborn distplot shows a histogram with bars for each age from 9 to 17, categorized by fruit type (Strawberry and Banana). However, the ticks on the X-axis do not align correctly with the bars, especially noticeable between ages 11 and 15. The expected output should have the X-axis ticks properly positioned to correspond with the centers of the bars, improving the overall readability of the plot.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "seaborn",
+        "data-visualization"
+    ]
+}

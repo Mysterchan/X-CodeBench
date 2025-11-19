@@ -1,0 +1,28 @@
+{
+    "Title": "AtCoder Beginner Contest 424",
+    "Source": "atcoder",
+    "Name": "Adding Chords",
+    "Time Limit": "3 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "There are N points equally spaced on a circle, numbered 1,2,\\dots,N clockwise.\nYou are given Q queries of the following form; process them in order.\n- Draw the line segment connecting points A_i and B_i. However, if this segment intersects a segment that has already been drawn, do not draw it.\nHere, it is guaranteed that the 2Q integers A_1,...,A_Q,B_1,...,B_Q are all distinct.\nFor each query, answer whether the segment was drawn.",
+    "Statement Images": [],
+    "Constraints": "- 2 ≤ N ≤ 10^6\n- 1 ≤ Q ≤ 3\\times 10^5\n- 1 ≤ A_i < B_i ≤ N\n- The 2Q integers A_1,...,A_Q,B_1,...,B_Q are pairwise distinct.\n- All input values are integers.",
+    "IO Styles": "Input\nThe input is given from Standard Input in the following format:\nN Q\nA_1 B_1\nA_2 B_2\n\\vdots\nA_Q B_Q\nOutput\nOutput Q lines.\nOn the i-th line, output Yes if, in the i-th query, the segment was drawn, and No if it was not drawn.",
+    "Sample Detail": [
+        {
+            "input": "8 3\n1 5\n2 7\n3 4\n",
+            "output": "Yes\nNo\nYes\n",
+            "explanation": "By the queries, the segments are drawn as in the figure.\n\n- In the 1-st query, the segment connecting points 1 and 5 is drawn.\n- In the 2-nd query, the segment connecting points 2 and 7 is not drawn because it intersects the segment drawn in the 1-st query.\n- In the 3-rd query, the segment connecting points 3 and 4 is drawn.\n\n\n![image](1.png)",
+            "images": [
+                "https://img.atcoder.jp/abc424/da7d251baf0dbd538951f53fa04bb155.png"
+            ]
+        },
+        {
+            "input": "999999 4\n123456 987654\n888888 999999\n1 3\n2 777777\n",
+            "output": "Yes\nNo\nYes\nNo\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "en"
+}

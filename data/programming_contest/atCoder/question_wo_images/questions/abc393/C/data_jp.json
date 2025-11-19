@@ -1,0 +1,32 @@
+{
+    "Title": "AtCoder Beginner Contest 393",
+    "Source": "atcoder",
+    "Name": "Make it Simple",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "頂点に 1 から N の、辺に 1 から M の番号がついた N 頂点 M 辺の無向グラフが与えられます。辺 i は頂点 u_i と頂点 v_i を結ぶ辺です。\nグラフから辺を取り除いてグラフを単純にするためには、少なくとも何本の辺を取り除く必要がありますか？\nここでグラフが単純であるとは、グラフが自己ループや多重辺を含まないことをいいます。",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ N ≤ 2 \\times 10^5\n- 0 ≤ M ≤ 5 \\times 10^5\n- 1 ≤ u_i ≤ N\n- 1 ≤ v_i ≤ N\n- 入力される値は全て整数",
+    "IO Styles": "入力\n入力は以下の形式で標準入力から与えられる。\nN M\r\nu_1 v_1\r\nu_2 v_2\r\n\\vdots\r\nu_M v_M\r\n出力\nグラフを単純にするために取り除く必要がある辺の本数の最小値を出力せよ。",
+    "Sample Detail": [
+        {
+            "input": "3 5\n1 2\n2 3\n3 2\n3 1\n1 1\n",
+            "output": "2\n",
+            "explanation": "辺 3 と辺 5 を取り除くとグラフを単純にすることが出来て、これが取り除く辺の本数が最小となる選び方の 1 つです。よって答えは 2 本です。",
+            "images": []
+        },
+        {
+            "input": "1 0\n",
+            "output": "0\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "6 10\n6 2\n4 1\n5 1\n6 6\n5 3\n5 1\n1 4\n6 4\n4 2\n5 6\n",
+            "output": "3\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "jp"
+}

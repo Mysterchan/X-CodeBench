@@ -1,0 +1,24 @@
+{
+    "Title": "Codeforces Round 1050 (Div. 4)",
+    "Source": "codeforces",
+    "Name": "Lasers",
+    "Time Limit": "2 s",
+    "Memory Limit": "256 mb",
+    "Problem Statement": "There is a 2D-coordinate plane that ranges from $(0,0)$ to $(x, y)$. You are located at $(0,0)$ and want to head to $(x, y)$. \nHowever, there are $n$ horizontal lasers, with the $i$-th laser continuously spanning $(0, a_i)$ to $(x, a_i)$. Additionally, there are also $m$ vertical lasers, with the $i$-th laser continuously spanning $(b_i, 0)$ to $(b_i, y)$.\nYou may move in any direction to reach $(x, y)$, but your movement must be a continuous curve that lies inside the plane. Every time you cross a vertical or a horizontal laser, it counts as one crossing. Particularly, if you pass through an intersection point between two lasers, it counts as two crossings.\nFor example, if $x = y = 2$, $n = m = 1$, $a = [1]$, $b = [1]$, the movement can be as follows: ![image](1.png) \nWhat is the minimum number of crossings necessary to reach $(x, y)$?",
+    "Statement Images": [
+        "https://espresso.codeforces.com/44cd14d5698957fd058be07680bad092035229a0.png"
+    ],
+    "Constraints": "Time limit: 2 s\nMemory limit: 256 mb",
+    "IO Styles": "Input\nThe first line contains $t$ ($1 ≤ t ≤ 10^4$)  — the number of test cases.\nThe first line of each test case contains four integers $n$, $m$, $x$, and $y$ ($1 ≤ n, m ≤ 2 \\cdot 10^5, 2 ≤ x ,y ≤ 10^9$).\nThe following line contains $n$ integers $a_1, a_2, ..., a_n$ ($0 < a_i < y$)  — the y-coordinates of the horizontal lasers. It is guaranteed that $a_i > a_{i-1}$ for all $i > 1$.\nThe following line contains $m$ integers $b_1, b_2, ..., b_m$ ($0 < b_i < x$)  — the x-coordinates of the vertical lasers. It is guaranteed that $b_i > b_{i-1}$ for all $i > 1$.\nIt is guaranteed that the sum of $n$ and $m$ over all test cases does not exceed $2 \\cdot 10^5$.\nOutput\nFor each test case, output the minimum number of crossings necessary to reach $(x, y)$.",
+    "Sample Detail": [
+        {
+            "input": "2\n1 1 2 2\n1\n1\n2 1 100000 100000\n42 58\n32",
+            "output": "2\n3",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Notes": "",
+    "Note Images": [],
+    "Language": "en"
+}

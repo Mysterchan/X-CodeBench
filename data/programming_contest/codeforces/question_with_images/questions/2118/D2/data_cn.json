@@ -1,0 +1,25 @@
+{
+    "Title": "Codeforces Round 1030 (Div. 2)",
+    "Source": "codeforces",
+    "Name": "Red Light, Green Light (Hard version)",
+    "Time Limit": "4 s",
+    "Memory Limit": "512 mb",
+    "Problem Statement": "這是該問題的困難版本。唯一的區別在於對 $k$ 的約束以及所有測試案例中 $n$ 和 $q$ 的總和。只有在解決了這兩個版本的問題後，你才能進行檢測。\n\n你被給予一條長度為 $10^{15}$ 的帶子和一個常數 $k$。總共有 $n$ 個單元格包含紅綠燈；每個紅綠燈都有一個位置 $p_i$ 和一個初始延遲 $d_i$，滿足 $d_i < k$。第 $i$ 個紅綠燈的工作方式如下：\n- 在第 $l \\cdot k + d_i$ 秒時，它顯示紅燈，其中 $l$ 是一個整數；\n- 否則，它顯示綠燈。\n\n在第 $0$ 秒時，你最初位於帶子上的某個單元格，面朝正方向。每秒，你依次執行以下動作：\n- 如果當前單元格包含紅燈，你將轉身；\n- 以你目前面朝的方向移動一個單元格。\n\n你被提供了 $q$ 個不同的起始位置。對於每個位置，判斷你是否最終會在 $10^{100}$ 秒內離開帶子。",
+    "Statement Images": [],
+    "Constraints": "Time limit: 4 s\nMemory limit: 512 mb",
+    "IO Styles": "輸入\n每個測試包含多個測試案例。第一行包含測試案例的數量 $t$ （$1 ≤ t ≤ 2\\cdot10^5$）。隨後是測試案例的描述。\n每個測試案例的第一行包含兩個整數 $n$ 和 $k$ （$\\mathbf{1 ≤ n ≤ 2\\cdot10^5}$ 和 $\\mathbf{1 ≤ k ≤ 10^{15}}$）—— 交通燈的數量和周期的長度。\n每個測試案例的第二行包含 $n$ 個整數 $p_1, p_2, ... p_n$ （$1 ≤ p_1 < p_2 < ... < p_n ≤ 10^{15}$）—— 交通燈的位置。\n每個測試案例的第三行包含 $n$ 個整數 $d_1, d_2, ... d_n$ （$0 ≤ d_i < k$）—— 交通燈的延遲時間。\n每個測試案例的第四行包含一個整數 $q$ （$\\mathbf{1 ≤ q ≤ 2\\cdot10^5}$）—— 查詢的數量。\n每個測試案例的第五行包含 $q$ 個整數 $a_1, a_2, ..., a_q$ （$1 ≤ a_i ≤ 10^{15}$）—— 起始位置。\n保證所有測試案例中 $n$ 和 $q$ 的總和不超過 $\\mathbf{2\\cdot10^5}$。\n輸出\n對於每個測試案例，輸出 $q$ 行。每行應該包含 \"YES\" 如果你最終會離開這個路段，否則為 \"NO\"。你可以以任何字母大小寫輸出答案（大寫或小寫）。例如，字串 \"yEs\"、\"yes\"、\"Yes\" 和 \"YES\" 都會被視為正面回應。",
+    "Sample Detail": [
+        {
+            "input": "4\n2 2\n1 4\n1 0\n3\n1 2 3\n9 4\n1 2 3 4 5 6 7 8 9\n3 2 1 0 1 3 3 1 1\n5\n2 5 6 7 8\n4 2\n1 2 3 4\n0 0 0 0\n4\n1 2 3 4\n3 4\n1 2 3\n3 1 1\n3\n1 2 3",
+            "output": "YES\nNO\nYES\nYES\nYES\nYES\nNO\nNO\nYES\nYES\nNO\nNO\nYES\nNO\nYES",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Notes": "注意\n在第一個測試案例中，在起始位置 $1$、$2$ 和 $3$ 發生以下情況： ![image](1.png) \n而在第二個測試案例中，在起始位置 $2$ 發生以下情況： ![image](2.png)",
+    "Note Images": [
+        "https://espresso.codeforces.com/63db34c82cbed1e62971514d85a4a6bf71302a79.png",
+        "https://espresso.codeforces.com/70971ec2952940a09246b1e55290386a0dec24a1.png"
+    ],
+    "Language": "cn"
+}

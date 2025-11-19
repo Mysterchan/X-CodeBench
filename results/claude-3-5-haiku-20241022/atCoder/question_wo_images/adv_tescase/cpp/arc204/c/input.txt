@@ -1,0 +1,41 @@
+Looking at this problem, I need to understand what the buggy code is doing wrong.
+
+The buggy code computes: `2 * min(A0, A1) + min(abs(A0 - A1), A2)`
+
+This formula doesn't consider the permutation P at all, which is a red flag since P should affect the answer.
+
+Let me think about the MEX function:
+- MEX(x, y) = minimum non-negative integer not in {x, y}
+- MEX(0, 1) = 2
+- MEX(0, 2) = 1  
+- MEX(1, 2) = 0
+- MEX(x, x) = minimum value ≠ x, so MEX(0,0) = 1, MEX(1,1) = 0, MEX(2,2) = 0
+
+The score for position i is MEX(B[i], B[P[i]]).
+
+The buggy formula seems to assume some generic relationship between A0, A1, A2, but it ignores the structure of the permutation.
+
+Let me create a test case where the permutation structure matters:
+
+Consider N=3 with permutation P = (2, 3, 1):
+- Position 1 pairs with position 2
+- Position 2 pairs with position 3  
+- Position 3 pairs with position 1
+
+This forms a cycle of length 3.
+
+For query A0=1, A1=1, A2=1:
+- Buggy formula: 2*min(1,1) + min(|1-1|, 1) = 2*1 + min(0,1) = 2
+
+But we can assign: B = (0, 1, 2)
+- MEX(B[1], B[P[1]]) = MEX(0, B[2]) = MEX(0, 1) = 2
+- MEX(B[2], B[P[2]]) = MEX(1, B[3]) = MEX(1, 2) = 0
+- MEX(B[3], B[P[3]]) = MEX(2, B[1]) = MEX(2, 0) = 1
+- Total score = 2 + 0 + 1 = 3
+
+So the correct answer is 3, but buggy gives 2.
+
+3
+2 3 1
+1
+1 1 1

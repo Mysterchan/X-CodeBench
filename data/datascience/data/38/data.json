@@ -1,0 +1,11 @@
+{
+    "url": "https://stackoverflow.com/questions/63209883/how-to-horizontally-center-a-bar-plot-annotation",
+    "source": "stackoverflow",
+    "title": "How to horizontally center a bar plot annotation?",
+    "Description": "The bar chart is intended to display the values of 'M' and 'F' on top of each corresponding bar using plt.annotate. However, the values are currently placed toward the right side of the bars instead of being centered above them. The desired behavior is for the annotations to be correctly positioned at the center of each bar.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "matplotlib",
+        "data-visualization"
+    ]
+}

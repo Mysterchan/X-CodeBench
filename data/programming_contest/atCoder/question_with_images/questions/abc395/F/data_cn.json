@@ -1,0 +1,41 @@
+{
+    "Title": "AtCoder Beginner Contest 395",
+    "Source": "atcoder",
+    "Name": "Smooth Occlusion",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "高橋有2N顆牙齒：N顆上牙和N顆下牙。\n第i顆上牙從左邊數的長度為U_i，而第i顆下牙從左邊數的長度為D_i。\n若滿足以下兩個條件，則稱他的牙齒“配合得很好”：\n- 存在一個整數H，使得對於每個整數i（1 ≤ i ≤ N），都有U_i + D_i = H。\n- 對於每個整數i（1 ≤ i < N），都有\\lvert U_i - U_{i+1} \\rvert ≤ X。\n他可以進行以下操作任意次：\n- 支付1日元使用磨牙機，選擇一顆長度為正的牙齒，將其長度減少1。\n不允許使用其他方法來改變牙齒的長度。\n找到他需要支付的最少總金額，以使他的牙齒配合得很好。",
+    "Statement Images": [],
+    "Constraints": "- 2 ≤ N ≤ 2 \\times 10^5\n- 1 ≤ U _ i ≤ 10^9 \\ (1 ≤ i ≤ N)\n- 1 ≤ D _ i ≤ 10^9 \\ (1 ≤ i ≤ N)\n- 1 ≤ X ≤ 10^9\n- 所有輸入值皆為整數。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nN X\nU_1 D_1\nU_2 D_2\n\\vdots\nU_N D_N\n\n輸出\n輸出答案。",
+    "Sample Detail": [
+        {
+            "input": "4 3\n3 1\n4 1\n5 9\n2 6\n",
+            "output": "15\n",
+            "explanation": "最初，Takahashi的牙齒具有以下長度：\n\n![image](1.png)\n\n例如，您可以以以下方式使它們完美地貼合：\n\n![image](2.png)\n\n達到這些長度的費用是15日元。\n\n以14日元或更少的費用，無法使它們完美地貼合，因此請輸出15。",
+            "images": [
+                "https://img.atcoder.jp/abc395/37264cf2f8fbc7d9e0f698b6181c804e.png",
+                "https://img.atcoder.jp/abc395/eeb6b57fa9d9b6577f264baba37644c5.png"
+            ]
+        },
+        {
+            "input": "4 1000000000\n3 3\n3 3\n3 3\n3 3\n",
+            "output": "0\n",
+            "explanation": "有可能牙齒已經很好地相互啟合而不需要任何改動。",
+            "images": []
+        },
+        {
+            "input": "4 1\n1000000000 1000000000\n1000000000 1000000000\n1000000000 1000000000\n1 1\n",
+            "output": "5999999994\n",
+            "explanation": "請注意，答案可能超過 32 位元整數範圍。",
+            "images": []
+        },
+        {
+            "input": "15 128\n748 169\n586 329\n972 529\n432 519\n408 587\n138 249\n656 114\n632 299\n984 755\n404 772\n155 506\n832 854\n353 465\n387 374\n567 385\n",
+            "output": "9460\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

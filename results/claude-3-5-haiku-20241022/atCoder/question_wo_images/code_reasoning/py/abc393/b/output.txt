@@ -1,0 +1,52 @@
+I need to trace through the execution of this code with input "AABCC".
+
+The code looks for triples (i, j, k) where:
+- S[i] = 'A', S[j] = 'B', S[k] = 'C'
+- j - i = k - j (equal spacing)
+
+Let me trace through with S = "AABCC":
+- Indices: 0='A', 1='A', 2='B', 3='C', 4='C'
+- Length = 5
+
+Initial check: "A" in S ✓, "B" in S ✓, "C" in S ✓, so we proceed.
+
+**read_A = 0 (S[0] = 'A'):**
+- read_B = 1:
+  - S[1] = 'A' ≠ 'B', continue
+- read_B = 2:
+  - S[2] = 'B' ✓
+  - distance = 2 - 0 = 2
+  - target_idx = 2 + 2 = 4
+  - target_idx (4) < len(S) (5) ✓
+  - S[4] = 'C' ✓
+  - cnt += 1 → cnt = 1
+- read_B = 3:
+  - S[3] = 'C' ≠ 'B', continue
+- read_B = 4:
+  - S[4] = 'C' ≠ 'B', continue
+
+**read_A = 1 (S[1] = 'A'):**
+- read_B = 2:
+  - S[2] = 'B' ✓
+  - distance = 2 - 1 = 1
+  - target_idx = 2 + 1 = 3
+  - target_idx (3) < len(S) (5) ✓
+  - S[3] = 'C' ✓
+  - cnt += 1 → cnt = 2
+- read_B = 3:
+  - S[3] = 'C' ≠ 'B', continue
+- read_B = 4:
+  - S[4] = 'C' ≠ 'B', continue
+
+**read_A = 2 (S[2] = 'B'):**
+- S[2] ≠ 'A', skip inner loop
+
+**read_A = 3 (S[3] = 'C'):**
+- S[3] ≠ 'A', skip inner loop
+
+**read_A = 4 (S[4] = 'C'):**
+- S[4] ≠ 'A', skip inner loop
+
+Final cnt = 2
+
+2

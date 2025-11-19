@@ -1,0 +1,11 @@
+{
+    "url": "https://stackoverflow.com/questions/71331844/a-boxplot-with-lines-connecting-data-points-in-python",
+    "source": "stackoverflow",
+    "title": "A boxplot with lines connecting data points in python",
+    "Description": "The current graph displays a boxplot of player scores with corresponding points represented by a swarmplot, indicating wins with colors. However, the visualization lacks connecting lines between points representing the same player across different courts. The expected outcome includes gray lines connecting the points of each player on the graph, illustrating their score relationships by court.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "seaborn",
+        "data-visualization"
+    ]
+}

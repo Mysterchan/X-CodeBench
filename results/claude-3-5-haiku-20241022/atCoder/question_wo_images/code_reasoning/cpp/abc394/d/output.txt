@@ -1,0 +1,52 @@
+Let me trace through the execution of this C program with the input `([])<>()`.
+
+The program uses a stack-based approach to check if the string is a colorful bracket sequence.
+
+**Initial state:**
+- Input string S = `([])<>()`
+- stack is empty (top = -1)
+- len = 8
+
+**Processing each character:**
+
+1. **i=0, c='('**: Opening bracket → push to stack
+   - stack: `['(']`, top = 0
+
+2. **i=1, c='['**: Opening bracket → push to stack
+   - stack: `['(', '[']`, top = 1
+
+3. **i=2, c=']'**: Closing bracket
+   - top = 1 (not -1), top_char = '['
+   - Check: c==']' && top_char=='[' → **True**
+   - Pop from stack: top = 0
+   - stack: `['(']`
+
+4. **i=3, c=')'**: Closing bracket
+   - top = 0 (not -1), top_char = '('
+   - Check: c==')' && top_char=='(' → **True**
+   - Pop from stack: top = -1
+   - stack: `[]`
+
+5. **i=4, c='<'**: Opening bracket → push to stack
+   - stack: `['<']`, top = 0
+
+6. **i=5, c='>'**: Closing bracket
+   - top = 0 (not -1), top_char = '<'
+   - Check: c=='>' && top_char=='<' → **True**
+   - Pop from stack: top = -1
+   - stack: `[]`
+
+7. **i=6, c='('**: Opening bracket → push to stack
+   - stack: `['(']`, top = 0
+
+8. **i=7, c=')'**: Closing bracket
+   - top = 0 (not -1), top_char = '('
+   - Check: c==')' && top_char=='(' → **True**
+   - Pop from stack: top = -1
+   - stack: `[]`
+
+**After loop:**
+- top = -1 (stack is empty)
+- Print: `top == -1 ? "Yes" : "No"` → "Yes"
+
+Yes

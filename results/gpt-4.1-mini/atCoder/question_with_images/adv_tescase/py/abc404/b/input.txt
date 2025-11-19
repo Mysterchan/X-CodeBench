@@ -1,0 +1,10 @@
+2
+#.
+.#
+#.
+.#
+
+Explanation:
+- The buggy code initializes count90=1, count180=2, count270=3 instead of 0, causing incorrect minimal operation calculation.
+- This minimal 2x2 test case triggers the bug because the minimal flips after rotation are miscounted due to wrong initial values.
+- A correct solution would output 2, but the buggy code outputs a wrong minimal count.

@@ -1,0 +1,22 @@
+{
+    "Title": "AtCoder Beginner Contest 424",
+    "Source": "atcoder",
+    "Name": "2x2 Erasing 2",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "There is a grid with H rows and W columns, and each cell is painted white or black.\nLet us denote the cell at the i-th row from the top (1≤ i≤ H) and the j-th column from the left (1≤ j≤ W) by cell (i,j).\nThe state of the grid is given by H strings S_1,S_2,...,S_H of length W consisting of . and #.\nIf the j-th character of S_i is ., then cell (i,j) is white; if it is #, then cell (i,j) is black.\nBy repainting some black cells (possibly zero) to white, Takahashi wants to make the grid have no 2\\times 2 subgrid consisting only of black cells.\nMore precisely, he wants to satisfy the following condition.\nFor any integer pair (i,j) with 1≤ i≤ H-1 and 1≤ j≤ W-1,\namong cells (i,j), (i,j+1), (i+1,j), and (i+1,j+1), at least one is white.\nFind the minimum number of cells that need to be repainted white in order for Takahashi to achieve his goal.\nYou are given T test cases; answer each of them.",
+    "Statement Images": [],
+    "Constraints": "- 1≤ T≤ 100\n- 2≤ H≤ 7\n- 2≤ W≤ 7\n- Each S_i is a string of length W consisting of . and #.\n- T,H,W are integers.",
+    "IO Styles": "Input\nThe input is given from Standard Input in the following format:\nT\n\\mathrm{case}_1\n\\mathrm{case}_2\n\\vdots\n\\mathrm{case}_T\n\\mathrm{case}_i represents the i-th test case.\nEach test case is given in the following format:\nH W\nS_1\nS_2\n\\vdots\nS_H\nOutput\nOutput T lines.\nOn the i-th line (1≤ i≤ T), output the answer for the i-th test case.",
+    "Sample Detail": [
+        {
+            "input": "2\n5 5\n####.\n##.##\n#####\n.####\n##.#.\n2 2\n..\n..\n",
+            "output": "3\n0\n",
+            "explanation": "For the first test case, the initial state of the grid is as shown in the left figure below.\nBy repainting, for example, the three cells with numbers in the right figure below from black to white, the condition can be satisfied.\n\n![image](1.png)\n\nIt is impossible to satisfy the condition by repainting two or fewer cells from the initial state, so output 3 on the 1-st line.\n\nFor the second test case, the grid already satisfies the condition from the beginning.\nThus, output 0 on the 2-nd line.",
+            "images": [
+                "https://img.atcoder.jp/abc424/166fd932b252ce1ef6ba3682f87e0f9e.png"
+            ]
+        }
+    ],
+    "Language": "en"
+}

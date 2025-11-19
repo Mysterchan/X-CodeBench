@@ -1,0 +1,26 @@
+{
+    "Title": "AtCoder Beginner Contest 391",
+    "Source": "atcoder",
+    "Name": "Lucky Direction",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "8 種類の方角（北、東、西、南、北東、北西、南東、南西）のいずれかを表す文字列 D が与えられます。方角とそれを表す文字列は以下のように対応しています。\n- 北：N\n- 東：E\n- 西：W\n- 南：S\n- 北東：NE\n- 北西：NW\n- 南東：SE\n- 南西：SW\nD が表す方角の反対の方角を表す文字列を出力してください。",
+    "Statement Images": [],
+    "Constraints": "- D は N, E, W, S, NE, NW, SE, SW のいずれか",
+    "IO Styles": "入力\n入力は以下の形式で標準入力から与えられる。\nD\r\n出力\n答えを出力せよ。",
+    "Sample Detail": [
+        {
+            "input": "N\n",
+            "output": "S\n",
+            "explanation": "北の反対の方角である南を表す S を出力してください。",
+            "images": []
+        },
+        {
+            "input": "SE\n",
+            "output": "NW\n",
+            "explanation": "南東の反対の方角である北西を表す NW を出力してください。",
+            "images": []
+        }
+    ],
+    "Language": "jp"
+}

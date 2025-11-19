@@ -1,0 +1,51 @@
+Looking at this problem, I need to trace through the execution step by step.
+
+**Initial Setup:**
+- N = 4
+- A = [5, 0, 9, 3]
+- imos = [0, 0, 0, 0, 0, 0] (length N+2 = 6)
+- ruiseki = 0
+- ans = [0, 0, 0, 0]
+
+**Understanding the logic:**
+- At time t, alien t becomes an adult
+- Each adult with at least 1 stone gives 1 stone to the new adult
+- The imos array tracks cumulative adults giving stones
+
+**Tracing through t = 1 to 4:**
+
+**t = 1:** (Alien 1 becomes adult)
+- ruiseki += imos[1] → ruiseki = 0 + 0 = 0
+- S = A[0] + ruiseki = 5 + 0 = 5
+- ans[0] = max(0, 5 - (4-1)) = max(0, 5-3) = max(0, 2) = 2
+- L = min(5, 3) = 3
+- imos[2] += 1 → imos = [0, 0, 1, 0, 0, 0]
+- imos[5] -= 1 → imos = [0, 0, 1, 0, 0, -1]
+
+**t = 2:** (Alien 2 becomes adult)
+- ruiseki += imos[2] → ruiseki = 0 + 1 = 1
+- S = A[1] + ruiseki = 0 + 1 = 1
+- ans[1] = max(0, 1 - (4-2)) = max(0, 1-2) = max(0, -1) = 0
+- L = min(1, 2) = 1
+- imos[3] += 1 → imos = [0, 0, 1, 1, 0, -1]
+- imos[4] -= 1 → imos = [0, 0, 1, 1, -1, -1]
+
+**t = 3:** (Alien 3 becomes adult)
+- ruiseki += imos[3] → ruiseki = 1 + 1 = 2
+- S = A[2] + ruiseki = 9 + 2 = 11
+- ans[2] = max(0, 11 - (4-3)) = max(0, 11-1) = max(0, 10) = 10
+- L = min(11, 1) = 1
+- imos[4] += 1 → imos = [0, 0, 1, 1, 0, -1]
+- imos[5] -= 1 → imos = [0, 0, 1, 1, 0, -2]
+
+**t = 4:** (Alien 4 becomes adult)
+- ruiseki += imos[4] → ruiseki = 2 + 0 = 2
+- S = A[3] + ruiseki = 3 + 2 = 5
+- ans[3] = max(0, 5 - (4-4)) = max(0, 5-0) = max(0, 5) = 5
+- L = min(5, 0) = 0
+- No imos updates (L = 0)
+
+**Final answer:**
+ans = [2, 0, 10, 5]
+
+2 0 10 5

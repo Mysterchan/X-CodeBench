@@ -1,0 +1,22 @@
+{
+    "Title": "AtCoder Regular Contest 205 (Div. 2)",
+    "Source": "atcoder",
+    "Name": "Non-Ancestor Matching",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "你有一個以1爲根的樹，樹中有N個頂點，編號從1到N。頂點1是根，頂點i（2 ≤ i ≤ N）的父節點是頂點p_i（1≤ p_i < i）。最初，所有頂點都是白色的。\n你可以執行以下操作序列零次或多次。\n- 選擇一對滿足所有以下條件的整數(u, v)。\n- 1≤ u < v ≤ N\n- 頂點u和v均為白色。\n- u不是v的祖先。\n- 將頂點u和v著色爲黑色。\n這裡，“u不是v的祖先”意味著無論執行多少次到當前頂點父節點的操作，都無法到達頂點u。\n找出在適當的順序下，你能執行的最大操作次數。\n你給出了T個測試用例，請為每個用例找到答案。",
+    "Statement Images": [],
+    "Constraints": "- 1≤ T≤ 5\\times 10^4\n- 2≤ N≤ 5\\times 10^5\n- 1≤ p_i < i\n- 所有測試案例中 N 的總和最多為 5\\times 10^5。\n- 所有輸入值均為整數。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nT\n\\text{case}_1\n\\text{case}_2\n\\vdots\n\\text{case}_T\n每個測試用例 \\text{case}_i 的格式如下：\nN\np_2 p_3 ... p_N\n\n輸出\n輸出 T 行。\n第 i 行 (1≤ i≤ T) 應該包含第 i 個測試用例的答案。",
+    "Sample Detail": [
+        {
+            "input": "4\n6\n1 2 2 2 5\n7\n1 2 3 4 5 6\n7\n1 2 3 4 2 4\n12\n1 1 2 2 2 4 4 4 7 7 7\n",
+            "output": "2\n0\n2\n5\n",
+            "explanation": "考慮第一個測試案例。\n\n![image](1.png)\n\n你可以執行兩個操作，如下所示。\n\n- 選擇 (u,v)=(3,5)。將頂點 3 和 5 塗成黑色。\n- 選擇 (u,v)=(4,6)。將頂點 4 和 6 塗成黑色。\n\n你不能執行超過兩次操作，因此在第一行輸出 2。",
+            "images": [
+                "https://img.atcoder.jp/arc205/6734339acfecc9c4c7ae80a268dda726.png"
+            ]
+        }
+    ],
+    "Language": "cn"
+}

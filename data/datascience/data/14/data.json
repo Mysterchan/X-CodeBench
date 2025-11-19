@@ -1,0 +1,11 @@
+{
+    "url": "https://github.com/matplotlib/matplotlib/issues/25764",
+    "source": "github",
+    "title": "Scatter plot markers disappear completely when using facecolors='none'",
+    "Description": "In the scatter plot, the circles intended to be displayed with facecolors='none' are not visible. The marker is currently rendered without any fill color, resulting in an emptiness that does not show the contours. The expected appearance is for the circles to be outlined clearly against the background, allowing them to be seen without a filled color.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "matplotlib",
+        "data-visualization"
+    ]
+}

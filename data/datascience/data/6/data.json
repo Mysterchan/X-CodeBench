@@ -1,0 +1,11 @@
+{
+    "url": "https://github.com/matplotlib/matplotlib/issues/27966",
+    "source": "github",
+    "title": "[Bug]: The color is wrong.",
+    "Description": "The plot is a 3D surface visualization showing two surfaces representing different profit models, labeled as \"$E\\,\\\\Pi_{as}$\" and \"$E\\,\\\\Pi_s$\". Each surface is intended to be uniquely colored, with \"$E\\,\\\\Pi_{as}$\" in black and \"$E\\,\\\\Pi_s$\" in gray. However, an unintended gray shading appears at the top of the plot that has not been defined in the code. The desired output should only show the two defined surface colors and no additional gray area.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "matplotlib",
+        "data-visualization"
+    ]
+}

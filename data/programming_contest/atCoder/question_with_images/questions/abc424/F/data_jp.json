@@ -1,0 +1,28 @@
+{
+    "Title": "AtCoder × Engineer Guild オンサイトコンテスト ～集結！高レート人材～予選（AtCoder Beginner Contest 424）",
+    "Source": "atcoder",
+    "Name": "Adding Chords",
+    "Time Limit": "3 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "円周上に等間隔に N 個の点があり、時計回りに 1,2,\\dots,N と番号がついています。\n以下の形式のクエリが Q 個与えられるので順に処理してください。\n- 点 A_i と点 B_i を結ぶ線分を書く。ただし、この線分が既に書かれている線分と交わる場合は書かない。\nここで、2Q 個の整数 A_1,...,A_Q,B_1,...,B_Q は相異なることが保証されます。\n各線分が書かれたかどうか答えてください。",
+    "Statement Images": [],
+    "Constraints": "- 2 ≤ N ≤ 10^6\n- 1 ≤ Q ≤ 3\\times 10^5\n- 1 ≤ A_i < B_i ≤ N\n- 2Q 個の整数 A_1,...,A_Q,B_1,...,B_Q は相異なる\n- 入力は全て整数",
+    "IO Styles": "入力\n入力は以下の形式で標準入力から与えられる。\nN Q\nA_1 B_1\nA_2 B_2\n\\vdots\nA_Q B_Q\n出力\nQ 行出力せよ。\ni 行目には、i 番目のクエリにおいて線分が書かれたとき Yes、書かれなかったとき No と出力せよ。",
+    "Sample Detail": [
+        {
+            "input": "8 3\n1 5\n2 7\n3 4\n",
+            "output": "Yes\nNo\nYes\n",
+            "explanation": "クエリにより図のように線分が書かれます。\n\n- 1 番目のクエリで、点 1 と点 5 を結ぶ線分が書かれる。\n- 2 番目のクエリで、点 2 と点 7 を結ぶ線分は、1 番目のクエリで書いた線分と交わるので書かない。\n- 3 番目のクエリで、点 3 と点 4 を結ぶ線分が書かれる。\n\n\n![image](1.png)",
+            "images": [
+                "https://img.atcoder.jp/abc424/da7d251baf0dbd538951f53fa04bb155.png"
+            ]
+        },
+        {
+            "input": "999999 4\n123456 987654\n888888 999999\n1 3\n2 777777\n",
+            "output": "Yes\nNo\nYes\nNo\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "jp"
+}

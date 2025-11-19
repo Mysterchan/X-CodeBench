@@ -1,0 +1,27 @@
+{
+    "Title": "Codeforces Round 1007 (Div. 2)",
+    "Source": "codeforces",
+    "Name": "LeaFall",
+    "Time Limit": "3 s",
+    "Memory Limit": "512 mb",
+    "Problem Statement": "You are given a tree$^{\\text{∗}}$ with $n$ vertices. Over time, each vertex $i$ ($1 ≤ i ≤ n$) has a probability of $\\frac{p_i}{q_i}$ of falling. Determine the expected value of the number of unordered pairs$^{\\text{†}}$ of distinct vertices that become leaves$^{\\text{‡}}$ in the resulting forest$^{\\text{§}}$, modulo $998\\,244\\,353$.\nNote that when vertex $v$ falls, it is removed along with all edges connected to it. However, adjacent vertices remain unaffected by the fall of $v$.\n$^{\\text{∗}}$A tree is a connected graph without cycles. \n$^{\\text{†}}$An unordered pair is a collection of two elements where the order in which the elements appear does not matter. For example, the unordered pair $(1, 2)$ is considered the same as $(2, 1)$.\n$^{\\text{‡}}$A leaf is a vertex that is connected to exactly one edge.\n$^{\\text{§}}$A forest is a graph without cycles",
+    "Statement Images": [],
+    "Constraints": "Time limit: 3 s\nMemory limit: 512 mb",
+    "IO Styles": "Input\nEach test contains multiple test cases. The first line contains the number of test cases $t$ ($1 ≤ t ≤ 10^4$). The description of the test cases follows. \nThe first line of each test case contains a single integer $n$ ($1 ≤ n ≤ 10^5$).\nThe $i$-th line of the following $n$ lines contains two integers $p_i$ and $q_i$ ($1 ≤ p_i < q_i < 998\\,244\\,353$).\nEach of the following $n - 1$ lines contains two integers $u$ and $v$ ($1 ≤ u, v ≤ n$, $u \\neq v$) — the indices of the vertices connected by an edge.\nIt is guaranteed that the given edges form a tree.\nIt is guaranteed that the sum of $n$ over all test cases does not exceed $10^5$. \nOutput\nFor each test case, output a single integer — the expected value of the number of unordered pairs of distinct vertices that become leaves in the resulting forest modulo $998\\,244\\,353$.\nFormally, let $M = 998\\,244\\,353$. It can be shown that the exact answer can be expressed as an irreducible fraction $\\frac{p}{q}$, where $p$ and $q$ are integers and $q \\not \\equiv 0 \\pmod{M}$. Output the integer equal to $p \\cdot q^{-1} \\bmod M$. In other words, output such an integer $x$ that $0 ≤ x < M$ and $x \\cdot q \\equiv p \\pmod{M}$.",
+    "Sample Detail": [
+        {
+            "input": "5\n1\n1 2\n3\n1 2\n1 2\n1 2\n1 2\n2 3\n3\n1 3\n1 5\n1 3\n1 2\n2 3\n1\n998244351 998244352\n6\n10 17\n7 13\n6 11\n2 10\n10 19\n5 13\n4 3\n3 6\n1 4\n3 5\n3 2",
+            "output": "0\n623902721\n244015287\n0\n799215919",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Notes": "Note\nIn the first test case, only one vertex is in the tree, which is not a leaf, so the answer is $0$.\nIn the second test case, the tree is shown below. ![image](1.png) \nVertices that have not fallen are denoted in bold. Let us examine the following three cases: ![image](2.png) We arrive at this configuration with a probability of $≤ft( \\frac{1}{2} \\right) ^3$, where the only unordered pair of distinct leaf vertices is $(2, 3)$. ![image](3.png) We arrive at this configuration with a probability of $≤ft( \\frac{1}{2} \\right) ^3$, where the only unordered pair of distinct leaf vertices is $(2, 1)$. ![image](4.png) We arrive at this configuration with a probability of $≤ft( \\frac{1}{2} \\right) ^3$, where the only unordered pair of distinct leaf vertices is $(1, 3)$. \nAll remaining cases contain no unordered pairs of distinct leaf vertices. Hence, the answer is $\\frac{1 + 1 + 1}{8} = \\frac{3}{8}$, which is equal to $623\\,902\\,721$ modulo $998\\,244\\,353$.",
+    "Note Images": [
+        "https://espresso.codeforces.com/218d5395c3eda2e155307f3e22e7428b9a96e6ff.png",
+        "https://espresso.codeforces.com/6cfe17a3ff2a57778dfab93b3e9a98240502f199.png",
+        "https://espresso.codeforces.com/a22759c32eac92fed3e06de6d3dae7fba635c199.png",
+        "https://espresso.codeforces.com/482e22b5149724d44e3ecc17a70ff253edaec105.png"
+    ],
+    "Language": "en"
+}

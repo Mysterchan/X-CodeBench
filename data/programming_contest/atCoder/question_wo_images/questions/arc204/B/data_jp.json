@@ -1,0 +1,32 @@
+{
+    "Title": "AtCoder Regular Contest 204 (Div. 1)",
+    "Source": "atcoder",
+    "Name": "Sort Permutation",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "正整数 N, K と、(1, 2, \\dots, NK) の順列 P = (P_{1}, P_{2}, \\dots, P_{NK}) が与えられます。\nAlice は以下の操作を繰り返し、P を昇順ソートします。\n- 1 以上 NK 以下の整数 i, j(i\\neq j) を選び、P_{i} と P_{j} を入れ替える。このとき、|i - j| が N の倍数なら、Alice は 1 ポイントもらえる。\nAlice は最小の操作回数で P を昇順ソートし、その上でもらえるポイントの和を最大化する行動をします。\nAlice が得るポイントの和を出力してください。",
+    "Statement Images": [],
+    "Constraints": "- 1≤ N≤ 500\n- 1≤ K≤ 10\n- (P_{1}, P_{2}, \\dots , P_{NK}) は (1, 2, \\dots, NK) の順列\n- 入力は全て整数",
+    "IO Styles": "入力\n入力は以下の形式で標準入力から与えられます。\nN K\nP_{1} P_{2} \\dots P_{NK}\n出力\n答えを出力してください。",
+    "Sample Detail": [
+        {
+            "input": "3 2\n1 6 5 3 2 4\n",
+            "output": "2\n",
+            "explanation": "例えば以下のように 4 回操作すると P を昇順ソートできます。\n\n- (i, j) = (2, 5) として操作する。操作後、P = (1, 2, 5, 3, 6, 4) となる。\n- (i, j) = (4, 6) として操作する。操作後、P = (1, 2, 5, 4, 6, 3) となる。\n- (i, j) = (3, 5) として操作する。操作後、P = (1, 2, 6, 4, 5, 3) となる。\n- (i, j) = (3, 6) として操作する。操作後、P = (1, 2, 3, 4, 5, 6) となる。\n\n\n上記の 4 回の操作のうち、1 回目と 4 回目の操作で Alice はそれぞれ 1 ポイントもらえるため、Alice は合計で 2 ポイントもらえます。\n\nこのように操作することが最小の操作回数で P を昇順ソートし、その上でもらえるポイントの和を最大化する行動のひとつであるため、2 を出力します。",
+            "images": []
+        },
+        {
+            "input": "1 1\n1\n",
+            "output": "0\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "4 6\n10 24 3 4 8 14 5 2 22 9 21 1 15 6 13 23 18 12 7 17 19 16 20 11\n",
+            "output": "7\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "jp"
+}

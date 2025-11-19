@@ -1,0 +1,39 @@
+Looking at this problem, I need to trace through the given Java code with the input "WACWA".
+
+The code:
+1. Takes the input string "WACWA"
+2. Creates a StringBuilder with this string
+3. Iterates from right to left (i = sb.length() - 1 down to i = 1)
+4. When it finds "WA" at positions (i-1, i), it replaces those two characters with "AC"
+
+Let me trace through the execution:
+
+Initial string: "WACWA"
+Length = 5
+Loop runs from i = 4 down to i = 1
+
+**i = 4:**
+- sb.charAt(3) = 'W', sb.charAt(4) = 'A'
+- This is "WA", so replace positions [3, 5) with "AC"
+- String becomes: "WACAC"
+- Length is now 5
+
+**i = 3:**
+- sb.charAt(2) = 'C', sb.charAt(3) = 'A'
+- This is "CA", not "WA", so no replacement
+
+**i = 2:**
+- sb.charAt(1) = 'A', sb.charAt(2) = 'C'
+- This is "AC", not "WA", so no replacement
+
+**i = 1:**
+- sb.charAt(0) = 'W', sb.charAt(1) = 'A'
+- This is "WA", so replace positions [0, 2) with "AC"
+- String becomes: "ACCAC"
+- Length is now 5
+
+Loop ends.
+
+Final output: "ACCAC"
+
+ACCAC

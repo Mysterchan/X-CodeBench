@@ -1,0 +1,5 @@
+if N%2==0:
+  ans=0
+  A=sorted(A)
+  for i in range(N//2):
+    ans+=A[-1-i]-A[i]

@@ -1,0 +1,42 @@
+{
+    "Title": "Denso Create Programming Contest 2025（AtCoder Beginner Contest 413）",
+    "Source": "atcoder",
+    "Name": "Big Banned Grid",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "There is an H \\times W grid.\nLet (i,j) denote the cell at the i-th row (1≤ i≤ H) from the top and j-th column (1≤ j≤ W) from the left.\nEach cell in the grid either has an obstacle placed on it or has nothing placed on it. There are K cells with obstacles: cells (r_1,c_1),(r_2,c_2),...,(r_K,c_K).\nTakahashi is initially at cell (1,1) and wants to reach cell (H,W) by repeatedly moving to an adjacent cell (up, down, left, right) that has nothing placed on it.\nMore precisely, he can repeat the following operation as many times as he likes:\n- Choose one of the following four operations and perform the chosen operation:\n- If 1\\lt i and cell (i-1,j) has nothing placed on it, move to cell (i-1,j). Otherwise, do not move.\n- If 1\\lt j and cell (i,j-1) has nothing placed on it, move to cell (i,j-1). Otherwise, do not move.\n- If i\\lt H and cell (i+1,j) has nothing placed on it, move to cell (i+1,j). Otherwise, do not move.\n- If j\\lt W and cell (i,j+1) has nothing placed on it, move to cell (i,j+1). Otherwise, do not move.\nDetermine whether he can move from cell (1,1) to cell (H,W).",
+    "Statement Images": [],
+    "Constraints": "- 1≤ H≤2\\times10^5\n- 1≤ W≤2\\times10^5\n- 0≤ K≤2\\times10^5\n- 1≤ r_i≤ H\\ (1≤ i≤ K)\n- 1≤ c_i≤ W\\ (1≤ i≤ K)\n- (r_i,c_i)\\ne(1,1)\\ (1≤ i≤ K)\n- (r_i,c_i)\\ne(H,W)\\ (1≤ i≤ K)\n- (r_i,c_i)\\ne(r_j,c_j)\\ (1≤ i\\lt j≤ K)\n- All input values are integers.",
+    "IO Styles": "Input\nThe input is given from standard input in the following format:\nH W K\r\nr_1 c_1\r\nr_2 c_2\r\n\\vdots\r\nr_K c_K\r\nOutput\nIf Takahashi can move from cell (1,1) to cell (H,W) by repeating the operation described in the problem, print Yes; otherwise, print No.",
+    "Sample Detail": [
+        {
+            "input": "4 5 5\n1 4\n2 3\n3 2\n3 4\n4 2\n",
+            "output": "No\n",
+            "explanation": "The grid looks as follows:\n\n![image](1.png)\n\nTakahashi cannot move from cell (1,1) to cell (4,5).",
+            "images": [
+                "https://img.atcoder.jp/abc413/b20c1350e9da21a02c8c6a46f0b58a35.png"
+            ]
+        },
+        {
+            "input": "2 7 3\n1 2\n2 4\n1 6\n",
+            "output": "Yes\n",
+            "explanation": "The grid looks as follows:\n\n![image](2.png)\n\nHe can move from cell (1,1) to cell (2,7) by moving as shown in the figure.",
+            "images": [
+                "https://img.atcoder.jp/abc413/0e45dcbb4a025ab811e485f6c91ceb36.png"
+            ]
+        },
+        {
+            "input": "1 1 0\n",
+            "output": "Yes\n",
+            "explanation": "Note that there may be cases where he does not need to move or where no obstacles are placed.",
+            "images": []
+        },
+        {
+            "input": "10 12 20\n8 3\n1 11\n6 4\n3 7\n10 4\n5 7\n4 7\n5 5\n4 3\n6 1\n1 6\n2 7\n6 7\n1 3\n6 3\n2 12\n9 6\n7 3\n3 11\n9 7\n",
+            "output": "Yes\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "en"
+}

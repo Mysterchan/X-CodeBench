@@ -1,0 +1,11 @@
+{
+    "url": "https://stackoverflow.com/questions/71446670/add-horizontal-lines-from-min-point-to-max-point-per-category-in-seaborn-catplot",
+    "source": "stackoverflow",
+    "title": "Add horizontal lines from min point to max point per category in seaborn catplot",
+    "Description": "The goal is to visualize different types of purchases over a quarterly period for selected customers using a Seaborn catplot with a swarm plot for the data. The plot should display individual fruit purchases marked by different colors based on their type. Additionally, horizontal lines should connect the first and last points (dots) for each type of fruit across the quarters. Currently, the generated graph does not include these connecting lines, making it difficult to trace the purchasing timeline for each fruit type. The expected graph includes these horizontal lines, clearly linking the first and last dots for each fruit category per quarter.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "seaborn",
+        "data-visualization"
+    ]
+}

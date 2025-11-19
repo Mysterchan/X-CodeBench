@@ -1,0 +1,32 @@
+{
+    "Title": "KAJIMA CORPORATION CONTEST 2025 (AtCoder Beginner Contest 394)",
+    "Source": "atcoder",
+    "Name": "Debug",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "給定一個由大寫英文字母組成的字符串 S。對 S 應用以下過程，然後輸出結果字符串：\n只要字符串中包含 WA 作為（連續）子字符串，就重複以下操作：\n- 在字符串中所有的 WA 出現中，將最左側的那一個替換為 AC。\n可以在本問題的限制下證明，這個操作最多將重複有限次。",
+    "Statement Images": [],
+    "Constraints": "- S 是一個長度介於 1 和 3\\times 10^5 之間（包括 1 和 3\\times 10^5）的大寫英文字母字符串。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nS\n輸出\n打印經過問題描述中提到的過程處理後的結果字符串。",
+    "Sample Detail": [
+        {
+            "input": "WACWA\n",
+            "output": "ACCAC\n",
+            "explanation": "最初，字符串是 S = WACWA。\n這個字符串在兩個位置包含 WA 作為子字符串：從第 1 個字符到第 2 個字符，以及從第 4 個字符到第 5 個字符。\n在第一次操作中，我們將最左側的出現（從第 1 個字符到第 2 個字符的子字符串）替換為 AC，結果變為 ACCWA。\n第一次操作後，字符串恰好在一個位置包含 WA 作為子字符串：從第 4 個字符到第 5 個字符。\n在第二次操作中，我們將其替換為 AC，結果變為 ACCAC。\n由於 ACCAC 不包含 WA 作為子字符串，程序結束。因此，我們輸出 ACCAC。",
+            "images": []
+        },
+        {
+            "input": "WWA\n",
+            "output": "ACC\n",
+            "explanation": "最初，字符串為 S = WWA。\n這個字符串在恰好一個地方包含子字符串 WA：從第 2 個字符到第 3 個字符。\n在第一次操作中，我們將其替換成 AC，結果為 WAC。\n然後，在第一次操作之後，字符串在恰好一個地方包含 WA：從第 1 個字符到第 2 個字符。\n在第二次操作中，我們將其替換成 AC，結果為 ACC。\n由於 ACC 不包含 WA 作為子字符串，因此程序結束。因此，我們輸出 ACC。",
+            "images": []
+        },
+        {
+            "input": "WWWWW\n",
+            "output": "WWWWW\n",
+            "explanation": "由於 S 從一開始就不包含 WA 作為子串，因此不執行任何操作，程序立即結束。因此，我們輸出 WWWWW。",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

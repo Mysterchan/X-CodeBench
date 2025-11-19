@@ -1,0 +1,11 @@
+{
+    "url": "https://stackoverflow.com/questions/66404883/seaborn-scatterplot-set-hollow-markers-instead-of-filled-markers",
+    "source": "stackoverflow",
+    "title": "Seaborn scatterplot set hollow markers instead of filled markers",
+    "Description": "The current scatterplot displays filled circle markers for two categories, which is not the desired style. The objective is to modify the scatterplot so that it uses hollow circle markers instead. The graph should clearly indicate categories 'a' and 'b' with the appropriate color differentiation while maintaining the hollow appearance of the markers.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "seaborn",
+        "data-visualization"
+    ]
+}

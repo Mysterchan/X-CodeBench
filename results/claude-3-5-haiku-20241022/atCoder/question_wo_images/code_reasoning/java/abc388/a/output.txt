@@ -1,0 +1,8 @@
+Let me trace through the execution of this Java program with the input "Kyoto".
+
+1. The program reads the string S = "Kyoto"
+2. It extracts the first character: `firstChar = S.charAt(0)` which gives `'K'`
+3. It prints `firstChar + "UPC"` which concatenates the character 'K' with the string "UPC"
+4. This results in printing "KUPC"
+
+KUPC

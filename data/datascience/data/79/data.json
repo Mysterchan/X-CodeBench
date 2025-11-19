@@ -1,0 +1,11 @@
+{
+    "url": "https://stackoverflow.com/questions/70693038/add-aggregate-of-all-data-to-boxplots",
+    "source": "stackoverflow",
+    "title": "Add aggregate of all data to boxplots",
+    "Description": "The goal is to add a box plot labeled \"All\" to the y-axis of an existing box plot that displays scores by domain. This new \"All\" box plot should represent all scores regardless of their domain. Additionally, it should be visually separated from the other domain box plots by a horizontal line to clarify that \"All\" is not a separate domain. Currently, the existing plot does not include the \"All\" category, and all box plots are positioned closely without any separation. The expected outcome should clearly show the \"All\" box plot at the top of the graph, distinctly separated from the other domains.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "seaborn",
+        "data-visualization"
+    ]
+}

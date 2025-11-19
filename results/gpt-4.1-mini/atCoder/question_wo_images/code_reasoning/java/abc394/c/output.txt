@@ -1,0 +1,52 @@
+Let's simulate the given code step-by-step on the input:
+
+**Input:**  
+`WACWA`
+
+---
+
+**Code logic:**
+
+- The code reads the string into a StringBuilder `sb`.
+- It iterates from the end of the string towards the start (from `i = sb.length() - 1` down to `i > 0`).
+- For each position `i`, it checks if `sb.charAt(i-1) == 'W'` and `sb.charAt(i) == 'A'`.
+- If yes, it replaces the substring from `i-1` to `i+1` (i.e., the two characters "WA") with "AC".
+- After the loop finishes, it prints the resulting string.
+
+---
+
+**Initial string:**  
+`W A C W A`  
+Indexes: 0 1 2 3 4
+
+---
+
+**Iteration details:**
+
+- `i = 4` (chars at 3 and 4): `sb.charAt(3) = 'W'`, `sb.charAt(4) = 'A'` → matches "WA"  
+  Replace `sb.replace(3, 5, "AC")`  
+  String becomes: `W A C A C`  
+  Indexes: 0 1 2 3 4
+
+- `i = 3` (chars at 2 and 3): `sb.charAt(2) = 'C'`, `sb.charAt(3) = 'A'` → no match
+
+- `i = 2` (chars at 1 and 2): `sb.charAt(1) = 'A'`, `sb.charAt(2) = 'C'` → no match
+
+- `i = 1` (chars at 0 and 1): `sb.charAt(0) = 'W'`, `sb.charAt(1) = 'A'` → matches "WA"  
+  Replace `sb.replace(0, 2, "AC")`  
+  String becomes: `A C C A C`  
+  Indexes: 0 1 2 3 4
+
+---
+
+No more iterations (loop ends).
+
+---
+
+**Final string:**  
+`ACCAC`
+
+---
+
+**Output:**  
+`ACCAC`

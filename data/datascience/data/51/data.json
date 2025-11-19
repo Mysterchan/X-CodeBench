@@ -1,0 +1,11 @@
+{
+    "url": "https://stackoverflow.com/questions/70910391/seaborn-lineplot-connecting-dots-of-scatterplot",
+    "source": "stackoverflow",
+    "title": "Seaborn lineplot - connecting dots of scatterplot",
+    "Description": "The intended visualization is a scatter plot with points connected by a solid line representing the closest joining line among mapped points. In the current graph, the line created by `sns.lineplot` exhibits varying widths at x-axis values that share the same coordinate, leading to an unsatisfactory representation of the connection. The desired outcome is to have a consistent, solid line without fluctuations in width throughout the entire plot.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "seaborn",
+        "data-visualization"
+    ]
+}

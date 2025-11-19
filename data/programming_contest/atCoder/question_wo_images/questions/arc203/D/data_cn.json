@@ -1,0 +1,26 @@
+{
+    "Title": "AtCoder Regular Contest 203 (Div. 2)",
+    "Source": "atcoder",
+    "Name": "Insert XOR",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "有一個整數序列 A=(A_1,A_2,\\dots,A_N)，長度為 N，由 0 和 1 組成。\n你將獲得 Q 個查詢。\n第 q 個查詢如下：\n- 給定一個介於 1 和 N 之間的整數 i_q。如果 A_{i_q} 是 0，則將其改為 1；如果 A_{i_q} 是 1，則將其改為 0。\n在處理每個查詢後，尋找以下問題的答案：\n考慮序列 B=(B_1,B_2,\\dots,B_{|B|})，由 0 和 1 組成，滿足以下條件：\n- 透過對 B 進行任意次數的以下操作，可以使其與序列 A 相匹配：\n- 選擇一個整數 i，滿足 1 \\leq i \\leq |B|-1。\n- 在 B_i 和 B_{i+1} 之間插入 B_i\\oplus B_{i+1}。  \n可以證明，總是存在一個 B 滿足該條件。\n找出 |B| 的最小可能值。",
+    "Statement Images": [],
+    "Constraints": "- 3 ≤ N ≤ 2 \\times 10^5\n- 0 ≤ A_i ≤ 1\n- 1 ≤ Q ≤ 5 \\times 10^5\n- 1 ≤ i_q ≤ N\n- 所有輸入值均為整數。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nN\nA_1 A_2 \\dots A_N\nQ\ni_1\ni_2\n\\vdots\ni_Q\n輸出\n輸出總共 Q 行的答案。\n第 q 行應該包含在處理第 q 次查詢後的問題答案。",
+    "Sample Detail": [
+        {
+            "input": "3\n0 0 0\n2\n1\n2\n",
+            "output": "3\n2\n",
+            "explanation": "當 A=(1,0,0) 時，|B| 由 B=(1,0,0) 最小化。\n當 A=(1,1,0) 時，|B| 由 B=(1,0) 最小化。",
+            "images": []
+        },
+        {
+            "input": "8\n0 1 0 0 1 1 1 0\n3\n1\n4\n1\n",
+            "output": "5\n2\n3\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

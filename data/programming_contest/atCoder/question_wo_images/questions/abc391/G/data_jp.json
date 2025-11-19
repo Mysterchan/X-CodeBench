@@ -1,0 +1,32 @@
+{
+    "Title": "AtCoder Beginner Contest 391",
+    "Source": "atcoder",
+    "Name": "Many LCS",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "長さ N の英小文字列 S および整数 M が与えられます。各 k=0,1,...,N に対して以下の問題を解いてください。\n- 長さ M の英小文字列は 26^M 通りあるが、そのうち S との最長共通部分列の長さが k であるようなものの個数を 998244353 で割った余りを求めよ。",
+    "Statement Images": [],
+    "Constraints": "- 1≤ N≤ 10\n- 1≤ M≤ 100\n- N,M は整数\n- S は長さ N の英小文字列",
+    "IO Styles": "入力\n入力は以下の形式で標準入力から与えられる。\nN M\r\nS\r\n出力\nk=i のときの答えを \\mathrm{ans}_i として、以下の形式で出力せよ。\n\\mathrm{ans}_0 \\mathrm{ans}_1 ... \\mathrm{ans}_N",
+    "Sample Detail": [
+        {
+            "input": "2 2\nab\n",
+            "output": "576 99 1\n",
+            "explanation": "k=0,1,2 それぞれに対する答えは以下のようになります。\n\n- k=0 : 長さ 2 の英小文字列のうち ab との最長共通部分列が 0 であるようなものは cd, re, zz など全部で 576 個存在します。\n- k=1 : 長さ 2 の英小文字列のうち ab との最長共通部分列が 1 であるようなものは ac, wa, ba など全部で 99 個存在します。\n- k=2 : 長さ 2 の英小文字列のうち ab との最長共通部分列が 2 であるようなものは ab の 1 個存在します。",
+            "images": []
+        },
+        {
+            "input": "3 4\naaa\n",
+            "output": "390625 62500 3750 101\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "7 50\natcoder\n",
+            "output": "309810541 226923474 392073062 146769908 221445233 435648037 862664208 238437587\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "jp"
+}

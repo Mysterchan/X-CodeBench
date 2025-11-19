@@ -1,0 +1,40 @@
+{
+    "Title": "UNIQUE VISION Programming Contest 2025 Spring (AtCoder Beginner Contest 398)",
+    "Source": "atcoder",
+    "Name": "Bonfire",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "There is an infinitely large two-dimensional grid, with a campfire at coordinate (0,0).\nAt time t=0, smoke exists only at cell (0,0).\nYou are given a length-N string S consisting of N, W, S, E. At times t=1,2,\\dots,N, the following happen in order:\n- Wind blows, and all the smoke present at that time moves as follows:\n- If the t-th character of S is N, smoke in cell (r,c) moves to cell (r-1,c).\n- If it is W, smoke in cell (r,c) moves to cell (r,c-1).\n- If it is S, smoke in cell (r,c) moves to cell (r+1,c).\n- If it is E, smoke in cell (r,c) moves to cell (r,c+1).\n- If there is no smoke in cell (0,0), new smoke is generated at cell (0,0).\nTakahashi is standing at cell (R,C).\nFor each integer 1 ≤ t ≤ N, determine if smoke exists at cell (R,C) at time t+0.5, and print the response according to the required format.",
+    "Statement Images": [],
+    "Constraints": "- N is an integer between 1 and 200000, inclusive.\n- S is a length N string consisting of N, W, S, E.\n- R and C are integers between -N and N, inclusive.\n- (R,C) \\neq (0,0)",
+    "IO Styles": "Input\nThe input is given from Standard Input in the following format:\nN R C\nS\nOutput\nPrint an N-character string consisting of 0 and 1.\nThe t-th character (1 ≤ t ≤ N) should be:\n- 1 if smoke exists at cell (R,C) at time t+0.5, and\n- 0 otherwise.",
+    "Sample Detail": [
+        {
+            "input": "6 -2 1\nNNEEWS\n",
+            "output": "001010\n",
+            "explanation": "At times 1.5,2.5,4.5,6.5, there is no smoke at cell (-2,1). At times 3.5,5.5, there is smoke at cell (-2,1).\nHence, output 001010.\n\nIn the figures below, taking cell (0,0) with the campfire as a reference, cell (r,c) is drawn:\n\n- -r cells up if r < 0,\n- r cells down if r ≥ 0,\n- -c cells left if c < 0,\n- c cells right if c ≥ 0.\n\n\nThe grid at time 0.5 looks like:\n\n![image](1.png)\n\nThe grid at time 1.5 looks like:\n\n![image](2.png)\n\nThe grid at time 2.5 looks like:\n\n![image](3.png)\n\nThe grid at time 3.5 looks like:\n\n![image](4.png)\n\nThe grid at time 4.5 looks like:\n\n![image](5.png)\n\nThe grid at time 5.5 looks like:\n\n![image](6.png)\n\nThe grid at time 6.5 looks like:\n\n![image](7.png)",
+            "images": [
+                "https://img.atcoder.jp/abc398/pmRbLy1F_D_t0.png",
+                "https://img.atcoder.jp/abc398/pmRbLy1F_D_t1.png",
+                "https://img.atcoder.jp/abc398/pmRbLy1F_D_t2.png",
+                "https://img.atcoder.jp/abc398/pmRbLy1F_D_t3.png",
+                "https://img.atcoder.jp/abc398/pmRbLy1F_D_t4.png",
+                "https://img.atcoder.jp/abc398/pmRbLy1F_D_t5.png",
+                "https://img.atcoder.jp/abc398/pmRbLy1F_D_t6.png"
+            ]
+        },
+        {
+            "input": "10 1 2\nNEESESWEES\n",
+            "output": "0001101011\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "20 -1 -2\nWWNNWSWEWNSWWENSNWWN\n",
+            "output": "00100111111000101111\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "en"
+}

@@ -1,0 +1,50 @@
+I need to trace through this code step by step to determine the output.
+
+Initial state:
+- n = 4
+- a = [5, 0, 9, 3]
+- delta = [0, 0, 0, 0, 0, 0] (size n+2 = 6)
+
+The code processes each alien i from 0 to n-1:
+
+**i = 0:**
+- `if(i > 0)` is false, so skip delta update
+- `a[0] += delta[0]` → a[0] = 5 + 0 = 5
+- `r = a[0] - (n - 0 - 1) = 5 - 3 = 2`
+- `delta[min(4, 0 + 5 + 1)]--` → `delta[min(4, 6)]--` → `delta[4]--` → delta[4] = -1
+- `a[0] = max(0, 2) = 2`
+- `delta[1]++` → delta[1] = 1
+- delta = [0, 1, 0, 0, -1, 0]
+
+**i = 1:**
+- `delta[1] += delta[0]` → delta[1] = 1 + 0 = 1
+- `a[1] += delta[1]` → a[1] = 0 + 1 = 1
+- `r = a[1] - (n - 1 - 1) = 1 - 2 = -1`
+- `delta[min(4, 1 + 1 + 1)]--` → `delta[min(4, 3)]--` → `delta[3]--` → delta[3] = -1
+- `a[1] = max(0, -1) = 0`
+- `delta[2]++` → delta[2] = 1
+- delta = [0, 1, 1, -1, -1, 0]
+
+**i = 2:**
+- `delta[2] += delta[1]` → delta[2] = 1 + 1 = 2
+- `a[2] += delta[2]` → a[2] = 9 + 2 = 11
+- `r = a[2] - (n - 2 - 1) = 11 - 1 = 10`
+- `delta[min(4, 2 + 11 + 1)]--` → `delta[min(4, 14)]--` → `delta[4]--` → delta[4] = -2
+- `a[2] = max(0, 10) = 10`
+- `delta[3]++` → delta[3] = 0
+- delta = [0, 1, 2, 0, -2, 0]
+
+**i = 3:**
+- `delta[3] += delta[2]` → delta[3] = 0 + 2 = 2
+- `a[3] += delta[3]` → a[3] = 3 + 2 = 5
+- `r = a[3] - (n - 3 - 1) = 5 - 0 = 5`
+- `delta[min(4, 3 + 5 + 1)]--` → `delta[min(4, 9)]--` → `delta[4]--` → delta[4] = -3
+- `a[3] = max(0, 5) = 5`
+- `delta[4]++` → delta[4] = -2
+- delta = [0, 1, 2, 2, -2, 0]
+
+Final array a = [2, 0, 10, 5]
+
+The output prints each element followed by a space, then a newline.
+
+2 0 10 5

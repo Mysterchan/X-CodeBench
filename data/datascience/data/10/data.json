@@ -1,0 +1,11 @@
+{
+    "url": "https://github.com/matplotlib/matplotlib/issues/26791",
+    "source": "github",
+    "title": "[Bug]: inconsistent results when formatting ticklabels by get_text() in time axis",
+    "Description": "The intended visualization consists of three subplots with time series data plotted against a time axis formatted to display years and months. Each subplot should have consistent tick label sizes for the year names on the x-axis. Currently, the tick label sizes for the year names vary inconsistently, with some years appearing larger or smaller than others, making the visualization unclear. The expected behavior is for all year labels to have a uniform font size.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "matplotlib",
+        "data-visualization"
+    ]
+}

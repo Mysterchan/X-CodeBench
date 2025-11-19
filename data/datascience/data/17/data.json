@@ -1,0 +1,11 @@
+{
+    "url": "https://stackoverflow.com/questions/74426028/pyplot-3d-scatter-plot-zlabel",
+    "source": "github",
+    "title": "[Bug]: Setting ticks marks on a single spine doesn't work properly",
+    "Description": "The graph is a 3D scatter plot with points defined by x, y, and z coordinates. The x-axis and y-axis are correctly labeled as \"X data\" and \"Y data,\" respectively. However, there is currently no label for the z-axis, which is intended to be labeled as \"Z data.\" The expected behavior is for the z-axis to display a label to provide clarity for the data being represented.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "matplotlib",
+        "data-visualization"
+    ]
+}

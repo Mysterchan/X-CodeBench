@@ -1,0 +1,11 @@
+{
+    "url": "https://github.com/matplotlib/matplotlib/issues/28681",
+    "source": "github",
+    "title": "[Bug]: text misplaced on subplots with histograms",
+    "Description": "The intention is to create a figure with two horizontally aligned subplots; the first subplot displaying a histogram of normally distributed data and the second subplot intended to be empty with centered text indicating \"TEST X\", where X varies. However, when using `sharex=True`, the text in the empty subplot is misaligned if the histogram does not include zero. The expected behavior is for the text to be correctly centered in the second subplot, regardless of the histogram data.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "matplotlib",
+        "data-visualization"
+    ]
+}

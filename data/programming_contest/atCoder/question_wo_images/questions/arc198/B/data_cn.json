@@ -1,0 +1,20 @@
+{
+    "Title": "AtCoder Regular Contest 198 (Div. 2)",
+    "Source": "atcoder",
+    "Name": "Rivalry",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "確定是否存在一個長度為 X+Y+Z 的序列 A=(A_1,A_2,\\dots,A_{X+Y+Z})，其中正好有 X 個零、Y 個一和 Z 個二，並滿足以下條件：\n- 對於每個 i(1 ≤ i ≤ X+Y+Z)，在 A_{i-1} 和 A_{i+1} 中，恰好有 A_i 個數字小於 A_i。\n在這裡，假設 A_0 = A_{X+Y+Z} 且 A_{X+Y+Z+1} = A_1。\n你將獲得 T 檢測案例。解決每一個案例。",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ T ≤ 2 \\times 10^{5}  \n- 0 ≤ X,Y,Z ≤ 10^{9}  \n- 3 ≤ X + Y + Z",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nT\n\\mathrm{case}_1\n\\mathrm{case}_2\n\\vdots\n\\mathrm{case}_T\n每個測試案例的格式如下：\nX\\ Y\\ Z\n輸出\n輸出 T 行。第 i 行 (1 ≤ i ≤ T) 應該包含 Yes 如果存在這樣的序列，否則為 No。",
+    "Sample Detail": [
+        {
+            "input": "4\n2 1 1\n3 4 5\n1359 1998 1022\n392848293 683919483 822948689\n",
+            "output": "Yes\nNo\nYes\nNo\n",
+            "explanation": "中文: 對於第一個測試案例，序列 A = (2,0,0,1) 滿足條件。\n\n對於第二個測試案例，沒有序列滿足條件。",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

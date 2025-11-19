@@ -1,0 +1,32 @@
+{
+    "Title": "AtCoder Beginner Contest 387",
+    "Source": "atcoder",
+    "Name": "Snake Numbers",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "A positive integer not less than 10 whose top digit (the most significant digit) in decimal representation is strictly larger than every other digit in that number is called a Snake number.\nFor example, 31 and 201 are Snake numbers, but 35 and 202 are not.\nFind how many Snake numbers exist between L and R, inclusive.",
+    "Statement Images": [],
+    "Constraints": "- 10 ≤ L ≤ R ≤ 10^{18}\n- All input values are integers.",
+    "IO Styles": "Input\nThe input is given from Standard Input in the following format:\nL R\nOutput\nPrint the answer.",
+    "Sample Detail": [
+        {
+            "input": "97 210\n",
+            "output": "6\n",
+            "explanation": "The Snake numbers between 97 and 210, inclusive, are 97, 98, 100, 200, 201, and 210: there are six.",
+            "images": []
+        },
+        {
+            "input": "1000 9999\n",
+            "output": "2025\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "252509054433933519 760713016476190692\n",
+            "output": "221852052834757\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "en"
+}

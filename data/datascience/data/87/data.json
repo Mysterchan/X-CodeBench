@@ -1,0 +1,11 @@
+{
+    "url": "https://stackoverflow.com/questions/63473560/how-do-i-change-the-order-of-the-bars-on-this-bar-chart",
+    "source": "stackoverflow",
+    "title": "How do I change the order of the bars on this bar chart?",
+    "Description": "The countplot currently displays the bars in the order of A, D, B, E, C, AA, and HR for the Prosper Rating categories. The desired order for the bars is AA, A, B, C, D, E, and HR. Each bar should correctly reflect this specified order along with its corresponding label.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "seaborn",
+        "data-visualization"
+    ]
+}

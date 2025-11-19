@@ -1,0 +1,32 @@
+{
+    "Title": "日本レジストリサービス（JPRS）プログラミングコンテスト2025#1（AtCoder Beginner Contest 392）",
+    "Source": "atcoder",
+    "Name": "Shuffled Equation",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "整数列 A=(A_1,A_2,A_3) が与えられます。\nA の要素を自由に並べ替えた列を B=(B_1,B_2,B_3) とします。\nこのとき、 B_1 \\times B_2 = B_3 を満たすようにできるか判定してください。",
+    "Statement Images": [],
+    "Constraints": "- 入力は全て整数\n- 1 ≤ A_1,A_2,A_3 ≤ 100",
+    "IO Styles": "入力\n入力は以下の形式で標準入力から与えられる。\nA_1 A_2 A_3\r\n出力\nB_1 \\times B_2 = B_3 を満たすようにできるなら Yes 、そうでないなら No と出力せよ。",
+    "Sample Detail": [
+        {
+            "input": "3 15 5\n",
+            "output": "Yes\n",
+            "explanation": "A=(3,15,5) です。\nB=(3,5,15) と並べ替えることで、 B_1 \\times B_2 = B_3 を満たすようにできます。",
+            "images": []
+        },
+        {
+            "input": "5 3 2\n",
+            "output": "No\n",
+            "explanation": "B をどのように定めても、 B_1 \\times B_2 = B_3 を満たすようにはできません。",
+            "images": []
+        },
+        {
+            "input": "3 3 9\n",
+            "output": "Yes\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "jp"
+}

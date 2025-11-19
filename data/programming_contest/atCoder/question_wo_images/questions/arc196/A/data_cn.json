@@ -1,0 +1,32 @@
+{
+    "Title": "AtCoder Regular Contest 196 (Div. 1)",
+    "Source": "atcoder",
+    "Name": "Adjacent Delete",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "給定一個長度為 N 的序列 A = (A_1, A_2, ..., A_N)。\n你將重複執行以下操作直到序列的長度至多為 1：選擇兩個相鄰的數字並將它們從序列中移除。\n在一次操作中獲得的分數是所選兩個數字的絕對差值。\n找出可以獲得的最大可能的總分數。",
+    "Statement Images": [],
+    "Constraints": "- 2 ≤ N ≤ 3 \\times 10^5\n- 1 ≤ A_i ≤ 10^9\n- 所有輸入值均為整數。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nN\nA_1 A_2 ... A_N\n輸出\n輸出獲得的最高總分。",
+    "Sample Detail": [
+        {
+            "input": "4\n1 2 5 3\n",
+            "output": "5\n",
+            "explanation": "首先，移除 A_2 和 A_3。所獲得的分數是 |A_2 - A_3| = 3。\n\n接著，移除 A_1 和 A_4。請注意，由於前面的操作，這兩個數字現在是相鄰的。所獲得的分數是 |A_1 - A_4| = 2。\n\n因此，所獲得的總分是 5。\n\n無法達到總分 6 或更高，所以輸出 5。",
+            "images": []
+        },
+        {
+            "input": "7\n3 1 4 1 5 9 2\n",
+            "output": "14\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "5\n1 1 1 1 1\n",
+            "output": "0\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

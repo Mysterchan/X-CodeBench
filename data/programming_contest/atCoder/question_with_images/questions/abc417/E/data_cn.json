@@ -1,0 +1,22 @@
+{
+    "Title": "AtCoder Beginner Contest 417",
+    "Source": "atcoder",
+    "Name": "A Path in A Dictionary",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "給定一個簡單的連通無向圖 G，包含 N 個頂點和 M 條邊。\nG 的頂點編號為頂點 1, 頂點 2, ..., 頂點 N，並且第 i 條邊 (1≤ i≤ M) 連接頂點 U_i 和 V_i。\n在 G 中找出從頂點 X 到頂點 Y 的字典序最小的簡單路徑。\n也就是說，找出符合以下條件的整數序列 P=(P_1,P_2,...,P_{\\lvert P\\rvert}) 中的字典序最小的序列：\n- 1≤ P_i≤ N\n- 如果 i≠ j，則 P_i≠ P_j。\n- P_1=X 且 P_{\\lvert P\\rvert}=Y。\n- 對於 1≤ i≤ \\lvert P\\rvert-1，存在一條邊連接頂點 P_i 和 P_{i+1}。\n可以證明在這個問題的約束下，這樣的路徑總是存在的。\n你將獲得 T 個測試案例，請為每個案例找到答案。\n整數序列的字典序\n整數序列 S=(S_1,S_2,...,S_{\\lvert S\\rvert}) 會字典序小於整數序列 T=(T_1,T_2,...,T_{\\lvert T\\rvert})，如果滿足以下 1. 或 2. 中的任一條件。這裡，\\lvert S\\rvert 和 \\lvert T\\rvert 分別代表 S 和 T 的長度。\n- \\lvert S\\rvert<\\lvert T\\rvert 且 (S_1,S_2,...,S_{\\lvert S\\rvert})=(T_1,T_2,...,T_{\\lvert S\\rvert})。\n- 存在某個 1≤ i≤ \\min(\\lvert S\\rvert,\\lvert T\\rvert)，使得 (S_1,S_2,...,S_{i-1})=(T_1,T_2,...,T_{i-1}) 且 S_i< T_i。",
+    "Statement Images": [],
+    "Constraints": "- 1≤ T≤ 500  \n- 2≤ N≤ 1000  \n- N-1≤ M≤ \\min\\left( \\frac{N(N-1)}{2},5\\times 10^4\\right)  \n- 1≤ X,Y ≤ N  \n- X\\neq Y  \n- 1≤ U_i<V_i ≤ N  \n- 如果 i\\neq j，則 (U_i,V_i)\\neq (U_j,V_j)。  \n- 給定的圖是連通的。  \n- 每個輸入中所有測試用例的 N 之和至多為 1000。  \n- 每個輸入中所有測試用例的 M 之和至多為 5\\times 10^4。  \n- 所有輸入值均為整數。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nT\n\\mathrm{case}_1\n\\mathrm{case}_2\n\\vdots\n\\mathrm{case}_T\n\\mathrm{case}_i 代表第 i 個測試用例。\n每個測試用例以以下格式給出：\nN M X Y \nU_1 V_1\nU_2 V_2\n\\vdots\nU_M V_M\n輸出\n輸出 T 行。\n第 i 行 (1 ≤ i ≤ T) 應該包含在簡單路徑上，作為第 i 個測試用例的答案的頂點號碼，按順序用空格分隔。\n也就是說，當第 i 個測試用例的答案是 P=(P_1,P_2,...,P_{\\lvert P\\rvert}) 時，請在第 i 行以這個順序輸出 P_1, P_2, ..., P_{\\lvert P\\rvert}，並用空格分隔。",
+    "Sample Detail": [
+        {
+            "input": "2\n6 10 3 5\n1 2\n1 3\n1 5\n1 6\n2 4\n2 5\n2 6\n3 4\n3 5\n5 6\n3 2 3 2\n1 3\n2 3\n",
+            "output": "3 1 2 5\n3 2\n",
+            "explanation": "對於第一個測試案例，圖 G 如下：\n\n![image](1.png)\n\n從頂點 3 到頂點 5 的簡單路徑，按字典序列出如下：\n\n- (3,1,2,5)\n- (3,1,2,6,5)\n- (3,1,5)\n- (3,1,6,2,5)\n- (3,1,6,5)\n- (3,4,2,1,5)\n- (3,4,2,1,6,5)\n- (3,4,2,5)\n- (3,4,2,6,1,5)\n- (3,4,2,6,5)\n- (3,5)\n\n在這些路徑中，字典序最小的是 (3,1,2,5)，因此在第一行輸出 3,1,2,5，以空格分隔。\n\n對於第二個測試案例，(3,2) 是從頂點 3 到頂點 2 的唯一簡單路徑。",
+            "images": [
+                "https://img.atcoder.jp/abc417/12ddd13a59ff48977cc238502d4fa41a.png"
+            ]
+        }
+    ],
+    "Language": "cn"
+}

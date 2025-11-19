@@ -1,0 +1,11 @@
+{
+    "url": "https://stackoverflow.com/questions/65141953/seaborn-barplot-with-varying-number-of-bars-per-group-without-blank-spaces",
+    "source": "stackoverflow",
+    "title": "Seaborn Barplot with Varying Number of Bars per Group without Blank Spaces",
+    "Description": "The bar plot should display the x-axis grouped by 'Simple', 'Complex', and 'Cool', with different colored bars representing distinct algorithms. Currently, the plot includes excessive blank space and shows bars from all algorithms in each group, even when some algorithms do not apply to certain groups. The desired outcome is to have two bars for 'Simple' and 'Complex', and only one bar for 'Cool', eliminating unnecessary spacing between bars.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "seaborn",
+        "data-visualization"
+    ]
+}

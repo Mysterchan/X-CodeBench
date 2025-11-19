@@ -1,0 +1,45 @@
+I need to trace through this code with the given input.
+
+Let me analyze the `solve()` function and trace through each test case.
+
+**Test Case 1:**
+- n = 6
+- a = [1, 1, 1, 0, 0, 1]
+- b = [0, 1, 1, 0, 1, 1]
+
+First check: `sum(a) != sum(b)`?
+- sum(a) = 1+1+1+0+0+1 = 4
+- sum(b) = 0+1+1+0+1+1 = 4
+- They're equal, so continue
+
+Second check: `sum(a) == 1`?
+- sum(a) = 4, not 1, so go to else branch
+- Print "Yes"
+
+**Test Case 2:**
+- n = 2
+- a = [0, 0]
+- b = [1, 0]
+
+First check: `sum(a) != sum(b)`?
+- sum(a) = 0
+- sum(b) = 1
+- They're not equal, so print "No" and return
+
+**Test Case 3:**
+- n = 3
+- a = [1, 1, 1]
+- b = [1, 1, 1]
+
+First check: `sum(a) != sum(b)`?
+- sum(a) = 3
+- sum(b) = 3
+- They're equal, so continue
+
+Second check: `sum(a) == 1`?
+- sum(a) = 3, not 1, so go to else branch
+- Print "Yes"
+
+Yes
+No
+Yes

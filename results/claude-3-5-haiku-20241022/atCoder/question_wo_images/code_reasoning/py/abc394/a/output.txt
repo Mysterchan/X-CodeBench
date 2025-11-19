@@ -1,0 +1,19 @@
+Let me trace through the code execution with the given input.
+
+**Input:** `20250222`
+
+**Code execution:**
+1. `S = input().strip()` → `S = "20250222"`
+2. `str = ""` → Initialize empty string
+3. Loop through each character in S:
+   - `i = '2'`: condition `i == "2"` is True → `str = "2"`
+   - `i = '0'`: condition `i == "2"` is False → `str = "2"`
+   - `i = '2'`: condition `i == "2"` is True → `str = "22"`
+   - `i = '5'`: condition `i == "2"` is False → `str = "22"`
+   - `i = '0'`: condition `i == "2"` is False → `str = "22"`
+   - `i = '2'`: condition `i == "2"` is True → `str = "222"`
+   - `i = '2'`: condition `i == "2"` is True → `str = "2222"`
+   - `i = '2'`: condition `i == "2"` is True → `str = "22222"`
+4. `print(str)` → outputs `"22222"`
+
+**Output:** 22222

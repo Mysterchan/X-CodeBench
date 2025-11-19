@@ -1,0 +1,11 @@
+{
+    "url": "https://github.com/matplotlib/matplotlib/issues/25545",
+    "source": "github",
+    "title": "[Bug]: This code does work properly in windows",
+    "Description": "The plot is intended to display a line graph of temperature vs. hours with markers, labeled axes, a title, and a grid. However, the current output shows an empty graph with no plotted data, despite the code executing without errors. The desired graph should clearly depict the temperature data points at specified hour intervals with the correct visual elements.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "matplotlib",
+        "data-visualization"
+    ]
+}

@@ -1,0 +1,51 @@
+Let me trace through the execution of this code step by step.
+
+**Initial state:**
+- n = 3, m = 5
+- g = [[], [], []] (3 empty lists for vertices 0, 1, 2)
+- ans = 0
+
+**Processing each edge:**
+
+**Edge 1: u=1, v=2**
+- Not a self-loop (u ≠ v)
+- Convert to 0-indexed: u=0, v=1
+- Check if v in g[u] and u in g[v]: 1 in [] and 0 in [] → False
+- Add edge: g[0].append(1), g[1].append(0)
+- g = [[1], [0], []]
+- ans = 0
+
+**Edge 2: u=2, v=3**
+- Not a self-loop (u ≠ v)
+- Convert to 0-indexed: u=1, v=2
+- Check if v in g[u] and u in g[v]: 2 in [0] and 1 in [] → False
+- Add edge: g[1].append(2), g[2].append(1)
+- g = [[1], [0, 2], [1]]
+- ans = 0
+
+**Edge 3: u=3, v=2**
+- Not a self-loop (u ≠ v)
+- Convert to 0-indexed: u=2, v=1
+- Check if v in g[u] and u in g[v]: 1 in [1] and 2 in [0, 2] → True and True → True
+- This is a multi-edge (edge between 2 and 3 already exists)
+- ans += 1
+- ans = 1
+
+**Edge 4: u=3, v=1**
+- Not a self-loop (u ≠ v)
+- Convert to 0-indexed: u=2, v=0
+- Check if v in g[u] and u in g[v]: 0 in [1] and 2 in [1] → False
+- Add edge: g[2].append(0), g[0].append(2)
+- g = [[1, 2], [0, 2], [1, 0]]
+- ans = 1
+
+**Edge 5: u=1, v=1**
+- Self-loop (u == v)
+- ans += 1
+- ans = 2
+- Continue (skip the rest)
+
+**Final output:**
+print(ans) → prints 2
+
+2

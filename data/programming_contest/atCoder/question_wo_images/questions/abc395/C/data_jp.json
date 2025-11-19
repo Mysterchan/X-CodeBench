@@ -1,0 +1,32 @@
+{
+    "Title": "AtCoder Beginner Contest 395",
+    "Source": "atcoder",
+    "Name": "Shortest Duplicate Subarray",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "正整数 N と、長さ N の整数列 A=(A_1,A_2,\\dots,A_N) が与えられます。\nA の空でない連続部分列であって、同じ値を複数個含むようなものが存在するか判定してください。存在するならばそのようなもののうち最も短いものの長さを求めてください。",
+    "Statement Images": [],
+    "Constraints": "- 1≤ N≤ 2\\times 10^5\n- 1≤ A_i≤ 10^6 (1≤ i≤ N)\n- 入力はすべて整数",
+    "IO Styles": "入力\n入力は以下の形式で標準入力から与えられる。\nN\r\nA_1 A_2 \\dots A_N\r\n出力\n問題文中の条件を満たす連続部分列が存在しないならば -1 と出力せよ。存在するならば、そのようなもののうち最も短いものの長さを出力せよ。",
+    "Sample Detail": [
+        {
+            "input": "5\n3 9 5 3 1\n",
+            "output": "4\n",
+            "explanation": "(3,9,5,3) と (3,9,5,3,1) が条件を満たします。短いのは (3,9,5,3) で、その長さは 4 です。",
+            "images": []
+        },
+        {
+            "input": "4\n2 5 3 1\n",
+            "output": "-1\n",
+            "explanation": "条件を満たす連続部分列は存在しません。",
+            "images": []
+        },
+        {
+            "input": "10\n1 1 2 3 5 8 13 21 34 55\n",
+            "output": "2\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "jp"
+}

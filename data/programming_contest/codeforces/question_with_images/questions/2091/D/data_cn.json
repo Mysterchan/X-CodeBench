@@ -1,0 +1,25 @@
+{
+    "Title": "Codeforces Round 1013 (Div. 3)",
+    "Source": "codeforces",
+    "Name": "Place of the Olympiad",
+    "Time Limit": "1 s",
+    "Memory Limit": "256 mb",
+    "Problem Statement": "對於 IT Campus \"NEIMARK\" 首屆奧林匹克的決賽，準備了一個矩形場地。你可以假設場地被劃分為 $n$ 行，每行包含 $m$ 個參賽者桌子的空位。總共有 $k$ 名參賽者已經註冊參加決賽，每位參賽者將坐在一個獨立的桌子上。現在，組織委員會必須選擇場地中桌子的擺放位置。\n每個桌子佔用一行中的 $m$ 個空位之一。此外，如果幾個桌子佔用同一行中的連續空位，我們稱這樣的一組桌子為一個長椅，組中的桌子數量就是長椅的長度。例如，在一個 $3 \\times 4$ 的場地上（$n = 3, m = 4$）安排 $7$ 名參賽者可以如下所示：![image](1.png) \n在上圖中，第一行有一個長椅，長度為 $3$，第二行有一個長椅，長度為 $2$，第三行有兩個長椅，長度為 $1$。\n組織委員會希望選擇位置，使得最長長椅的長度儘可能小。特別地，這 $7$ 個桌子可以以更優化的方式安排，使得所有長椅的長度不超過 $2$：![image](2.png) \n給定整數 $n$、$m$ 和 $k$，確定最長長椅的最小可能長度。",
+    "Statement Images": [
+        "https://espresso.codeforces.com/317328659933bccf6e074c99dc79c48007f8590a.png",
+        "https://espresso.codeforces.com/866854af56de91f98d6d3f7bc454c49515587b2f.png"
+    ],
+    "Constraints": "Time limit: 1 s\nMemory limit: 256 mb",
+    "IO Styles": "輸入\n每個測試包含多個測試案例。第一行包含測試案例的數量 $t$ ($1 ≤ t ≤ 10^4$)。接下來是測試案例的描述。\n每個測試案例的單行包含三個正整數——$n$、$m$、$k$ ($1 ≤ n, m, k ≤ 10^9$，$k ≤ n\\cdot m$)。\n\n輸出\n對於每個測試案例，輸出一個數字——最長長椅的最小可能長度。",
+    "Sample Detail": [
+        {
+            "input": "5\n3 4 7\n5 5 5\n1 13 2\n2 4 7\n1 5 4",
+            "output": "2\n1\n1\n4\n2",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Notes": "請提供您希望翻譯的英文內容。",
+    "Note Images": [],
+    "Language": "cn"
+}

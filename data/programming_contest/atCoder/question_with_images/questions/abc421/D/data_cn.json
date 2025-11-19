@@ -1,0 +1,40 @@
+{
+    "Title": "AtCoder Beginner Contest 421",
+    "Source": "atcoder",
+    "Name": "RLE Moving",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "有一個無限大的網格。網格中的一個格子稱為格子 (0,0)。位於格子 (0,0) 向下 r 個格子和向右 c 個格子的格子稱為格子 (r,c)。這裡，“向下 r 個格子”意指當 r 為負時為“向上 |r| 個格子”，而“向右 c 個格子”意指當 c 為負時為“向左 |c| 個格子”。具體而言，格子 (0,0) 周圍的格子如下所示：\n![image](1.png)\n起初，Takahashi 位於格子 (R_t,C_t)，而 Aoki 位於格子 (R_a,C_a)。他們將根據長度為 N 的字符串 S 和 T 各自進行 N 次移動，這些字符串由字符 U、D、L、R 組成。\n對於每個 i，Takahashi 和 Aoki 的第 i 次移動是同時進行的：如果 S 的第 i 個字符是 U，Takahashi 就向上移動一個格子；如果是 D，則向下；如果是 L，則向左；如果是 R，則向右；Aoki 也根據 T 的第 i 個字符進行類似的移動。\n請找出在 N 次移動中，Takahashi 和 Aoki 在每次移動後立即位於相同格子的次數。由於 N 非常大，S 和 T 的表示形式為((S'_1, A_1),...,(S'_M,A_M))和((T'_1,B_1),...,(T'_L,B_L))，其中 S 是按此順序連接“A_1 次字符 S'_1，...，A_M 次字符 S'_M”所得到的字符串，T 以類似方式給出。",
+    "Statement Images": [
+        "https://img.atcoder.jp/abc421/550057ef5ef7d5545bf82cc405541482.png"
+    ],
+    "Constraints": "- -10^9 ≤ R_t,C_t,R_a,C_a ≤ 10^9\n- 1 ≤ N ≤ 10^{14}\n- 1 ≤ M,L ≤ 10^5\n- 每個 S'_i 和 T'_i 是 U、D、L、R 其中之一。\n- 1 ≤ A_i,B_i ≤ 10^9\n- A_1+\\dots+A_M=B_1+\\dots+B_L=N\n- 所有給定值均為整數。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nR_t C_t R_a C_a\nN M L\nS'_1 A_1\n\\vdots\nS'_M A_M\nT'_1 B_1\n\\vdots\nT'_L B_L\n輸出\n輸出答案。",
+    "Sample Detail": [
+        {
+            "input": "0 0 4 2\n3 2 1\nR 2\nD 1\nU 3\n",
+            "output": "1\n",
+            "explanation": "在這種情況下，S= RRD 和 T= UUU，移動過程如下：\n\n- 初始時，Takahashi 在（0,0）單元格，Aoki 在（4,2）單元格。\n- 第一次移動後，Takahashi 在（0,1）單元格，Aoki 在（3,2）單元格。\n- 第二次移動後，Takahashi 在（0,2）單元格，Aoki 在（2,2）單元格。\n- 第三次移動後，Takahashi 在（1,2）單元格，Aoki 在（1,2）單元格。\n\n因此，Takahashi 和 Aoki 在移動後立即處於相同單元格的次數為 1。",
+            "images": []
+        },
+        {
+            "input": "1000000000 1000000000 -1000000000 -1000000000\n3000000000 3 3\nL 1000000000\nU 1000000000\nU 1000000000\nD 1000000000\nR 1000000000\nU 1000000000\n",
+            "output": "1000000001\n",
+            "explanation": "從第 2000000000 步到第 3000000000 步，Takahashi 和 Aoki 在每次移動後立即在同一格出現了 1000000001 次。",
+            "images": []
+        },
+        {
+            "input": "3 3 3 2\n1 1 1\nL 1\nR 1\n",
+            "output": "0\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "0 0 0 0\n1 1 1\nL 1\nR 1\n",
+            "output": "0\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

@@ -1,0 +1,41 @@
+{
+    "Title": "AtCoder Beginner Contest 395",
+    "Source": "atcoder",
+    "Name": "Smooth Occlusion",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "Takahashi has 2N teeth: N upper teeth and N lower teeth.\nThe length of the i-th upper tooth from the left (1 ≤ i ≤ N) is U _ i, and the length of the i-th lower tooth from the left (1 ≤ i ≤ N) is D _ i.\nHis teeth are said to “fit together well” if both of the following conditions are satisfied:\n- There exists an integer H such that U _ i + D _ i = H for every integer i with 1 ≤ i ≤ N.\n- \\lvert U _ i - U _ {i+1} \\rvert ≤ X for every integer i with 1 ≤ i < N.\nHe can perform the following operation any number of times:\n- Pay 1 yen to use a tooth-grinding machine, choose exactly one tooth whose length is positive, and reduce its length by 1.\nNo other method may be used to change the lengths of the teeth.\nFind the minimum total amount of money he needs to pay to make his teeth fit together well.",
+    "Statement Images": [],
+    "Constraints": "- 2 ≤ N ≤ 2 \\times 10^5\n- 1 ≤ U _ i ≤ 10^9 \\ (1 ≤ i ≤ N)\n- 1 ≤ D _ i ≤ 10^9 \\ (1 ≤ i ≤ N)\n- 1 ≤ X ≤ 10^9\n- All input values are integers.",
+    "IO Styles": "Input\nThe input is given from Standard Input in the following format:\nN X\r\nU _ 1 D _ 1\r\nU _ 2 D _ 2\r\n\\vdots\r\nU _ N D _ N\r\nOutput\nPrint the answer.",
+    "Sample Detail": [
+        {
+            "input": "4 3\n3 1\n4 1\n5 9\n2 6\n",
+            "output": "15\n",
+            "explanation": "Initially, Takahashi’s teeth have the following lengths:\n\n![image](1.png)\n\nFor example, you can make them fit together well in the following way:\n\n![image](2.png)\n\nIt costs 15 yen to achieve these lengths.\n\nIt is impossible to make them fit together well with 14 yen or less, so print 15.",
+            "images": [
+                "https://img.atcoder.jp/abc395/37264cf2f8fbc7d9e0f698b6181c804e.png",
+                "https://img.atcoder.jp/abc395/eeb6b57fa9d9b6577f264baba37644c5.png"
+            ]
+        },
+        {
+            "input": "4 1000000000\n3 3\n3 3\n3 3\n3 3\n",
+            "output": "0\n",
+            "explanation": "It is possible that the teeth already fit together well without any changes.",
+            "images": []
+        },
+        {
+            "input": "4 1\n1000000000 1000000000\n1000000000 1000000000\n1000000000 1000000000\n1 1\n",
+            "output": "5999999994\n",
+            "explanation": "Note that the answer may exceed the 32-bit integer range.",
+            "images": []
+        },
+        {
+            "input": "15 128\n748 169\n586 329\n972 529\n432 519\n408 587\n138 249\n656 114\n632 299\n984 755\n404 772\n155 506\n832 854\n353 465\n387 374\n567 385\n",
+            "output": "9460\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "en"
+}

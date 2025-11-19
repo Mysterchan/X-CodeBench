@@ -1,0 +1,55 @@
+I need to trace through this code step by step to find the output.
+
+Let me understand the code first:
+- It's solving for the number of ways to choose K walls to demolish such that there's a path from top-left to bottom-right
+- The code uses combinatorics and handles different cases based on K
+- MOD = 998244353
+
+Let me trace through each test case:
+
+**Test case 1: h=2, w=2, k=1**
+- b = comb(2+2-2, 2-1) = comb(2, 1) = 2
+- r = 2*(2-1) + (2-1)*2 - (2+2-2) = 2*1 + 1*2 - 2 = 2 + 2 - 2 = 2
+- k=1, h+w-2=2, so k < h+w-2? 1 < 2? YES
+- Output: 0
+
+**Test case 2: h=2, w=2, k=3**
+- b = 2, r = 2 (same as above)
+- k=3, h+w-2=2, so k < h+w-2? NO. k == h+w-2? NO. k == h+w-1? 3 == 3? YES
+- Output: b * r % mod = 2 * 2 % 998244353 = 4
+
+**Test case 3: h=2, w=2, k=2**
+- b = 2, r = 2
+- k=2, h+w-2=2, so k < h+w-2? NO. k == h+w-2? 2 == 2? YES
+- Output: b = 2
+
+**Test case 4: h=2, w=2, k=4**
+- b = 2, r = 2
+- k=4, h+w-2=2, so k < h+w-2? NO. k == h+w-2? NO. k == h+w-1? 4 == 3? NO
+- else branch:
+  - term1 = (2 * 2 * (2-1) * inv2 - comb(2+2-4, 2-2) * (2+2-3)) % mod
+  - term1 = (4 * 1 * inv2 - comb(0, 0) * 1) % mod
+  - inv2 = pow(2, -1, 998244353) = 499122177
+  - term1 = (4 * 499122177 - 1 * 1) % mod = (1996488708 - 1) % mod = 1996488707 % 998244353 = 2 - 1 = 1
+  - term2 = comb(2+2-2, 2-3) * (2-1) % mod = comb(2, -1) * 1 % mod = 0 * 1 = 0
+  - term3 = comb(2+2-2, 2-3) * (2-1) % mod = comb(2, -1) * 1 % mod = 0
+- Output: (1 + 0 + 0) % mod = 1
+
+**Test case 5: h=200000, w=200000, k=400000**
+- b = comb(399998, 199999)
+- r = 200000*199999 + 199999*200000 - 399998 = 2*200000*199999 - 399998
+- k=400000, h+w-2=399998, so k < h+w-2? NO. k == h+w-2? NO. k == h+w-1? 400000 == 399999? NO
+- else branch with large numbers - need to compute modulo 998244353
+
+**Test case 6: h=2, w=203, k=203**
+- b = comb(2+203-2, 2-1) = comb(203, 1) = 203
+- r = 2*202 + 1*203 - 203 = 404 + 203 - 203 = 404
+- k=203, h+w-2=203, so k < h+w-2? NO. k == h+w-2? 203 == 203? YES
+- Output: b = 203
+
+0
+4
+2
+1
+499122177
+203

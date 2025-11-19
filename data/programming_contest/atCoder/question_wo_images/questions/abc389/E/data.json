@@ -1,0 +1,26 @@
+{
+    "Title": "Toyota Programming Contest  2025（AtCoder Beginner Contest 389)",
+    "Source": "atcoder",
+    "Name": "Square Price",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "There are N types of products, each having 10^{100} units in stock.\nYou can buy any non-negative number of units of each product. To buy k units of the i-th product, it costs k^2 P_i yen.\nIf your total purchase cost is at most M yen, what is the maximum number of units you can buy in total?",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ N ≤ 2 \\times 10^{5}\n- 1 ≤ M ≤ 10^{18}\n- 1 ≤ P_i ≤ 2 \\times 10^{9}\n- All input values are integers.",
+    "IO Styles": "Input\nThe input is given from Standard Input in the following format:\nN M\r\nP_1 ... P_N\r\nOutput\nPrint the answer.",
+    "Sample Detail": [
+        {
+            "input": "3 9\n4 1 9\n",
+            "output": "3\n",
+            "explanation": "If you buy one unit of the 1st product and two units of the 2nd product, the total purchase cost is 1^2 \\times 4 + 2^2 \\times 1 = 8. It is impossible to buy four or more units in total with a total cost of at most 9 yen, so the answer is 3.",
+            "images": []
+        },
+        {
+            "input": "10 1000\n2 15 6 5 12 1 7 9 17 2\n",
+            "output": "53\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "en"
+}

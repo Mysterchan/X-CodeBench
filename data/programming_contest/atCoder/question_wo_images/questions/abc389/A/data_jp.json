@@ -1,0 +1,26 @@
+{
+    "Title": "トヨタ自動車プログラミングコンテスト2025（AtCoder Beginner Contest 389）",
+    "Source": "atcoder",
+    "Name": "9x9",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "1 文字目が数字、2 文字目が文字 x、3 文字目が数字であるような 3 文字の文字列 S が与えられます。\nS の 2 つの数の積を求めてください。",
+    "Statement Images": [],
+    "Constraints": "- S は 1 文字目が 1 以上 9 以下の整数、2 文字目が文字 x、3 文字目が 1 以上 9 以下の整数であるような 3 文字の文字列",
+    "IO Styles": "入力\n入力は以下の形式で標準入力から与えられる。\nS\n出力\n答えを整数として出力せよ。",
+    "Sample Detail": [
+        {
+            "input": "3x8\n",
+            "output": "24\n",
+            "explanation": "3 \\times 8 = 24 より、24 を出力します。",
+            "images": []
+        },
+        {
+            "input": "9x9\n",
+            "output": "81\n",
+            "explanation": "9 \\times 9 = 81 より、81 を出力します。",
+            "images": []
+        }
+    ],
+    "Language": "jp"
+}

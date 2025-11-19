@@ -1,0 +1,11 @@
+{
+    "url": "https://stackoverflow.com/questions/55586912/seaborn-catplot-set-values-over-the-bars",
+    "source": "stackoverflow",
+    "title": "Seaborn Catplot set values over the bars",
+    "Description": "The intended visualization is a bar plot displaying income data for different geographical areas across multiple years, with the income values represented in 'K' notation (e.g., 48.4K). The values should be placed on top of each bar. Currently, the income values are not displayed above the bars. The expected graph shows these values clearly labeled at the top of each bar, formatted in 'K', enhancing the readability of the data.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "seaborn",
+        "data-visualization"
+    ]
+}

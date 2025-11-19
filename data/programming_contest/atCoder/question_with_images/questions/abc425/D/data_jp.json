@@ -1,0 +1,34 @@
+{
+    "Title": "ユニークビジョンプログラミングコンテスト2025 秋（AtCoder Beginner Contest 425）",
+    "Source": "atcoder",
+    "Name": "Ulam-Warburton Automaton",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "H 行 W 列のマス目があります。上から i 行目 (1≤ i≤ H)、左から j 列目 (1≤ j≤ W) のマスをマス (i,j) と呼ぶことにします。\nはじめ、マス (i,j) は S_{i,j} が # のとき黒、. のとき白で塗られています。\n以下の操作を 10^{100} 回行います。\n- 白で塗られているマスであって、そのマスに辺で隣接するマスのうちちょうど 1 つが黒で塗られているようなマスの集合を T とする。T の各マスに対して、そのマスを黒で塗る。ただし、2 つのマス (i_1,j_1),(i_2,j_2) が辺で隣接するとは、 |i_1-i_2|+|j_1-j_2|=1 であることをいう。\nすべての操作が終わったあとに黒く塗られているマスの個数を求めてください。",
+    "Statement Images": [],
+    "Constraints": "- 2≤ H,W\n- HW≤ 3\\times 10^5\n- H,W は整数\n- S_{i,j} は # または .",
+    "IO Styles": "入力\n入力は以下の形式で標準入力から与えられる。\nH W\r\nS_{1,1}S_{1,2}... S_{1,W}\r\nS_{2,1}S_{2,2}... S_{2,W}\r\n\\vdots\r\nS_{H,1}S_{H,2}... S_{H,W}\r\n出力\n答えを出力せよ。",
+    "Sample Detail": [
+        {
+            "input": "9 9\n.........\n.........\n.........\n.........\n....#....\n.........\n.........\n.........\n.........\n",
+            "output": "57\n",
+            "explanation": "操作によってマス目は以下のように変化します。（上の数字は操作回数を表しており、10 回目の操作後まで表示しています。）\n\n![image](1.png)![image](2.png)![image](3.png)![image](4.png)![image](5.png)![image](6.png)![image](7.png)![image](8.png)![image](9.png)![image](10.png)![image](11.png)\n\n最終的に黒く塗られたマスは 57 個です。",
+            "images": [
+                "https://img.atcoder.jp/abc425/66c86ae7efa44c7545e6db9451921205.gif"
+            ]
+        },
+        {
+            "input": "2 2\n..\n..\n",
+            "output": "0\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "10 10\n..........\n....#.....\n#.......#.\n......#...\n.......#..\n.....#....\n..........\n..........\n..#...#...\n.......#..\n",
+            "output": "64\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "jp"
+}

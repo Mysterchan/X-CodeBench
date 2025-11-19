@@ -1,0 +1,26 @@
+{
+    "Title": "HHKB Programming Contest 2025(AtCoder Beginner Contest 388)",
+    "Source": "atcoder",
+    "Name": "?UPC",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "You are given a string S. Here, the first character of S is an uppercase English letter, and the second and subsequent characters are lowercase English letters.\nPrint the string formed by concatenating the first character of S and UPC in this order.",
+    "Statement Images": [],
+    "Constraints": "- S is a string of length between 1 and 100, inclusive.\n- The first character of S is an uppercase English letter.\n- The second and subsequent characters of S are lowercase English letters.",
+    "IO Styles": "Input\nThe input is given from Standard Input in the following format:\nS\r\nOutput\nPrint the string formed by concatenating the first character of S and UPC in this order.",
+    "Sample Detail": [
+        {
+            "input": "Kyoto\n",
+            "output": "KUPC\n",
+            "explanation": "The first character of Kyoto is K, so concatenate K and UPC, and print KUPC.",
+            "images": []
+        },
+        {
+            "input": "Tohoku\n",
+            "output": "TUPC\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "en"
+}

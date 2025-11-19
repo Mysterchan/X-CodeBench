@@ -1,0 +1,11 @@
+{
+    "url": "https://github.com/matplotlib/matplotlib/issues/24549",
+    "source": "github",
+    "title": "[Bug]: Setting set_xscale(\"symlog\") has different behavior depending on value range",
+    "Description": "The current graph is intended to display a scatter plot with both axes set to \"symlog\" scale. However, when using a small range of values (0 to 1), the plot does not exhibit the expected \"symlog\" scale behavior, resulting in unclear visualization. For larger ranges (0 to 1000), the \"symlog\" scale appears to function as intended. The expected behavior is for the \"symlog\" scale to be effective and visible even within smaller ranges of values.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "matplotlib",
+        "data-visualization"
+    ]
+}

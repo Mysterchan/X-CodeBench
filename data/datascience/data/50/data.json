@@ -1,0 +1,11 @@
+{
+    "url": "https://stackoverflow.com/questions/63071539/how-to-control-white-space-between-bars-in-seaborn-bar-plots",
+    "source": "stackoverflow",
+    "title": "How to control white space between bars in seaborn bar plots?",
+    "Description": "The current bar plot visualizes age data for male (blue) and female (orange) groups but lacks sufficient whitespace between the bars for males and females, making them appear crowded. The desired output should show increased spacing between the blue male bars and the adjacent orange female bars, providing clearer separation in the visualization.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "seaborn",
+        "data-visualization"
+    ]
+}

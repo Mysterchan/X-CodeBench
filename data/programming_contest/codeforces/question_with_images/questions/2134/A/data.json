@@ -1,0 +1,25 @@
+{
+    "Title": "Codeforces Round 1045 (Div. 2)",
+    "Source": "codeforces",
+    "Name": "Painting With Two Colors",
+    "Time Limit": "1 s",
+    "Memory Limit": "256 mb",
+    "Problem Statement": "You are given three positive integers $n$, $a$, and $b$ ($1≤ a,b ≤ n$).\nConsider a row of $n$ cells, initially all white and indexed from $1$ to $n$. You will perform the following two steps in order: - Choose an integer $x$ such that $1 ≤ x ≤ n - a + 1$, and paint the $a$ consecutive cells $x, x+1, ..., x+a-1$ red. - Choose an integer $y$ such that $1 ≤ y ≤ n - b + 1$, and paint the $b$ consecutive cells $y, y+1, ..., y+b-1$ blue. \nIf a cell is painted both red and blue, its final color is blue.\nA coloring of the grid is considered symmetric if, for every integer $i$ from $1$ to $n$ (inclusive), the color of cell $i$ is the same as the color of cell $(n+1-i)$. Your task is to determine whether there exist integers $x$ and $y$ such that the final coloring of the grid is symmetric.",
+    "Statement Images": [],
+    "Constraints": "Time limit: 1 s\nMemory limit: 256 mb",
+    "IO Styles": "Input\nEach test contains multiple test cases. The first line contains the number of test cases $t$ ($1 ≤ t ≤ 500$). The description of the test cases follows. \nThe first and the only line of each test case contains three integers $n$, $a$, and $b$ ($1 ≤ n ≤ 10^9$, $1 ≤ a,b ≤ n$) — the number of cells of the grid and the number of cells to be painted in each step.\nOutput\nFor each testcase, output \"YES\" if it is possible that the final coloring of the grid is symmetric; otherwise, output \"NO\".\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.",
+    "Sample Detail": [
+        {
+            "input": "7\n5 3 1\n4 1 2\n7 7 4\n8 3 7\n1 1 1\n1000000000 1000000000 1000000000\n3 2 1",
+            "output": "YES\nYES\nNO\nNO\nYES\nYES\nNO",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Notes": "Note\nIn the first test case, the grid becomes symmetric when choosing $x = 2$ and $y = 3$, so the answer is \"YES\". The following figure illustrates each step of the coloring process: ![image](1.png) \nIn the second test case, the grid becomes symmetric when choosing $x = 2$ and $y = 2$, so the answer is \"YES\". The following figure illustrates each step of the coloring process: ![image](2.png) \nIn the third and fourth test cases, it can be proved that no choice of $x$ and $y$ results in a symmetric grid, so the answer is \"NO\".",
+    "Note Images": [
+        "https://espresso.codeforces.com/49b5127f3ce78dd6088ae912c84849f1627365f9.png",
+        "https://espresso.codeforces.com/bc5bb23e8338ec0254fa51d7d8fddd12c7074f66.png"
+    ],
+    "Language": "en"
+}

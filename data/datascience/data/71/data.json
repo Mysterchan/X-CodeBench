@@ -1,0 +1,11 @@
+{
+    "url": "https://stackoverflow.com/questions/60955246/draw-a-vertical-line-on-seaborn-jointplot",
+    "source": "stackoverflow",
+    "title": "Draw a vertical line on Seaborn Joint Plot",
+    "Description": "The intended visualization is a Seaborn Joint Plot displaying a kernel density estimate (KDE) with a vertical dashed line at x=0. The axes should be set to xlim=(-0.75, 1.25) and ylim=(-0.75, 1.25). The current implementation results in either an error indicating that 'ax' is not iterable, or it produces two separate plots instead of the desired single plot. The expected appearance includes the joint plot correctly showing the KDE along with the vertical dashed line, clearly marked at x=0.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "seaborn",
+        "data-visualization"
+    ]
+}

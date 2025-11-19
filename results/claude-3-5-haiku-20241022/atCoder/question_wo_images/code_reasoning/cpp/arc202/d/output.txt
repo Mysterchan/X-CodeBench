@@ -1,0 +1,1 @@
+ans = sum over i=0 to 3: ((3-i) % 2 ? -1 : 1) * C(3,i) * f[i] * g[i]

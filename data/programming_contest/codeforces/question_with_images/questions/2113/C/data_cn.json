@@ -1,0 +1,26 @@
+{
+    "Title": "Codeforces Round 1031 (Div. 2)",
+    "Source": "codeforces",
+    "Name": "Smilo and Minecraft",
+    "Time Limit": "2 s",
+    "Memory Limit": "256 mb",
+    "Problem Statement": "男孩斯米洛正在玩 Minecraft！為了準備與龍的戰鬥，他需要很多金蘋果，而這需要大量的金子。因此，斯米洛前往礦坑。\n礦坑是一個大小為 $n \\times m$ 的矩形網格，每個單元格可以是金礦石、石頭或空單元格。斯米洛可以在任何空單元格中引爆炸藥。當炸藥在坐標 $(x, y)$ 的空單元格中爆炸時，所有位於以單元格 $(x, y)$ 為中心的邊長為 $2k + 1$ 的正方形內的單元格將變成空的。如果金礦石位於該正方形的內部（不在邊界上），則它會消失。然而，如果金礦石在該正方形的邊界上，斯米洛則可收集該金子。\n炸藥只能在礦坑內引爆，但爆炸正方形可以延伸超出礦坑的邊界。\n確定斯米洛可以收集到的最大金子量。",
+    "Statement Images": [],
+    "Constraints": "Time limit: 2 s\nMemory limit: 256 mb",
+    "IO Styles": "輸入\n每個測試包含多個測試案例。第一行包含測試案例的數量 $t$ ($1 ≤ t ≤ 10^4$)。接下來是測試案例的描述。\n每個測試案例的第一行包含三個整數 $n$、$m$ 和 $k$ ($1 ≤ n, m, k ≤ 500$) — 行數、列數以及爆炸參數 $k$。\n接下來的 $n$ 行中，每行包含 $m$ 個字符，每個字符為 '.'、'#' 或 'g'，其中 '.' 代表空單元，'#' 代表石頭，'g' 代表金子。保證至少有一個單元是空的。\n保證所有測試案例中 $n \\cdot m$ 的總和不超過 $2.5 \\cdot 10^5$。\n輸出\n對於每個測試案例，輸出一個整數 — 可以獲得的最大金子數量。",
+    "Sample Detail": [
+        {
+            "input": "3\n2 3 1\n#.#\ng.g\n2 3 2\n#.#\ng.g\n3 4 2\n.gg.\ng..#\ng##.",
+            "output": "2\n0\n4",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Notes": "注意\n在第一個測試案例中，Smilo 可以在任何空的格子中引爆炸藥並獲得 $2$ 金幣：![image](1.png)  \n在第二個測試案例中，不論 Smilo 怎麼做，都無法獲得任何金幣：![image](2.png)  \n在第三個測試案例中，可以在右下角引爆炸藥以獲得 $2$ 金幣，然後再向左引爆一格以獲得剩下的 $2$ 金幣：![image](3.png)",
+    "Note Images": [
+        "https://espresso.codeforces.com/8d84438b7b95b71aaa30d080d90a75329fdadcac.png",
+        "https://espresso.codeforces.com/98712070a6a4b0c65db7542b15f57d61ae19e48e.png",
+        "https://espresso.codeforces.com/b781559838668a5220fc0c077b93d684cd0ee5ec.png"
+    ],
+    "Language": "cn"
+}

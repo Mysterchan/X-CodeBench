@@ -1,0 +1,11 @@
+{
+    "url": "https://stackoverflow.com/questions/67253174/how-to-set-space-between-the-axis-and-the-label",
+    "source": "stackoverflow",
+    "title": "How to set space between the axis and the label",
+    "Description": "The plot should feature appropriately spaced labels for both the x-axis ('X') and y-axis ('Y'). Currently, the y-axis label 'Y' is touching the y-axis itself, while there is an excessive gap between the x-axis label 'X' and the x-axis. The desired outcome is to have consistent spacing between the axes and their respective labels to improve readability.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "matplotlib",
+        "data-visualization"
+    ]
+}

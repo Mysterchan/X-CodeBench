@@ -1,0 +1,27 @@
+{
+    "Title": "AtCoder Regular Contest 196 (Div. 1)",
+    "Source": "atcoder",
+    "Name": "Torus Loop",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "有一個包含 H 行和 W 列的網格。  \n行從上到下標記為 0, 1, ..., H-1，列從左到右標記為 0, 1, ..., W-1。  \n令 (i,j) 表示第 i 行和第 j 列的單元格。  \n你被給定了 H 個字符串 S_0, S_1, ..., S_{H-1}，每個字符串的長度為 W，並由 A 和 B 組成。  \n在每個單元格中，放置了以下兩種瓷磚之一。  \n令 S_{ij} 表示字符串 S_i 的 (j+1)-th 字符 (0 ≤ j ≤ W-1)。放置在單元格 (i,j) 中的瓷磚類型為 S_{ij}。  \n- 類型 A：在瓷磚的表面上畫一條線段，連接兩個相鄰邊的中點。  \n![image](1.png)  \n- 類型 B：在瓷磚的表面上畫一條線段，連接兩個相對邊的中點。  \n![image](2.png)  \n這些瓷磚可以自由旋轉。僅考慮線段形成的圖案，類型 A 瓷磚有四種旋轉方式，類型 B 瓷磚有兩種旋轉方式。因此，如果僅根據線段的圖案來區分放置，則放置瓷磚的方式數量為 4^a × 2^b，其中 a 是類型 A 瓷磚的數量，b 是類型 B 瓷磚的數量。  \n在這些方式中，輸出當線段在瓷磚上觀看網格作為一個環面時沒有死角的方式數，並對 998244353 取模。  \n當且僅當每個單元格 (i,j) 滿足以下兩個條件時，稱「瓷磚上的線段在查看網格作為環面時沒有死角」：  \n- 下面兩者存在，或下面兩者都不存在：\n  - 在單元格 (i,j) 中繪製的線段，其端點是該單元格 (i,j) 的右邊緣的中點\n  - 在單元格 (i,(j+1) \\bmod W) 中繪製的線段，其端點是該單元格 (i,(j+1) \\bmod W) 的左邊緣的中點\n- 下面兩者存在，或下面兩者都不存在：\n  - 在單元格 (i,j) 中繪製的線段，其端點是該單元格 (i,j) 的下邊緣的中點\n  - 在單元格 ((i+1) \\bmod H,j) 中繪製的線段，其端點是該單元格 ((i+1) \\bmod H,j) 的上邊緣的中點  \n例如，以下放置滿足條件：  \n![image](3.png)  \n以下放置不滿足條件。具體來說，雖然在單元格 (0,2) 中沒有線段的端點在瓷磚右邊緣的中點，但在單元格 (0,0) 中有一條線段的端點在瓷磚左邊緣的中點，因此條件不滿足。  \n![image](4.png)  \n你將獲得 T 個測試案例；解決每一個。",
+    "Statement Images": [
+        "https://img.atcoder.jp/arc196/A.png",
+        "https://img.atcoder.jp/arc196/B.png",
+        "https://img.atcoder.jp/arc196/ok.png",
+        "https://img.atcoder.jp/arc196/ng.png"
+    ],
+    "Constraints": "- 1 ≤ T ≤ 10^5\n- 2 ≤ H,W\n- HW ≤ 10^6\n- S_i (0 ≤ i ≤ H-1) 是由 A 和 B 組成的長度為 W 的字串。\n- 所有測試案例中 H W 的總和最多為 10^6。\n- T、H 和 W 為整數。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nT\ncase_1\ncase_2\n\\vdots\ncase_T\n每個案例的格式如下：\nH W\nS_0\nS_1\n\\vdots\nS_{H-1}\n\n輸出\n對於每個測試案例，打印滿足條件的排列數，取模 998244353，並在單獨的行上輸出。",
+    "Sample Detail": [
+        {
+            "input": "3\n3 3\nAAB\nAAB\nBBB\n3 3\nBBA\nABA\nAAB\n3 4\nBAAB\nBABA\nBBAA\n",
+            "output": "2\n0\n2\n",
+            "explanation": "一個有效的放置方式在第一個測試案例中顯示於下圖：\n\n![image](5.png)",
+            "images": [
+                "https://img.atcoder.jp/arc196/sample.png"
+            ]
+        }
+    ],
+    "Language": "cn"
+}

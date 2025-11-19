@@ -1,0 +1,25 @@
+{
+    "Title": "Codeforces Round 1031 (Div. 2)",
+    "Source": "codeforces",
+    "Name": "Good Start",
+    "Time Limit": "1 s",
+    "Memory Limit": "256 mb",
+    "Problem Statement": "屋頂是一個大小為 $w \\times h$ 的矩形，其左下角在平面上的點 $(0, 0)$。您的團隊需要完全用相同大小的屋頂板（尺寸為 $a \\times b$）覆蓋這個屋頂，需遵循以下條件：\n- 板材不能旋轉（即使旋轉 $90^\\circ$ 也不行）。\n- 板材不能重疊（但可以在邊緣相接）。\n- 板材可以延伸超出矩形屋頂的邊界。\n\n您團隊的一名新手已經將兩片這樣的板材放置在屋頂上，使得這些板材不重疊，而且每片都部分覆蓋了屋頂。\n\n您的任務是判斷在不移除已放置的兩片板材的情況下，是否能夠完全鋪滿屋頂。",
+    "Statement Images": [],
+    "Constraints": "Time limit: 1 s\nMemory limit: 256 mb",
+    "IO Styles": "輸入\n每個測試包含多個測試案例。第一行包含測試案例的數量 $t$ ($1 ≤ t ≤ 10^4$)。接下來是測試案例的描述。\n每個測試案例的第一行包含四個整數 $w$, $h$, $a$, 和 $b$ ($1 ≤ w, h, a, b ≤ 10^9$) — 屋頂的尺寸和屋頂材料的尺寸。\n每個測試案例的第二行包含四個整數 $x_1$, $y_1$, $x_2$, 和 $y_2$ ($-a + 1 ≤ x_1, x_2 ≤ w - 1, -b + 1 ≤ y_1, y_2 ≤ h - 1$) — 已經放置的屋頂材料的左下角坐標。保證這些屋頂材料沒有重疊。\n輸出\n對於每個測試案例，若能在不移動已放置的兩塊屋頂材料的情況下完全覆蓋屋頂，則輸出 \"Yes\"（不包含引號）；否則輸出 \"No\"。你可以以任何形式輸出答案（大寫或小寫）。例如，字符串 \"yEs\", \"yes\", \"Yes\", 和 \"YES\" 都會被視為正確答案。",
+    "Sample Detail": [
+        {
+            "input": "7\n6 5 2 3\n-1 -2 5 4\n4 4 2 2\n0 0 3 1\n10 9 3 2\n0 0 4 3\n10 9 3 2\n0 0 6 3\n5 5 2 2\n-1 -1 4 -1\n5 5 2 2\n-1 -1 2 3\n7 8 2 4\n0 0 0 5",
+            "output": "Yes\nNo\nNo\nYes\nNo\nYes\nNo",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Notes": "注意\n在第一個測試案例中，可以如下添加 $8$ 片屋頂瓦片：![image](1.png) \n在第二個測試案例中，完全鋪滿屋頂是不可能的：![image](2.png)",
+    "Note Images": [
+        "https://espresso.codeforces.com/76a7cc7bc4e86f820c778a0bb385668955eaab01.png",
+        "https://espresso.codeforces.com/7a137282544846beb0e98facae5ddf58e8248fee.png"
+    ],
+    "Language": "cn"
+}

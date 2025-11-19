@@ -1,0 +1,33 @@
+{
+    "Title": "Codeforces Round 1033 (Div. 2) and CodeNite 2025",
+    "Source": "codeforces",
+    "Name": "Square Pool",
+    "Time Limit": "1 s",
+    "Memory Limit": "256 mb",
+    "Problem Statement": "Aryan and Harshith are playing pool in universe AX120 on a fixed square pool table of side $s$ with pockets at its $4$ corners. The corners are situated at $(0,0)$, $(0,s)$, $(s,0)$, and $(s,s)$. In this game variation, $n$ identical balls are placed on the table with integral coordinates such that no ball lies on the edge or corner of the table. Then, they are all simultaneously shot at $10^{100}$ units/sec speed (only at $45$ degrees with the axes).\nIn universe AX120, balls and pockets are almost point-sized, and the collisions are elastic, i.e., the ball, on hitting any surface, bounces off at the same angle and with the same speed. ![image](1.png) \nHarshith shot the balls, and he provided Aryan with the balls' positions and the angles at which he shot them. Help Aryan determine the number of balls potted into the pockets by Harshith.\nIt is guaranteed that multiple collisions do not occur at the same moment and position.",
+    "Statement Images": [
+        "https://espresso.codeforces.com/138ce7bac82674c9a6751e6b772e6f1ef70c54be.png"
+    ],
+    "Constraints": "Time limit: 1 s\nMemory limit: 256 mb",
+    "IO Styles": "Input\nEach test contains multiple test cases. The first line contains the number of test cases $t$ ($1 ≤ t ≤ 1000$). The description of the test cases follows. \nThe first line of each test case contains two integers $n$ and $s$ ($1 ≤ n ≤ 10^3$, $2 ≤ s≤ 10^9$) — the number of balls placed on the table and the side length of the square pool table.\nThe $i$-th of the next $n$ lines contains four integers $d_x$, $d_y$, $x_i$, and $y_i$ ($d_x,d_y \\in \\{-1, 1\\}$, $0 \\lt x_i, y_i \\lt s$) — the direction vectors of the launch on the $X$-axis and $Y$-axis respectively, and the coordinates of the location where the $i$-th ball was placed. It is guaranteed that no two balls coincide at the initial moment.\nIt is also guaranteed that the sum of $n$ over all test cases does not exceed $10^3$.\nOutput\nFor each test case, print a single integer — the number of balls potted in that game.",
+    "Sample Detail": [
+        {
+            "input": "2\n1 2\n1 1 1 1\n5 4\n1 -1 1 1\n1 -1 2 2\n-1 1 2 3\n1 -1 1 3\n-1 1 3 1",
+            "output": "1\n3",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Notes": "Note\nIn the first test case, there is a single ball and it's shot directly towards the pocket at $(2, 2)$, thus potted.\nIn the second test case, the state progresses as ![image](2.png)$\\rightarrow$![image](3.png)  ![image](4.png)$\\rightarrow$![image](5.png)  ![image](6.png)$\\rightarrow$![image](7.png)  ![image](8.png)$\\rightarrow$![image](9.png)",
+    "Note Images": [
+        "https://espresso.codeforces.com/08caa72a3a1dca78c7b776d383163e115a007a64.png",
+        "https://espresso.codeforces.com/0ee2db956c3cabb78b741df2d46b2a401edd7af6.png",
+        "https://espresso.codeforces.com/192e5629c048f70102f1510fb53852f034c5c9ab.png",
+        "https://espresso.codeforces.com/cf4eca33f47ec0df523a2e76beaafd77d334fd4b.png",
+        "https://espresso.codeforces.com/c398799ea9820515ae418be088563c548af518cf.png",
+        "https://espresso.codeforces.com/aa16ba76cf82f97b752cc75a10075f92d4da0b2f.png",
+        "https://espresso.codeforces.com/e89048dcac1951219c611833cebf4efc939150ab.png",
+        "https://espresso.codeforces.com/0f9e2291168b5c051667a7cfdea4c92dbc9cf8e3.png"
+    ],
+    "Language": "en"
+}

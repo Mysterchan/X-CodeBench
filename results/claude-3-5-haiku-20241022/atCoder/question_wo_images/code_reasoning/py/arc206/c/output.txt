@@ -1,0 +1,42 @@
+I need to trace through this code step by step with the given input.
+
+**Input:**
+- n = 3
+- a = [-1, -1, -1]
+
+**Initial state:**
+- dp = [1, 0]
+
+**Iteration i=0 (a[0] = -1):**
+- ndp = [0, 0]
+- Since a[i] == -1:
+  - ndp[1] += dp[1] = 0
+  - ndp[1] += (n-1)*dp[0] = (3-1)*1 = 2
+  - ndp[0] += dp[0] = 1
+- ndp = [1, 2]
+- dp = [1, 2]
+
+**Iteration i=1 (a[1] = -1):**
+- ndp = [0, 0]
+- Since a[i] == -1:
+  - ndp[1] += dp[1] = 2
+  - ndp[1] += (n-1)*dp[0] = (3-1)*1 = 2
+  - ndp[1] = 4
+  - ndp[0] += dp[0] = 1
+- ndp = [1, 4]
+- dp = [1, 4]
+
+**Iteration i=2 (a[2] = -1):**
+- ndp = [0, 0]
+- Since a[i] == -1:
+  - ndp[1] += dp[1] = 4
+  - ndp[1] += (n-1)*dp[0] = (3-1)*1 = 2
+  - ndp[1] = 6
+  - ndp[0] += dp[0] = 1
+- ndp = [1, 6]
+- dp = [1, 6]
+
+**Final calculation:**
+- ans = sum(dp) % mod = (1 + 6) % 998244353 = 7
+
+7

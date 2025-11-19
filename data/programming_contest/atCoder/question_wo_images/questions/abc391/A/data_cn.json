@@ -1,0 +1,26 @@
+{
+    "Title": "AtCoder Beginner Contest 391",
+    "Source": "atcoder",
+    "Name": "Lucky Direction",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "給定一個字串 D，代表八個方向之一（北、東、西、南、東北、西北、東南、西南）。方向與其代表字串之間的對應如下：\n- 北：N\n- 東：E\n- 西：W\n- 南：S\n- 東北：NE\n- 西北：NW\n- 東南：SE\n- 西南：SW\n打印代表與 D 所表示方向相對方向的字串。",
+    "Statement Images": [],
+    "Constraints": "- D 是 N、E、W、S、NE、NW、SE、SW 其中之一。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nD\n輸出\n打印答案。",
+    "Sample Detail": [
+        {
+            "input": "N\n",
+            "output": "S\n",
+            "explanation": "中文：打印 S，表示南方，是與北方相對的方向。",
+            "images": []
+        },
+        {
+            "input": "SE\n",
+            "output": "NW\n",
+            "explanation": "印出 NW，代表西北，與東南方向相對。",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

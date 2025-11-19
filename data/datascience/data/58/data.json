@@ -1,0 +1,11 @@
+{
+    "url": "https://stackoverflow.com/questions/62866029/annotation-as-symbols-on-a-seaborn-heatmap",
+    "source": "stackoverflow",
+    "title": "Annotation as symbols on a seaborn heatmap",
+    "Description": "The heatmap is intended to display annotations as symbols, specifically using '*' to represent the value 1 and a blank space for the value 0. Currently, the heatmap annotations show the numeric values of 1 and 0 instead of the desired symbols. The expected appearance is a heatmap where the cell corresponding to 1 has a '*' symbol, and the cell corresponding to 0 is blank.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "seaborn",
+        "data-visualization"
+    ]
+}

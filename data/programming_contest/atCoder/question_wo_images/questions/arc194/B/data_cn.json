@@ -1,0 +1,32 @@
+{
+    "Title": "AtCoder Regular Contest 194 (Div. 2)",
+    "Source": "atcoder",
+    "Name": "Minimum Cost Sort",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "給定一個排列 P = (P_1, P_2, ..., P_N)，它是 (1, 2, ..., N) 的一個排列。Takahashi 可以重複對 P 執行以下操作（可能執行零次）：\n- 選擇一個滿足 1 ≤ i ≤ N-1 的整數 i。支付成本 i，並交換 P_i 和 P_{i+1}。\n找出將 P 排序為升序所需的最小總成本。",
+    "Statement Images": [],
+    "Constraints": "- 2 ≤ N ≤ 2 \\times 10^5\n- (P_1, P_2, ..., P_N) 是 (1, 2, ..., N) 的一個排列。\n- 所有輸入值都是整數。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nN\nP_1 P_2 ... P_N\n輸出\n打印將 P 排序為升序所需的最小總成本。",
+    "Sample Detail": [
+        {
+            "input": "3\n3 2 1\n",
+            "output": "4\n",
+            "explanation": "高橋可以按照以下方式將 P 按升序排序：\n\n- 支付成本 1，交換 P_1 = 3 和 P_2 = 2。現在，P = (2, 3, 1)。\n- 支付成本 2，交換 P_2 = 3 和 P_3 = 1。現在，P = (2, 1, 3)。\n- 支付成本 1，交換 P_1 = 2 和 P_2 = 1。現在，P = (1, 2, 3)。\n\n這些操作的總成本為 4，這是可能的最小值。",
+            "images": []
+        },
+        {
+            "input": "5\n2 4 1 3 5\n",
+            "output": "6\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "2\n1 2\n",
+            "output": "0\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

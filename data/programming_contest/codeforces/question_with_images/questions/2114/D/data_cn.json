@@ -1,0 +1,25 @@
+{
+    "Title": "Codeforces Round 1027 (Div. 3)",
+    "Source": "codeforces",
+    "Name": "Come a Little Closer",
+    "Time Limit": "2 s",
+    "Memory Limit": "256 mb",
+    "Problem Statement": "遊戲場地是一個大小為 $10^9 \\times 10^9$ 的矩陣，位於第 $a$ 行和第 $b$ 列的單元格表示為 ($a, b$)。\n遊戲場地上有 $n$ 隻怪物，第 $i$ 隻怪物位於單元格 ($x_i, y_i$)，而其他單元格是空的。每個單元格最多只能有一隻怪物。\n你可以將一隻怪物移動到未被其他怪物佔據的任意單元格，最多只能移動一次。\n之後，你必須在場地上選擇一個矩形；所有位於所選矩形內的怪物將被消滅。對於所選矩形中的每個單元格，你必須支付 $1$ 貨幣。\n你的任務是找出消滅所有怪物所需的最小貨幣數。",
+    "Statement Images": [],
+    "Constraints": "Time limit: 2 s\nMemory limit: 256 mb",
+    "IO Styles": "輸入\n第一行包含一個整數 $t$ ($1 ≤ t ≤ 10^4$) — 測試案例的數量。\n每個測試案例的第一行包含一個整數 $n$ ($1 ≤ n ≤ 2 \\cdot 10^5$) — 場上怪物的數量。\n隨後的 $n$ 行包含兩個整數 $x_i$ 和 $y_i$ ($1 ≤ x_i, y_i ≤ 10^9$) — 第 $i$ 隻怪物所在格子的座標。所有的配對 ($x_i, y_i$) 都是不同的。\n保證所有測試案例中的 $n$ 之和不超過 $2 \\cdot 10^5$。\n輸出\n對於每個測試案例，輸出一個整數 — 消滅所有 $n$ 隻怪物的最小成本。",
+    "Sample Detail": [
+        {
+            "input": "7\n3\n1 1\n1 2\n2 1\n5\n1 1\n2 6\n6 4\n3 3\n8 2\n4\n1 1\n1 1000000000\n1000000000 1\n1000000000 1000000000\n1\n1 1\n5\n1 2\n4 2\n4 3\n3 1\n3 2\n3\n1 1\n2 5\n2 2\n4\n4 3\n3 1\n4 4\n1 2",
+            "output": "3\n32\n1000000000000000000\n1\n6\n4\n8",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Notes": "注意\n以下是最佳移動的示例，矩形中的待選單元格以綠色突出顯示。 ![image](1.png) 第一個示例所需的移動。 ![image](2.png) 第五個示例所需的移動。",
+    "Note Images": [
+        "https://espresso.codeforces.com/ca79021ecc5bbc58d3d6d2916618b6655a52f3e2.png",
+        "https://espresso.codeforces.com/90880c3716cbe6421b8cdd5d29f5bcc007286b21.png"
+    ],
+    "Language": "cn"
+}

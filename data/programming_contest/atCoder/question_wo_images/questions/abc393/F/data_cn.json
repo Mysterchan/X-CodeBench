@@ -1,0 +1,26 @@
+{
+    "Title": "AtCoder Beginner Contest 393",
+    "Source": "atcoder",
+    "Name": "Prefix LIS Query",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "給定一個長度為 N 的序列 A = (A_1, A_2, \\dots, A_N)。\n回答 Q 個查詢。第 i 個查詢 (1 ≤ i ≤ Q) 如下：\n- 給定整數 R_i 和 X_i。考慮 (A_1, A_2, \\dots, A_{R_i}) 的一個子序列（不一定是連續的），該子序列是嚴格遞增的並且僅包含最多 X_i 的元素。找出這樣的子序列的最大可能長度。\n保證有 X_i ≥ \\min\\lbrace A_1, A_2,\\dots,A_{R_i} \\rbrace。",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ N,Q ≤ 2 × 10^5\n- 1 ≤ A_i ≤ 10^9\n- 1 ≤ R_i ≤ N\n- \\min\\lbrace A_1, A_2,\\dots,A_{R_i} \\rbrace≤ X_i≤ 10^9\n- 所有輸入值均為整數。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nN Q\nA_1 A_2 \\dots A_N\nR_1 X_1\nR_2 X_2\n\\vdots\nR_Q X_Q\n\n輸出\n輸出 Q 行。第 i 行應包含對第 i 個查詢的答案。",
+    "Sample Detail": [
+        {
+            "input": "5 3\n2 4 1 3 3\n2 5\n5 2\n5 3\n",
+            "output": "2\n1\n2\n",
+            "explanation": "- 第 1 個查詢：對於序列 (2,4)，所有元素都不超過 5 的最長嚴格遞增子序列長度為 2。具體而言，(2,4) 符合條件。\n- 第 2 個查詢：對於序列 (2,4,1,3,3)，所有元素都不超過 2 的最長嚴格遞增子序列長度為 1。具體而言，(2) 和 (1) 符合條件。\n- 第 3 個查詢：對於序列 (2,4,1,3,3)，所有元素都不超過 3 的最長嚴格遞增子序列長度為 2。具體而言，(2,3) 和 (1,3) 符合條件。",
+            "images": []
+        },
+        {
+            "input": "10 8\n2 5 6 5 2 1 7 9 7 2\n7 8\n5 2\n2 3\n2 6\n7 3\n8 9\n9 6\n8 7\n",
+            "output": "4\n1\n1\n2\n1\n5\n3\n4\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

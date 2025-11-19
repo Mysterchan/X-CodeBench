@@ -1,0 +1,11 @@
+{
+    "url": "https://stackoverflow.com/questions/62387538/secondary-x-axis-on-a-seaborn-heatmap",
+    "source": "stackoverflow",
+    "title": "Secondary x-axis on a seaborn heatmap",
+    "Description": "The plot is intended to display a heatmap with an additional x-axis at the top to indicate statistical significance using stars. Currently, the heatmap does not have this extra annotation, making it difficult to mark significant columns. The expected outcome includes asterisks above the heatmap at specified positions for columns 55 and 66, denoting statistical significance.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "seaborn",
+        "data-visualization"
+    ]
+}

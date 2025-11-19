@@ -1,0 +1,32 @@
+{
+    "Title": "AtCoder Beginner Contest 387",
+    "Source": "atcoder",
+    "Name": "Count Arrays",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "給定正整數 N、M，以及長度為 N 的序列 A = (A_1, A_2, \\dots, A_N)，每個元素為介於 1 到 N 之間的整數（包括 1 和 N）。\n找出滿足以下條件的序列 x = (x_1, x_2, \\dots, x_N) 的數量，取模 998244353：\n- 對於每個 i（1 ≤ i ≤ N），都有 x_i ≤ x_{A_i}。",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ N, M ≤ 2025  \n- 1 ≤ A_i ≤ N  \n- 所有輸入值都是整數。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nN M\nA_1 A_2 \\dots A_N\n輸出\n輸出答案。",
+    "Sample Detail": [
+        {
+            "input": "3 3\n2 1 1\n",
+            "output": "6\n",
+            "explanation": "這些序列 x=(1,1,1)，(2,2,1)，(2,2,2)，(3,3,1)，(3,3,2)，(3,3,3) 滿足條件。",
+            "images": []
+        },
+        {
+            "input": "4 9\n1 1 1 1\n",
+            "output": "2025\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "10 5\n9 4 5 5 4 2 1 5 7 2\n",
+            "output": "10010\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

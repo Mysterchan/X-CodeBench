@@ -1,0 +1,26 @@
+{
+    "Title": "Order Capital Round 1 (Codeforces Round 1038, Div. 1 + Div. 2)",
+    "Source": "codeforces",
+    "Name": "Pile Shuffling",
+    "Time Limit": "1 s",
+    "Memory Limit": "256 mb",
+    "Problem Statement": "給定 $n$ 個二進制堆，其中第 $i$ 個堆的頂部有 $a_i$ 個零，底部有 $b_i$ 個一。在一次操作中，你可以從任何堆中取出頂部的元素，並將其移動到任何堆中的任意位置，包括原來的堆。 ![image](1.png) 第一個範例測試案例的解法。計算將第 $i$ 個堆調整為頂部有 $c_i$ 個零和底部有 $d_i$ 個一所需的最小操作次數。",
+    "Statement Images": [
+        "https://espresso.codeforces.com/0db537ae486941d1359d90287005ddee63578545.png"
+    ],
+    "Constraints": "Time limit: 1 s\nMemory limit: 256 mb",
+    "IO Styles": "輸入\n每個測試包含多個測試案例。第一行包含測試案例的數量 $t$ ($1 ≤ t ≤ 10^4$)。測試案例的描述隨之而來。\n每個測試案例的第一行包含一個整數 $n$ ($1 ≤ n ≤ 2 \\cdot 10^5$) — 堆的數量。\n然後接下來 $n$ 行，每行包含四個整數 $a_i$, $b_i$, $c_i$, $d_i$ ($0 ≤ a_i, b_i, c_i, d_i ≤ 10^9$) — 第 $i$ 堆的原始狀態和目標狀態。\n保證存在一個操作序列可以將堆變換成目標狀態。\n保證所有測試案例的 $n$ 的總和不超過 $2 \\cdot 10^5$。\n輸出\n對於每個測試案例，輸出一個整數 — 達到目標狀態所需的最小操作數。",
+    "Sample Detail": [
+        {
+            "input": "3\n2\n1 3 1 2\n1 1 1 2\n3\n2 0 2 2\n0 1 1 0\n1 1 0 0\n3\n1 2 1 2\n3 4 3 4\n0 0 0 0",
+            "output": "2\n3\n0",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Notes": "注意\n第一個測試案例的解答在題目中已顯示。\n在第二個測試案例中，一個最佳解是執行以下操作： ![image](2.png) \n在第三個測試案例中，所有堆疊已經處於其目標狀態。",
+    "Note Images": [
+        "https://espresso.codeforces.com/cd402da4da4d022bd71d8e9811598affac4deadd.png"
+    ],
+    "Language": "cn"
+}

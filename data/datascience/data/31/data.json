@@ -1,0 +1,11 @@
+{
+    "url": "https://stackoverflow.com/questions/61132936/drawing-plotting-a-circle-with-some-radius-around-a-point-matplotlib",
+    "source": "stackoverflow",
+    "title": "Drawing a circle with some radius around a point in Matplotlib",
+    "Description": "The intended visualization is a scatter plot with a circle drawn around a specific point. Currently, the graph only shows the scatter points without any circles. The desired appearance includes a clearly defined circle of a specified radius around a chosen point in the plot.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "matplotlib",
+        "data-visualization"
+    ]
+}

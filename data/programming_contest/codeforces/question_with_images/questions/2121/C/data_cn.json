@@ -1,0 +1,25 @@
+{
+    "Title": "Codeforces Round 1032 (Div. 3)",
+    "Source": "codeforces",
+    "Name": "Those Who Are With Us",
+    "Time Limit": "1 s",
+    "Memory Limit": "256 mb",
+    "Problem Statement": "給定一個大小為 $n$ 行 $m$ 列的整數矩陣。第 $i$ 行和第 $j$ 列交叉的單元格包含數字 $a_{ij}$。\n您可以執行以下操作一次：\n- 選擇兩個數字 $1 ≤ r ≤ n$ 和 $1 ≤ c ≤ m$。\n- 對於矩陣中所有滿足 $i = r$ 或 $j = c$ 的單元格 $(i, j)$，將 $a_{ij}$ 減少 1。\n您需要找到在執行一次此操作後，矩陣 $a$ 中的最小可能最大值。",
+    "Statement Images": [],
+    "Constraints": "Time limit: 1 s\nMemory limit: 256 mb",
+    "IO Styles": "輸入\n每個測試包含多個測試案例。第一行包含一個整數 $t$ （$1 ≤ t ≤ 10^4$）— 測試案例的數量。接下來是測試案例的描述。\n每個測試案例的第一行包含兩個整數 $n$ 和 $m$ （$1 ≤ n \\cdot m ≤ 10^5$）— 矩陣的行數和列數。\n接下來的 $n$ 行描述了矩陣 $a$。第 $i$ 行包含 $m$ 個整數 $a_{i1}, a_{i2}, ..., a_{im}$ （$1 ≤ a_{ij} ≤ 100$）— 矩陣第 $i$ 行的元素。\n保證所有測試案例中 $n \\cdot m$ 的和不超過 $2 \\cdot 10^5$。\n輸出\n對於每個測試案例，輸出在執行恰好一個操作後，矩陣 $a$ 中的最小最大值。",
+    "Sample Detail": [
+        {
+            "input": "10\n1 1\n1\n1 2\n1 2\n2 1\n2\n1\n2 2\n4 2\n3 4\n3 4\n1 2 3 2\n3 2 1 3\n2 1 3 2\n4 3\n1 5 1\n3 1 3\n5 5 5\n3 5 1\n4 4\n1 3 3 2\n2 3 2 2\n1 2 2 1\n3 3 2 3\n2 2\n2 2\n1 2\n3 2\n1 2\n2 1\n1 2\n3 3\n2 1 1\n1 2 1\n1 1 2",
+            "output": "0\n1\n1\n3\n2\n4\n3\n1\n1\n2",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Notes": "注意\n在前三個測試案例中，您可以選擇 $r = 1$ 和 $c = 1$。\n在第四個測試案例中，您可以選擇 $r = 1$ 和 $c = 2$。![image](1.png)\n在第五個測試案例中，您可以選擇 $r = 2$ 和 $c = 3$。![image](2.png)\n在第六個測試案例中，您可以選擇 $r = 3$ 和 $c = 2$。",
+    "Note Images": [
+        "https://espresso.codeforces.com/c17767a6920a311231f92f0369c10b9b6a34d491.png",
+        "https://espresso.codeforces.com/45bddc965ec3fa397cb2b518c9236cd1e45f846e.png"
+    ],
+    "Language": "cn"
+}

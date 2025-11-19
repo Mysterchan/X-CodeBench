@@ -1,0 +1,51 @@
+I need to trace through the given code with the provided input.
+
+The code reads T test cases and for each case with values x, y, z, it checks several conditions:
+
+1. `if z > x + y`: flg = False
+2. `if x < z`: flg = False  
+3. `if y > x * 2`: flg = False
+4. `if x == 0 or not (y % 2 == 0 or z >= 1)`: flg = False
+
+Let me trace through each test case:
+
+**Test case 1: x=2, y=1, z=1**
+- flg = True initially
+- z > x + y? → 1 > 2+1=3? No, flg stays True
+- x < z? → 2 < 1? No, flg stays True
+- y > x * 2? → 1 > 2*2=4? No, flg stays True
+- x == 0 or not (y % 2 == 0 or z >= 1)? → 2 == 0 or not (1 % 2 == 0 or 1 >= 1)? → False or not (False or True)? → False or not True? → False or False? → False
+- flg stays True
+- Output: "Yes"
+
+**Test case 2: x=3, y=4, z=5**
+- flg = True initially
+- z > x + y? → 5 > 3+4=7? No, flg stays True
+- x < z? → 3 < 5? Yes, flg = False
+- y > x * 2? → 4 > 3*2=6? No, flg stays False
+- x == 0 or not (y % 2 == 0 or z >= 1)? → 3 == 0 or not (4 % 2 == 0 or 5 >= 1)? → False or not (True or True)? → False or False? → False
+- flg stays False
+- Output: "No"
+
+**Test case 3: x=1359, y=1998, z=1022**
+- flg = True initially
+- z > x + y? → 1022 > 1359+1998=3357? No, flg stays True
+- x < z? → 1359 < 1022? No, flg stays True
+- y > x * 2? → 1998 > 1359*2=2718? No, flg stays True
+- x == 0 or not (y % 2 == 0 or z >= 1)? → 1359 == 0 or not (1998 % 2 == 0 or 1022 >= 1)? → False or not (True or True)? → False or False? → False
+- flg stays True
+- Output: "Yes"
+
+**Test case 4: x=392848293, y=683919483, z=822948689**
+- flg = True initially
+- z > x + y? → 822948689 > 392848293+683919483=1076767776? No, flg stays True
+- x < z? → 392848293 < 822948689? Yes, flg = False
+- y > x * 2? → 683919483 > 392848293*2=785696586? No, flg stays False
+- x == 0 or not (y % 2 == 0 or z >= 1)? → False or not (False or True)? → False or False? → False
+- flg stays False
+- Output: "No"
+
+Yes
+No
+Yes
+No

@@ -1,0 +1,22 @@
+{
+    "Title": "AtCoder Regular Contest 197 (Div. 2)",
+    "Source": "atcoder",
+    "Name": "Four Square Tiles",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "正整数 N, H, W が与えられます．ただし，H, W ≤ 3N-1 が成り立ちます．\nH\\times W のマス目に N\\times N の正方形のタイルを 4 個置く方法であって，以下の条件をすべて満たすものの個数を 998244353 で割った余りを求めてください．\n- 各タイルは，マス目の ちょうど N^2 個のマスを完全に覆う．\n- ひとつのマスが複数のタイルによって覆われてはならない．\nただし，タイル同士は区別しません．\nT 個のテストケースが与えられるので，それぞれについて解いてください．",
+    "Statement Images": [],
+    "Constraints": "- 1≤ T≤ 2\\times 10^5\n- 1≤ N,H,W≤ 10^9\n- H,W≤ 3N - 1\n- 入力される値はすべて整数",
+    "IO Styles": "入力\n入力は以下の形式で標準入力から与えられます．\nT\n\\text{case}_1\n\\vdots\n\\text{case}_T\n各ケースは以下の形式で与えられます．\nN H W\n出力\nT 行出力してください．i 行目には i 番目のテストケースについて，条件を満たすようにタイルを置く方法の個数を 998244353 で割った余りを出力してください．",
+    "Sample Detail": [
+        {
+            "input": "4\n2 4 5\n2 5 5\n1000 1000 1000\n1000 2222 2025\n",
+            "output": "9\n79\n0\n262210557\n",
+            "explanation": "1 つめのテストケースについて，次の図で示す 9 通りの方法があります．\n\n![image](1.png)",
+            "images": [
+                "https://img.atcoder.jp/arc197/240d39425cb3786e6c8a2952f2220f14.png"
+            ]
+        }
+    ],
+    "Language": "jp"
+}

@@ -1,0 +1,20 @@
+{
+    "Title": "AtCoder Regular Contest 203 (Div. 2)",
+    "Source": "atcoder",
+    "Name": "Swap If Equal Sum",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "0 と 1 からなる長さ N の整数列 A=(A_1,A_2,\\dots,A_N),\\; B=(B_1,B_2,\\dots,B_N) が与えられます。\n数列 A の i 番目から j 番目の連続部分列を A[i,j] と表すことにします。ただし、i>j のとき、A[i,j] は長さ 0 の数列とします。\nA に対して、以下の操作を何回でも行えます。\n- 以下の 2 条件を満たす 4 整数 a,b,c,d を選ぶ。 \n- 1 ≤ a ≤ b < c ≤ d ≤ N \n- \\sum_{i=a}^{b}{A_i}=\\sum_{i=c}^{d}{A_i} \n \n- A[a,b] と A[c,d] を入れ替える。より厳密には、A を、A[1,a-1], A[c,d], A[b+1,c-1], A[a,b], A[d+1,N] の順に結合した数列に置き換える。 \nA を B に一致させられるかどうかを判定してください。\n1 つの入力ファイルにつき、T 個のテストケースを解いてください。",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ T ≤ 10^5\n- 2 ≤ N ≤ 2 \\times 10^5\n- 0 ≤ A_i ≤ 1\n- 0 ≤ B_i ≤ 1\n- 全てのテストケースにおける N の総和は 2\\times 10^5 以下\n- 入力される値は全て整数",
+    "IO Styles": "入力\n入力は以下の形式で標準入力から与えられる。\nT\r\ncase_1\r\ncase_2\r\n\\vdots\r\ncase_T\r\n各ケースは以下の形式で与えられる。\nN\r\nA_1 A_2 \\dots A_N\r\nB_1 B_2 \\dots B_N\r\n出力\n答えを合計 T 行で出力せよ。\r\nt 行目には、t 番目のテストケースについて A を B に一致させられるならば Yes を、一致させられないならば No を出力せよ。",
+    "Sample Detail": [
+        {
+            "input": "3\n6\n1 1 1 0 0 1\n0 1 1 0 1 1\n2\n0 0\n1 0\n3\n1 1 1\n1 1 1\n",
+            "output": "Yes\nNo\nYes\n",
+            "explanation": "1 つ目のテストケースでは、A は最初、(1,1,1,0,0,1) です。\n(a,b,c,d)=(1,2,3,6) を選んで操作を行うと、A は (1,0,0,1,1,1) になります。\r\n次に、(a,b,c,d)=(1,2,3,4) を選んで操作を行うと、A は (0,1,1,0,1,1) になり、B に一致します。\n2 つ目のテストケースでは、A を B に一致させることはできません。\n3 つ目のテストケースでは、A は最初から B に一致しています。",
+            "images": []
+        }
+    ],
+    "Language": "jp"
+}

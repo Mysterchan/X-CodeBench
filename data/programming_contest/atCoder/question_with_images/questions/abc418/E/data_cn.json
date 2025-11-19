@@ -1,0 +1,28 @@
+{
+    "Title": "AtCoder Beginner Contest 418",
+    "Source": "atcoder",
+    "Name": "Trapezium",
+    "Time Limit": "4 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "在一個二維平面上有 N 個點，第 i 個點的坐標為 (X_i, Y_i)。保證沒有兩個點位於相同位置，且沒有三個點共線。\n在這些點中，四個點的組合中，有多少組合可以形成一個以這四個點為頂點的梯形多邊形？",
+    "Statement Images": [],
+    "Constraints": "- 4 ≤ N ≤ 2,000\n- 0 ≤ X_i, Y_i ≤ 10^7 (1 ≤ i ≤ N)\n- 兩個點不會位於相同的位置。\n- 三個點不會共線。\n- 所有的輸入值都是整數。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nN\nX_1 Y_1\n\\vdots\nX_N Y_N\n輸出\n在一行中打印答案。",
+    "Sample Detail": [
+        {
+            "input": "5\n0 2\n0 5\n1 0\n2 1\n2 4\n",
+            "output": "3\n",
+            "explanation": "給定的點按照下圖所示的排列。\n\n![image](1.png)\n\n在四個點的組合中，以下三個組合可以形成以這些點為頂點的梯形多邊形：\n\n- 第1、5、4、3個點。\n- 第1、3、4、2個點。\n- 第1、2、5、4個點。\n\n請注意，平行四邊形和矩形也被視為梯形。",
+            "images": [
+                "https://img.atcoder.jp/abc418/b9ceb745ad713f77a9ac81a243b552b0.png"
+            ]
+        },
+        {
+            "input": "8\n0 1\n1 3\n2 3\n3 1\n0 2\n1 0\n2 0\n3 2\n",
+            "output": "22\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

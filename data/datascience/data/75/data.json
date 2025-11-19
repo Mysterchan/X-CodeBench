@@ -1,0 +1,11 @@
+{
+    "url": "https://stackoverflow.com/questions/69398013/seaborn-jointplot-turn-off-one-of-the-marginal-plots",
+    "source": "stackoverflow",
+    "title": "Seaborn jointplot turn off one of the marginal plots",
+    "Description": "The intended visualization is a Seaborn Jointplot that displays a scatter plot of tips versus total bill with marginal histograms. The plot should include a legend indicating the smoker status (Yes/No) and keep the marginal histograms on the right side of the scatter plot. Currently, the graph shows an unwanted top marginal plot that disrupts the layout. The desired outcome is to have only the right marginal histogram visible, without the top marginal plot.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "seaborn",
+        "data-visualization"
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "Title": "AtCoder Beginner Contest 405",
+    "Source": "atcoder",
+    "Name": "Chord Crossing",
+    "Time Limit": "3 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "在一個圓上，2N 個點以相等的間隔放置，並從任意一點開始按照順時針方向編號為 1, 2, …, 2N。\n有 M 條線段編號為 1, 2, …, M，這些線段連接這些點。第 i 條線段連接點 A_i 和 B_i。\n在這裡，A_i 和 B_i 是不同的偶數。\n保證這些線段沒有共享的點。\n處理 Q 個查詢。第 j 個查詢如下：\n- 給定兩個不同的奇數 C_j 和 D_j。在 M 條線段 1, 2, …, M 中，找出與連接點 C_j 和 D_j 的線段共享點的數量。",
+    "Statement Images": [],
+    "Constraints": "- 2 ≤ N ≤ 10^6\n- 1 ≤ M ≤ \\min\\left(\\lfloor\\frac{N}{2}\\rfloor, 2\\times 10^5\\right)\n- 1 ≤ Q ≤ 2 \\times 10^5\n- 1 ≤ A_i < B_i ≤ 2N\n- 1 ≤ C_j < D_j ≤ 2N\n- A_i 和 B_i 都是偶數。\n- C_j 和 D_j 都是奇數。\n- 對於任何 i_1 和 i_2（i_1 ≠ i_2），區間 i_1 和 i_2 不共享任何點。\n- 所有輸入值都是整數。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nN M\nA_1 B_1\nA_2 B_2\n\\vdots\nA_M B_M\nQ\nC_1 D_1\nC_2 D_2\n\\vdots\nC_Q D_Q\n\n輸出\n輸出 Q 行。\n第 j 行 (1≤ j ≤ Q) 應該包含第 j 個查詢的答案。",
+    "Sample Detail": [
+        {
+            "input": "4 2\n2 4\n6 8\n3\n1 3\n3 7\n1 5\n",
+            "output": "1\n2\n0\n",
+            "explanation": "![image](1.png)\n\n上面的圖示顯示了範例輸入1。黑色點是2N\\ (=8)個點，藍色實線是初始的M\\ (=2)條線段，紅色虛線是Q\\ (=3)條查詢線段。\n\n- 對於第一個查詢，連接點1和點3的線段與一條初始線段相交：線段1。\n- 對於第二個查詢，連接點3和點7的線段與兩條初始線段相交：線段1和線段2。\n- 對於第三個查詢，連接點1和點5的線段與零條初始線段相交。",
+            "images": [
+                "https://img.atcoder.jp/abc405/7f9b7b9c988c95df92d0a5919a865fcc.png"
+            ]
+        },
+        {
+            "input": "20 7\n24 34\n26 28\n18 38\n2 14\n8 12\n30 32\n20 22\n10\n7 29\n31 39\n9 21\n19 29\n15 21\n11 39\n17 21\n15 31\n5 25\n25 31\n",
+            "output": "3\n3\n4\n1\n2\n2\n2\n3\n3\n1\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

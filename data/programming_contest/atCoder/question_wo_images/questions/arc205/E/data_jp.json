@@ -1,0 +1,32 @@
+{
+    "Title": "AtCoder Regular Contest 205 (Div. 2)",
+    "Source": "atcoder",
+    "Name": "Subset Product Problem",
+    "Time Limit": "6 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "長さ N の非負整数列 A=(A_1,A_2,...,A_N) が与えられます。\nk=1,2,...,N に対し以下の問題を解いてください。\n- A_i と A_k のビット単位 \\mathrm{OR} 演算が A_k となるような 1 以上 k 以下の整数 i 全てに対する A_i の 総積 を 998244353 で割ったあまりを求めてください。\n ビット単位 \\mathrm{OR} 演算とは\n \n 非負整数 X,Y のビット単位 \\mathrm{OR}、X\\ \\mathrm{OR}\\ Y は以下のように定義されます。\n \n- X\\ \\mathrm{OR}\\ Y を二進表記した際の 2^k (k ≥ 0) の位の数は、X,Y を二進表記した際の 2^k の位の数のうち少なくとも片方が 1 であれば 1、そうでなければ 0 である。\n 例えば、3\\ \\mathrm{OR}\\ 5 = 7 となります（二進表記すると： 011\\ \\mathrm{OR}\\ 101 = 111）。",
+    "Statement Images": [],
+    "Constraints": "- 1≤ N≤ 4\\times 10^5\n- 0≤ A_i < 2^{20}\n- 入力される値は全て整数",
+    "IO Styles": "入力\n入力は以下の形式で標準入力から与えられる。\nN\nA_1 A_2 ... A_N\n出力\nN 行出力せよ。\ni 行目 (1≤ i≤ N) には、 k=i の場合の答えを出力せよ。",
+    "Sample Detail": [
+        {
+            "input": "4\n1 2 3 5\n",
+            "output": "1\n2\n6\n5\n",
+            "explanation": "- k=1 のとき： i=1 に対し A_i と A_k のビット単位 \\mathrm{OR} 演算は 1 になります。したがって、 k=1 の場合の答えは A_1=1 です。\n- k=2 のとき： i=1,2 に対し A_i と A_k のビット単位 \\mathrm{OR} 演算はそれぞれ 3,2 になります。したがって、 k=2 の場合の答えは A_2=2 です。\n- k=3 のとき： i=1,2,3 に対し A_i と A_k のビット単位 \\mathrm{OR} 演算は全て 3 になります。したがって、 k=3 の場合の答えは A_1\\times A_2\\times A_3=6 です。\n- k=4 のとき： i=1,2,3,4 に対し A_i と A_k のビット単位 \\mathrm{OR} 演算はそれぞれ 5,7,7,5 になります。したがって、 k=4 の場合の答えは A_1\\times A_4=5 です。",
+            "images": []
+        },
+        {
+            "input": "9\n3 1 4 1 5 9 2 6 5\n",
+            "output": "3\n1\n4\n1\n20\n9\n2\n48\n100\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "12\n437926 528156 284664 1038330 692060 720863 602077 1027766 868190 532252 982711 876446\n",
+            "output": "437926\n528156\n284664\n94842632\n158208162\n985930968\n548875758\n875494466\n345599613\n605424119\n111381243\n768586512\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "jp"
+}

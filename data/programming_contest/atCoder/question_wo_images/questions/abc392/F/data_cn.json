@@ -1,0 +1,26 @@
+{
+    "Title": "Japan Registry Services (JPRS) Programming Contest 2025#1 (AtCoder Beginner Contest 392)",
+    "Source": "atcoder",
+    "Name": "Insert",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "有一個空數組 A。對於 i = 1,2,...,N，依次執行以下操作：\n- 將數字 i 插入 A，使其成為從開頭算起的第 P_i 個元素。\n- 更準確地說，將 A 替換為 A 的前 P_i-1 個元素的連接，然後是 i，然後是從 P_i 個元素開始的 A 的剩餘元素，按照此順序。\n輸出在所有操作完成後的最終數組 A。",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ N ≤ 5\\times 10^5\n- 1 ≤ P_i ≤ i\n- 所有輸入值都是整數。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nN\nP_1 P_2 ... P_N\n輸出\n設最後的數組為 A = (A_1, A_2, ..., A_N)。\n按照此順序打印 A_1, A_2, ..., A_N，並用空格分隔。",
+    "Sample Detail": [
+        {
+            "input": "4\n1 1 2 1\n",
+            "output": "4 2 3 1\n",
+            "explanation": "操作按以下步驟執行：\n\n- 插入數字 1，使其成為 A 的第一個元素。現在，A = (1)。\n- 插入數字 2，使其成為 A 的第一個元素。現在，A = (2, 1)。\n- 插入數字 3，使其成為 A 的第二個元素。現在，A = (2, 3, 1)。\n- 插入數字 4，使其成為 A 的第一個元素。現在，A = (4, 2, 3, 1)。",
+            "images": []
+        },
+        {
+            "input": "5\n1 2 3 4 5\n",
+            "output": "1 2 3 4 5\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

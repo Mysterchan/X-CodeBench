@@ -1,0 +1,32 @@
+{
+    "Title": "Toyota Programming Contest  2025（AtCoder Beginner Contest 389)",
+    "Source": "atcoder",
+    "Name": "Squares in Circle",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "在二維坐標平面上，存在無限的 1 \\times 1 正方形鋪磚。\n考慮在這些正方形中的一個正方形的中心畫一個半徑為 R 的圓。這些正方形中有多少個是完全包含在圓內的？\n更精確地說，找出所有整數對 (i,j) 的數量，使得所有四個點 (i+0.5,j+0.5)、(i+0.5,j-0.5)、(i-0.5,j+0.5) 和 (i-0.5,j-0.5) 與原點的距離都至多為 R。",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ R ≤ 10^{6}  \n- 所有輸入值都是整數。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nR\n輸出\n輸出答案。",
+    "Sample Detail": [
+        {
+            "input": "2\n",
+            "output": "5\n",
+            "explanation": "總共有五個完全包含在圓內的正方形：一個中心與圓心重合的正方形，以及四個與其相鄰的正方形。",
+            "images": []
+        },
+        {
+            "input": "4\n",
+            "output": "37\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "26\n",
+            "output": "2025\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

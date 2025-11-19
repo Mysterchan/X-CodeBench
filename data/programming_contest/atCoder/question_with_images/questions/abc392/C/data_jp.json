@@ -1,0 +1,28 @@
+{
+    "Title": "日本レジストリサービス（JPRS）プログラミングコンテスト2025#1（AtCoder Beginner Contest 392）",
+    "Source": "atcoder",
+    "Name": "Bib",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "1 から N の番号がついた N 人の人がいます。\n人 i は数 Q_i が書かれたゼッケンを着けており、人 P_i を見つめています。\ni が書かれたゼッケンを着けている人が見つめている人の着けているゼッケンにかかれている数を、i=1,2,...,N のそれぞれについて求めてください。",
+    "Statement Images": [],
+    "Constraints": "- 2 ≤ N ≤ 3\\times 10^5\n- 1 ≤ P_i ≤ N\n- P_i は相異なる\n- 1 ≤ Q_i ≤ N\n- Q_i は相異なる\n- 入力は全て整数である",
+    "IO Styles": "入力\n入力は以下の形式で標準入力から与えられる。\nN\r\nP_1 P_2 \\dots P_N\r\nQ_1 Q_2 \\dots Q_N\r\n出力\ni が書かれたゼッケンを着けている人が見つめている人の着けているゼッケンにかかれている数を S_i とする。\nS_1,S_2,...,S_N をこの順に空白区切りで出力せよ。",
+    "Sample Detail": [
+        {
+            "input": "4\n4 3 2 1\n2 3 1 4\n",
+            "output": "3 4 1 2\n",
+            "explanation": "人 3 は 1 が書かれたゼッケンを着けており、人 3 が見つめている人 2 は 3 が書かれたゼッケンを着けています。\r\nよって i=1 に対する答えは 3 になります。\n\n![image](1.png)",
+            "images": [
+                "https://img.atcoder.jp/abc392/965b8e458deb7426d2813e2dba014a5b.png"
+            ]
+        },
+        {
+            "input": "10\n2 6 4 3 7 8 9 10 1 5\n1 4 8 2 10 5 7 3 9 6\n",
+            "output": "4 8 6 5 3 10 9 2 1 7\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "jp"
+}

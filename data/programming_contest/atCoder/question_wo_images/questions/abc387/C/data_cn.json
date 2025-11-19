@@ -1,0 +1,32 @@
+{
+    "Title": "AtCoder Beginner Contest 387",
+    "Source": "atcoder",
+    "Name": "Snake Numbers",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "一個不小於 10 的正整數，其十進位表示中的最高位數字（最重要的數字）嚴格大於該數字的其他所有數字，稱為蛇數。  \n例如，31 和 201 是蛇數，但 35 和 202 不是。  \n請找出在 L 到 R 之間（包括 L 和 R）存在多少個蛇數。",
+    "Statement Images": [],
+    "Constraints": "- 10 ≤ L ≤ R ≤ 10^{18}\n- 所有輸入值均為整數。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nL R\n輸出\n打印答案。",
+    "Sample Detail": [
+        {
+            "input": "97 210\n",
+            "output": "6\n",
+            "explanation": "在97到210之間的蛇數（包括97和210）為97、98、100、200、201和210：共有六個。",
+            "images": []
+        },
+        {
+            "input": "1000 9999\n",
+            "output": "2025\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "252509054433933519 760713016476190692\n",
+            "output": "221852052834757\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

@@ -1,0 +1,11 @@
+{
+    "url": "https://stackoverflow.com/questions/60910412/how-to-make-y-axis-text-appear-inside-the-plot-while-using-data-coordinates-in-m",
+    "source": "stackoverflow",
+    "title": "How to make y axis text appear inside the plot while using data coordinates in matplotlib?",
+    "Description": "The graph is intended to display a line plot of values with maximum and minimum points highlighted by horizontal dotted lines. The maximum value of 5.7 is currently positioned at '2020-03-01', but the text label overlaps with the y-axis tick labels, which is undesirable. The minimum value of 1.7 is placed at a relative position that does not effectively convey its relationship to the data on the y-axis. The expected behavior is to have the text labels for both points clearly placed inside the plot area, not obstructing any axis tick labels, and positioned accurately according to the dynamic x-axis values defined by the datetime format.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "seaborn",
+        "data-visualization"
+    ]
+}

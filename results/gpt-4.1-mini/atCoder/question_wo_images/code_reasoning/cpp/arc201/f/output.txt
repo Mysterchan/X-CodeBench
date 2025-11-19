@@ -1,0 +1,7 @@
+ans = s7/3
+ans = min(ans, s1)
+ans = min(ans, s2)
+ans = min(ans, s3)
+ans = min(ans, s4/2)
+ans = min(ans, s5/2)
+ans = min(ans, s6/2)

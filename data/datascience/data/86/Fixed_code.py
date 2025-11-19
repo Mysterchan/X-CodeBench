@@ -1,0 +1,12 @@
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+df = pd.DataFrame(
+    {'x': [3,2,5,1,1,0],
+     'y': [1,1,2,3,0,2],
+     'cat': ['a','a','a','b','b','b']}
+)
+
+sns.scatterplot(data=df, x='x', y='y', hue="cat", marker="$\circ$", ec="face", s=100)
+plt.show()

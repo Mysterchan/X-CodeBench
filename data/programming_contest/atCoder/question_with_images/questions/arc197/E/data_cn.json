@@ -1,0 +1,22 @@
+{
+    "Title": "AtCoder Regular Contest 197 (Div. 2)",
+    "Source": "atcoder",
+    "Name": "Four Square Tiles",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "給定正整數 N、H 和 W，滿足 H,W ≤ 3N-1。請計算在 H×W 網格上放置四個 N×N 方塊瓷磚的方式數，並對 998244353 取模，滿足以下所有條件：\n- 每個瓷磚恰好覆蓋 N^2 個網格單元。\n- 沒有單元格被超過一個瓷磚覆蓋。\n在這裡，瓷磚是不可區分的。\n有 T 個測試用例；請解決每一個。",
+    "Statement Images": [],
+    "Constraints": "- 1≤ T≤ 2\\times 10^5\n- 1≤ N,H,W≤ 10^9\n- H,W≤ 3N-1\n- 所有輸入值均為整數。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nT\n\\text{case}_1\n\\vdots\n\\text{case}_T\n每個案例是以以下格式給出：\nN H W\n\n輸出\n輸出 T 行。第 i 行應該包含對於第 i 個測試案例，放置瓷磚的有效方式數（取模 998244353）。",
+    "Sample Detail": [
+        {
+            "input": "4\n2 4 5\n2 5 5\n1000 1000 1000\n1000 2222 2025\n",
+            "output": "9\n79\n0\n262210557\n",
+            "explanation": "對於第一個測試案例，有 9 種方法，如下圖所示： \n\n![image](1.png)",
+            "images": [
+                "https://img.atcoder.jp/arc197/240d39425cb3786e6c8a2952f2220f14.png"
+            ]
+        }
+    ],
+    "Language": "cn"
+}

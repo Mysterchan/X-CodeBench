@@ -1,0 +1,38 @@
+{
+    "Title": "AtCoder Beginner Contest 387",
+    "Source": "atcoder",
+    "Name": "Happy New Year 2025",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "You are given two positive integers A and B.\nOutput the square of A + B.",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ A,B ≤ 2025\n- All input values are integers.",
+    "IO Styles": "Input\nThe input is given from Standard Input in the following format:\nA B\r\nOutput\nPrint the answer.",
+    "Sample Detail": [
+        {
+            "input": "20 25\n",
+            "output": "2025\n",
+            "explanation": "(20+25)^2=2025.",
+            "images": []
+        },
+        {
+            "input": "30 25\n",
+            "output": "3025\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "45 11\n",
+            "output": "3136\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "2025 1111\n",
+            "output": "9834496\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "en"
+}

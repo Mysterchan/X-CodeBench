@@ -1,0 +1,11 @@
+{
+    "url": "https://discourse.matplotlib.org/t/combine-two-graphs-into-one-figure-using-two-y-axis/23760",
+    "source": "matplotlib",
+    "title": "Combine two graphs into one figure using two y-axis",
+    "Description": "The goal is to create a single figure that combines a stacked bar chart from `df1` and a line graph from `df2`, both sharing the same x-axis labeled with dates. However, the current implementation does not display the intended plots, as the bar and line data are not properly rendered together on the axes. The expected result is to see a stacked bar graph showing values from `df1` with a line overlaid from `df2`, allowing for comparison of the two datasets.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "matplotlib",
+        "data-visualization"
+    ]
+}

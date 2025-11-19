@@ -1,0 +1,34 @@
+{
+    "Title": "UNIQUE VISION Programming Contest 2025 Autumn (AtCoder Beginner Contest 425)",
+    "Source": "atcoder",
+    "Name": "Ulam-Warburton Automaton",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "There is a grid with H rows and W columns. We call the cell at the i-th row from the top (1≤ i≤ H) and j-th column from the left (1≤ j≤ W) as cell (i,j).\nInitially, cell (i,j) is colored black if S_{i,j} is # and white if it is ..\nPerform the following operation 10^{100} times:\n- Let T be the set of cells that are colored white and have exactly one adjacent cell colored black. Color each cell in T black. Here, two cells (i_1,j_1) and (i_2,j_2) are adjacent if and only if |i_1-i_2|+|j_1-j_2|=1.\nFind the number of cells that are colored black after all operations are completed.",
+    "Statement Images": [],
+    "Constraints": "- 2≤ H,W\n- HW≤ 3\\times 10^5\n- H and W are integers.\n- S_{i,j} is # or ..",
+    "IO Styles": "Input\nThe input is given from Standard Input in the following format:\nH W\nS_{1,1}S_{1,2}... S_{1,W}\nS_{2,1}S_{2,2}... S_{2,W}\n\\vdots\nS_{H,1}S_{H,2}... S_{H,W}\nOutput\nOutput the answer.",
+    "Sample Detail": [
+        {
+            "input": "9 9\n.........\n.........\n.........\n.........\n....#....\n.........\n.........\n.........\n.........\n",
+            "output": "57\n",
+            "explanation": "The grid changes as follows through the operations. (The number above represents the operation count. The first ten operations are displayed.)\n\n![image](1.png)![image](2.png)![image](3.png)![image](4.png)![image](5.png)![image](6.png)![image](7.png)![image](8.png)![image](9.png)![image](10.png)![image](11.png)\n\nEventually, 57 cells are colored black.",
+            "images": [
+                "https://img.atcoder.jp/abc425/66c86ae7efa44c7545e6db9451921205.gif"
+            ]
+        },
+        {
+            "input": "2 2\n..\n..\n",
+            "output": "0\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "10 10\n..........\n....#.....\n#.......#.\n......#...\n.......#..\n.....#....\n..........\n..........\n..#...#...\n.......#..\n",
+            "output": "64\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "en"
+}

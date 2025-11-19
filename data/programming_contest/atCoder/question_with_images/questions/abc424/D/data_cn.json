@@ -1,0 +1,22 @@
+{
+    "Title": "AtCoder Beginner Contest 424",
+    "Source": "atcoder",
+    "Name": "2x2 Erasing 2",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "有一個 H 行 W 列的格子，每個單元格被塗成白色或黑色。\n讓我們用 (i,j) 表示從上方第 i 行 (1≤ i≤ H) 和從左側第 j 列 (1≤ j≤ W) 的單元格。\n格子的狀態由 H 個長度為 W 的字符串 S_1,S_2,...,S_H 組成，這些字符串由 . 和 # 組成。\n如果 S_i 的第 j 個字符是 .，則單元格 (i,j) 為白色；如果是 #，則單元格 (i,j) 為黑色。\n透過將一些黑色單元格（可能為零）重新上色為白色，Takahashi 希望使該格子中沒有僅由黑色單元格組成的 2×2 子格。\n更精確地說，他希望滿足以下條件：\n對於任意整數對 (i,j)，滿足 1≤ i≤ H-1 和 1≤ j≤ W-1，\n在單元格 (i,j)、(i,j+1)、(i+1,j) 和 (i+1,j+1) 中，至少有一個是白色的。\n找出為了達成這個目標，Takahashi 需要重新上色為白色的最少單元格數量。\n你將得到 T 組測試用例；請回答它們。",
+    "Statement Images": [],
+    "Constraints": "- 1≤ T≤ 100\n- 2≤ H≤ 7\n- 2≤ W≤ 7\n- 每個 S_i 是長度為 W 的字串，由 . 和 # 組成。\n- T、H、W 為整數。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nT\n\\mathrm{case}_1\n\\mathrm{case}_2\n\\vdots\n\\mathrm{case}_T\n\\mathrm{case}_i 代表第 i 個測試案例。\n每個測試案例的格式如下：\nH W\nS_1\nS_2\n\\vdots\nS_H\n輸出\n輸出 T 行。\n在第 i 行 (1≤ i≤ T)，輸出第 i 個測試案例的答案。",
+    "Sample Detail": [
+        {
+            "input": "2\n5 5\n####.\n##.##\n#####\n.####\n##.#.\n2 2\n..\n..\n",
+            "output": "3\n0\n",
+            "explanation": "中文: 對於第一個測試案例，網格的初始狀態如左圖所示。  \n通過重新上色，例如，將右圖中帶有數字的三個單元格從黑色變為白色，可以滿足條件。\n\n![image](1.png)\n\n無法通過從初始狀態重新上色兩個或更少的單元格來滿足條件，因此在第一行輸出3。\n\n對於第二個測試案例，網格從一開始就已經滿足條件。  \n因此，在第二行輸出0。",
+            "images": [
+                "https://img.atcoder.jp/abc424/166fd932b252ce1ef6ba3682f87e0f9e.png"
+            ]
+        }
+    ],
+    "Language": "cn"
+}

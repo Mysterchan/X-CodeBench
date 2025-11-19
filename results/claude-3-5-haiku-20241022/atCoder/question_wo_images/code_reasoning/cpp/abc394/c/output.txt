@@ -1,0 +1,31 @@
+Let me trace through the execution of this code with input "WACWA".
+
+Initial state:
+- S = "WACWA"
+- s = ['W', 'A', 'C', 'W', 'A', '\0'] (size 6, with extra space)
+- S.size() = 5
+
+**First iteration of while loop:**
+- Loop through i = 0 to 4:
+  - i=0: s[0]='W', s[1]='A' → Found "WA"! Set wa=true, s[0]='A', s[1]='C'
+  - Now s = ['A', 'C', 'C', 'W', 'A', '\0']
+  - i=1: s[1]='C', s[2]='C' → Not "WA"
+  - i=2: s[2]='C', s[3]='W' → Not "WA"
+  - i=3: s[3]='W', s[4]='A' → Found "WA"! Set wa=true (already true), s[3]='A', s[4]='C'
+  - Now s = ['A', 'C', 'C', 'A', 'C', '\0']
+  - i=4: s[4]='C', s[5]='\0' → Not "WA"
+- wa=true, so continue loop
+
+**Second iteration of while loop:**
+- Loop through i = 0 to 4:
+  - i=0: s[0]='A', s[1]='C' → Not "WA"
+  - i=1: s[1]='C', s[2]='C' → Not "WA"
+  - i=2: s[2]='C', s[3]='A' → Not "WA"
+  - i=3: s[3]='A', s[4]='C' → Not "WA"
+  - i=4: s[4]='C', s[5]='\0' → Not "WA"
+- wa=false, so break
+
+**Output:**
+Print s[0] through s[4]: 'A', 'C', 'C', 'A', 'C'
+
+ACCAC

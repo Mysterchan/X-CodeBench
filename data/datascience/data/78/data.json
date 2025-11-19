@@ -1,0 +1,11 @@
+{
+    "url": "https://stackoverflow.com/questions/68895009/have-gradient-colours-in-sns-pairplot-for-one-column-of-dataframe-so-that-i-can",
+    "source": "stackoverflow",
+    "title": "Have gradient colours in sns.pairplot for one column of dataframe so that I can see which datapoints are connected to each other",
+    "Description": "The intended visualization is a pairplot showing the interdependence of the DataFrame columns, with a gradual color gradient applied to one column (column 'b'), where low values are represented by yellow and high values by blue. This color gradient should be used on all non-diagonal subplots to enhance the understanding of the data relationships. Currently, the plot does not display this color gradient, as all non-diagonal plots are shown in a uniform light blue color without reflecting the varying values of the chosen column. The expected appearance includes a smooth gradient of color reflecting the numerical values in column 'b' across the relevant subplots.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "seaborn",
+        "data-visualization"
+    ]
+}

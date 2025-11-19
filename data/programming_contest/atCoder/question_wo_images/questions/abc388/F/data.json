@@ -1,0 +1,32 @@
+{
+    "Title": "HHKB Programming Contest 2025(AtCoder Beginner Contest 388)",
+    "Source": "atcoder",
+    "Name": "Dangerous Sugoroku",
+    "Time Limit": "4 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "There are N squares arranged in a row, labeled 1, 2, ..., N from left to right.\nYou are given M pairs of integers (L_1, R_1), ..., (L_M, R_M).\nA square j is defined to be bad if and only if there exists some i such that L_i ≤ j ≤ R_i.\nDetermine whether you can move from square 1 to square N by repeatedly performing the following action:\n- Let your current square be x. Choose an integer i that satisfies all of the following conditions, and move to square x + i.\n- A ≤ i ≤ B\n- x + i ≤ N\n- Square x + i is not bad.",
+    "Statement Images": [],
+    "Constraints": "- 2 ≤ N ≤ 10^{12}\n- 0 ≤ M ≤ 2 \\times 10^4\n- 1 ≤ A ≤ B ≤ 20\n- 1 < L_i ≤ R_i < N \\ (1 ≤ i ≤ M)\n- R_i < L_{i+1} \\ (1 ≤ i ≤ M - 1)\n- All input values are integers.",
+    "IO Styles": "Input\nThe input is given from Standard Input in the following format:\nN M A B\r\nL_1 R_1\r\nL_2 R_2\r\n\\vdots\r\nL_M R_M\r\nOutput\nIf it is possible to reach square N by repeating the action described in the problem statement, print Yes. Otherwise, print No.",
+    "Sample Detail": [
+        {
+            "input": "24 2 3 5\n7 8\n17 20\n",
+            "output": "Yes\n",
+            "explanation": "You can move to square N in this way: 1 \\to 6 \\to 9 \\to 12 \\to 16 \\to 21 \\to 24.",
+            "images": []
+        },
+        {
+            "input": "30 1 5 8\n4 24\n",
+            "output": "No\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "100 4 10 11\n16 18\n39 42\n50 55\n93 99\n",
+            "output": "Yes\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "en"
+}

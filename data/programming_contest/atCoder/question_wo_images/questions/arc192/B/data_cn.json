@@ -1,0 +1,32 @@
+{
+    "Title": "AtCoder Regular Contest 192 (Div. 2)",
+    "Source": "atcoder",
+    "Name": "Fennec VS. Snuke 2",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "Fennec 和 Snuke 正在玩一個桌上遊戲。\n給定一個正整數 N 和一個長度為 N 的正整數序列 A=(A_1,A_2,\\dots,A_N)。此外，還有一個初始為空的集合 S。\nFennec 和 Snuke 輪流按照以下操作進行，從 Fennec 開始。\n- 選擇一個索引 i，使得 1≤ A_i。從 A_i 減去 1，並且如果 i\\notin S，則將 i 添加到 S 中。\n- 如果 S=\\lbrace 1,2,\\dots,N \\rbrace，則遊戲結束，最後一個執行操作的玩家獲勝。\n請注意，可以證明，在確定勝者並結束遊戲之前，玩家總是可以移動（存在某個 i 使得 1≤ A_i）。\nFennec 和 Snuke 都以最優方式進行遊戲以爭取勝利。確定誰將獲勝。",
+    "Statement Images": [],
+    "Constraints": "- 1≤ N≤ 2\\times 10^5\n- 1≤ A_i≤ 10^9 (1≤ i≤ N)\n- 所有輸入值都是整數。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nN\nA_1 A_2 \\dots A_N\n輸出\n如果 Fennec 贏了，則輸出 Fennec；如果 Snuke 贏了，則輸出 Snuke。\n評審對大小寫不敏感；例如，如果正確答案是 Fennec，則 fennec、FENNEC 或 fEnNeC 等輸出都將被接受。",
+    "Sample Detail": [
+        {
+            "input": "3\n1 9 2\n",
+            "output": "Fennec\n",
+            "explanation": "例如，遊戲的進行可能如下：\n\n- 最初，A=(1,9,2)，而S是空的。\n- Fennec選擇索引2。然後，A=(1,8,2)且S=\\lbrace 2 \\rbrace。\n- Snuke選擇索引2。然後，A=(1,7,2)且S=\\lbrace 2 \\rbrace。\n- Fennec選擇索引1。然後，A=(0,7,2)且S=\\lbrace 1,2 \\rbrace。\n- Snuke選擇索引2。然後，A=(0,6,2)且S=\\lbrace 1,2 \\rbrace。\n- Fennec選擇索引3。然後，A=(0,6,1)且S=\\lbrace 1,2,3 \\rbrace。遊戲以Fennec被宣布為勝者結束。\n\n這一系列的動作可能不是最佳的；然而，可以證明即使當兩位玩家都採取最佳策略時，Fennec仍然會獲勝。",
+            "images": []
+        },
+        {
+            "input": "2\n25 29\n",
+            "output": "Snuke\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "6\n1 9 2 25 2 9\n",
+            "output": "Snuke\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

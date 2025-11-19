@@ -1,0 +1,26 @@
+{
+    "Title": "Codeforces Round 1024 (Div. 1)",
+    "Source": "codeforces",
+    "Name": "Shoo Shatters the Sunshine",
+    "Time Limit": "7 s",
+    "Memory Limit": "256 mb",
+    "Problem Statement": "給定一棵具有 $n$ 個頂點的樹，其中每個頂點可以被著色為紅色、藍色或白色。著色的酷炫程度定義為紅色頂點與藍色頂點之間的最大距離$^{\\text{∗}}$。形式上，如果我們將第 $i$ 個頂點的顏色表示為 $c_i$，則著色的酷炫程度為 $\\max d(u, v)$，對於所有頂點對 $1≤ u, v≤ n$，其中 $c_u$ 為紅色，$c_v$ 為藍色。如果不存在紅色或藍色頂點，則酷炫程度為零。您的任務是計算樹的所有 $3^n$ 種可能著色的酷炫程度總和，結果對 $998\\,244\\,353$ 取模。\n\n$^{\\text{∗}}$ 在樹中，兩個頂點 $a$ 和 $b$ 之間的距離等於頂點 $a$ 和頂點 $b$ 之間唯一簡單路徑上的邊的數量。",
+    "Statement Images": [],
+    "Constraints": "Time limit: 7 s\nMemory limit: 256 mb",
+    "IO Styles": "輸入\n每個測試包含多個測試案例。第一行包含測試案例的數量 $t$ ($1 ≤ t ≤ 50$)。隨後是測試案例的描述。\n每個測試案例的第一行包含一個整數 $n$ ($2≤ n≤ 3000$) — 樹中頂點的數量。\n接下來的 $n - 1$ 行各包含兩個整數 $u$ 和 $v$ ($1≤ u, v≤ n$) — 樹的邊的端點。\n保證給定的邊形成一棵樹。\n保證所有測試案例的 $n$ 之和不超過 $3000$。\n輸出\n對於每個測試案例，輸出樹的所有 $3^n$ 種可能著色的酷炫度的總和，結果對 $998\\,244\\,353$ 取模。",
+    "Sample Detail": [
+        {
+            "input": "3\n3\n1 2\n2 3\n6\n1 2\n1 3\n1 4\n3 5\n5 6\n17\n1 2\n1 3\n1 4\n1 5\n2 6\n2 7\n2 8\n3 9\n3 10\n7 11\n7 12\n11 13\n13 14\n14 15\n10 16\n16 17",
+            "output": "18\n1920\n78555509",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Notes": "注意\n在第一個測試案例中，有 $12$ 種著色方式至少有一個藍色節點和一個紅色節點。以下圖片顯示了它們的著色和酷炫度： ![image](1.png) 所有這些著色的酷炫度為 $2$ ！[image](2.png) 所有這些著色的酷炫度為 $1$\n因此，所有可能著色的酷炫度總和為 $6\\cdot 2 + 6\\cdot 1 = 18$。\n在第二個測試案例中，以下是一些酷炫度為 $3$ 的著色示例： ![image](3.png)",
+    "Note Images": [
+        "https://espresso.codeforces.com/15dd2aaf8c69f02fa71a455d40f5b7dc08ca4311.png",
+        "https://espresso.codeforces.com/921c5954be27aa779f596f91411b63f11d4f661a.png",
+        "https://espresso.codeforces.com/24a643356f55c5c5cb134dfece58f952a4c90566.png"
+    ],
+    "Language": "cn"
+}

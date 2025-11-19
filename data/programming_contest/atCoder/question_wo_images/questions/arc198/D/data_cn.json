@@ -1,0 +1,32 @@
+{
+    "Title": "AtCoder Regular Contest 198 (Div. 2)",
+    "Source": "atcoder",
+    "Name": "Many Palindromes on Tree",
+    "Time Limit": "5 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "你會得到一棵樹 T，包含 N 個編號為 1 到 N 的頂點，以及一個 N × N 矩陣 A = (A_{i,j})。樹 T 的第 i 條邊連接頂點 U_i 和 V_i。矩陣 A 的每個元素都是 0 或 1。 \n定義整數序列 x=(x_1,x_2,\\dots,x_N) 的分數如下：\n- 對於一對頂點 (i,j)(1 ≤ i,j ≤ N)，從 i 到 j 在 T 中的簡單路徑為 v_1=i,v_2,\\dots,v_n=j（由於 T 是一棵樹，這條路徑是唯一的）。如果滿足 x_{v_k} = x_{v_{n+1-k}} 對每個 k (1 ≤ k ≤ n)，則稱這對 (i,j) 為回文對。\n- 如果存在一對 (i,j) 使得 A_{i,j} = 1 且 (i,j) 不是回文對，則 x 的分數為 10^{100}。\n- 否則，x 的分數為滿足 1 ≤ i,j ≤ N 且 (i,j) 為回文對的對數。\n找出所有整數序列 x 的最小分數。",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ N ≤ 3000  \n- 1 ≤ U_i,V_i ≤ N  \n- T 是一棵樹。  \n- A_{i,j} \\in \\lbrace 0,1 \\rbrace  \n- A_{i,i} = 1  \n- A_{i,j} = A_{j,i}",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nN\r\nU_1 V_1\r\nU_2 V_2\r\n\\vdots\r\nU_{N-1} V_{N-1}\r\nA_{1,1}A_{1,2}\\dots A_{1,N}\r\nA_{2,1}A_{2,2}\\dots A_{2,N}\r\n\\vdots\r\nA_{N,1}A_{N,2}\\dots A_{N,N}\r\n輸出\n輸出所有整數序列 x 中的最小分數。",
+    "Sample Detail": [
+        {
+            "input": "4\n1 2\n1 3\n1 4\n1000\n0101\n0010\n0101\n",
+            "output": "6\n",
+            "explanation": "例如，當 x = (1,2,4,2) 時，沒有任何對 (i,j) 使得 A_{i,j}=1 並且 (i,j) 不是回文對。回文對為 (1,1),(2,2),(3,3),(4,4),(2,4),(4,2)，所以得分為 6。\n\n另一方面，當 x = (1,2,3,4) 時，我們有 A_{2,4} = 1，而 (2,4) 不是回文對，因此得分為 10^{100}。",
+            "images": []
+        },
+        {
+            "input": "7\n7 2\n4 1\n6 5\n1 6\n3 4\n2 3\n1001000\n0100000\n0010000\n1001001\n0000100\n0000010\n0001001\n",
+            "output": "13\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "10\n7 5\n10 3\n7 6\n6 10\n8 3\n9 3\n5 4\n1 5\n2 10\n1000000000\n0100010000\n0010010100\n0001000000\n0000100100\n0110010000\n0000001001\n0010100110\n0000000110\n0000001001\n",
+            "output": "66\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

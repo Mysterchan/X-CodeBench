@@ -1,0 +1,11 @@
+{
+    "url": "https://github.com/matplotlib/matplotlib/issues/29275",
+    "source": "github",
+    "title": "[Bug]: clip_on=False dosen't work",
+    "Description": "The intended visualization consists of a logarithmic plot (ax) framing a linear plot (axLin) above it. The data points should be clearly visible in both plots. Currently, the point in the axLin range is displayed correctly, but the point in the ax range does not appear as expected, despite the parameter clip_on being set to False. The expected behavior is for all data points to be fully displayed without clipping, regardless of their location in the logarithmic or linear scales.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "matplotlib",
+        "data-visualization"
+    ]
+}

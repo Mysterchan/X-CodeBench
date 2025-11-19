@@ -1,0 +1,25 @@
+{
+    "Title": "Codeforces Round 1050 (Div. 4)",
+    "Source": "codeforces",
+    "Name": "Gravity Falls",
+    "Time Limit": "2 s",
+    "Memory Limit": "256 mb",
+    "Problem Statement": "農夫約翰有 $n$ 個陣列 $a_1, a_2, ..., a_n$，它們的長度可能不同。他將這些陣列堆疊在一起，形成一個有 $n$ 行的網格。這些陣列是左對齊的，可以按照他想要的任何順序堆疊。\n然後，重力將發生。任何不在底行且下方沒有元素的單元格都會向下掉落一行。這個過程會重複進行，直到沒有單元格滿足上述條件為止。\n對於農夫約翰可以堆疊陣列的所有可能方式，輸出重力發生後的字典序最小的底行。",
+    "Statement Images": [],
+    "Constraints": "Time limit: 2 s\nMemory limit: 256 mb",
+    "IO Styles": "輸入\n第一行包含 $t$ （$1 ≤ t ≤ 1000$）—— 測試案例的數量。\n每個測試案例的第一行包含 $n$ （$1 ≤ n ≤ 2 \\cdot 10^5$）。\n接下來的 $n$ 行中，第一個整數 $k_i$ （$1 ≤ k ≤ 2 \\cdot 10^5$）表示 $a_i$ 的長度。\n然後，隨後會跟著 $k_i$ 個以空格分隔的整數 $a_{i_1}, a_{i_2}, ..., a_{i_{k_i}}$ （$1 ≤ a_{i_j} ≤ 2 \\cdot 10^5$）。\n保證所有測試案例的 $n$ 之和以及所有 $k_i$ 的總和不會超過 $2 \\cdot 10^5$。\n輸出\n對於每個測試案例，在新的一行上輸出字典序最小的底行。",
+    "Sample Detail": [
+        {
+            "input": "4\n1\n3 5 2 7\n2\n2 2 9\n3 3 1 4\n3\n1 5\n2 5 1\n2 5 2\n3\n3 4 4 9\n7 7 6 5 4 3 2 1\n4 2 4 5 1",
+            "output": "5 2 7 \n2 9 4 \n5 1 \n2 4 5 1 3 2 1 ",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Notes": "注意\n測試案例 2 的示範： ![image](1.png) \n測試案例 4 的示範： ![image](2.png)",
+    "Note Images": [
+        "https://espresso.codeforces.com/5ba037e1932e419911deb228cf24e855426a4e86.png",
+        "https://espresso.codeforces.com/aa42d1b94a4cd0987eeef2881296cffae9e01740.png"
+    ],
+    "Language": "cn"
+}

@@ -1,0 +1,11 @@
+{
+    "url": "https://stackoverflow.com/questions/67427241/how-to-change-the-margin-title-color-in-a-facetgrid",
+    "source": "stackoverflow",
+    "title": "How to change the margin title color in a FacetGrid",
+    "Description": "The intended visualization is a Seaborn displot with facet grids organized by species (columns) and sex (rows), using margin titles. The titles for the margins should be in red, while the main titles should retain their default color. Currently, the command `g.set_titles(color = 'red')` changes both the margin titles and the main titles to red, which is not the desired outcome. The expected appearance is that only the margin titles display in red without affecting the color of the main titles.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "seaborn",
+        "data-visualization"
+    ]
+}

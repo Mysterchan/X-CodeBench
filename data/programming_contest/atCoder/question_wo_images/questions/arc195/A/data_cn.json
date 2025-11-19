@@ -1,0 +1,32 @@
+{
+    "Title": "AtCoder Regular Contest 195 (Div. 2)",
+    "Source": "atcoder",
+    "Name": "Twice Subsequence",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "有一個序列 A = (A_1,\\dots,A_N)。判斷是否存在至少兩個 A 的子序列與序列 B = (B_1,\\dots,B_M) 匹配。若兩個子序列來自不同的位置，即使它們的序列相同，也視為不同的子序列。\n子序列\nA 的子序列是通過從 A 中移除零個或多個元素並保持其餘元素的原始順序而獲得的序列。",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ M ≤ N ≤ 2\\times 10^5\n- 1 ≤ A_i ≤ 10^9\n- 1 ≤ B_i ≤ 10^9\n- 所有輸入值皆為整數。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nN M\nA_1 A_2 ... A_N\nB_1 B_2 ... B_M\n輸出\n如果 A 中至少有兩個子序列與 B 匹配，則輸出 Yes。否則，輸出 No。",
+    "Sample Detail": [
+        {
+            "input": "4 2\n1 2 1 2\n1 2\n",
+            "output": "Yes\n",
+            "explanation": "有三個子序列 A 與 B 相符： (A_1,A_2), (A_1,A_4), (A_3,A_4)。",
+            "images": []
+        },
+        {
+            "input": "3 2\n1 2 1\n1 2\n",
+            "output": "No\n",
+            "explanation": "只有一個子序列 A 與 B 匹配：(A_1, A_2)。",
+            "images": []
+        },
+        {
+            "input": "3 2\n1 1 2\n2 1\n",
+            "output": "No\n",
+            "explanation": "在 A 中沒有任何子序列與 B 匹配。",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

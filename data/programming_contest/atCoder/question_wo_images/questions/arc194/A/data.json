@@ -1,0 +1,32 @@
+{
+    "Title": "AtCoder Regular Contest 194 (Div. 2)",
+    "Source": "atcoder",
+    "Name": "Operations on a Stack",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "You are given an integer sequence of length N: (A_1, A_2, ..., A_N). There is also a sequence S, which is initially empty.\nFor each i = 1, 2, ..., N in this order, you perform exactly one of the following two operations:\n- Append A_i as an element to the end of S.\n- Delete the last element of S. You cannot choose this operation if S is empty.\nPrint the maximum possible value of the sum of the elements of S after all operations.",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ N ≤ 2 \\times 10^5\n- -10^9 ≤ A_i ≤ 10^9\n- All input values are integers.",
+    "IO Styles": "Input\nThe input is given from Standard Input in the following format:\nN\r\nA_1 A_2 ... A_N\r\nOutput\nPrint the answer.",
+    "Sample Detail": [
+        {
+            "input": "6\n3 -1 -4 5 -9 2\n",
+            "output": "8\n",
+            "explanation": "Starting from the initial state where S is an empty sequence, consider the following operations:\n\n- For i = 1, append A_1 = 3 to the end of S. Now, S = (3).\n- For i = 2, append A_2 = -1 to the end of S. Now, S = (3, -1).\n- For i = 3, delete the last element of S. Now, S = (3).\n- For i = 4, append A_4 = 5 to the end of S. Now, S = (3, 5).\n- For i = 5, append A_5 = -9 to the end of S. Now, S = (3, 5, -9).\n- For i = 6, delete the last element of S. Now, S = (3, 5).\n\n\nHere, the sum of the elements of S after all operations is 3 + 5 = 8, which is the maximum possible value.",
+            "images": []
+        },
+        {
+            "input": "1\n-1\n",
+            "output": "-1\n",
+            "explanation": "Note that if S is empty, you must choose to append an element.",
+            "images": []
+        },
+        {
+            "input": "20\n-14 74 -48 38 -51 43 5 37 -39 -29 80 -44 -55 59 17 89 -37 -68 38 -16\n",
+            "output": "369\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "en"
+}

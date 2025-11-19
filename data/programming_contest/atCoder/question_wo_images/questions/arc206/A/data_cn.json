@@ -1,0 +1,26 @@
+{
+    "Title": "AtCoder Regular Contest 206 (Div. 2)",
+    "Source": "atcoder",
+    "Name": "Range Replace",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "你被給予一個長度為 N 的序列 A=(A_1,...,A_N)。你將執行以下操作恰好一次。\n- 選擇一對整數 (L,R)，使得 1≤ L ≤ R ≤ N。將 A_L,A_{L+1},...,A_R 的每個元素替換為 A_L。\n操作後的 A 可以有多少不同的序列？",
+    "Statement Images": [],
+    "Constraints": "- 所有輸入值為整數。\n- 1 ≤ N ≤ 10^6\n- 1 ≤ A_i ≤ N",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nN \nA_1 ... A_N\n輸出\n輸出答案。",
+    "Sample Detail": [
+        {
+            "input": "4\n1 1 2 3\n",
+            "output": "4\n",
+            "explanation": "操作後可能的序列如下四個序列：\n\n- (1,1,1,1)\n- (1,1,1,3)\n- (1,1,2,2)\n- (1,1,2,3)\n\n例如，(1,1,1,3) 可以通過執行操作，選擇 L=2, R=3 來獲得。",
+            "images": []
+        },
+        {
+            "input": "10\n2 5 6 5 2 1 7 9 7 2\n",
+            "output": "41\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

@@ -1,0 +1,23 @@
+{
+    "Title": "Panasonic Programming Contest 2025（AtCoder Beginner Contest 406）",
+    "Source": "atcoder",
+    "Name": "Compare Tree Weights",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "There is a tree T with N vertices.\nThe vertices are labeled as vertex 1, vertex 2, ..., vertex N, and the edges are labeled as edge 1, edge 2, ..., edge (N-1).\nEdge i (1≤ i≤ N-1) connects vertices U_i and V_i.\nEach vertex has a weight; initially, the weight of every vertex is 1.\nYou are given Q queries to process in order.\nEach query is of one of the following two types:\n- 1 x w : Increase the weight of vertex x by w.\n- 2 y : If edge y were removed, the tree T would be split into two subtrees (connected components). For each subtree, let its weight be the sum of the weights of its vertices. Output the difference between the weights of the two subtrees.\nFor a query of the second type, it can be proved that removing any edge of T always splits it into exactly two subtrees.\nNote that queries of the second type do not actually delete remove the edge.",
+    "Statement Images": [],
+    "Constraints": "- 2 ≤ N ≤ 3 \\times 10^5\n- 1 ≤ U_i, V_i ≤ N\n- 1 ≤ Q ≤ 3 \\times 10^5\n- 1 ≤ x ≤ N\n- 1 ≤ w ≤ 1000\n- 1 ≤ y ≤ N-1\n- All input values are integers.\n- The given graph is a tree.\n- There is at least one query of the second type.",
+    "IO Styles": "Input\nThe input is given from Standard Input in the following format:\nN\nU_1 V_1\nU_2 V_2\n\\vdots\nU_{N-1} V_{N-1}\nQ\n\\mathrm{query}_1\n\\mathrm{query}_2\n\\vdots\n\\mathrm{query}_Q\nEach query \\mathrm{query}_i (1≤ i≤ Q) is given in one of the following formats:\n1 x w\n2 y\nOutput\nLet K be the number of queries of the second type.\nOutput K lines; the i-th line (1 ≤ i ≤ K) should contain the answer to the i-th query of the second type.",
+    "Sample Detail": [
+        {
+            "input": "6\n1 2\n1 3\n2 4\n4 5\n4 6\n5\n2 1\n1 1 3\n2 1\n1 4 10\n2 5\n",
+            "output": "2\n1\n17\n",
+            "explanation": "The structure of the tree T and the vertex numbering are as shown on the left of the figure below. Initially, the weight of every vertex is 1.\n\nIn the 1st query, consider deleting edge 1.\nThe tree splits into the subtree containing vertex 1 and the subtree containing vertex 2.\nThe subtree with vertex 1 has weight 2; the subtree with vertex 2 has weight 4. Output the difference, 2 (figure below, right).\n\n![image](1.png)\n\nThe 2nd query increases the weight of vertex 1 by 3.\n\nIn the 3rd query, consider deleting edge 1.\nThe subtree with vertex 1 has weight 5; the subtree with vertex 2 has weight 4. Output the difference, 1 (figure below, left).\n\nThe 4th query increases the weight of vertex 4 by 10.\n\nIn the 5th query, consider deleting edge 5.\nThe tree splits into the subtree containing vertex 4 and the subtree consisting only of vertex 6.\nThe subtree with vertex 4 has weight 18; the subtree with vertex 6 has weight 1. Output the difference, 17 (figure below, right).\n\n![image](2.png)\n\nThus, output the answers to the queries of second type in order: 2, 1, and 17, separated by newlines.",
+            "images": [
+                "https://img.atcoder.jp/abc406/6f17e951940c2460b3ae5fe8e6bddc52.png",
+                "https://img.atcoder.jp/abc406/c5eacf2967bcc2b09866a0d8b83104c4.png"
+            ]
+        }
+    ],
+    "Language": "en"
+}

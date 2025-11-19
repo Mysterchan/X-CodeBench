@@ -1,0 +1,6 @@
+int ans=0;
+for(int i=-n;i<=n;i++){
+    if(n-i&1) continue ;
+    if(__gcd(abs(i),m)>1) continue ;
+    AddAs(ans,C(n,(n-i)/2));
+}

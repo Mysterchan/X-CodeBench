@@ -1,0 +1,26 @@
+{
+    "Title": "AtCoder Regular Contest 194 (Div. 2)",
+    "Source": "atcoder",
+    "Name": "Swap 0^X and 1^Y",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "給定兩個字符串 S 和 T，均長度為 N，且由 0 和 1 組成，以及兩個正整數 X 和 Y。對於 i = 1, 2, ..., N，讓 S_i 表示 S 的第 i 個字符。判斷是否可以通過重複執行以下任意次數（可能為零）且順序任意的操作 A 和 B，使 S 與 T 相同：\n\n- \n（操作 A）選擇一個整數 i 滿足 1 ≤ i ≤ N-(X+Y)+1，且 S_{i} = S_{i+1} = \\cdots = S_{i+X-1} = 0，並且 S_{i+X} = S_{i+X+1} = \\cdots = S_{i+X+Y-1} = 1，然後將 S_{i}, S_{i+1}, ..., S_{i+Y-1} 的值變更為 1，並將 S_{i+Y}, S_{i+Y+1}, ..., S_{i+Y+X-1} 的值變更為 0。\n\n- \n（操作 B）選擇一個整數 i 滿足 1 ≤ i ≤ N-(X+Y)+1，且 S_{i} = S_{i+1} = \\cdots = S_{i+Y-1} = 1，並且 S_{i+Y} = S_{i+Y+1} = \\cdots = S_{i+Y+X-1} = 0，然後將 S_{i}, S_{i+1}, ..., S_{i+X-1} 的值變更為 0，並將 S_{i+X}, S_{i+X+1}, ..., S_{i+X+Y-1} 的值變更為 1。",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ N ≤ 5 \\times 10^5\n- 1 ≤ X, Y ≤ N\n- S 和 T 是長度為 N 的由 0 和 1 組成的字符串。\n- 所有輸入值都是整數。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nN X Y\nS\nT\n\n輸出\n如果可以使 S 與 T 相同，則輸出 Yes；否則，輸出 No。",
+    "Sample Detail": [
+        {
+            "input": "9 2 1\n000111001\n011000011\n",
+            "output": "Yes\n",
+            "explanation": "以下的程序可以將 S 轉換為 T：\n\n- 首先，以 i = 2 執行操作 A。現在，S = 010011001。\n- 接著，以 i = 6 執行操作 B。現在，S = 010010011。\n- 最後，以 i = 3 執行操作 A。現在，S = 011000011。\n\n因此，打印「是」。",
+            "images": []
+        },
+        {
+            "input": "1 1 1\n0\n1\n",
+            "output": "No\n",
+            "explanation": "不可能使 S 與 T 完全相同。因此，輸出「No」。",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

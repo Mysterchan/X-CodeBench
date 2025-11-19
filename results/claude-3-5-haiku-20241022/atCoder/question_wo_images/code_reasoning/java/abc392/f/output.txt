@@ -1,0 +1,49 @@
+I need to trace through this program step by step.
+
+**Input:**
+- N = 4
+- P = [1, 1, 2, 1] (which becomes order = [0, 0, 1, 0] after subtracting 1)
+
+**Understanding the algorithm:**
+
+The code processes insertions in reverse order (from i = n-1 down to 0). It uses a segment tree to track available positions.
+
+**Initial state:**
+- Segment tree initialized with values 1 at positions 0 through 4 (5 positions total)
+- ans = [0, 0, 0, 0]
+
+**Processing backwards (i from 3 to 0):**
+
+**i = 3:** (inserting number 4, order[3] = 0)
+- getIdx(0): Find position where cumulative sum > 0. This returns index 0.
+- ans[0] = 4
+- Remove position 0 from segment tree (add -1 at index 0)
+- ans = [4, 0, 0, 0]
+
+**i = 2:** (inserting number 3, order[2] = 1)
+- getIdx(1): Find position where cumulative sum > 1. 
+  - Position 0 is removed, position 1 has sum 1, position 2 would give sum 2.
+  - This returns index 2.
+- ans[2] = 3
+- Remove position 2 from segment tree
+- ans = [4, 0, 3, 0]
+
+**i = 1:** (inserting number 2, order[1] = 0)
+- getIdx(0): Find position where cumulative sum > 0.
+  - Position 0 is removed, position 1 has sum 1.
+  - This returns index 1.
+- ans[1] = 2
+- Remove position 1 from segment tree
+- ans = [4, 2, 3, 0]
+
+**i = 0:** (inserting number 1, order[0] = 0)
+- getIdx(0): Find position where cumulative sum > 0.
+  - Positions 0, 1, 2 are removed, position 3 has sum 1.
+  - This returns index 3.
+- ans[3] = 1
+- Remove position 3 from segment tree
+- ans = [4, 2, 3, 1]
+
+**Output:** The final array is [4, 2, 3, 1]
+
+4 2 3 1

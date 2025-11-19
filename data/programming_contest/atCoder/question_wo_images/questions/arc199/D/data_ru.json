@@ -1,0 +1,32 @@
+{
+    "Title": "AtCoder Regular Contest 199 (Div. 1)",
+    "Source": "atcoder",
+    "Name": "Limestone",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "Дано положительные целые числа H и W.\nСуществует матрица H \\times W A=(A_{i,j})\\ (1≤ i≤ H,1≤ j≤ W), где изначально все элементы равны 0.\nВы можете выполнять следующие два типа операций с этой матрицей в любом порядке и любое количество раз:\n- Выберите целые числа r и c\\ (1≤ r≤ H,1≤ c≤ W). Установите все A_{r,1}, A_{r,2}, ..., A_{r,c} в 1.\n- Выберите целые числа r и c\\ (1≤ r≤ H,1≤ c≤ W). Установите все A_{1,c}, A_{2,c}, ..., A_{r,c} в 1.\nНайдите сумму \\displaystyle \\sum_{i=1}^H\\sum_{j=1}^W A_{i,j} по всем матрицам, которые можно получить, повторяя вышеупомянутые операции, по модулю 998244353.",
+    "Statement Images": [],
+    "Constraints": "- 1≤ H,W\n- HW≤ 2\\times 10^5\n- Все входные значения - целые числа.",
+    "IO Styles": "Входные данные\nВходные данные поступают из стандартного ввода в следующем формате:\nH W\nВыходные данные\nВыведите сумму \\displaystyle \\sum_{i=1}^H\\sum_{j=1}^W A_{i,j} по всем матрицам, которые можно получить, повторяя операции, по модулю 998244353.",
+    "Sample Detail": [
+        {
+            "input": "2 2\n",
+            "output": "29\n",
+            "explanation": "Существует 14 матриц, которые могут быть получены путем повторения операций:\n\n\\begin{pmatrix}0&0 \\\\ 0&0\\end{pmatrix} \n\\begin{pmatrix}1&0 \\\\ 0&0\\end{pmatrix} \n\\begin{pmatrix}0&1 \\\\ 0&0\\end{pmatrix} \n\\begin{pmatrix}1&1 \\\\ 0&0\\end{pmatrix} \n\\begin{pmatrix}0&0 \\\\ 1&0\\end{pmatrix} \n\\begin{pmatrix}1&0 \\\\ 1&0\\end{pmatrix} \n\\begin{pmatrix}0&1 \\\\ 1&0\\end{pmatrix} \n\\begin{pmatrix}1&1 \\\\ 1&0\\end{pmatrix} \n\\begin{pmatrix}0&1 \\\\ 0&1\\end{pmatrix} \n\\begin{pmatrix}1&1 \\\\ 0&1\\end{pmatrix} \n\\begin{pmatrix}0&0 \\\\ 1&1\\end{pmatrix} \n\\begin{pmatrix}1&0 \\\\ 1&1\\end{pmatrix} \n\\begin{pmatrix}0&1 \\\\ 1&1\\end{pmatrix} \n\\begin{pmatrix}1&1 \\\\ 1&1\\end{pmatrix}\n\nОтвет равен 0+1+1+2+1+2+2+3+2+3+2+3+3+4=29.\n\nМатрицы \\begin{pmatrix}0&0 \\\\ 0&1\\end{pmatrix} и \\begin{pmatrix}1&0 \\\\ 0&1\\end{pmatrix} не могут быть получены ни одной последовательностью операций.",
+            "images": []
+        },
+        {
+            "input": "1 10\n",
+            "output": "5120\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "123 456\n",
+            "output": "428623282\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "ru"
+}

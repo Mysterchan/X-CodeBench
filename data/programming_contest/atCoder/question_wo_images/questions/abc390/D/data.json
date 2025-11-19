@@ -1,0 +1,32 @@
+{
+    "Title": "AtCoder Beginner Contest 390",
+    "Source": "atcoder",
+    "Name": "Stone XOR",
+    "Time Limit": "3 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "There are N bags, labeled bag 1, bag 2, ..., bag N.\nBag i (1 ≤ i ≤ N) contains A_i stones.\nTakahashi can perform the following operation any number of times, possibly zero:\nChoose two bags A and B, and move all stones from bag A into bag B.\nFind the number of different possible values for the following after repeating the operation.\n- B_1 \\oplus B_2 \\oplus \\cdots \\oplus B_N, where B_i is the final number of stones in bag i.\nHere, \\oplus denotes bitwise XOR.\nAbout bitwise XOR\nFor non-negative integers a and b, the bitwise XOR a \\oplus b is defined as follows:\n\n\nIn the binary representation of a \\oplus b, the digit in the 2^k place (k ≥ 0) is 1 if and only if exactly one of the digits in the 2^k place of a and b is 1; otherwise, it is 0.\n\n\nFor example, 3 \\oplus 5 = 6 (in binary, 011 \\oplus 101 = 110).\nIn general, for k non-negative integers x_1, x_2, ..., x_k, their bitwise XOR x_1 \\oplus x_2 \\oplus \\cdots \\oplus x_k is defined as (\\cdots((x_1 \\oplus x_2) \\oplus x_3) \\oplus \\cdots) \\oplus x_k, which does not depend on the order of x_1, x_2, ..., x_k.\nIt can be proved that under the constraints of this problem, the number of possible values is finite.",
+    "Statement Images": [],
+    "Constraints": "- 2 ≤ N ≤ 12\n- 1 ≤ A_i ≤ 10^{17}\n- All input values are integers.",
+    "IO Styles": "Input\nThe input is given from Standard Input in the following format:\nN\r\nA_1 A_2 ... A_N\r\nOutput\nPrint the number of different possible values for B_1 \\oplus B_2 \\oplus \\cdots \\oplus B_N after repeating the operation.",
+    "Sample Detail": [
+        {
+            "input": "3\n2 5 7\n",
+            "output": "3\n",
+            "explanation": "For example, if Takahashi chooses bags 1 and 3 for the operation, then the numbers of stones in bags 1, 2, 3 become 0, 5, 9.\r\nIf he stops at this point, the XOR is 0 \\oplus 5 \\oplus 9 = 12.\n\nThe other possible XOR values after repeating the operation are 0 and 14.\r\nTherefore, the possible values are 0, 12, 14; there are three values, so the output is 3.",
+            "images": []
+        },
+        {
+            "input": "2\n100000000000000000 100000000000000000\n",
+            "output": "2\n",
+            "explanation": "",
+            "images": []
+        },
+        {
+            "input": "6\n71 74 45 34 31 60\n",
+            "output": "84\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "en"
+}

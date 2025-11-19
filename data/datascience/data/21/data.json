@@ -1,0 +1,11 @@
+{
+    "url": "https://stackoverflow.com/questions/65230006/how-to-create-a-figure-of-subplots-of-grouped-bar-charts-in-python",
+    "source": "stackoverflow",
+    "title": "How to create a figure of subplots of grouped bar charts in python",
+    "Description": "The intention is to create a single figure featuring two grouped bar charts: one for \"yesterday\" data and another for \"today\" data, with correctly grouped bars for each category labeled as 'G1', 'G2', and 'G3'. Currently, the bar charts are rendered in separate figures instead of a combined visualization. The expected outcome is a single figure with two subplots side by side, each displaying their respective grouped bar charts.",
+    "Input Payload": "Code Snippet: {{}} \n Current Output: ![image](1.png) \n Expected Output: ![image](2.png)",
+    "tags": [
+        "matplotlib",
+        "data-visualization"
+    ]
+}

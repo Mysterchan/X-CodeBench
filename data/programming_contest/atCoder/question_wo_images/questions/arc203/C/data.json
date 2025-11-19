@@ -1,0 +1,20 @@
+{
+    "Title": "AtCoder Regular Contest 203 (Div. 2)",
+    "Source": "atcoder",
+    "Name": "Destruction of Walls",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "Rooms are arranged in a grid with H rows and W columns.\nThere are walls between adjacent rooms that share an edge.\nWhen you are in room A and room B is adjacent to room A in one of the four directions (up, down, left, right), and the wall between room A and room B has been demolished, you can move from room A to room B.\nFind the total number, modulo 998244353, of ways to choose K walls such that the following condition is satisfied.\n- When all chosen walls are demolished, it is possible to move from the top-left room to the bottom-right room by passing through some rooms.\nSolve T test cases for each input file.",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ T ≤ 2 \\times 10^5\n- 2 ≤ H ≤ 2 \\times 10^5\n- 2 ≤ W ≤ 2 \\times 10^5\n- \\boldsymbol{0 ≤ K ≤ H+W}\n- All input values are integers.",
+    "IO Styles": "Input\nThe input is given from Standard Input in the following format:\nT\ncase_1\ncase_2\n\\vdots\ncase_T\nEach case is given in the following format:\nH W K\nOutput\nOutput the answers in a total of T lines.\nThe t-th line should contain the total number, modulo 998244353, of ways to select K walls that satisfy the condition for the t-th test case.",
+    "Sample Detail": [
+        {
+            "input": "6\n2 2 1\n2 2 3\n2 2 2\n2 2 4\n200000 200000 400000\n2 203 203\n",
+            "output": "0\n4\n2\n1\n387815582\n203\n",
+            "explanation": "In the first case, demolishing any single wall does not allow movement from the top-left room to the bottom-right room.\nIn the second case, choosing and demolishing any three walls out of the four available walls allows movement from the top-left room to the bottom-right room.",
+            "images": []
+        }
+    ],
+    "Language": "en"
+}

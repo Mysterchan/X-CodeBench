@@ -1,0 +1,38 @@
+{
+    "Title": "AtCoder Beginner Contest 390",
+    "Source": "atcoder",
+    "Name": "12435",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "給定一個整數序列 A=(A_1,A_2,A_3,A_4,A_5)，這個序列是由 (1,2,3,4,5) 進行排列而成。請判斷 A 是否可以通過恰好一次交換 A 中兩個相鄰元素的操作，將其排序為升序。",
+    "Statement Images": [],
+    "Constraints": "- A 是一個通過排列 (1,2,3,4,5) 獲得的長度為 5 的整數序列。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nA_1 A_2 A_3 A_4 A_5\n輸出\n如果 A 能夠透過剛好一次操作以升序排序，則輸出 Yes；否則，輸出 No。",
+    "Sample Detail": [
+        {
+            "input": "1 2 4 3 5\n",
+            "output": "Yes\n",
+            "explanation": "透過交換 A_3 和 A_4，A 變成 (1,2,3,4,5)，因此可以按照升序排列。因此，印出 Yes。",
+            "images": []
+        },
+        {
+            "input": "5 3 2 4 1\n",
+            "output": "No\n",
+            "explanation": "無論執行何種操作，都無法將 A 以升序排列。",
+            "images": []
+        },
+        {
+            "input": "1 2 3 4 5\n",
+            "output": "No\n",
+            "explanation": "您必須執行正好一個操作。",
+            "images": []
+        },
+        {
+            "input": "2 1 3 4 5\n",
+            "output": "Yes\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

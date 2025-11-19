@@ -1,0 +1,32 @@
+{
+    "Title": "AtCoder Regular Contest 194 (Div. 2)",
+    "Source": "atcoder",
+    "Name": "Operations on a Stack",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "給定一個長度為 N 的整數序列：(A_1, A_2, ..., A_N)。還有一個初始為空的序列 S。\n對於每個 i = 1, 2, ..., N，按照此順序，你需要執行以下兩個操作中的一個：\n- 將 A_i 作為元素附加到 S 的末尾。\n- 刪除 S 的最後一個元素。如果 S 為空，則不能選擇此操作。\n打印所有操作後 S 的元素總和的最大可能值。",
+    "Statement Images": [],
+    "Constraints": "- 1 ≤ N ≤ 2 \\times 10^5\n- -10^9 ≤ A_i ≤ 10^9\n- 所有輸入值均為整數。",
+    "IO Styles": "輸入\n輸入是以以下格式從標準輸入給出：\nN\nA_1 A_2 ... A_N\n輸出\n打印答案。",
+    "Sample Detail": [
+        {
+            "input": "6\n3 -1 -4 5 -9 2\n",
+            "output": "8\n",
+            "explanation": "從初始狀態開始，其中 S 是一個空序列，考慮以下操作：\n\n- 當 i = 1 時，將 A_1 = 3 附加到 S 的末尾。現在，S = (3)。\n- 當 i = 2 時，將 A_2 = -1 附加到 S 的末尾。現在，S = (3, -1)。\n- 當 i = 3 時，刪除 S 的最後一個元素。現在，S = (3)。\n- 當 i = 4 時，將 A_4 = 5 附加到 S 的末尾。現在，S = (3, 5)。\n- 當 i = 5 時，將 A_5 = -9 附加到 S 的末尾。現在，S = (3, 5, -9)。\n- 當 i = 6 時，刪除 S 的最後一個元素。現在，S = (3, 5)。\n\n在所有操作結束後，S 的元素總和為 3 + 5 = 8，這是可能的最大值。",
+            "images": []
+        },
+        {
+            "input": "1\n-1\n",
+            "output": "-1\n",
+            "explanation": "注意，如果 S 是空的，您必須選擇添加一個元素。",
+            "images": []
+        },
+        {
+            "input": "20\n-14 74 -48 38 -51 43 5 37 -39 -29 80 -44 -55 59 17 89 -37 -68 38 -16\n",
+            "output": "369\n",
+            "explanation": "",
+            "images": []
+        }
+    ],
+    "Language": "cn"
+}

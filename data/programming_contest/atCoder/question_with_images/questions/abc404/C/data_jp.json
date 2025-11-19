@@ -1,0 +1,30 @@
+{
+    "Title": "AtCoder Beginner Contest 404（Promotion for Engineer Guild）",
+    "Source": "atcoder",
+    "Name": "Cycle Graph?",
+    "Time Limit": "2 sec",
+    "Memory Limit": "1024 MiB",
+    "Problem Statement": "N 頂点 M 辺の単純無向グラフが与えられます。頂点には 1,2,\\dots,N の番号が、辺には 1,2,\\dots,M の番号がつけられており、辺 i は頂点 A_i と頂点 B_i を結んでいます。\nこのグラフがサイクルグラフであるか判定してください。\n単純無向グラフとは\n単純無向グラフとは、自己ループや多重辺を含まず、辺に向きの無いグラフのことをいいます。\nサイクルグラフとは\n頂点に 1, 2, \\dots, N の番号が付けられた N 頂点のグラフがサイクルグラフであるとは、(1, 2, \\dots, N) を並べ変えて得られる数列 (v_1, v_2, \\dots, v_N) であって、以下の条件を満たすものが存在することをいいます。\n- i = 1, 2, \\dots, N-1 に対して、頂点 v_i と v_{i+1} を結ぶ辺が存在する\n- 頂点 v_N と v_1 を結ぶ辺が存在する\n- それら以外の辺は存在しない",
+    "Statement Images": [],
+    "Constraints": "- 3≤ N ≤ 2\\times 10^5\n- 0 ≤ M ≤ 2\\times 10^5\n- 1 ≤ A_i, B_i ≤ N\n- 与えられるグラフは単純\n- 入力は全て整数",
+    "IO Styles": "入力\n入力は以下の形式で標準入力から与えられる。\nN M\nA_1 B_1\n\\vdots\nA_M B_M\n出力\n与えられたグラフがサイクルグラフであるなら Yes、そうでないなら No と出力せよ。",
+    "Sample Detail": [
+        {
+            "input": "4 4\n2 4\n3 1\n4 1\n2 3\n",
+            "output": "Yes\n",
+            "explanation": "与えられたグラフは以下の通りであり、これはサイクルグラフです。\n\n![image](1.png)",
+            "images": [
+                "https://img.atcoder.jp/abc404/92ea02f287069bfd5e2142ffcafa0e3e.png"
+            ]
+        },
+        {
+            "input": "4 6\n1 2\n1 3\n1 4\n2 3\n2 4\n3 4\n",
+            "output": "No\n",
+            "explanation": "与えられたグラフは以下の通りであり、これはサイクルグラフではありません。\n\n![image](2.png)",
+            "images": [
+                "https://img.atcoder.jp/abc404/a428538cd729b649a952c46a67afd8d7.png"
+            ]
+        }
+    ],
+    "Language": "jp"
+}
